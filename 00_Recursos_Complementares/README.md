@@ -7,7 +7,6 @@
 **Ambiente de desenvolvimento, documentação técnica, interatividade e análise de dados**
 
 ![Ambiente Python](https://img.shields.io/badge/Ambiente-Python-3776AB?style=for-the-badge)
-![Documentação](https://img.shields.io/badge/Documenta%C3%A7%C3%A3o-T%C3%A9cnica-40566B?style=for-the-badge)
 ![Interatividade](https://img.shields.io/badge/Interfaces-Interativas-16A085?style=for-the-badge)
 ![Análise de Dados](https://img.shields.io/badge/An%C3%A1lise-de%20Dados-6C63FF?style=for-the-badge)
 
@@ -102,10 +101,13 @@ O arquivo [`requirements.txt`](./requirements.txt) lista as dependências direta
 ├── outputs/
 │   └── ... arquivos de exemplo gerados pelo notebook de Polars
 └── materiais_referencia/
-    └── ... PDFs de apoio (quando adicionados)
+    ├── Ambientes_Python_e_JupyterLab.pdf
+    ├── Markdown_e_Documentacao.pdf
+    ├── Widgets_e_Interatividade.pdf
+    └── Polars_e_Analise_de_Dados.pdf
 ```
 
-A pasta `outputs/` é utilizada para resultados dos exemplos e pode ter conteúdo variável. A pasta `materiais_referencia/` é reservada aos PDFs de apoio; não há arquivos de código complementar previstos neste assunto. Os nomes dos PDFs serão documentados quando estiverem definidos.
+A pasta `outputs/` reúne pequenos resultados didáticos que podem ser recriados durante os exercícios. Em `materiais_referencia/` encontram-se quatro PDFs autorais que aprofundam os temas dos notebooks e integram seções de consulta rápida. Não há códigos legados complementares selecionados para `exemplos_codigo/` neste assunto.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR PARA O TOPO</a></p>
 
@@ -189,7 +191,16 @@ Se houver `ModuleNotFoundError`, confira se o pacote foi instalado no interpreta
 
 O foco deste conjunto está em **ferramentas de apoio e exemplos práticos**. Os quatro notebooks não dependem de um conjunto de dados externo obrigatório identificado na documentação recebida. Quando forem utilizados arquivos de entrada em outros assuntos, o diretório adotado para datasets será `datasets/`.
 
-Os exemplos de Polars podem produzir arquivos na pasta [`outputs/`](./outputs/). Os **PDFs de apoio**, quando presentes, devem ficar em `materiais_referencia/`. A revisão e a padronização desses PDFs ocorrerão separadamente, sem alterar os notebooks ou o roteiro de estudo. Não há pasta `exemplos_codigo/` neste assunto.
+Os exemplos de Polars podem produzir arquivos na pasta [`outputs/`](./outputs/). Os materiais abaixo são **autorais**, com teoria, exemplos comentados, exercícios e consulta rápida, elaborados para acompanhar os quatro notebooks sem reproduzir os guias de terceiros.
+
+| Material complementar | Conteúdo e relação com o notebook |
+|---|---|
+| [Ambientes Python e JupyterLab](./materiais_referencia/Ambientes_Python_e_JupyterLab.pdf) | Interpretadores, ambientes virtuais, pip, dependências, kernels, atalhos, diagnóstico e reprodutibilidade; apoio ao notebook 01. |
+| [Markdown e Documentação](./materiais_referencia/Markdown_e_Documentacao.pdf) | Estrutura textual, links, tabelas, fórmulas, documentação científica e consulta rápida; apoio ao notebook 02. |
+| [Widgets e Interatividade](./materiais_referencia/Widgets_e_Interatividade.pdf) | Componentes, callbacks, estado, layouts, entradas, testes e solução de problemas; apoio ao notebook 03. |
+| [Polars e Análise de Dados](./materiais_referencia/Polars_e_Analise_de_Dados.pdf) | Expressões, tipos, ausências, junções, agregações, datas, Lazy API, CSV/Parquet, integração com Pandas e estudo de caso; apoio ao notebook 04. |
+
+Os guias rápidos de referência foram aproveitados como orientação temática para produzir seções próprias de **Consulta Rápida** dentro dos PDFs. Os documentos originais permanecem preservados fora da publicação. Não há pasta `exemplos_codigo/` neste assunto.
 
 Consulte também as fontes técnicas da seção [Referências](#referências).
 
@@ -268,9 +279,9 @@ Para dúvidas, sugestões ou contribuições, utilize os canais profissionais ab
 <a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="E-mail" height="27"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
 <a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>&nbsp;&nbsp;
-<a href="https://discord.com/channels/1095050260964966483/1111074732503203900"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/discord_icon.svg" alt="Discord" height="27"></a>
+<a href="https://discord.com/users/533043855122235393"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/discord_icon.svg" alt="Discord" height="27"></a>
 
-[**Portfólio profissional**](https://eduardo-pereira.webflow.io/) · [**Perfil no GitHub**](https://github.com/eduardojr-pereira)
+[**Portfólio**](https://eduardo-pereira.webflow.io/)
 
 </div>
 
