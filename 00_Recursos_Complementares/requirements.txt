@@ -1,0 +1,11 @@
+# Requisitos diretos — 00 Recursos Complementares
+# Execute instalações somente se faltarem bibliotecas no kernel correto.
+# Compatibilidade precisa ser validada no ambiente de destino.
+ipywidgets
+polars
+pandas
+numpy
+matplotlib
+ipykernel
+jupyterlab
+# pyarrow é opcional para conversões de Polars para Pandas.

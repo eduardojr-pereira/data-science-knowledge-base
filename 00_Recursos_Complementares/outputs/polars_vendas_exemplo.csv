@@ -1,0 +1,9 @@
+pedido_id,data,produto,categoria,regiao,quantidade,preco_unitario,desconto_pct,receita_bruta,desconto_tratado,receita_liquida
+101,2026-01-03,Caderno,Papelaria,Sul,2,25.0,0.0,50.0,0.0,50.0
+102,2026-01-03,Caneta,Papelaria,Norte,5,4.0,0.0,20.0,0.0,20.0
+103,2026-01-04,Mochila,Acessórios,Sul,1,150.0,0.1,150.0,0.1,135.0
+104,2026-01-05,Caderno,Papelaria,Norte,3,25.0,,75.0,0.0,75.0
+105,2026-02-01,Caneta,Papelaria,Sul,4,4.0,0.0,16.0,0.0,16.0
+106,2026-02-02,Mochila,Acessórios,Norte,2,150.0,0.05,300.0,0.05,285.0
+107,2026-02-02,Caderno,Papelaria,Sul,1,25.0,0.0,25.0,0.0,25.0
+108,2026-02-03,Caneta,Papelaria,Norte,6,4.0,0.0,24.0,0.0,24.0
