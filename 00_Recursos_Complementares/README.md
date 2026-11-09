@@ -281,7 +281,7 @@ Para dúvidas, sugestões ou contribuições, utilize os canais profissionais ab
 <a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>&nbsp;&nbsp;
 <a href="https://discord.com/users/533043855122235393"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/discord_icon.svg" alt="Discord" height="27"></a>
 
-[**Portfólio**](https://eduardo-pereira.webflow.io/)
+[**Portfólio**](https://github.com/eduardojr-pereira/data-science-portfolio)
 
 </div>
 
