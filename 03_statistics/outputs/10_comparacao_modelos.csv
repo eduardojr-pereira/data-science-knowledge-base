@@ -1,0 +1,4 @@
+﻿modelo,aic,observacoes
+poisson,918.2473273085562,250
+binomial_negativa_alpha_fixo,1061.948365398119,250
+logistico,319.597356412704,250

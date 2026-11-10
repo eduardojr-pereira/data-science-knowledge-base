@@ -1,0 +1,8 @@
+# Pacotes necessários aos notebooks (sem upgrade global do ambiente)
+jupyterlab>=4
+ipykernel>=6
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+scipy>=1.11
+statsmodels>=0.14
