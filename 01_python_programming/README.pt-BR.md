@@ -95,20 +95,20 @@ As principais ferramentas são **Python, JupyterLab, NumPy, Matplotlib, Pandas e
 ├── 05_pandas.ipynb
 ├── 06_classes_e_objetos.ipynb
 ├── reference_materials/
-│   ├── 01_Guia_Fundamentos_Python.pdf
-│   ├── 02_Guia_Colecoes_e_Lacos.pdf
-│   ├── 03_Guia_Dicionarios_e_Funcoes.pdf
-│   ├── 04_Guia_NumPy.pdf
-│   ├── 05_Guia_Matplotlib.pdf
-│   ├── 06_Guia_Pandas.pdf
-│   ├── 07_Guia_Orientacao_a_Objetos.pdf
+│   ├── 01_fundamentos_python.pdf
+│   ├── 02_colecoes_e_lacos.pdf
+│   ├── 03_dicionarios_e_funcoes.pdf
+│   ├── 04_numpy.pdf
+│   ├── 05_matplotlib.pdf
+│   ├── 06_pandas.pdf
+│   ├── 07_orientacao_a_objetos.pdf
 ├── cheat_sheets/
-│   ├── EP_Cheat_Sheet_Fundamentos_Python.pdf
-│   ├── EP_Cheat_Sheet_Colecoes_e_Lacos.pdf
-│   ├── EP_Cheat_Sheet_Funcoes_Python.pdf
-│   ├── EP_Cheat_Sheet_NumPy.pdf
-│   ├── EP_Cheat_Sheet_Pandas.pdf
-│   ├── EP_Cheat_Sheet_Orientacao_a_Objetos.pdf
+│   ├── cheat_sheet_fundamentos_python.pdf
+│   ├── cheat_sheet_colecoes_e_lacos.pdf
+│   ├── cheat_sheet_funcoes_python.pdf
+│   ├── cheat_sheet_numpy.pdf
+│   ├── cheat_sheet_pandas.pdf
+│   ├── cheat_sheet_orientacao_a_objetos.pdf
 └── outputs/
     └── ... arquivos CSV e Excel dos exercícios
 ```
@@ -165,13 +165,13 @@ Os arquivos CSV e XLSX ficam em [`outputs/`](./outputs/). Há sete guias técnic
 
 | Guia técnico | Tema |
 |---|---|
-| [Fundamentos Python](./reference_materials/01_Guia_Fundamentos_Python.pdf) | Explicações, exemplos e exercícios técnicos. |
-| [Coleções e Laços](./reference_materials/02_Guia_Colecoes_e_Lacos.pdf) | Explicações, exemplos e exercícios técnicos. |
-| [Dicionários e Funções](./reference_materials/03_Guia_Dicionarios_e_Funcoes.pdf) | Explicações, exemplos e exercícios técnicos. |
-| [NumPy](./reference_materials/04_Guia_NumPy.pdf) | Explicações, exemplos e exercícios técnicos. |
-| [Matplotlib](./reference_materials/05_Guia_Matplotlib.pdf) | Explicações, exemplos e exercícios técnicos. |
-| [Pandas](./reference_materials/06_Guia_Pandas.pdf) | Explicações, exemplos e exercícios técnicos. |
-| [Orientação a Objetos](./reference_materials/07_Guia_Orientacao_a_Objetos.pdf) | Explicações, exemplos e exercícios técnicos. |
+| [Fundamentos Python](./reference_materials/01_fundamentos_python.pdf) | Explicações, exemplos e exercícios técnicos. |
+| [Coleções e Laços](./reference_materials/02_colecoes_e_lacos.pdf) | Explicações, exemplos e exercícios técnicos. |
+| [Dicionários e Funções](./reference_materials/03_dicionarios_e_funcoes.pdf) | Explicações, exemplos e exercícios técnicos. |
+| [NumPy](./reference_materials/04_numpy.pdf) | Explicações, exemplos e exercícios técnicos. |
+| [Matplotlib](./reference_materials/05_matplotlib.pdf) | Explicações, exemplos e exercícios técnicos. |
+| [Pandas](./reference_materials/06_pandas.pdf) | Explicações, exemplos e exercícios técnicos. |
+| [Orientação a Objetos](./reference_materials/07_orientacao_a_objetos.pdf) | Explicações, exemplos e exercícios técnicos. |
 
 <p align="right"><a href="#readme-top">↑ VOLTAR PARA O TOPO</a></p>
 
@@ -185,12 +185,12 @@ As seis cheat sheets EP são independentes, têm uma página A4 em paisagem e ev
 
 | Referência rápida | Foco |
 |---|---|
-| [Fundamentos Python](./cheat_sheets/EP_Cheat_Sheet_Fundamentos_Python.pdf) | Comandos e padrões para consulta imediata. |
-| [Coleções e Laços](./cheat_sheets/EP_Cheat_Sheet_Colecoes_e_Lacos.pdf) | Comandos e padrões para consulta imediata. |
-| [Funções Python](./cheat_sheets/EP_Cheat_Sheet_Funcoes_Python.pdf) | Comandos e padrões para consulta imediata. |
-| [NumPy](./cheat_sheets/EP_Cheat_Sheet_NumPy.pdf) | Comandos e padrões para consulta imediata. |
-| [Pandas](./cheat_sheets/EP_Cheat_Sheet_Pandas.pdf) | Comandos e padrões para consulta imediata. |
-| [Orientação a Objetos](./cheat_sheets/EP_Cheat_Sheet_Orientacao_a_Objetos.pdf) | Comandos e padrões para consulta imediata. |
+| [Fundamentos Python](./cheat_sheets/cheat_sheet_fundamentos_python.pdf) | Comandos e padrões para consulta imediata. |
+| [Coleções e Laços](./cheat_sheets/cheat_sheet_colecoes_e_lacos.pdf) | Comandos e padrões para consulta imediata. |
+| [Funções Python](./cheat_sheets/cheat_sheet_funcoes_python.pdf) | Comandos e padrões para consulta imediata. |
+| [NumPy](./cheat_sheets/cheat_sheet_numpy.pdf) | Comandos e padrões para consulta imediata. |
+| [Pandas](./cheat_sheets/cheat_sheet_pandas.pdf) | Comandos e padrões para consulta imediata. |
+| [Orientação a Objetos](./cheat_sheets/cheat_sheet_orientacao_a_objetos.pdf) | Comandos e padrões para consulta imediata. |
 
 <p align="right"><a href="#readme-top">↑ VOLTAR PARA O TOPO</a></p>
 

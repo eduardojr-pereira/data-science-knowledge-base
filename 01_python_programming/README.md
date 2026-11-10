@@ -95,20 +95,20 @@ Main tools: **Python, JupyterLab, NumPy, Matplotlib, Pandas, and openpyxl** (for
 ├── 05_pandas.ipynb
 ├── 06_classes_e_objetos.ipynb
 ├── reference_materials/
-│   ├── 01_Guia_Fundamentos_Python.pdf
-│   ├── 02_Guia_Colecoes_e_Lacos.pdf
-│   ├── 03_Guia_Dicionarios_e_Funcoes.pdf
-│   ├── 04_Guia_NumPy.pdf
-│   ├── 05_Guia_Matplotlib.pdf
-│   ├── 06_Guia_Pandas.pdf
-│   ├── 07_Guia_Orientacao_a_Objetos.pdf
+│   ├── 01_fundamentos_python.pdf
+│   ├── 02_colecoes_e_lacos.pdf
+│   ├── 03_dicionarios_e_funcoes.pdf
+│   ├── 04_numpy.pdf
+│   ├── 05_matplotlib.pdf
+│   ├── 06_pandas.pdf
+│   ├── 07_orientacao_a_objetos.pdf
 ├── cheat_sheets/
-│   ├── EP_Cheat_Sheet_Fundamentos_Python.pdf
-│   ├── EP_Cheat_Sheet_Colecoes_e_Lacos.pdf
-│   ├── EP_Cheat_Sheet_Funcoes_Python.pdf
-│   ├── EP_Cheat_Sheet_NumPy.pdf
-│   ├── EP_Cheat_Sheet_Pandas.pdf
-│   ├── EP_Cheat_Sheet_Orientacao_a_Objetos.pdf
+│   ├── cheat_sheet_fundamentos_python.pdf
+│   ├── cheat_sheet_colecoes_e_lacos.pdf
+│   ├── cheat_sheet_funcoes_python.pdf
+│   ├── cheat_sheet_numpy.pdf
+│   ├── cheat_sheet_pandas.pdf
+│   ├── cheat_sheet_orientacao_a_objetos.pdf
 └── outputs/
     └── ... arquivos CSV e Excel dos exercícios
 ```
@@ -165,13 +165,13 @@ Example CSV and XLSX files are available in [`outputs/`](./outputs/). Seven in-d
 
 | Technical guide | Topic |
 |---|---|
-| [Python Fundamentals](./reference_materials/01_Guia_Fundamentos_Python.pdf) | Explanations, code samples, and exercises. |
-| [Collections and Loops](./reference_materials/02_Guia_Colecoes_e_Lacos.pdf) | Explanations, code samples, and exercises. |
-| [Dictionaries and Functions](./reference_materials/03_Guia_Dicionarios_e_Funcoes.pdf) | Explanations, code samples, and exercises. |
-| [NumPy](./reference_materials/04_Guia_NumPy.pdf) | Explanations, code samples, and exercises. |
-| [Matplotlib](./reference_materials/05_Guia_Matplotlib.pdf) | Explanations, code samples, and exercises. |
-| [Pandas](./reference_materials/06_Guia_Pandas.pdf) | Explanations, code samples, and exercises. |
-| [Object-Oriented Programming](./reference_materials/07_Guia_Orientacao_a_Objetos.pdf) | Explanations, code samples, and exercises. |
+| [Python Fundamentals](./reference_materials/01_fundamentos_python.pdf) | Explanations, code samples, and exercises. |
+| [Collections and Loops](./reference_materials/02_colecoes_e_lacos.pdf) | Explanations, code samples, and exercises. |
+| [Dictionaries and Functions](./reference_materials/03_dicionarios_e_funcoes.pdf) | Explanations, code samples, and exercises. |
+| [NumPy](./reference_materials/04_numpy.pdf) | Explanations, code samples, and exercises. |
+| [Matplotlib](./reference_materials/05_matplotlib.pdf) | Explanations, code samples, and exercises. |
+| [Pandas](./reference_materials/06_pandas.pdf) | Explanations, code samples, and exercises. |
+| [Object-Oriented Programming](./reference_materials/07_orientacao_a_objetos.pdf) | Explanations, code samples, and exercises. |
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -185,12 +185,12 @@ The six EP cheat sheets are separate, one-page landscape A4 quick references des
 
 | Quick reference | Focus |
 |---|---|
-| [Python Fundamentals](./cheat_sheets/EP_Cheat_Sheet_Fundamentos_Python.pdf) | Commands and patterns for quick lookup. |
-| [Collections and Loops](./cheat_sheets/EP_Cheat_Sheet_Colecoes_e_Lacos.pdf) | Commands and patterns for quick lookup. |
-| [Python Functions](./cheat_sheets/EP_Cheat_Sheet_Funcoes_Python.pdf) | Commands and patterns for quick lookup. |
-| [NumPy](./cheat_sheets/EP_Cheat_Sheet_NumPy.pdf) | Commands and patterns for quick lookup. |
-| [Pandas](./cheat_sheets/EP_Cheat_Sheet_Pandas.pdf) | Commands and patterns for quick lookup. |
-| [Object-Oriented Programming](./cheat_sheets/EP_Cheat_Sheet_Orientacao_a_Objetos.pdf) | Commands and patterns for quick lookup. |
+| [Python Fundamentals](./cheat_sheets/cheat_sheet_fundamentos_python.pdf) | Commands and patterns for quick lookup. |
+| [Collections and Loops](./cheat_sheets/cheat_sheet_colecoes_e_lacos.pdf) | Commands and patterns for quick lookup. |
+| [Python Functions](./cheat_sheets/cheat_sheet_funcoes_python.pdf) | Commands and patterns for quick lookup. |
+| [NumPy](./cheat_sheets/cheat_sheet_numpy.pdf) | Commands and patterns for quick lookup. |
+| [Pandas](./cheat_sheets/cheat_sheet_pandas.pdf) | Commands and patterns for quick lookup. |
+| [Object-Oriented Programming](./cheat_sheets/cheat_sheet_orientacao_a_objetos.pdf) | Commands and patterns for quick lookup. |
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 

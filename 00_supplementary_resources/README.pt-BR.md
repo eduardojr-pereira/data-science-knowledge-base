@@ -63,10 +63,10 @@ Ao concluir o roteiro, você será capaz de:
 
 | Ordem | Notebook | Conteúdo principal |
 |:---:|---|---|
-| 01 | [Ambiente Python e JupyterLab](./01_Ambiente_Python_e_JupyterLab.ipynb) | Ambientes, kernels, dependências e reprodução de experimentos. |
-| 02 | [Markdown e Documentação Científica](./02_Markdown_e_Documentacao_Cientifica.ipynb) | Texto formatado, equações, tabelas e organização de relatórios. |
-| 03 | [Widgets e Interatividade](./03_Widgets_e_Interatividade.ipynb) | Componentes, eventos, uploads e filtros interativos. |
-| 04 | [Polars e Análise de Dados](./04_Polars_e_Analise_de_Dados.ipynb) | Expressões, consultas, Lazy API, integração com Pandas, qualidade dos dados e estudo de caso. |
+| 01 | [Ambiente Python e JupyterLab](./01_ambiente_python_e_jupyterlab.ipynb) | Ambientes, kernels, dependências e reprodução de experimentos. |
+| 02 | [Markdown e Documentação Científica](./02_markdown_e_documentacao_cientifica.ipynb) | Texto formatado, equações, tabelas e organização de relatórios. |
+| 03 | [Widgets e Interatividade](./03_widgets_e_interatividade.ipynb) | Componentes, eventos, uploads e filtros interativos. |
+| 04 | [Polars e Análise de Dados](./04_polars_e_analise_de_dados.ipynb) | Expressões, consultas, Lazy API, integração com Pandas, qualidade dos dados e estudo de caso. |
 
 Os notebooks estão numerados para facilitar a sequência de estudo, mas também podem servir como material de consulta pontual.
 
@@ -101,21 +101,21 @@ O arquivo [`requirements.txt`](./requirements.txt) lista as dependências direta
 ├── README.md
 ├── README.pt-BR.md
 ├── requirements.txt
-├── 01_Ambiente_Python_e_JupyterLab.ipynb
-├── 02_Markdown_e_Documentacao_Cientifica.ipynb
-├── 03_Widgets_e_Interatividade.ipynb
-├── 04_Polars_e_Analise_de_Dados.ipynb
+├── 01_ambiente_python_e_jupyterlab.ipynb
+├── 02_markdown_e_documentacao_cientifica.ipynb
+├── 03_widgets_e_interatividade.ipynb
+├── 04_polars_e_analise_de_dados.ipynb
 ├── outputs/
 │   └── ... arquivos de exemplo gerados pelo notebook de Polars
 ├── reference_materials/
-│   ├── Ambientes_Python_e_JupyterLab.pdf
-│   ├── Markdown_e_Documentacao.pdf
-│   ├── Widgets_e_Interatividade.pdf
-│   └── Polars_e_Analise_de_Dados.pdf
+│   ├── ambientes_python_e_jupyterlab.pdf
+│   ├── markdown_e_documentacao.pdf
+│   ├── widgets_e_interatividade.pdf
+│   └── polars_e_analise_de_dados.pdf
 └── cheat_sheets/
-    ├── EP_Cheat_Sheet_Markdown.pdf
-    ├── EP_Cheat_Sheet_Pip_Ambientes_Python.pdf
-    └── EP_Cheat_Sheet_JupyterLab.pdf
+    ├── cheat_sheet_markdown.pdf
+    ├── cheat_sheet_pip_ambientes_python.pdf
+    └── cheat_sheet_jupyterlab.pdf
 ```
 
 Os arquivos de licença gerais `LICENSE-CODE.txt` e `LICENSE-CONTENT.md` estão na raiz do repositório, um nível acima deste diretório.
@@ -205,10 +205,10 @@ Os exemplos de Polars podem produzir arquivos na pasta [`outputs/`](./outputs/).
 
 | Material complementar | Conteúdo e relação com o notebook |
 |---|---|
-| [Ambientes Python e JupyterLab](./reference_materials/Ambientes_Python_e_JupyterLab.pdf) | Interpretadores, ambientes virtuais, pip, dependências, kernels, atalhos, diagnóstico e reprodutibilidade; apoio ao notebook 01. |
-| [Markdown e Documentação](./reference_materials/Markdown_e_Documentacao.pdf) | Estrutura textual, links, tabelas, fórmulas, documentação científica e consulta rápida; apoio ao notebook 02. |
-| [Widgets e Interatividade](./reference_materials/Widgets_e_Interatividade.pdf) | Componentes, callbacks, estado, layouts, entradas, testes e solução de problemas; apoio ao notebook 03. |
-| [Polars e Análise de Dados](./reference_materials/Polars_e_Analise_de_Dados.pdf) | Expressões, tipos, ausências, junções, agregações, datas, Lazy API, CSV/Parquet, integração com Pandas e estudo de caso; apoio ao notebook 04. |
+| [Ambientes Python e JupyterLab](./reference_materials/ambientes_python_e_jupyterlab.pdf) | Interpretadores, ambientes virtuais, pip, dependências, kernels, atalhos, diagnóstico e reprodutibilidade; apoio ao notebook 01. |
+| [Markdown e Documentação](./reference_materials/markdown_e_documentacao.pdf) | Estrutura textual, links, tabelas, fórmulas, documentação científica e consulta rápida; apoio ao notebook 02. |
+| [Widgets e Interatividade](./reference_materials/widgets_e_interatividade.pdf) | Componentes, callbacks, estado, layouts, entradas, testes e solução de problemas; apoio ao notebook 03. |
+| [Polars e Análise de Dados](./reference_materials/polars_e_analise_de_dados.pdf) | Expressões, tipos, ausências, junções, agregações, datas, Lazy API, CSV/Parquet, integração com Pandas e estudo de caso; apoio ao notebook 04. |
 
 Os documentos técnicos aprofundados e as cheat sheets autorais cumprem funções complementares: estudo detalhado e consulta imediata, respectivamente. As referências de terceiros utilizadas na preparação permanecem preservadas fora da publicação. Não há pasta `code_examples/` neste assunto.
 
@@ -224,9 +224,9 @@ As **cheat sheets EP** são referências de consulta rápida, cada uma com uma p
 
 | Referência rápida | Conteúdo principal |
 |---|---|
-| [Markdown](./cheat_sheets/EP_Cheat_Sheet_Markdown.pdf) | Sintaxe, formatação, tabelas, código, links, imagens e documentação. |
-| [pip e Ambientes Python](./cheat_sheets/EP_Cheat_Sheet_Pip_Ambientes_Python.pdf) | Ambientes virtuais, instalação, dependências, atualização de pacotes e diagnóstico. |
-| [JupyterLab](./cheat_sheets/EP_Cheat_Sheet_JupyterLab.pdf) | Atalhos, células, kernels, comandos mágicos e procedimentos de execução. |
+| [Markdown](./cheat_sheets/cheat_sheet_markdown.pdf) | Sintaxe, formatação, tabelas, código, links, imagens e documentação. |
+| [pip e Ambientes Python](./cheat_sheets/cheat_sheet_pip_ambientes_python.pdf) | Ambientes virtuais, instalação, dependências, atualização de pacotes e diagnóstico. |
+| [JupyterLab](./cheat_sheets/cheat_sheet_jupyterlab.pdf) | Atalhos, células, kernels, comandos mágicos e procedimentos de execução. |
 
 <p align="right"><a href="#readme-top">↑ VOLTAR PARA O TOPO</a></p>
 
