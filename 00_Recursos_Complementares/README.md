@@ -21,7 +21,7 @@
 <div align="center">
 
 [Visão Geral](#visão-geral) • [Objetivos](#objetivos) • [Conteúdo](#conteúdo) • [Tecnologias Utilizadas](#tecnologias-utilizadas) • [Estrutura de Diretórios](#estrutura-de-diretórios)  
-[Instalação e Configuração](#instalação-e-configuração) • [Instruções de Uso](#instruções-de-uso) • [Datasets e Materiais de Referência](#datasets-e-materiais-de-referência)  
+[Instalação e Configuração](#instalação-e-configuração) • [Instruções de Uso](#instruções-de-uso) • [Datasets e Materiais de Referência](#datasets-e-materiais-de-referência) • [Cheat Sheets](#cheat-sheets)  
 [Exercícios e Aprendizagem](#exercícios-e-aprendizagem) • [Testes e Validação](#testes-e-validação) • [Referências](#referências) • [Licença](#licença) • [Contato](#contato)
 
 </div>
@@ -100,14 +100,18 @@ O arquivo [`requirements.txt`](./requirements.txt) lista as dependências direta
 ├── 04_Polars_e_Analise_de_Dados.ipynb
 ├── outputs/
 │   └── ... arquivos de exemplo gerados pelo notebook de Polars
-└── materiais_referencia/
-    ├── Ambientes_Python_e_JupyterLab.pdf
-    ├── Markdown_e_Documentacao.pdf
-    ├── Widgets_e_Interatividade.pdf
-    └── Polars_e_Analise_de_Dados.pdf
+├── materiais_referencia/
+│   ├── Ambientes_Python_e_JupyterLab.pdf
+│   ├── Markdown_e_Documentacao.pdf
+│   ├── Widgets_e_Interatividade.pdf
+│   └── Polars_e_Analise_de_Dados.pdf
+└── cheat_sheets/
+    ├── EP_Cheat_Sheet_Markdown.pdf
+    ├── EP_Cheat_Sheet_Pip_Ambientes_Python.pdf
+    └── EP_Cheat_Sheet_JupyterLab.pdf
 ```
 
-A pasta `outputs/` reúne pequenos resultados didáticos que podem ser recriados durante os exercícios. Em `materiais_referencia/` encontram-se quatro PDFs autorais que aprofundam os temas dos notebooks e integram seções de consulta rápida. Não há códigos legados complementares selecionados para `exemplos_codigo/` neste assunto.
+A pasta `outputs/` reúne pequenos resultados didáticos que podem ser recriados durante os exercícios. Em `materiais_referencia/` encontram-se quatro PDFs autorais que aprofundam os temas dos notebooks. A pasta `cheat_sheets/` reúne três referências rápidas EP de uma página, em formato paisagem, para consultas pontuais. Não há códigos legados complementares selecionados para `exemplos_codigo/` neste assunto.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR PARA O TOPO</a></p>
 
@@ -200,9 +204,23 @@ Os exemplos de Polars podem produzir arquivos na pasta [`outputs/`](./outputs/).
 | [Widgets e Interatividade](./materiais_referencia/Widgets_e_Interatividade.pdf) | Componentes, callbacks, estado, layouts, entradas, testes e solução de problemas; apoio ao notebook 03. |
 | [Polars e Análise de Dados](./materiais_referencia/Polars_e_Analise_de_Dados.pdf) | Expressões, tipos, ausências, junções, agregações, datas, Lazy API, CSV/Parquet, integração com Pandas e estudo de caso; apoio ao notebook 04. |
 
-Os guias rápidos de referência foram aproveitados como orientação temática para produzir seções próprias de **Consulta Rápida** dentro dos PDFs. Os documentos originais permanecem preservados fora da publicação. Não há pasta `exemplos_codigo/` neste assunto.
+Os documentos técnicos aprofundados e as cheat sheets autorais cumprem funções complementares: estudo detalhado e consulta imediata, respectivamente. As referências de terceiros utilizadas na preparação permanecem preservadas fora da publicação. Não há pasta `exemplos_codigo/` neste assunto.
 
 Consulte também as fontes técnicas da seção [Referências](#referências).
+
+<p align="right"><a href="#readme-top">↑ VOLTAR PARA O TOPO</a></p>
+
+---
+
+## Cheat Sheets
+
+As **cheat sheets EP** são referências de consulta rápida, cada uma com uma página A4 em paisagem, comandos e exemplos selecionados para uso durante a prática. Elas complementam os PDFs aprofundados e os notebooks, sem substituí-los.
+
+| Referência rápida | Conteúdo principal |
+|---|---|
+| [Markdown](./cheat_sheets/EP_Cheat_Sheet_Markdown.pdf) | Sintaxe, formatação, tabelas, código, links, imagens e documentação. |
+| [pip e Ambientes Python](./cheat_sheets/EP_Cheat_Sheet_Pip_Ambientes_Python.pdf) | Ambientes virtuais, instalação, dependências, atualização de pacotes e diagnóstico. |
+| [JupyterLab](./cheat_sheets/EP_Cheat_Sheet_JupyterLab.pdf) | Atalhos, células, kernels, comandos mágicos e procedimentos de execução. |
 
 <p align="right"><a href="#readme-top">↑ VOLTAR PARA O TOPO</a></p>
 
