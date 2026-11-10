@@ -1,0 +1,7 @@
+# Dependências diretas dos exemplos dos notebooks 04 e 05.
+# Não usar opencv, TensorFlow ou scikit-surprise nesta disciplina.
+numpy
+pandas
+matplotlib
+openpyxl
+ipykernel
