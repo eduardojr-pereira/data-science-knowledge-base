@@ -97,7 +97,7 @@ O arquivo [`requirements.txt`](./requirements.txt) lista as dependências direta
 ## Estrutura de Diretórios
 
 ```text
-00_Recursos_Complementares/
+00_supplementary_resources/
 ├── README.md
 ├── README.pt-BR.md
 ├── requirements.txt
@@ -107,7 +107,7 @@ O arquivo [`requirements.txt`](./requirements.txt) lista as dependências direta
 ├── 04_Polars_e_Analise_de_Dados.ipynb
 ├── outputs/
 │   └── ... arquivos de exemplo gerados pelo notebook de Polars
-├── materiais_referencia/
+├── reference_materials/
 │   ├── Ambientes_Python_e_JupyterLab.pdf
 │   ├── Markdown_e_Documentacao.pdf
 │   ├── Widgets_e_Interatividade.pdf
@@ -118,7 +118,9 @@ O arquivo [`requirements.txt`](./requirements.txt) lista as dependências direta
     └── EP_Cheat_Sheet_JupyterLab.pdf
 ```
 
-A pasta `outputs/` reúne pequenos resultados didáticos que podem ser recriados durante os exercícios. Em `materiais_referencia/` encontram-se quatro PDFs autorais que aprofundam os temas dos notebooks. A pasta `cheat_sheets/` reúne três referências rápidas EP de uma página, em formato paisagem, para consultas pontuais. Não há códigos legados complementares selecionados para `exemplos_codigo/` neste assunto.
+Os arquivos de licença gerais `LICENSE-CODE.txt` e `LICENSE-CONTENT.md` estão na raiz do repositório, um nível acima deste diretório.
+
+A pasta `outputs/` reúne pequenos resultados didáticos que podem ser recriados durante os exercícios. Em `reference_materials/` encontram-se quatro PDFs autorais que aprofundam os temas dos notebooks. A pasta `cheat_sheets/` reúne três referências rápidas EP de uma página, em formato paisagem, para consultas pontuais. Não há códigos legados complementares selecionados para `code_examples/` neste assunto.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR PARA O TOPO</a></p>
 
@@ -140,14 +142,11 @@ source .venv/bin/activate
 # Windows (PowerShell)
 # .venv\Scripts\Activate.ps1
 
-# Conferir a consistência do ambiente
-python -m pip check
-
-# Instalar as dependências diretas, caso seja necessário
+# Instalar as dependências declaradas (inclusive JupyterLab)
 python -m pip install -r requirements.txt
 
-# Caso o JupyterLab ainda não esteja instalado no ambiente
-python -m pip install jupyterlab
+# Validar as dependências instaladas
+python -m pip check
 
 # Iniciar a interface
 jupyter lab
@@ -206,12 +205,12 @@ Os exemplos de Polars podem produzir arquivos na pasta [`outputs/`](./outputs/).
 
 | Material complementar | Conteúdo e relação com o notebook |
 |---|---|
-| [Ambientes Python e JupyterLab](./materiais_referencia/Ambientes_Python_e_JupyterLab.pdf) | Interpretadores, ambientes virtuais, pip, dependências, kernels, atalhos, diagnóstico e reprodutibilidade; apoio ao notebook 01. |
-| [Markdown e Documentação](./materiais_referencia/Markdown_e_Documentacao.pdf) | Estrutura textual, links, tabelas, fórmulas, documentação científica e consulta rápida; apoio ao notebook 02. |
-| [Widgets e Interatividade](./materiais_referencia/Widgets_e_Interatividade.pdf) | Componentes, callbacks, estado, layouts, entradas, testes e solução de problemas; apoio ao notebook 03. |
-| [Polars e Análise de Dados](./materiais_referencia/Polars_e_Analise_de_Dados.pdf) | Expressões, tipos, ausências, junções, agregações, datas, Lazy API, CSV/Parquet, integração com Pandas e estudo de caso; apoio ao notebook 04. |
+| [Ambientes Python e JupyterLab](./reference_materials/Ambientes_Python_e_JupyterLab.pdf) | Interpretadores, ambientes virtuais, pip, dependências, kernels, atalhos, diagnóstico e reprodutibilidade; apoio ao notebook 01. |
+| [Markdown e Documentação](./reference_materials/Markdown_e_Documentacao.pdf) | Estrutura textual, links, tabelas, fórmulas, documentação científica e consulta rápida; apoio ao notebook 02. |
+| [Widgets e Interatividade](./reference_materials/Widgets_e_Interatividade.pdf) | Componentes, callbacks, estado, layouts, entradas, testes e solução de problemas; apoio ao notebook 03. |
+| [Polars e Análise de Dados](./reference_materials/Polars_e_Analise_de_Dados.pdf) | Expressões, tipos, ausências, junções, agregações, datas, Lazy API, CSV/Parquet, integração com Pandas e estudo de caso; apoio ao notebook 04. |
 
-Os documentos técnicos aprofundados e as cheat sheets autorais cumprem funções complementares: estudo detalhado e consulta imediata, respectivamente. As referências de terceiros utilizadas na preparação permanecem preservadas fora da publicação. Não há pasta `exemplos_codigo/` neste assunto.
+Os documentos técnicos aprofundados e as cheat sheets autorais cumprem funções complementares: estudo detalhado e consulta imediata, respectivamente. As referências de terceiros utilizadas na preparação permanecem preservadas fora da publicação. Não há pasta `code_examples/` neste assunto.
 
 Consulte também as fontes técnicas da seção [Referências](#referências).
 
@@ -276,13 +275,13 @@ A interatividade de `ipywidgets` depende também da integração com o frontend 
 
 ## Licença
 
-A distribuição deste acervo adota licenças distintas conforme a natureza dos arquivos:
+Este acervo diferencia as licenças conforme a natureza de cada material:
 
-- **Código autoral:** licença [MIT](https://opensource.org/license/mit), observadas as condições do respectivo arquivo `LICENSE` quando publicado.
-- **Textos e conteúdos didáticos autorais:** [Creative Commons Atribuição-NãoComercial 4.0 Internacional (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/deed.pt-br).
-- **Bibliotecas, datasets, imagens e conteúdos de terceiros:** permanecem sujeitos às respectivas licenças e atribuições. Sua presença no acervo não altera esses direitos.
+- **Código executável autoral**, inclusive células de código originais nos notebooks: [MIT — LICENSE-CODE.txt](../LICENSE-CODE.txt).
+- **Textos didáticos autorais**, incluindo explicações nos READMEs e notebooks, PDFs técnicos autorais e cheat sheets: [CC BY-NC 4.0 — LICENSE-CONTENT.md](../LICENSE-CONTENT.md), com acesso ao [texto jurídico oficial completo](https://creativecommons.org/licenses/by-nc/4.0/legalcode.en).
+- **Materiais de terceiros**, incluindo datasets, logotipos externos, ícones, marcas e outros conteúdos protegidos: seguem suas próprias condições e **não** são automaticamente abrangidos pelas licenças acima.
 
-As condições de licenciamento se aplicam apenas aos conteúdos sobre os quais o autor possui os direitos correspondentes. Os textos de licenças devem acompanhar a publicação do repositório; materiais de terceiros exigem verificação própria de autorização e atribuição.
+Em notebooks com código e texto, a MIT se aplica ao código autoral e a CC BY-NC 4.0 aos textos didáticos autorais. Essas licenças só alcançam os materiais sobre os quais o autor detenha os direitos necessários. Consulte os arquivos vinculados para escopo e avisos.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR PARA O TOPO</a></p>
 
