@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@6.4.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-e1be0ef95f29f7c6ffe9927a63f12d45"}, "mark": {"type": "bar"}, "encoding": {"tooltip": [{"field": "produto", "title": "Produto", "type": "nominal"}, {"field": "unidades", "format": ",.0f", "title": "Unidades", "type": "quantitative"}], "x": {"field": "unidades", "title": "Unidades vendidas", "type": "quantitative"}, "y": {"field": "produto", "sort": "-x", "title": "Produto", "type": "nominal"}}, "height": 250, "params": [{"name": "param_1e9efca18e7a2868", "select": {"type": "interval", "encodings": ["x", "y"]}, "bind": "scales"}], "title": "Unidades por produto \u2014 dados sint\u00e9ticos", "width": 550, "$schema": "https://vega.github.io/schema/vega-lite/v6.4.1.json", "datasets": {"data-e1be0ef95f29f7c6ffe9927a63f12d45": [{"produto": "Caf\u00e9", "unidades": 412, "receita_conhecida": 7416.0}, {"produto": "Ch\u00e1", "unidades": 551, "receita_conhecida": 7714.0}, {"produto": "Suco", "unidades": 644, "receita_conhecida": 7188.0}, {"produto": "\u00c1gua", "unidades": 768, "receita_conhecida": 5376.0}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

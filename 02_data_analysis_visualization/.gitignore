@@ -1,0 +1,13 @@
+# Jupyter and Python temporary files
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Legacy Plotly output at the discipline root only.
+# Keep outputs/iframe_figures/ versioned along with the other outputs.
+/iframe_figures/
+
+# Operating system and editor temporary files
+.DS_Store
