@@ -1,0 +1,10 @@
+# Núcleo dos 17 notebooks (sem downloads automáticos de modelos)
+numpy
+scipy
+scikit-learn
+nltk
+pandas
+# spaCy e pt_core_news_sm: opcionais para exercícios específicos
+# spacy
+# Exemplos de Transformers e RAG são demonstrações locais
+# torch, transformers e sentence-transformers não são exigidos
