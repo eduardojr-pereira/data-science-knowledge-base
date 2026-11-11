@@ -1,0 +1,41 @@
+name: biblioteca-bancos
+services:
+  postgres:
+    image: postgres:16.6
+    profiles: [postgres]
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-estudos}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-senha_local_trocar}
+      POSTGRES_DB: ${POSTGRES_DB:-biblioteca}
+    ports: ["127.0.0.1:5433:5432"]
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 10s
+      retries: 10
+  mongodb:
+    image: mongo:7.0
+    profiles: [mongo]
+    ports: ["127.0.0.1:27017:27017"]
+    volumes: [mongodata:/data/db]
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.runCommand({ping:1}).ok"]
+      interval: 10s
+      retries: 10
+  cassandra:
+    image: cassandra:5.0
+    profiles: [cassandra]
+    environment:
+      MAX_HEAP_SIZE: 1G
+      HEAP_NEWSIZE: 256M
+    ports: ["127.0.0.1:9042:9042"]
+    volumes: [cassandradata:/var/lib/cassandra]
+    healthcheck:
+      test: ["CMD-SHELL", "cqlsh -e 'DESCRIBE KEYSPACES' >/dev/null 2>&1"]
+      interval: 30s
+      start_period: 90s
+      retries: 12
+volumes:
+  pgdata:
+  mongodata:
+  cassandradata:

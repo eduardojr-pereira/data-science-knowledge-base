@@ -1,0 +1,4 @@
+# INSTALAÇÃO OPCIONAL: somente ao executar bancos externos isolados
+psycopg[binary]>=3.2,<4
+pymongo>=4.6,<5
+cassandra-driver>=3.29,<4

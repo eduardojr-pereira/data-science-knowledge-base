@@ -1,0 +1,60 @@
+[
+  {
+    "_id": 1,
+    "nome": "Ana",
+    "cidade": "Belo Horizonte",
+    "interesses": [
+      "dados",
+      "livros"
+    ],
+    "ativo": true
+  },
+  {
+    "_id": 2,
+    "nome": "Bruno",
+    "cidade": "Rio de Janeiro",
+    "interesses": [
+      "esportes"
+    ],
+    "ativo": true
+  },
+  {
+    "_id": 3,
+    "nome": "Carla",
+    "cidade": "São Paulo",
+    "interesses": [
+      "dados",
+      "café"
+    ],
+    "ativo": false
+  },
+  {
+    "_id": 4,
+    "nome": "Diego",
+    "cidade": "Belo Horizonte",
+    "interesses": [
+      "música",
+      "dados"
+    ],
+    "ativo": true
+  },
+  {
+    "_id": 5,
+    "nome": "Eva",
+    "cidade": "Curitiba",
+    "interesses": [
+      "livros"
+    ],
+    "ativo": true
+  },
+  {
+    "_id": 6,
+    "nome": "Fabio",
+    "cidade": "São Paulo",
+    "interesses": [
+      "esportes",
+      "cinema"
+    ],
+    "ativo": false
+  }
+]
