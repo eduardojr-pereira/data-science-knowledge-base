@@ -164,6 +164,7 @@ Código: [MIT](../LICENSE-CODE.txt). Conteúdo e PDFs autorais: [CC BY-NC 4.0](.
 
 ## Contato
 
-**EP — Eduardo Pereira**  \n[Portfólio GitHub](https://github.com/eduardojr-pereira/data-science-portfolio) · [Site pessoal](https://eduardo-pereira.webflow.io/) · [Repositório principal](https://github.com/eduardojr-pereira/data-science-knowledge-base)
+**EP — Eduardo Pereira**  
+[Portfólio GitHub](https://github.com/eduardojr-pereira/data-science-portfolio) · [Site pessoal](https://eduardo-pereira.webflow.io/) · [Repositório principal](https://github.com/eduardojr-pereira/data-science-knowledge-base)
 
 [↑ Voltar ao topo](#06--processamento-de-linguagem-natural)

@@ -41,23 +41,23 @@ Understand text preprocessing, representation and retrieval; implement baselines
 
 | # | Notebook | Topic |
 |---:|---|---|
-| 01 | [`01_fundamentos_pln.ipynb`](01_fundamentos_pln.ipynb) | Fundamentos de PLN e Linguística Computacional |
-| 02 | [`02_textos_regex.ipynb`](02_textos_regex.ipynb) | Textos, Expressões Regulares e Limpeza |
-| 03 | [`03_tokenizacao_normalizacao.ipynb`](03_tokenizacao_normalizacao.ipynb) | Tokenização e Normalização de Textos |
-| 04 | [`04_stemming_lematizacao_pos.ipynb`](04_stemming_lematizacao_pos.ipynb) | Stemming, Lematização e Classes Gramaticais |
-| 05 | [`05_reconhecimento_entidades.ipynb`](05_reconhecimento_entidades.ipynb) | Reconhecimento de Entidades Nomeadas |
-| 06 | [`06_bow_tfidf_ngramas.ipynb`](06_bow_tfidf_ngramas.ipynb) | Bag-of-Words, TF-IDF e N-gramas |
-| 07 | [`07_similaridade_recuperacao.ipynb`](07_similaridade_recuperacao.ipynb) | Similaridade e Recuperação de Informação |
-| 08 | [`08_sumarizacao_frequencia_luhn.ipynb`](08_sumarizacao_frequencia_luhn.ipynb) | Sumarização por Frequência e Luhn |
-| 09 | [`09_sumarizacao_grafos_avaliacao.ipynb`](09_sumarizacao_grafos_avaliacao.ipynb) | Sumarização com Grafos e Avaliação |
-| 10 | [`10_classificacao_sentimentos.ipynb`](10_classificacao_sentimentos.ipynb) | Classificação Textual e Sentimentos |
-| 11 | [`11_word_embeddings.ipynb`](11_word_embeddings.ipynb) | Word Embeddings e Representações |
-| 12 | [`12_transformers_atencao_bert.ipynb`](12_transformers_atencao_bert.ipynb) | Transformers, Atenção e BERT |
-| 13 | [`13_modelos_linguagem_geracao.ipynb`](13_modelos_linguagem_geracao.ipynb) | Modelos de Linguagem e Geração |
-| 14 | [`14_sentence_embeddings_busca.ipynb`](14_sentence_embeddings_busca.ipynb) | Sentence Embeddings e Busca Semântica |
+| 01 | [`01_fundamentos_pln.ipynb`](01_fundamentos_pln.ipynb) | NLP Fundamentals and Computational Linguistics |
+| 02 | [`02_textos_regex.ipynb`](02_textos_regex.ipynb) | Text Processing, Regular Expressions and Cleaning |
+| 03 | [`03_tokenizacao_normalizacao.ipynb`](03_tokenizacao_normalizacao.ipynb) | Text Tokenization and Normalization |
+| 04 | [`04_stemming_lematizacao_pos.ipynb`](04_stemming_lematizacao_pos.ipynb) | Stemming, Lemmatization and Part-of-Speech Tagging |
+| 05 | [`05_reconhecimento_entidades.ipynb`](05_reconhecimento_entidades.ipynb) | Named Entity Recognition |
+| 06 | [`06_bow_tfidf_ngramas.ipynb`](06_bow_tfidf_ngramas.ipynb) | Bag-of-Words, TF-IDF and N-grams |
+| 07 | [`07_similaridade_recuperacao.ipynb`](07_similaridade_recuperacao.ipynb) | Text Similarity and Information Retrieval |
+| 08 | [`08_sumarizacao_frequencia_luhn.ipynb`](08_sumarizacao_frequencia_luhn.ipynb) | Frequency-Based and Luhn Summarization |
+| 09 | [`09_sumarizacao_grafos_avaliacao.ipynb`](09_sumarizacao_grafos_avaliacao.ipynb) | Graph-Based Summarization and Evaluation |
+| 10 | [`10_classificacao_sentimentos.ipynb`](10_classificacao_sentimentos.ipynb) | Text Classification and Sentiment Analysis |
+| 11 | [`11_word_embeddings.ipynb`](11_word_embeddings.ipynb) | Word Embeddings and Representations |
+| 12 | [`12_transformers_atencao_bert.ipynb`](12_transformers_atencao_bert.ipynb) | Transformers, Attention and BERT |
+| 13 | [`13_modelos_linguagem_geracao.ipynb`](13_modelos_linguagem_geracao.ipynb) | Language Models and Text Generation |
+| 14 | [`14_sentence_embeddings_busca.ipynb`](14_sentence_embeddings_busca.ipynb) | Sentence Embeddings and Semantic Search |
 | 15 | [`15_rag.ipynb`](15_rag.ipynb) | Retrieval-Augmented Generation (RAG) |
-| 16 | [`16_chatbots_memoria_personalizacao.ipynb`](16_chatbots_memoria_personalizacao.ipynb) | Chatbots, Estado e Personalização |
-| 17 | [`17_avaliacao_seguranca_pln.ipynb`](17_avaliacao_seguranca_pln.ipynb) | Avaliação, Segurança e Privacidade em PLN |
+| 16 | [`16_chatbots_memoria_personalizacao.ipynb`](16_chatbots_memoria_personalizacao.ipynb) | Chatbots, Dialogue State and Personalization |
+| 17 | [`17_avaliacao_seguranca_pln.ipynb`](17_avaliacao_seguranca_pln.ipynb) | NLP Evaluation, Safety and Privacy |
 
 ## Technologies
 
@@ -164,6 +164,7 @@ Code: [MIT](../LICENSE-CODE.txt). Original educational materials: [CC BY-NC 4.0]
 
 ## Contact
 
-**EP — Eduardo Pereira**  \n[Portfólio GitHub](https://github.com/eduardojr-pereira/data-science-portfolio) · [Site pessoal](https://eduardo-pereira.webflow.io/) · [Repositório principal](https://github.com/eduardojr-pereira/data-science-knowledge-base)
+**EP — Eduardo Pereira**  
+[Portfólio GitHub](https://github.com/eduardojr-pereira/data-science-portfolio) · [Site pessoal](https://eduardo-pereira.webflow.io/) · [Repositório principal](https://github.com/eduardojr-pereira/data-science-knowledge-base)
 
 [↑ Back to top](#06--natural-language-processing)
