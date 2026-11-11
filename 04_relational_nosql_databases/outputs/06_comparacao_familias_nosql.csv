@@ -1,0 +1,5 @@
+tipo,exemplo,consulta_tipica
+Documento,MongoDB,filtro de documento
+Chave-valor,Redis,busca por chave
+Wide-column,Cassandra,consulta por partição
+Grafo,Neo4j,travessias

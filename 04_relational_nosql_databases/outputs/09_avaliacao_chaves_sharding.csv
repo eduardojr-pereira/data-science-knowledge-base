@@ -1,0 +1,4 @@
+chave,risco,observacao
+estado,baixa cardinalidade,frequentemente insuficiente
+usuario_id,boa cardinalidade potencial,ver padrão de consulta
+timestamp,hotspot se monotônica,avaliar estratégia hashed

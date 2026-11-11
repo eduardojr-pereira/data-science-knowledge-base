@@ -1,0 +1,4 @@
+modelo,exemplo,forte_em
+Relacional,PostgreSQL,integridade e SQL
+Documental,MongoDB,documentos flexíveis
+Wide-column,Cassandra,distribuição e consultas predefinidas

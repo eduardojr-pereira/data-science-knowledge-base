@@ -1,0 +1,7 @@
+_id,nome,cidade,ativo
+1,Ana,Belo Horizonte,True
+2,Bruno,Rio de Janeiro,True
+3,Carla,São Paulo,False
+4,Diego,Belo Horizonte,True
+5,Eva,Curitiba,True
+6,Fabio,São Paulo,False
