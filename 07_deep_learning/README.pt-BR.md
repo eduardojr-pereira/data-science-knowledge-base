@@ -72,9 +72,9 @@ Esta área reúne vinte notebooks em português, acompanhados de Guias Técnicos
 | 19 | [Modelos sequenciais: séries temporais e sentimentos](./19_sequencias_series_sentimentos.ipynb) | [Abrir PDF](./reference_materials/19_sequencias_series_sentimentos.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_sequencias_series_sentimentos.pdf) |
 | 20 | [Atenção, Transformers e tendências em Deep Learning](./20_atencao_transformers.ipynb) | [Abrir PDF](./reference_materials/20_atencao_transformers.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_atencao_transformers.pdf) |
 
-### Datasets
+### Conjuntos de Dados
 
-Não há dataset externo obrigatório. Os notebooks utilizam exemplos sintéticos ou datasets fornecidos pelo scikit-learn; os laboratórios neurais opcionais não devem baixar pesos externos sem configuração explícita.
+Não há dataset externo obrigatório. Os notebooks utilizam exemplos sintéticos ou conjuntos de dados fornecidos pelo scikit-learn; os laboratórios neurais opcionais não devem baixar pesos externos sem configuração explícita.
 
 ### Estrutura de Diretórios
 
@@ -83,11 +83,13 @@ Não há dataset externo obrigatório. Os notebooks utilizam exemplos sintético
 ├── README.md
 ├── README.pt-BR.md
 ├── requirements.txt
+├── .gitattributes
 ├── 01_fundamentos_deep_learning.ipynb
 ├── ...
 ├── 20_atencao_transformers.ipynb
-├── reference_materials/   # 20 Guias Técnicos (PDF)
-└── cheat_sheets/         # 20 Cheat Sheets (PDF)
+├── reference_materials/
+├── cheat_sheets/
+└── outputs/               # Resultados locais (ignorados pelo Git)
 ```
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
@@ -106,7 +108,7 @@ Não há dataset externo obrigatório. Os notebooks utilizam exemplos sintético
 | scikit-learn | Baselines, métricas, divisão treino/teste e pipelines |
 | Matplotlib | Visualizações científicas |
 | JupyterLab / ipykernel | Execução interativa e gerenciamento de kernels |
-| TensorFlow / Keras (optional) | Laboratórios neurais reais em ambiente compatível |
+| TensorFlow / Keras (laboratórios opcionais) | Laboratórios neurais reais em ambiente compatível |
 
 O ambiente básico está descrito em `requirements.txt`. TensorFlow/Keras exige validação separada por questões de compatibilidade com a plataforma e a versão do Python.
 
@@ -118,7 +120,7 @@ O ambiente básico está descrito em `requirements.txt`. TensorFlow/Keras exige 
 
 ## Instalação e Configuração
 
-**Pré-requisitos:** Python, Git, a terminal and JupyterLab. The commands below can be copied. Se um ambiente funcional (`jupyter-env`) já estiver configurado, ative-o e pule a criação de outro ambiente.
+**Pré-requisitos:** Python, Git, terminal e JupyterLab. Os comandos abaixo podem ser copiados. Se um ambiente funcional (`jupyter-env`) já estiver configurado, ative-o e pule a criação de outro ambiente.
 
 **1. Clone o repositório e acesse esta área**
 
@@ -243,8 +245,8 @@ Explique uma hipótese do modelo, execute uma variação controlada e avalie se 
 | JupyterLab | [Abrir documentação](https://jupyterlab.readthedocs.io/en/stable/) |
 | TensorFlow | [Abrir documentação](https://www.tensorflow.org/guide) |
 | Keras | [Abrir documentação](https://keras.io/guides/) |
-| Deep Learning Book | [Abrir documentação](https://www.deeplearningbook.org/) |
-| Keras saving guide | [Abrir documentação](https://keras.io/guides/serialization_and_saving/) |
+| Livro Deep Learning | [Abrir documentação](https://www.deeplearningbook.org/) |
+| Guia de persistência do Keras | [Abrir documentação](https://keras.io/guides/serialization_and_saving/) |
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 

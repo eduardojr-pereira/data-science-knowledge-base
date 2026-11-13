@@ -51,26 +51,26 @@ This area contains twenty Portuguese-language notebooks with original technical 
 
 | Order | Notebook | Technical Guide | Cheat Sheet |
 |:---:|---|---|---|
-| 01 | [Deep Learning Foundations](./01_fundamentos_deep_learning.ipynb) | [Read PDF](./reference_materials/01_fundamentos_deep_learning.pdf) | [Read PDF](./cheat_sheets/cheat_sheet_fundamentos_deep_learning.pdf) |
-| 02 | [Tensors, TensorFlow and Keras](./02_tensores_tensorflow_keras.ipynb) | [Read PDF](./reference_materials/02_tensores_tensorflow_keras.pdf) | [Read PDF](./cheat_sheets/cheat_sheet_tensores_tensorflow_keras.pdf) |
-| 03 | [Data Preparation for Neural Networks](./03_preparacao_para_redes.ipynb) | [Read PDF](./reference_materials/03_preparacao_para_redes.pdf) | [Read PDF](./cheat_sheets/cheat_sheet_preparacao_para_redes.pdf) |
-| 04 | [Neuron Models and the Perceptron](./04_neuronio_perceptron.ipynb) | [Read PDF](./reference_materials/04_neuronio_perceptron.pdf) | [Read PDF](./cheat_sheets/cheat_sheet_neuronio_perceptron.pdf) |
-| 05 | [Loss Functions, Gradients and Optimization](./05_perdas_gradientes_otimizacao.ipynb) | [Read PDF](./reference_materials/05_perdas_gradientes_otimizacao.pdf) | [Read PDF](./cheat_sheets/cheat_sheet_perdas_gradientes_otimizacao.pdf) |
-| 06 | [Backpropagation, MLP and XOR](./06_backpropagation_mlp_xor.ipynb) | [Read PDF](./reference_materials/06_backpropagation_mlp_xor.pdf) | [Read PDF](./cheat_sheets/cheat_sheet_backpropagation_mlp_xor.pdf) |
-| 07 | [Sequential Models with Keras](./07_keras_sequential.ipynb) | [Read PDF](./reference_materials/07_keras_sequential.pdf) | [Read PDF](./cheat_sheets/cheat_sheet_keras_sequential.pdf) |
-| 08 | [Functional API and Multi-input Models](./08_keras_functional.ipynb) | [Read PDF](./reference_materials/08_keras_functional.pdf) | [Read PDF](./cheat_sheets/cheat_sheet_keras_functional.pdf) |
-| 09 | [Model Evaluation and Baselines](./09_avaliacao_baselines.ipynb) | [Read PDF](./reference_materials/09_avaliacao_baselines.pdf) | [Read PDF](./cheat_sheets/cheat_sheet_avaliacao_baselines.pdf) |
-| 10 | [Hyperparameters and Initialization](./10_hiperparametros_inicializacao.ipynb) | [Read PDF](./reference_materials/10_hiperparametros_inicializacao.pdf) | [Read PDF](./cheat_sheets/cheat_sheet_hiperparametros_inicializacao.pdf) |
-| 11 | [Regularization, Callbacks and Early Stopping](./11_regularizacao_callbacks.ipynb) | [Read PDF](./reference_materials/11_regularizacao_callbacks.pdf) | [Read PDF](./cheat_sheets/cheat_sheet_regularizacao_callbacks.pdf) |
-| 12 | [Model Persistence and Reproducibility](./12_persistencia_reproducibilidade.ipynb) | [Read PDF](./reference_materials/12_persistencia_reproducibilidade.pdf) | [Read PDF](./cheat_sheets/cheat_sheet_persistencia_reproducibilidade.pdf) |
-| 13 | [Convolutions and CNN Mathematics](./13_convolucao_cnn_matematica.ipynb) | [Read PDF](./reference_materials/13_convolucao_cnn_matematica.pdf) | [Read PDF](./cheat_sheets/cheat_sheet_convolucao_cnn_matematica.pdf) |
-| 14 | [Convolutional Networks in Practice](./14_cnn_na_pratica.ipynb) | [Read PDF](./reference_materials/14_cnn_na_pratica.pdf) | [Read PDF](./cheat_sheets/cheat_sheet_cnn_na_pratica.pdf) |
-| 15 | [Data Augmentation and Robustness](./15_augmentation_robustez.ipynb) | [Read PDF](./reference_materials/15_augmentation_robustez.pdf) | [Read PDF](./cheat_sheets/cheat_sheet_augmentation_robustez.pdf) |
-| 16 | [Neural Architectures and Transfer Learning](./16_arquiteturas_transfer_learning.ipynb) | [Read PDF](./reference_materials/16_arquiteturas_transfer_learning.pdf) | [Read PDF](./cheat_sheets/cheat_sheet_arquiteturas_transfer_learning.pdf) |
-| 17 | [Interpretability and Computer Vision](./17_interpretabilidade_visao.ipynb) | [Read PDF](./reference_materials/17_interpretabilidade_visao.pdf) | [Read PDF](./cheat_sheets/cheat_sheet_interpretabilidade_visao.pdf) |
-| 18 | [Recurrent Networks: RNN, LSTM and GRU](./18_rnn_lstm_gru.ipynb) | [Read PDF](./reference_materials/18_rnn_lstm_gru.pdf) | [Read PDF](./cheat_sheets/cheat_sheet_rnn_lstm_gru.pdf) |
-| 19 | [Sequences, Time Series and Sentiment](./19_sequencias_series_sentimentos.ipynb) | [Read PDF](./reference_materials/19_sequencias_series_sentimentos.pdf) | [Read PDF](./cheat_sheets/cheat_sheet_sequencias_series_sentimentos.pdf) |
-| 20 | [Attention Mechanisms and Transformers](./20_atencao_transformers.ipynb) | [Read PDF](./reference_materials/20_atencao_transformers.pdf) | [Read PDF](./cheat_sheets/cheat_sheet_atencao_transformers.pdf) |
+| 01 | [Deep Learning Foundations](./01_fundamentos_deep_learning.ipynb) | [Open PDF](./reference_materials/01_fundamentos_deep_learning.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_fundamentos_deep_learning.pdf) |
+| 02 | [Tensors, TensorFlow and Keras](./02_tensores_tensorflow_keras.ipynb) | [Open PDF](./reference_materials/02_tensores_tensorflow_keras.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_tensores_tensorflow_keras.pdf) |
+| 03 | [Data Preparation for Neural Networks](./03_preparacao_para_redes.ipynb) | [Open PDF](./reference_materials/03_preparacao_para_redes.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_preparacao_para_redes.pdf) |
+| 04 | [Neuron Models and the Perceptron](./04_neuronio_perceptron.ipynb) | [Open PDF](./reference_materials/04_neuronio_perceptron.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_neuronio_perceptron.pdf) |
+| 05 | [Loss Functions, Gradients and Optimization](./05_perdas_gradientes_otimizacao.ipynb) | [Open PDF](./reference_materials/05_perdas_gradientes_otimizacao.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_perdas_gradientes_otimizacao.pdf) |
+| 06 | [Backpropagation, MLP and XOR](./06_backpropagation_mlp_xor.ipynb) | [Open PDF](./reference_materials/06_backpropagation_mlp_xor.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_backpropagation_mlp_xor.pdf) |
+| 07 | [Sequential Models with Keras](./07_keras_sequential.ipynb) | [Open PDF](./reference_materials/07_keras_sequential.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_keras_sequential.pdf) |
+| 08 | [Functional API and Multi-input Models](./08_keras_functional.ipynb) | [Open PDF](./reference_materials/08_keras_functional.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_keras_functional.pdf) |
+| 09 | [Model Evaluation and Baselines](./09_avaliacao_baselines.ipynb) | [Open PDF](./reference_materials/09_avaliacao_baselines.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_avaliacao_baselines.pdf) |
+| 10 | [Hyperparameters and Initialization](./10_hiperparametros_inicializacao.ipynb) | [Open PDF](./reference_materials/10_hiperparametros_inicializacao.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_hiperparametros_inicializacao.pdf) |
+| 11 | [Regularization, Callbacks and Early Stopping](./11_regularizacao_callbacks.ipynb) | [Open PDF](./reference_materials/11_regularizacao_callbacks.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_regularizacao_callbacks.pdf) |
+| 12 | [Model Persistence and Reproducibility](./12_persistencia_reproducibilidade.ipynb) | [Open PDF](./reference_materials/12_persistencia_reproducibilidade.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_persistencia_reproducibilidade.pdf) |
+| 13 | [Convolutions and CNN Mathematics](./13_convolucao_cnn_matematica.ipynb) | [Open PDF](./reference_materials/13_convolucao_cnn_matematica.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_convolucao_cnn_matematica.pdf) |
+| 14 | [Convolutional Networks in Practice](./14_cnn_na_pratica.ipynb) | [Open PDF](./reference_materials/14_cnn_na_pratica.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_cnn_na_pratica.pdf) |
+| 15 | [Data Augmentation and Robustness](./15_augmentation_robustez.ipynb) | [Open PDF](./reference_materials/15_augmentation_robustez.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_augmentation_robustez.pdf) |
+| 16 | [Neural Architectures and Transfer Learning](./16_arquiteturas_transfer_learning.ipynb) | [Open PDF](./reference_materials/16_arquiteturas_transfer_learning.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_arquiteturas_transfer_learning.pdf) |
+| 17 | [Interpretability and Computer Vision](./17_interpretabilidade_visao.ipynb) | [Open PDF](./reference_materials/17_interpretabilidade_visao.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_interpretabilidade_visao.pdf) |
+| 18 | [Recurrent Networks: RNN, LSTM and GRU](./18_rnn_lstm_gru.ipynb) | [Open PDF](./reference_materials/18_rnn_lstm_gru.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_rnn_lstm_gru.pdf) |
+| 19 | [Sequences, Time Series and Sentiment](./19_sequencias_series_sentimentos.ipynb) | [Open PDF](./reference_materials/19_sequencias_series_sentimentos.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_sequencias_series_sentimentos.pdf) |
+| 20 | [Attention Mechanisms and Transformers](./20_atencao_transformers.ipynb) | [Open PDF](./reference_materials/20_atencao_transformers.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_atencao_transformers.pdf) |
 
 ### Datasets
 
@@ -83,11 +83,13 @@ No mandatory external dataset is included. The notebooks use synthetic examples 
 ├── README.md
 ├── README.pt-BR.md
 ├── requirements.txt
+├── .gitattributes
 ├── 01_fundamentos_deep_learning.ipynb
 ├── ...
 ├── 20_atencao_transformers.ipynb
-├── reference_materials/   # 20 Guias Técnicos (PDF)
-└── cheat_sheets/         # 20 Cheat Sheets (PDF)
+├── reference_materials/
+├── cheat_sheets/
+└── outputs/               # Local generated artifacts (Git-ignored)
 ```
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
@@ -106,7 +108,7 @@ No mandatory external dataset is included. The notebooks use synthetic examples 
 | scikit-learn | Baselines, metrics, train/test splits and pipelines |
 | Matplotlib | Scientific plotting |
 | JupyterLab / ipykernel | Interactive execution and kernel management |
-| TensorFlow / Keras (optional) | Real neural network labs with compatible environment |
+| TensorFlow / Keras (optional labs) | Real neural network labs with compatible environment |
 
 The basic environment is described in `requirements.txt`. TensorFlow/Keras must be validated separately due to platform and Python version compatibility.
 
