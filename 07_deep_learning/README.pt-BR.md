@@ -232,7 +232,7 @@ Os arquivos exportados pelos notebooks são gerados localmente em `outputs/`. Al
 - [17_mapa_saliencia_numerica.png](./outputs/17_mapa_saliencia_numerica.png)
 - [19_previsoes_series_temporais.csv](./outputs/19_previsoes_series_temporais.csv)
 
-Os links acima seguem o mesmo padrão das áreas anteriores. **Eles funcionarão no GitHub somente depois que os arquivos correspondentes forem versionados em `outputs/`.** Até lá, execute as células dos notebooks para gerar os arquivos localmente. Revise modelos e artefatos gerados antes de compartilhá-los; nunca carregue arquivos `.joblib` de origem desconhecida.
+Os arquivos dos links acima estão disponíveis no repositório em `outputs/`. Revise modelos e artefatos gerados antes de compartilhá-los; nunca carregue arquivos `.joblib` de origem desconhecida.
 
 ### Exercícios e Prática
 

@@ -232,7 +232,7 @@ Files exported by notebooks are generated locally in `outputs/`. Examples includ
 - [17_mapa_saliencia_numerica.png](./outputs/17_mapa_saliencia_numerica.png)
 - [19_previsoes_series_temporais.csv](./outputs/19_previsoes_series_temporais.csv)
 
-The links above follow the same layout as previous areas. **They will work on GitHub only after the corresponding files have been committed to `outputs/`.** Until then, execute the relevant notebook cells to create the files locally. Review models and generated artifacts before sharing them; never load untrusted `.joblib` files.
+The files linked above are available in the repository under `outputs/`. Review models and generated artifacts before sharing them; never load untrusted `.joblib` files.
 
 ### Exercises and Practice
 
