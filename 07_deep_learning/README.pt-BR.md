@@ -222,17 +222,17 @@ Siga os notebooks 01–20 na ordem numérica. Para cada tema: consulte o Guia T�
 
 Os arquivos exportados pelos notebooks são gerados localmente em `outputs/`. Alguns exemplos:
 
-- `07_metricas_sequential.csv`
-- `09_metricas_baselines.csv`
-- `10_resultados_grid_search.csv`
-- `11_regularizacao_resultado.csv`
-- `12_pipeline_logistic_regression.joblib`
-- `12_pipeline_metadata.json`
-- `14_historico_treinamento_cnn.csv` (laboratório TensorFlow opcional)
-- `17_mapa_saliencia_numerica.png`
-- `19_previsoes_series_temporais.csv`
+- [07_metricas_sequential.csv](./outputs/07_metricas_sequential.csv)
+- [09_metricas_baselines.csv](./outputs/09_metricas_baselines.csv)
+- [10_resultados_grid_search.csv](./outputs/10_resultados_grid_search.csv)
+- [11_regularizacao_resultado.csv](./outputs/11_regularizacao_resultado.csv)
+- [12_pipeline_logistic_regression.joblib](./outputs/12_pipeline_logistic_regression.joblib)
+- [12_pipeline_metadata.json](./outputs/12_pipeline_metadata.json)
+- [14_historico_treinamento_cnn.csv](./outputs/14_historico_treinamento_cnn.csv) (laboratório TensorFlow opcional)
+- [17_mapa_saliencia_numerica.png](./outputs/17_mapa_saliencia_numerica.png)
+- [19_previsoes_series_temporais.csv](./outputs/19_previsoes_series_temporais.csv)
 
-Diferentemente das saídas publicadas em áreas anteriores, esses arquivos **não são rastreados pelo Git** e, portanto, não possuem links de download no repositório. Eles aparecem após executar as células correspondentes. Revise modelos e artefatos gerados antes de compartilhá-los; nunca carregue arquivos `.joblib` de origem desconhecida.
+Os links acima seguem o mesmo padrão das áreas anteriores. **Eles funcionarão no GitHub somente depois que os arquivos correspondentes forem versionados em `outputs/`.** Até lá, execute as células dos notebooks para gerar os arquivos localmente. Revise modelos e artefatos gerados antes de compartilhá-los; nunca carregue arquivos `.joblib` de origem desconhecida.
 
 ### Exercícios e Prática
 
