@@ -1,0 +1,6 @@
+numpy
+pandas
+matplotlib
+scikit-learn
+ipykernel
+# TensorFlow / Keras: opcionais; validar compatibilidade antes da instalação
