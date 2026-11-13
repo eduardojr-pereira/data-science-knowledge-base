@@ -4,19 +4,11 @@
 
 [🇺🇸 English](./README.md) &nbsp;|&nbsp; [🇧🇷 Português](./README.pt-BR.md)
 
-</div>
-
-<div align="center">
-
 # Supplementary Resources
 
-**Development environments, technical documentation, interactivity, and data analysis**
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white&style=for-the-badge) ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white&style=for-the-badge)
 
-![Python Environment](https://img.shields.io/badge/Environment-Python-3776AB?style=for-the-badge)
-![Interactivity](https://img.shields.io/badge/Interfaces-Interactive-16A085?style=for-the-badge)
-![Data Analysis](https://img.shields.io/badge/Data-Analysis-6C63FF?style=for-the-badge)
-
-*Practical foundations for building reproducible environments, documenting experiments, and exploring data efficiently.*
+*Development environments, interactive notebooks, and data analysis.*
 
 </div>
 
@@ -26,75 +18,47 @@
 
 <div align="center">
 
-[Overview](#overview) • [Learning Objectives](#learning-objectives) • [Contents](#contents) • [Technologies](#technologies) • [Directory Structure](#directory-structure)  
-[Setup and Installation](#setup-and-installation) • [How to Use](#how-to-use) • [Datasets and Reference Materials](#datasets-and-reference-materials) • [Cheat Sheets](#cheat-sheets)  
-[Exercises and Practice](#exercises-and-practice) • [Testing and Validation](#testing-and-validation) • [References](#references) • [License](#license) • [Contact](#contact)
+[Overview](#overview) • [Contents](#contents) • [Technologies](#technologies) • [Setup and Installation](#installation) • [Testing and Validation](#validation)  
+[How to Use](#usage) • [References](#references) • [License](#license) • [Contact](#contact)
 
 </div>
 
 ---
 
+<a id="overview"></a>
+
 ## Overview
 
-This collection supports learning and practical work in Data Science. The notebooks cover setting up Python and JupyterLab environments, writing technical documentation in Markdown, building interactive interfaces with `ipywidgets`, and analyzing data with Polars.
+Development environments, interactive notebooks, and data analysis.
 
-The material is organized for independent reference and progressive hands-on practice. Examples can also be revisited when working on other studies and projects.
+**Language note:** notebooks and study PDFs are in Brazilian Portuguese; this README provides navigation in English.
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+### Learning Objectives
 
----
-
-## Learning Objectives
-
-After working through the materials, you should be able to:
-
-- Identify the Python interpreter, virtual environment, and kernel associated with a notebook.
-- Manage dependencies and run notebooks reproducibly.
-- Write technical documentation using Markdown, tables, and equations.
-- Build interactive controls and connect events to notebook operations.
-- Explore and transform data with Polars, including expressions and Lazy API queries.
-- Compare tabular-data workflows using Polars and Pandas.
+Build reliable Python/Jupyter environments, document analyses, develop interactive notebook interfaces, and transform data with Polars.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
 ---
+
+<a id="contents"></a>
 
 ## Contents
 
-| Order | Notebook | Main topics |
-|:---:|---|---|
-| 01 | [Python Environment and JupyterLab](./01_ambiente_python_e_jupyterlab.ipynb) | Environments, kernels, dependencies, and reproducible experiments. |
-| 02 | [Markdown and Scientific Documentation](./02_markdown_e_documentacao_cientifica.ipynb) | Formatted text, equations, tables, and report organization. |
-| 03 | [Widgets and Interactivity](./03_widgets_e_interatividade.ipynb) | UI components, events, uploads, and interactive filtering. |
-| 04 | [Polars and Data Analysis](./04_polars_e_analise_de_dados.ipynb) | Expressions, queries, Lazy API, Pandas interoperability, data quality, and a case study. |
+### Notebooks and Learning Materials
 
-The notebooks are numbered to support sequential study but can also be consulted individually.
+| Order | Notebook | Technical Guide | Cheat Sheet |
+|:---:|---|---|---|
+| 01 | [Python Environment and JupyterLab](./01_ambiente_python_e_jupyterlab.ipynb) | [Open PDF](./reference_materials/ambientes_python_e_jupyterlab.pdf) | [JupyterLab](./cheat_sheets/cheat_sheet_jupyterlab.pdf) · [Pip Ambientes Python](./cheat_sheets/cheat_sheet_pip_ambientes_python.pdf) |
+| 02 | [Markdown and Scientific Documentation](./02_markdown_e_documentacao_cientifica.ipynb) | [Open PDF](./reference_materials/markdown_e_documentacao.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_markdown.pdf) |
+| 03 | [Widgets and Interactivity](./03_widgets_e_interatividade.ipynb) | [Open PDF](./reference_materials/widgets_e_interatividade.pdf) | — |
+| 04 | [Polars and Data Analysis](./04_polars_e_analise_de_dados.ipynb) | [Open PDF](./reference_materials/polars_e_analise_de_dados.pdf) | — |
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+### Datasets
 
----
+No mandatory input dataset is distributed in this area; examples are generated within the notebooks.
 
-## Technologies
-
-| Tool | Purpose | Documentation |
-|---|---|---|
-| ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) | Programming language and environment management. | [python.org](https://docs.python.org/3/) |
-| ![JupyterLab](https://img.shields.io/badge/JupyterLab-F37626?logo=jupyter&logoColor=white) | Notebook execution and workspace organization. | [jupyterlab.readthedocs.io](https://jupyterlab.readthedocs.io/) |
-| ![Markdown](https://img.shields.io/badge/Markdown-000000?logo=markdown&logoColor=white) | Documentation and presentation of findings. | [Markdown Guide](https://www.markdownguide.org/basic-syntax/) |
-| ![ipywidgets](https://img.shields.io/badge/ipywidgets-555555) | Interactive components and controls. | [ipywidgets.readthedocs.io](https://ipywidgets.readthedocs.io/) |
-| ![Polars](https://img.shields.io/badge/Polars-CD792C) | Data exploration and transformation. | [docs.pola.rs](https://docs.pola.rs/) |
-| ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white) | Tabular operations and comparative examples. | [pandas.pydata.org](https://pandas.pydata.org/docs/) |
-| ![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white) | Arrays and numerical computation in examples. | [numpy.org](https://numpy.org/doc/stable/) |
-| ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C) | Charts and data visualization. | [matplotlib.org](https://matplotlib.org/stable/) |
-| ![ipykernel](https://img.shields.io/badge/ipykernel-555555) | Connecting Python interpreters to Jupyter kernels. | [ipykernel](https://ipykernel.readthedocs.io/) |
-
-The [`requirements.txt`](./requirements.txt) file lists direct dependencies: `ipywidgets`, `polars`, `pandas`, `numpy`, `matplotlib`, `ipykernel`, and `jupyterlab`. The `pyarrow` package is **optional** for certain conversions between Polars and Pandas. The list does not fully lock the environment's package versions.
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
-
-## Directory Structure
+### Directory Structure
 
 ```text
 00_supplementary_resources/
@@ -105,205 +69,183 @@ The [`requirements.txt`](./requirements.txt) file lists direct dependencies: `ip
 ├── 02_markdown_e_documentacao_cientifica.ipynb
 ├── 03_widgets_e_interatividade.ipynb
 ├── 04_polars_e_analise_de_dados.ipynb
-├── outputs/
-│   └── ... example files generated by the Polars notebook
 ├── reference_materials/
-│   ├── ambientes_python_e_jupyterlab.pdf
-│   ├── markdown_e_documentacao.pdf
-│   ├── widgets_e_interatividade.pdf
-│   └── polars_e_analise_de_dados.pdf
-└── cheat_sheets/
-    ├── cheat_sheet_markdown.pdf
-    ├── cheat_sheet_pip_ambientes_python.pdf
-    └── cheat_sheet_jupyterlab.pdf
+├── cheat_sheets/
+├── outputs
 ```
-
-The repository-wide `LICENSE-CODE.txt` and `LICENSE-CONTENT.md` files are located one level above this directory.
-
-The `outputs/` directory contains small educational results that can be regenerated during the exercises. The `reference_materials/` directory includes four original in-depth technical PDFs accompanying the notebooks. The `cheat_sheets/` directory contains three original EP one-page landscape quick references. No additional legacy code examples were selected for an `code_examples/` directory in this collection.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
 ---
+
+<a id="technologies"></a>
+
+## Technologies
+
+| Technology | Purpose |
+|---|---|
+| Python | Programming and automation |
+| JupyterLab | Notebook workspace and execution |
+| Markdown | Structured technical writing |
+| ipywidgets | Interactive notebook controls |
+| Polars | Columnar data analysis |
+| Pandas | Tabular data handling |
+| NumPy | Numerical arrays and operations |
+| Matplotlib | Static data visualization |
+| ipykernel | Python kernel integration |
+
+Python dependencies are declared in `requirements.txt`; optional tools are documented where applicable.
+
+<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+
+---
+
+<a id="installation"></a>
 
 ## Setup and Installation
 
-**Prerequisites:** Python, JupyterLab, and a Python kernel connected to the environment containing the dependencies. When using a shared environment, check installed packages before adding or upgrading libraries.
+**Copyable commands:** run the steps in order. If an environment such as `jupyter-env` already works for you, activate it and skip creating `.venv`. If the repository is already cloned, go straight to the area directory.
 
-Run the following commands in a terminal from this directory:
+**1. Clone the repository and open this area**
 
 ```bash
-# Optional: create a dedicated virtual environment
+git clone https://github.com/eduardojr-pereira/data-science-knowledge-base.git
+cd data-science-knowledge-base/00_supplementary_resources
+```
+
+**2. Create and activate a virtual environment — Linux/macOS**
+
+```bash
 python -m venv .venv
-
-# Linux/macOS
 source .venv/bin/activate
+```
 
-# Windows (PowerShell)
-# .venv\Scripts\Activate.ps1
+**Windows PowerShell alternative**
 
-# Install the declared dependencies (including JupyterLab)
+```powershell
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+**3. Install dependencies and verify the environment**
+
+```bash
 python -m pip install -r requirements.txt
-
-# Validate the installed dependency set
+python -m pip install jupyterlab ipykernel
 python -m pip check
+```
 
-# Start JupyterLab
+**4. Register the kernel and start JupyterLab**
+
+```bash
+python -m ipykernel install --user --name ds-00 --display-name "Data Science 00"
 jupyter lab
 ```
 
-In JupyterLab, select the **kernel associated with the environment** where dependencies were installed. If a newly created environment is missing from the kernel list, consult the environment setup notebook for instructions on registering or selecting the appropriate interpreter.
-
-The notebooks **do not install packages automatically**. The first notebooks on environments and Markdown generally do not need the additional interactive-widget or tabular-analysis libraries. For the interactivity and Polars examples, use the packages specified in `requirements.txt`.
-
-To diagnose interpreter/kernel mismatches, run the following in a JupyterLab cell:
-
-```python
-import sys
-from pathlib import Path
-
-print('Interpreter:', sys.executable)
-print('Working directory:', Path.cwd())
-```
-
-If you encounter `ModuleNotFoundError`, verify that the package is installed in the interpreter used by the **selected kernel**. If a widget appears only as a textual representation, check JupyterLab's frontend integration with `ipywidgets` and restart the interface before changing dependencies. Install `pyarrow` only if your particular interoperability example requires it.
+Select this kernel in each notebook. Start JupyterLab in the area directory to keep relative data and output paths consistent.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
 ---
 
-## How to Use
-
-### Suggested learning path
-
-| Step | Recommended topic | Expected outcome |
-|:---:|---|---|
-| 1 | Python Environment and JupyterLab | Verify environment, dependencies, and kernel. |
-| 2 | Markdown and Scientific Documentation | Create a well-documented notebook. |
-| 3 | Widgets and Interactivity | Build interactive controls and observe events. |
-| 4 | Polars and Data Analysis | Explore and transform data and assess data quality. |
-
-**Suggested workflow:** open notebook 01, run the cells in order, and progress to notebook 04. Read explanations before running each example, vary parameters when appropriate, and record your own observations.
-
-### Execution best practices
-
-- Check the selected kernel before starting each notebook.
-- Run cells in order to avoid relying on leftover state from earlier executions.
-- If you modify an example, keep a personal copy or restore its contents before comparing results.
-- Polars notebook outputs can be regenerated in `outputs/`.
-- If a widget is not rendered graphically, check the integration between `ipywidgets`, JupyterLab, and the kernel. Restarting the interface may resolve a frontend-only rendering issue.
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
-
-## Datasets and Reference Materials
-
-This collection focuses on **supporting tools and practical examples**. According to the provided documentation, none of the four notebooks requires a mandatory external dataset. When datasets are needed in other topics, the standard input directory will be `datasets/`.
-
-Polars examples can generate files in [`outputs/`](./outputs/). The following **original reference materials** provide explanations, annotated examples, exercises, and quick-reference sections designed to accompany the four notebooks without reproducing third-party guides.
-
-| Reference material | Scope and related notebook |
-|---|---|
-| [Python Environments and JupyterLab](./reference_materials/ambientes_python_e_jupyterlab.pdf) | Interpreters, virtual environments, pip, dependencies, kernels, shortcuts, troubleshooting, and reproducibility; accompanies notebook 01. |
-| [Markdown and Documentation](./reference_materials/markdown_e_documentacao.pdf) | Document structure, links, tables, equations, technical writing, and quick reference; accompanies notebook 02. |
-| [Widgets and Interactivity](./reference_materials/widgets_e_interatividade.pdf) | UI components, callbacks, state, layouts, user inputs, tests, and troubleshooting; accompanies notebook 03. |
-| [Polars and Data Analysis](./reference_materials/polars_e_analise_de_dados.pdf) | Expressions, data types, missing values, joins, aggregations, dates, Lazy API, CSV/Parquet, Pandas interoperability, and a case study; accompanies notebook 04. |
-
-The in-depth technical documents and the original cheat sheets serve complementary purposes: detailed study and immediate reference, respectively. Third-party resources used during preparation are preserved separately and are not included in this publication. There is no `code_examples/` directory for this topic.
-
-See the official documentation in [References](#references).
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
-
-## Cheat Sheets
-
-The **EP cheat sheets** are concise references, each formatted as one landscape A4 page with selected commands and examples for hands-on work. They complement the detailed PDFs and notebooks rather than replacing them.
-
-| Quick reference | Main topics |
-|---|---|
-| [Markdown](./cheat_sheets/cheat_sheet_markdown.pdf) | Syntax, formatting, tables, code, links, images, and documentation. |
-| [pip and Python Environments](./cheat_sheets/cheat_sheet_pip_ambientes_python.pdf) | Virtual environments, package installation, dependencies, upgrades, and troubleshooting. |
-| [JupyterLab](./cheat_sheets/cheat_sheet_jupyterlab.pdf) | Shortcuts, cells, kernels, IPython magics, and execution procedures. |
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
-
-## Exercises and Practice
-
-To reinforce key concepts, try:
-
-1. Determine which Python interpreter and kernel are active and explain how they differ.
-2. Create a Markdown section with a heading, table, code block, and equation.
-3. Adapt an `ipywidgets` control to change an analysis parameter dynamically.
-4. Apply a Polars transformation, inspect its data types, and compare it with an equivalent Pandas operation.
-
-These activities complement the exercises already provided in the notebooks.
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
+<a id="validation"></a>
 
 ## Testing and Validation
 
-**Status: completed and approved.** The four notebooks were executed and approved by the collection maintainer in JupyterLab, including practical checks of the outputs and examples.
+| Verification | Recorded status |
+|---|---|
+| Notebooks documented | 4 |
+| Supporting materials | 4 guides / 3 Cheat Sheets |
+| Dependencies | `requirements.txt` |
+| Execution | Previous review; not re-executed for this update |
 
-The interactive experience with `ipywidgets` also depends on JupyterLab frontend integration, not just Python code execution. Visual rendering should be checked when using the materials in a different environment.
+All four notebooks were previously executed and approved in JupyterLab. Widget rendering depends on frontend integration and must be rechecked in a different environment.
+
+To check your environment, run `python -m pip check` and then **Restart Kernel → Run All Cells** in JupyterLab, inspecting tables, plots and files.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
 ---
+
+<a id="usage"></a>
+
+## How to Use
+
+Follow notebooks in the order shown in Contents and select the correct kernel. Use Technical Guides for in-depth explanations and Cheat Sheets for quick reference.
+
+### Generated Outputs
+
+Files exported by notebooks are available in `outputs/`. Examples include:
+
+- [polars_receita_categoria_mes.csv](./outputs/polars_receita_categoria_mes.csv)
+- [polars_receita_mensal.csv](./outputs/polars_receita_mensal.csv)
+- [polars_receita_por_regiao.csv](./outputs/polars_receita_por_regiao.csv)
+- [polars_unidades_por_produto.csv](./outputs/polars_unidades_por_produto.csv)
+- [polars_vendas_exemplo.csv](./outputs/polars_vendas_exemplo.csv)
+- [polars_vendas_exemplo.parquet](./outputs/polars_vendas_exemplo.parquet)
+
+### Exercises and Practice
+
+Check the active interpreter and kernel; document a notebook with Markdown; connect an ipywidgets control to an analysis; compare a Polars transformation with Pandas.
+
+<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+
+---
+
+<a id="references"></a>
 
 ## References
 
-- [Official Python documentation](https://docs.python.org/3/)
-- [Official JupyterLab documentation](https://jupyterlab.readthedocs.io/)
-- [ipywidgets documentation](https://ipywidgets.readthedocs.io/)
-- [Polars documentation](https://docs.pola.rs/)
-- [NumPy documentation](https://numpy.org/doc/stable/)
-- [Matplotlib documentation](https://matplotlib.org/stable/)
-- [ipykernel documentation](https://ipykernel.readthedocs.io/)
-- [Pandas documentation](https://pandas.pydata.org/docs/)
-- [Markdown Guide](https://www.markdownguide.org/)
+| Resource | Documentation / Reference |
+|---|---|
+| Python | [Open documentation](https://docs.python.org/3/) |
+| JupyterLab | [Open documentation](https://jupyterlab.readthedocs.io/en/stable/) |
+| Markdown | [Open documentation](https://www.markdownguide.org/) |
+| ipywidgets | [Open documentation](https://ipywidgets.readthedocs.io/) |
+| Polars | [Open documentation](https://docs.pola.rs/) |
+| Pandas | [Open documentation](https://pandas.pydata.org/docs/) |
+| NumPy | [Open documentation](https://numpy.org/doc/stable/) |
+| Matplotlib | [Open documentation](https://matplotlib.org/stable/) |
+| ipykernel | [Open documentation](https://ipykernel.readthedocs.io/) |
+
+Markdown Guide is a community reference rather than vendor-maintained official documentation.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
 ---
+
+<a id="license"></a>
 
 ## License
 
-This collection separates licensing by type of material:
+| Material | License | Scope |
+|---|---|---|
+| Original source code | [MIT](../LICENSE-CODE.txt) | Original scripts and notebook code |
+| Original educational content | [CC BY-NC 4.0](../LICENSE-CONTENT.md) | Original explanations, READMEs, guides and Cheat Sheets |
+| Third-party content | Respective terms | External datasets, images, trademarks and other assets |
 
-- **Original executable code**, including original code cells in notebooks: [MIT — LICENSE-CODE.txt](../LICENSE-CODE.txt).
-- **Original educational writing**, including README prose, original notebook explanations, and original technical PDFs and cheat sheets: [CC BY-NC 4.0 — LICENSE-CONTENT.md](../LICENSE-CONTENT.md), with a link to the [full official legal code](https://creativecommons.org/licenses/by-nc/4.0/legalcode.en).
-- **Third-party material**, including datasets, external logos, icons, trademarks, and other protected content: governed by its own rights and license terms, **not** automatically by either license above.
-
-For mixed-format notebooks, the MIT license applies to the original code and CC BY-NC 4.0 to original educational prose. These licenses apply only where the author holds the necessary rights. Refer to the linked license files for scope and notices.
+These licenses apply only where the author holds the necessary rights; notebook code and educational prose may have different licenses.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
 ---
 
-## Contact
+<a id="contact"></a>
 
-For questions, suggestions, or contributions, use the channels below.
+## Contact
 
 <div align="center">
 
-<a href="https://eduardo-pereira.webflow.io/">
-  <img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90">
-</a>
+<img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90">
 
 **Eduardo Junior Pereira**  
-*Data Science • Python • Artificial Intelligence*
+*Economics • Data Science • Python*
 
 <a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
-<a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>&nbsp;&nbsp;
-<a href="https://discord.com/users/533043855122235393"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/discord_icon.svg" alt="Discord" height="27"></a>
+<a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>
+
+[Let's connect on LinkedIn to exchange ideas and opportunities.](https://www.linkedin.com/in/eduardo-jr-pereira/)
 
 [**GitHub Portfolio**](https://github.com/eduardojr-pereira/data-science-portfolio) &nbsp;•&nbsp; [**Personal Website**](https://eduardo-pereira.webflow.io/)
 
@@ -312,3 +254,4 @@ For questions, suggestions, or contributions, use the channels below.
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
 ---
+

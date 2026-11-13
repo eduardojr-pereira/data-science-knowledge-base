@@ -4,17 +4,11 @@
 
 [🇺🇸 English](./README.md) &nbsp;|&nbsp; [🇧🇷 Português](./README.pt-BR.md)
 
-</div>
-
-<div align="center">
-
-# Machine Learning I
-
-**Python • scikit-learn • NumPy • SciPy • Pandas • Matplotlib • JupyterLab**
+# Machine Learning
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white&style=for-the-badge) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white&style=for-the-badge)
 
-*Seventeen progressive, reproducible notebooks on classical machine learning.*
+*Classical models, robust evaluation, and interpretability.*
 
 </div>
 
@@ -24,7 +18,8 @@
 
 <div align="center">
 
-[Overview](#overview) • [Learning Objectives](#objectives) • [Contents](#contents) • [Technologies](#technologies) • [Directory Structure](#directory) • [Setup and Installation](#installation) • [How to Use](#usage) • [Datasets and Reference Materials](#reference) • [Cheat Sheets](#cheats) • [Exercises and Practice](#exercises) • [Generated Outputs](#outputs) • [Testing and Validation](#validation) • [References](#references) • [License](#license) • [Contact](#contact)
+[Overview](#overview) • [Contents](#contents) • [Technologies](#technologies) • [Setup and Installation](#installation) • [Testing and Validation](#validation)  
+[How to Use](#usage) • [References](#references) • [License](#license) • [Contact](#contact)
 
 </div>
 
@@ -34,19 +29,13 @@
 
 ## Overview
 
-This study track contains 17 reviewed Jupyter notebooks, matching original EP technical guides and single-page quick references. Exercises use synthetic data or datasets bundled with scikit-learn; the historical teaching slides are private reference material, not distributed here.
+Classical models, robust evaluation, and interpretability.
 
+**Language note:** notebooks and study PDFs are in Brazilian Portuguese; this README provides navigation in English.
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+### Learning Objectives
 
----
-
-<a id="objectives"></a>
-
-## Learning Objectives
-
-Understand supervised and unsupervised learning, build leakage-safe preprocessing pipelines, compare baselines and algorithms, select evaluation metrics, tune hyperparameters, analyze errors and document reproducible conclusions.
-
+Develop leakage-safe preprocessing, evaluate models, compare algorithms and interpret predictive results.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -56,25 +45,60 @@ Understand supervised and unsupervised learning, build leakage-safe preprocessin
 
 ## Contents
 
-| # | Notebook | Topic |
-|---|---|---|
-| 01 | [01_fundamentos_ml.ipynb](./01_fundamentos_ml.ipynb) | Fundamentos de Machine Learning |
-| 02 | [02_matematica_aplicada.ipynb](./02_matematica_aplicada.ipynb) | Matemática Aplicada a Machine Learning |
-| 03 | [03_metodologia_experimentos.ipynb](./03_metodologia_experimentos.ipynb) | Metodologia e Experimentos Preditivos |
-| 04 | [04_preparacao_pipelines.ipynb](./04_preparacao_pipelines.ipynb) | Preparação de Dados, Engenharia de Atributos e Pipelines |
-| 05 | [05_knn.ipynb](./05_knn.ipynb) | KNN e Métodos Baseados em Distância |
-| 06 | [06_naive_bayes.ipynb](./06_naive_bayes.ipynb) | Naive Bayes e Classificação Probabilística |
-| 07 | [07_regressao_logistica.ipynb](./07_regressao_logistica.ipynb) | Regressão Logística para Classificação |
-| 08 | [08_svm.ipynb](./08_svm.ipynb) | Máquinas de Vetores de Suporte |
-| 09 | [09_arvores_ensembles.ipynb](./09_arvores_ensembles.ipynb) | Árvores de Decisão, Random Forest e Boosting |
-| 10 | [10_avaliacao_classificadores.ipynb](./10_avaliacao_classificadores.ipynb) | Avaliação de Classificadores e Desbalanceamento |
-| 11 | [11_validacao_otimizacao.ipynb](./11_validacao_otimizacao.ipynb) | Validação Cruzada, Seleção e Otimização |
-| 12 | [12_regressao_linear.ipynb](./12_regressao_linear.ipynb) | Regressão Linear, Múltipla e Regularização |
-| 13 | [13_regressao_nao_linear.ipynb](./13_regressao_nao_linear.ipynb) | Regressão Não Linear e Avaliação de Regressores |
-| 14 | [14_pca_reducao.ipynb](./14_pca_reducao.ipynb) | PCA, Seleção e Redução de Dimensionalidade |
-| 15 | [15_kmeans_hierarquico.ipynb](./15_kmeans_hierarquico.ipynb) | K-Means e Agrupamento Hierárquico |
-| 16 | [16_dbscan_avaliacao.ipynb](./16_dbscan_avaliacao.ipynb) | DBSCAN e Avaliação de Agrupamentos |
-| 17 | [17_interpretabilidade_reprodutibilidade.ipynb](./17_interpretabilidade_reprodutibilidade.ipynb) | Interpretação, Robustez e Reprodutibilidade |
+### Notebooks and Learning Materials
+
+| Order | Notebook | Technical Guide | Cheat Sheet |
+|:---:|---|---|---|
+| 01 | [Machine Learning Fundamentals](./01_fundamentos_ml.ipynb) | [Open PDF](./reference_materials/01_fundamentos_ml.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_fundamentos_ml.pdf) |
+| 02 | [Applied Mathematics](./02_matematica_aplicada.ipynb) | [Open PDF](./reference_materials/02_matematica_aplicada.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_matematica_aplicada.pdf) |
+| 03 | [Experiment Methodology](./03_metodologia_experimentos.ipynb) | [Open PDF](./reference_materials/03_metodologia_experimentos.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_metodologia_experimentos.pdf) |
+| 04 | [Data Preparation and Pipelines](./04_preparacao_pipelines.ipynb) | [Open PDF](./reference_materials/04_preparacao_pipelines.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_preparacao_pipelines.pdf) |
+| 05 | [KNN](./05_knn.ipynb) | [Open PDF](./reference_materials/05_knn.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_knn.pdf) |
+| 06 | [Naive Bayes](./06_naive_bayes.ipynb) | [Open PDF](./reference_materials/06_naive_bayes.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_naive_bayes.pdf) |
+| 07 | [Logistic Regression](./07_regressao_logistica.ipynb) | [Open PDF](./reference_materials/07_regressao_logistica.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_regressao_logistica.pdf) |
+| 08 | [Support Vector Machines](./08_svm.ipynb) | [Open PDF](./reference_materials/08_svm.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_svm.pdf) |
+| 09 | [Decision Trees and Ensembles](./09_arvores_ensembles.ipynb) | [Open PDF](./reference_materials/09_arvores_ensembles.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_arvores_ensembles.pdf) |
+| 10 | [Classifier Evaluation](./10_avaliacao_classificadores.ipynb) | [Open PDF](./reference_materials/10_avaliacao_classificadores.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_avaliacao_classificadores.pdf) |
+| 11 | [Validation and Optimization](./11_validacao_otimizacao.ipynb) | [Open PDF](./reference_materials/11_validacao_otimizacao.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_validacao_otimizacao.pdf) |
+| 12 | [Linear Regression](./12_regressao_linear.ipynb) | [Open PDF](./reference_materials/12_regressao_linear.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_regressao_linear.pdf) |
+| 13 | [Nonlinear Regression](./13_regressao_nao_linear.ipynb) | [Open PDF](./reference_materials/13_regressao_nao_linear.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_regressao_nao_linear.pdf) |
+| 14 | [PCA and Dimensionality Reduction](./14_pca_reducao.ipynb) | [Open PDF](./reference_materials/14_pca_reducao.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_pca_reducao.pdf) |
+| 15 | [K-means and Hierarchical Clustering](./15_kmeans_hierarquico.ipynb) | [Open PDF](./reference_materials/15_kmeans_hierarquico.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_kmeans_hierarquico.pdf) |
+| 16 | [DBSCAN and Cluster Evaluation](./16_dbscan_avaliacao.ipynb) | [Open PDF](./reference_materials/16_dbscan_avaliacao.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_dbscan_avaliacao.pdf) |
+| 17 | [Interpretability and Reproducibility](./17_interpretabilidade_reprodutibilidade.ipynb) | [Open PDF](./reference_materials/17_interpretabilidade_reprodutibilidade.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_interpretabilidade_reprodutibilidade.pdf) |
+
+### Datasets
+
+No mandatory input dataset is distributed in this area; examples are generated within the notebooks.
+
+### Directory Structure
+
+```text
+05_machine_learning/
+├── README.md
+├── README.pt-BR.md
+├── requirements.txt
+├── 01_fundamentos_ml.ipynb
+├── 02_matematica_aplicada.ipynb
+├── 03_metodologia_experimentos.ipynb
+├── 04_preparacao_pipelines.ipynb
+├── 05_knn.ipynb
+├── 06_naive_bayes.ipynb
+├── 07_regressao_logistica.ipynb
+├── 08_svm.ipynb
+├── 09_arvores_ensembles.ipynb
+├── 10_avaliacao_classificadores.ipynb
+├── 11_validacao_otimizacao.ipynb
+├── 12_regressao_linear.ipynb
+├── 13_regressao_nao_linear.ipynb
+├── 14_pca_reducao.ipynb
+├── 15_kmeans_hierarquico.ipynb
+├── 16_dbscan_avaliacao.ipynb
+├── 17_interpretabilidade_reprodutibilidade.ipynb
+├── reference_materials/
+├── cheat_sheets/
+├── outputs
+```
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -84,32 +108,17 @@ Understand supervised and unsupervised learning, build leakage-safe preprocessin
 
 ## Technologies
 
-`Python 3`, `JupyterLab`, `scikit-learn`, `NumPy`, `SciPy`, `pandas`, and `Matplotlib`. Datasets are embedded in scikit-learn or generated with fixed random seeds.
+| Technology | Purpose |
+|---|---|
+| Python | Programming and automation |
+| NumPy | Numerical arrays and operations |
+| SciPy | Scientific and statistical computing |
+| Pandas | Tabular data handling |
+| Matplotlib | Static data visualization |
+| scikit-learn | Machine learning algorithms and evaluation |
+| JupyterLab | Notebook workspace and execution |
 
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
-
-<a id="directory"></a>
-
-## Directory Structure
-
-```text
-05_machine_learning_1/
-├── README.md
-├── README.pt-BR.md
-├── .gitignore
-├── requirements.txt
-├── 01_fundamentos_ml.ipynb
-├── ...
-├── 17_interpretabilidade_reprodutibilidade.ipynb
-├── datasets/                   # Optional local inputs (currently empty)
-├── reference_materials/        # 17 original EP technical guides
-├── cheat_sheets/               # 17 A4 landscape one-page PDFs
-└── outputs/                    # Reproducible CSV tables and PNG plots
-```
-
+Python dependencies are declared in `requirements.txt`; optional tools are documented where applicable.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -119,111 +128,45 @@ Understand supervised and unsupervised learning, build leakage-safe preprocessin
 
 ## Setup and Installation
 
+**Copyable commands:** run the steps in order. If an environment such as `jupyter-env` already works for you, activate it and skip creating `.venv`. If the repository is already cloned, go straight to the area directory.
+
+**1. Clone the repository and open this area**
+
 ```bash
-cd 05_machine_learning_1
+git clone https://github.com/eduardojr-pereira/data-science-knowledge-base.git
+cd data-science-knowledge-base/05_machine_learning
+```
+
+**2. Create and activate a virtual environment — Linux/macOS**
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+**Windows PowerShell alternative**
+
+```powershell
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+**3. Install dependencies and verify the environment**
+
+```bash
 python -m pip install -r requirements.txt
+python -m pip install jupyterlab ipykernel
 python -m pip check
+```
+
+**4. Register the kernel and start JupyterLab**
+
+```bash
+python -m ipykernel install --user --name ds-05 --display-name "Data Science 05"
 jupyter lab
 ```
 
-Launch JupyterLab from this directory and select the environment that contains the installed dependencies.
-
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
-
-<a id="usage"></a>
-
-## How to Use
-
-Follow notebooks 01–17 in order. Each has linked technical guides and quick references. The examples run locally and do not require an external database or network connection. Keep input data separate from exported evidence.
-
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
-
-<a id="reference"></a>
-
-## Datasets and Reference Materials
-
-This module relies on local synthetic data and datasets bundled with scikit-learn; no external CSV inputs are required.
-
-| # | Technical guide |
-|---|---|
-| 01 | [Fundamentos de Machine Learning](./reference_materials/01_fundamentos_ml.pdf) |
-| 02 | [Matemática Aplicada a Machine Learning](./reference_materials/02_matematica_aplicada.pdf) |
-| 03 | [Metodologia e Experimentos Preditivos](./reference_materials/03_metodologia_experimentos.pdf) |
-| 04 | [Preparação de Dados, Engenharia de Atributos e Pipelines](./reference_materials/04_preparacao_pipelines.pdf) |
-| 05 | [KNN e Métodos Baseados em Distância](./reference_materials/05_knn.pdf) |
-| 06 | [Naive Bayes e Classificação Probabilística](./reference_materials/06_naive_bayes.pdf) |
-| 07 | [Regressão Logística para Classificação](./reference_materials/07_regressao_logistica.pdf) |
-| 08 | [Máquinas de Vetores de Suporte](./reference_materials/08_svm.pdf) |
-| 09 | [Árvores de Decisão, Random Forest e Boosting](./reference_materials/09_arvores_ensembles.pdf) |
-| 10 | [Avaliação de Classificadores e Desbalanceamento](./reference_materials/10_avaliacao_classificadores.pdf) |
-| 11 | [Validação Cruzada, Seleção e Otimização](./reference_materials/11_validacao_otimizacao.pdf) |
-| 12 | [Regressão Linear, Múltipla e Regularização](./reference_materials/12_regressao_linear.pdf) |
-| 13 | [Regressão Não Linear e Avaliação de Regressores](./reference_materials/13_regressao_nao_linear.pdf) |
-| 14 | [PCA, Seleção e Redução de Dimensionalidade](./reference_materials/14_pca_reducao.pdf) |
-| 15 | [K-Means e Agrupamento Hierárquico](./reference_materials/15_kmeans_hierarquico.pdf) |
-| 16 | [DBSCAN e Avaliação de Agrupamentos](./reference_materials/16_dbscan_avaliacao.pdf) |
-| 17 | [Interpretação, Robustez e Reprodutibilidade](./reference_materials/17_interpretabilidade_reprodutibilidade.pdf) |
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
-
-<a id="cheats"></a>
-
-## Cheat Sheets
-
-| # | Cheat sheet |
-|---|---|
-| 01 | [Fundamentos de Machine Learning](./cheat_sheets/cheat_sheet_fundamentos_ml.pdf) |
-| 02 | [Matemática Aplicada a Machine Learning](./cheat_sheets/cheat_sheet_matematica_aplicada.pdf) |
-| 03 | [Metodologia e Experimentos Preditivos](./cheat_sheets/cheat_sheet_metodologia_experimentos.pdf) |
-| 04 | [Preparação de Dados, Engenharia de Atributos e Pipelines](./cheat_sheets/cheat_sheet_preparacao_pipelines.pdf) |
-| 05 | [KNN e Métodos Baseados em Distância](./cheat_sheets/cheat_sheet_knn.pdf) |
-| 06 | [Naive Bayes e Classificação Probabilística](./cheat_sheets/cheat_sheet_naive_bayes.pdf) |
-| 07 | [Regressão Logística para Classificação](./cheat_sheets/cheat_sheet_regressao_logistica.pdf) |
-| 08 | [Máquinas de Vetores de Suporte](./cheat_sheets/cheat_sheet_svm.pdf) |
-| 09 | [Árvores de Decisão, Random Forest e Boosting](./cheat_sheets/cheat_sheet_arvores_ensembles.pdf) |
-| 10 | [Avaliação de Classificadores e Desbalanceamento](./cheat_sheets/cheat_sheet_avaliacao_classificadores.pdf) |
-| 11 | [Validação Cruzada, Seleção e Otimização](./cheat_sheets/cheat_sheet_validacao_otimizacao.pdf) |
-| 12 | [Regressão Linear, Múltipla e Regularização](./cheat_sheets/cheat_sheet_regressao_linear.pdf) |
-| 13 | [Regressão Não Linear e Avaliação de Regressores](./cheat_sheets/cheat_sheet_regressao_nao_linear.pdf) |
-| 14 | [PCA, Seleção e Redução de Dimensionalidade](./cheat_sheets/cheat_sheet_pca_reducao.pdf) |
-| 15 | [K-Means e Agrupamento Hierárquico](./cheat_sheets/cheat_sheet_kmeans_hierarquico.pdf) |
-| 16 | [DBSCAN e Avaliação de Agrupamentos](./cheat_sheets/cheat_sheet_dbscan_avaliacao.pdf) |
-| 17 | [Interpretação, Robustez e Reprodutibilidade](./cheat_sheets/cheat_sheet_interpretabilidade_reprodutibilidade.pdf) |
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
-
-<a id="exercises"></a>
-
-## Exercises and Practice
-
-Each chapter includes an experiment, interpretation questions, limitations and guided exercises. Compare against a baseline, document splits and metrics, and fit preprocessing only on training folds.
-
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
-
-<a id="outputs"></a>
-
-## Generated Outputs
-
-The following reproducible study artifacts are generated by the relevant notebooks and versioned in this repository:
-
-| Notebook | Export | Description |
-|---|---|---|
-| 05 | [05_comparacao_knn.csv](./outputs/05_comparacao_knn.csv) | KNN cross-validation scores |
-| 15 | [15_kmeans_sintetico.png](./outputs/15_kmeans_sintetico.png) | K-Means plot using synthetic data |
-| 16 | [16_dbscan_sintetico.png](./outputs/16_dbscan_sintetico.png) | DBSCAN plot and noise |
+Select this kernel in each notebook. Start JupyterLab in the area directory to keep relative data and output paths consistent.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -233,8 +176,38 @@ The following reproducible study artifacts are generated by the relevant noteboo
 
 ## Testing and Validation
 
-The 17 chapters were previously reviewed and validated in JupyterLab. The code examples use deterministic random seeds where applicable; their results demonstrate teaching scenarios rather than performance guarantees on real populations.
+| Verification | Recorded status |
+|---|---|
+| Notebooks documented | 17 |
+| Supporting materials | 17 guides / 17 Cheat Sheets |
+| Dependencies | `requirements.txt` |
+| Execution | Previous review; not re-executed for this update |
 
+The 17 notebooks were previously reviewed in JupyterLab. Teaching experiments and fixed seeds do not guarantee predictive performance in real-world populations.
+
+To check your environment, run `python -m pip check` and then **Restart Kernel → Run All Cells** in JupyterLab, inspecting tables, plots and files.
+
+<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+
+---
+
+<a id="usage"></a>
+
+## How to Use
+
+Follow notebooks in the order shown in Contents and select the correct kernel. Use Technical Guides for in-depth explanations and Cheat Sheets for quick reference.
+
+### Generated Outputs
+
+Files exported by notebooks are available in `outputs/`. Examples include:
+
+- [05_comparacao_knn.csv](./outputs/05_comparacao_knn.csv)
+- [15_kmeans_sintetico.png](./outputs/15_kmeans_sintetico.png)
+- [16_dbscan_sintetico.png](./outputs/16_dbscan_sintetico.png)
+
+### Exercises and Practice
+
+Recreate train/test splits, compare each model against a baseline, evaluate suitable metrics, and identify possible leakage.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -244,12 +217,15 @@ The 17 chapters were previously reviewed and validated in JupyterLab. The code e
 
 ## References
 
-- [scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html)
-- [NumPy documentation](https://numpy.org/doc/)
-- [SciPy documentation](https://docs.scipy.org/doc/scipy/)
-- [Pandas documentation](https://pandas.pydata.org/docs/)
-- [Matplotlib documentation](https://matplotlib.org/stable/)
-
+| Resource | Documentation / Reference |
+|---|---|
+| Python | [Open documentation](https://docs.python.org/3/) |
+| NumPy | [Open documentation](https://numpy.org/doc/stable/) |
+| SciPy | [Open documentation](https://docs.scipy.org/doc/scipy/) |
+| Pandas | [Open documentation](https://pandas.pydata.org/docs/) |
+| Matplotlib | [Open documentation](https://matplotlib.org/stable/) |
+| scikit-learn | [Open documentation](https://scikit-learn.org/stable/user_guide.html) |
+| JupyterLab | [Open documentation](https://jupyterlab.readthedocs.io/en/stable/) |
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -259,8 +235,13 @@ The 17 chapters were previously reviewed and validated in JupyterLab. The code e
 
 ## License
 
-Original code: [MIT](../LICENSE-CODE.txt). Original educational materials: [CC BY-NC 4.0](../LICENSE-CONTENT.md). Third-party sources retain their own licenses.
+| Material | License | Scope |
+|---|---|---|
+| Original source code | [MIT](../LICENSE-CODE.txt) | Original scripts and notebook code |
+| Original educational content | [CC BY-NC 4.0](../LICENSE-CONTENT.md) | Original explanations, READMEs, guides and Cheat Sheets |
+| Third-party content | Respective terms | External datasets, images, trademarks and other assets |
 
+These licenses apply only where the author holds the necessary rights; notebook code and educational prose may have different licenses.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -272,14 +253,16 @@ Original code: [MIT](../LICENSE-CODE.txt). Original educational materials: [CC B
 
 <div align="center">
 
-<a href="https://eduardo-pereira.webflow.io/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo" height="90"></a>
+<img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90">
 
 **Eduardo Junior Pereira**  
-*Data Science • Python • Artificial Intelligence*
+*Economics • Data Science • Python*
 
-<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Gmail" height="27"></a>&nbsp;&nbsp;
+<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
 <a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>
+
+[Let's connect on LinkedIn to exchange ideas and opportunities.](https://www.linkedin.com/in/eduardo-jr-pereira/)
 
 [**GitHub Portfolio**](https://github.com/eduardojr-pereira/data-science-portfolio) &nbsp;•&nbsp; [**Personal Website**](https://eduardo-pereira.webflow.io/)
 

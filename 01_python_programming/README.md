@@ -4,17 +4,11 @@
 
 [🇺🇸 English](./README.md) &nbsp;|&nbsp; [🇧🇷 Português](./README.pt-BR.md)
 
-</div>
-
-<div align="center">
-
 # Python Programming
-
-**Fundamentals • Collections • Functions • NumPy • Matplotlib • Pandas • Object-oriented programming**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge) ![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white&style=for-the-badge) ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white&style=for-the-badge)
 
-*A practical learning path for writing clear code, exploring data, and building strong Python foundations.*
+*From Python fundamentals to data analysis and object-oriented programming.*
 
 </div>
 
@@ -24,8 +18,8 @@
 
 <div align="center">
 
-[Overview](#overview) • [Learning Objectives](#objectives) • [Contents](#contents) • [Technologies](#technologies) • [Directory Structure](#directory) • [Setup and Installation](#installation) • [How to Use](#usage)  
-[Datasets and Reference Materials](#reference) • [Cheat Sheets](#cheats) • [Exercises and Practice](#exercises) • [Testing and Validation](#validation) • [References](#references) • [License](#license) • [Contact](#contact)
+[Overview](#overview) • [Contents](#contents) • [Technologies](#technologies) • [Setup and Installation](#installation) • [Testing and Validation](#validation)  
+[How to Use](#usage) • [References](#references) • [License](#license) • [Contact](#contact)
 
 </div>
 
@@ -35,17 +29,13 @@
 
 ## Overview
 
-Six progressively structured notebooks with explanations, runnable examples, and exercises covering Python, collections, functions, numerical analysis, visualization, and object-oriented programming. **Language note:** notebooks, technical guides, and cheat sheets are in Brazilian Portuguese; this README provides navigation in English.
+From Python fundamentals to data analysis and object-oriented programming.
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+**Language note:** notebooks and study PDFs are in Brazilian Portuguese; this README provides navigation in English.
 
----
+### Learning Objectives
 
-<a id="objectives"></a>
-
-## Learning Objectives
-
-After completing this track, you will be able to write robust code, choose appropriate structures, test functions, use NumPy vectorization, create interpretable charts, transform tables with Pandas, and model objects with invariants.
+Use Python collections and functions, vectorize operations, manipulate DataFrames, visualize data and design basic classes.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -55,14 +45,38 @@ After completing this track, you will be able to write robust code, choose appro
 
 ## Contents
 
-| Order | Notebook | Key topics |
-|:---:|---|---|
-| 01 | [Python Fundamentals](./01_fundamentos_python.ipynb) | Types, operators, strings, branching, and validation. |
-| 02 | [Lists, Tuples and Loops](./02_listas_tuplas_e_lacos.ipynb) | Collections, iteration, copies, and complexity. |
-| 03 | [Dictionaries and Functions](./03_dicionarios_e_funcoes.ipynb) | Mappings, parameters, returns, and tests. |
-| 04 | [NumPy and Matplotlib](./04_numpy_e_matplotlib.ipynb) | Arrays, broadcasting, randomness, and charts. |
-| 05 | [Pandas](./05_pandas.ipynb) | Selection, files, cleaning, grouping, and joins. |
-| 06 | [Classes and Objects](./06_classes_e_objetos.ipynb) | Classes, composition, inheritance, and properties. |
+### Notebooks and Learning Materials
+
+| Order | Notebook | Technical Guide | Cheat Sheet |
+|:---:|---|---|---|
+| 01 | [Python Fundamentals](./01_fundamentos_python.ipynb) | [Open PDF](./reference_materials/01_fundamentos_python.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_fundamentos_python.pdf) |
+| 02 | [Lists, Tuples and Loops](./02_listas_tuplas_e_lacos.ipynb) | [Open PDF](./reference_materials/02_colecoes_e_lacos.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_colecoes_e_lacos.pdf) |
+| 03 | [Dictionaries and Functions](./03_dicionarios_e_funcoes.ipynb) | [Open PDF](./reference_materials/03_dicionarios_e_funcoes.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_funcoes_python.pdf) |
+| 04 | [NumPy and Matplotlib](./04_numpy_e_matplotlib.ipynb) | [04 NumPy](./reference_materials/04_numpy.pdf) · [05 Matplotlib](./reference_materials/05_matplotlib.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_numpy.pdf) |
+| 05 | [Pandas](./05_pandas.ipynb) | [Open PDF](./reference_materials/06_pandas.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_pandas.pdf) |
+| 06 | [Classes and Objects](./06_classes_e_objetos.ipynb) | [Open PDF](./reference_materials/07_orientacao_a_objetos.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_orientacao_a_objetos.pdf) |
+
+### Datasets
+
+No mandatory input dataset is distributed in this area; examples are generated within the notebooks.
+
+### Directory Structure
+
+```text
+01_python_programming/
+├── README.md
+├── README.pt-BR.md
+├── requirements.txt
+├── 01_fundamentos_python.ipynb
+├── 02_listas_tuplas_e_lacos.ipynb
+├── 03_dicionarios_e_funcoes.ipynb
+├── 04_numpy_e_matplotlib.ipynb
+├── 05_pandas.ipynb
+├── 06_classes_e_objetos.ipynb
+├── reference_materials/
+├── cheat_sheets/
+├── outputs
+```
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -72,48 +86,17 @@ After completing this track, you will be able to write robust code, choose appro
 
 ## Technologies
 
-Main tools: **Python, JupyterLab, NumPy, Matplotlib, Pandas, and openpyxl** (for Excel). `unittest` is part of the standard library. See [`requirements.txt`](./requirements.txt) for direct dependencies and the official references below.
+| Technology | Purpose |
+|---|---|
+| Python | Programming and automation |
+| NumPy | Numerical arrays and operations |
+| Pandas | Tabular data handling |
+| Matplotlib | Static data visualization |
+| openpyxl | Excel file input and output |
+| JupyterLab | Notebook workspace and execution |
+| ipykernel | Python kernel integration |
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
-
-<a id="directory"></a>
-
-## Directory Structure
-
-```text
-01_python_programming/
-├── README.md
-├── README.pt-BR.md
-├── requirements.txt
-├── .gitignore
-├── 01_fundamentos_python.ipynb
-├── 02_listas_tuplas_e_lacos.ipynb
-├── 03_dicionarios_e_funcoes.ipynb
-├── 04_numpy_e_matplotlib.ipynb
-├── 05_pandas.ipynb
-├── 06_classes_e_objetos.ipynb
-├── reference_materials/
-│   ├── 01_fundamentos_python.pdf
-│   ├── 02_colecoes_e_lacos.pdf
-│   ├── 03_dicionarios_e_funcoes.pdf
-│   ├── 04_numpy.pdf
-│   ├── 05_matplotlib.pdf
-│   ├── 06_pandas.pdf
-│   ├── 07_orientacao_a_objetos.pdf
-├── cheat_sheets/
-│   ├── cheat_sheet_fundamentos_python.pdf
-│   ├── cheat_sheet_colecoes_e_lacos.pdf
-│   ├── cheat_sheet_funcoes_python.pdf
-│   ├── cheat_sheet_numpy.pdf
-│   ├── cheat_sheet_pandas.pdf
-│   ├── cheat_sheet_orientacao_a_objetos.pdf
-└── outputs/
-    └── ... arquivos CSV e Excel dos exercícios
-```
-
-The `outputs/` folder contains example CSV and Excel files; some are inputs and others are outputs. Original historical materials are preserved separately.
+Python dependencies are declared in `requirements.txt`; optional tools are documented where applicable.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -123,84 +106,45 @@ The `outputs/` folder contains example CSV and Excel files; some are inputs and 
 
 ## Setup and Installation
 
-**Prerequisites:** Python, suporte a ambientes virtuais e um terminal. Run these commands from `01_python_programming/`.
+**Copyable commands:** run the steps in order. If an environment such as `jupyter-env` already works for you, activate it and skip creating `.venv`. If the repository is already cloned, go straight to the area directory.
+
+**1. Clone the repository and open this area**
+
+```bash
+git clone https://github.com/eduardojr-pereira/data-science-knowledge-base.git
+cd data-science-knowledge-base/01_python_programming
+```
+
+**2. Create and activate a virtual environment — Linux/macOS**
 
 ```bash
 python -m venv .venv
-# Linux/macOS
 source .venv/bin/activate
-# Windows PowerShell (alternative): .venv\Scripts\Activate.ps1
+```
+
+**Windows PowerShell alternative**
+
+```powershell
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+**3. Install dependencies and verify the environment**
+
+```bash
 python -m pip install -r requirements.txt
+python -m pip install jupyterlab ipykernel
 python -m pip check
+```
+
+**4. Register the kernel and start JupyterLab**
+
+```bash
+python -m ipykernel install --user --name ds-01 --display-name "Data Science 01"
 jupyter lab
 ```
 
-**Existing environment:** avoid unnecessary reinstalls or upgrades. If JupyterLab is missing, run `python -m pip install jupyterlab`. Make sure the notebook kernel points to the interpreter that received the packages. Run `pip check` **after** installation.
-
-```python
-import sys, numpy, pandas, matplotlib
-print(sys.executable)
-print(numpy.__version__, pandas.__version__, matplotlib.__version__)
-```
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
-
-<a id="usage"></a>
-
-## How to Use
-
-Open notebooks in order (01–06), select the correct kernel, and use **Restart Kernel and Run All Cells**. Inspect tables and charts. Exercises involving user input may use `unittest.mock.patch` to simulate input values, making execution reproducible without interaction. Back up any customized files in `outputs/` before running cells that save results.
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
-
-<a id="reference"></a>
-
-## Datasets and Reference Materials
-
-Example CSV and XLSX files are available in [`outputs/`](./outputs/). Seven in-depth technical guides are provided; NumPy and Matplotlib are separate for easier reference.
-
-| Technical guide | Topic |
-|---|---|
-| [Python Fundamentals](./reference_materials/01_fundamentos_python.pdf) | Explanations, code samples, and exercises. |
-| [Collections and Loops](./reference_materials/02_colecoes_e_lacos.pdf) | Explanations, code samples, and exercises. |
-| [Dictionaries and Functions](./reference_materials/03_dicionarios_e_funcoes.pdf) | Explanations, code samples, and exercises. |
-| [NumPy](./reference_materials/04_numpy.pdf) | Explanations, code samples, and exercises. |
-| [Matplotlib](./reference_materials/05_matplotlib.pdf) | Explanations, code samples, and exercises. |
-| [Pandas](./reference_materials/06_pandas.pdf) | Explanations, code samples, and exercises. |
-| [Object-Oriented Programming](./reference_materials/07_orientacao_a_objetos.pdf) | Explanations, code samples, and exercises. |
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
-
-<a id="cheats"></a>
-
-## Cheat Sheets
-
-The six EP cheat sheets are separate, one-page landscape A4 quick references designed to minimize unnecessary overlap. They complement rather than replace the detailed guides.
-
-| Quick reference | Focus |
-|---|---|
-| [Python Fundamentals](./cheat_sheets/cheat_sheet_fundamentos_python.pdf) | Commands and patterns for quick lookup. |
-| [Collections and Loops](./cheat_sheets/cheat_sheet_colecoes_e_lacos.pdf) | Commands and patterns for quick lookup. |
-| [Python Functions](./cheat_sheets/cheat_sheet_funcoes_python.pdf) | Commands and patterns for quick lookup. |
-| [NumPy](./cheat_sheets/cheat_sheet_numpy.pdf) | Commands and patterns for quick lookup. |
-| [Pandas](./cheat_sheets/cheat_sheet_pandas.pdf) | Commands and patterns for quick lookup. |
-| [Object-Oriented Programming](./cheat_sheets/cheat_sheet_orientacao_a_objetos.pdf) | Commands and patterns for quick lookup. |
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
-
-<a id="exercises"></a>
-
-## Exercises and Practice
-
-Suggested practice: execute each notebook, modify inputs, compare alternative solutions, and test expected failures. Focus on boundary cases, collection copies, function contracts, NumPy axes, Pandas merge validation, and class invariants.
+Select this kernel in each notebook. Start JupyterLab in the area directory to keep relative data and output paths consistent.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -210,7 +154,45 @@ Suggested practice: execute each notebook, modify inputs, compare alternative so
 
 ## Testing and Validation
 
-**Validation history:** the six notebooks were previously executed and approved in JupyterLab by the collection maintainer. This package preserves the notebook files without modification; it does not represent a new automated execution of the full package. On another environment, run `python -m pip check`, then **Restart Kernel and Run All Cells** in each notebook; confirm charts, tables, and absence of unexpected errors.
+| Verification | Recorded status |
+|---|---|
+| Notebooks documented | 6 |
+| Supporting materials | 7 guides / 6 Cheat Sheets |
+| Dependencies | `requirements.txt` |
+| Execution | Previous review; not re-executed for this update |
+
+All six notebooks were previously executed and approved in JupyterLab; this README revision is not a new execution.
+
+To check your environment, run `python -m pip check` and then **Restart Kernel → Run All Cells** in JupyterLab, inspecting tables, plots and files.
+
+<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+
+---
+
+<a id="usage"></a>
+
+## How to Use
+
+Follow notebooks in the order shown in Contents and select the correct kernel. Use Technical Guides for in-depth explanations and Cheat Sheets for quick reference.
+
+### Generated Outputs
+
+Files exported by notebooks are available in `outputs/`. Examples include:
+
+- [cidades_ponto_virgula.csv](./outputs/cidades_ponto_virgula.csv)
+- [matriz_numerica.csv](./outputs/matriz_numerica.csv)
+- [matriz_transformada.csv](./outputs/matriz_transformada.csv)
+- [movimentacoes_financeiras.xlsx](./outputs/movimentacoes_financeiras.xlsx)
+- [movimentacoes_tratadas.xlsx](./outputs/movimentacoes_tratadas.xlsx)
+- [planilha_multiplas_abas.xlsx](./outputs/planilha_multiplas_abas.xlsx)
+- [produtos_estoque.csv](./outputs/produtos_estoque.csv)
+- [receitas_despesas.xlsx](./outputs/receitas_despesas.xlsx)
+
+Additional files are available under `outputs/`.
+
+### Exercises and Practice
+
+Test function edge cases, NumPy axes, Pandas merges and class invariants. Compare outputs with the examples in the notebooks.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -220,14 +202,16 @@ Suggested practice: execute each notebook, modify inputs, compare alternative so
 
 ## References
 
-- [Python](https://docs.python.org/3/)
-- [JupyterLab](https://jupyterlab.readthedocs.io/)
-- [NumPy](https://numpy.org/doc/stable/)
-- [Matplotlib](https://matplotlib.org/stable/)
-- [Pandas](https://pandas.pydata.org/docs/)
-- [openpyxl](https://openpyxl.readthedocs.io/)
-- [unittest.mock](https://docs.python.org/3/library/unittest.mock.html)
-- [PEP 8](https://peps.python.org/pep-0008/)
+| Resource | Documentation / Reference |
+|---|---|
+| Python | [Open documentation](https://docs.python.org/3/) |
+| NumPy | [Open documentation](https://numpy.org/doc/stable/) |
+| Pandas | [Open documentation](https://pandas.pydata.org/docs/) |
+| Matplotlib | [Open documentation](https://matplotlib.org/stable/) |
+| openpyxl | [Open documentation](https://openpyxl.readthedocs.io/) |
+| JupyterLab | [Open documentation](https://jupyterlab.readthedocs.io/en/stable/) |
+| ipykernel | [Open documentation](https://ipykernel.readthedocs.io/) |
+| PEP 8 | [PEP 8](https://peps.python.org/pep-0008/) |
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -237,7 +221,13 @@ Suggested practice: execute each notebook, modify inputs, compare alternative so
 
 ## License
 
-Original code: [MIT](../LICENSE-CODE.txt). Original educational text, technical guides, and cheat sheets: [CC BY-NC 4.0](../LICENSE-CONTENT.md). These licenses apply only to materials for which the author holds the necessary rights. Third-party content and data remain subject to their own terms.
+| Material | License | Scope |
+|---|---|---|
+| Original source code | [MIT](../LICENSE-CODE.txt) | Original scripts and notebook code |
+| Original educational content | [CC BY-NC 4.0](../LICENSE-CONTENT.md) | Original explanations, READMEs, guides and Cheat Sheets |
+| Third-party content | Respective terms | External datasets, images, trademarks and other assets |
+
+These licenses apply only where the author holds the necessary rights; notebook code and educational prose may have different licenses.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -249,15 +239,16 @@ Original code: [MIT](../LICENSE-CODE.txt). Original educational text, technical 
 
 <div align="center">
 
-<a href="https://eduardo-pereira.webflow.io/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90"></a>
+<img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90">
 
 **Eduardo Junior Pereira**  
-*Data Science • Python • Artificial Intelligence*
+*Economics • Data Science • Python*
 
-<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="gmail" height="27"></a>&nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="linkedin" height="27"></a>&nbsp;&nbsp;
-<a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="github" height="27"></a>&nbsp;&nbsp;
-<a href="https://discord.com/users/533043855122235393"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/discord_icon.svg" alt="discord" height="27"></a>&nbsp;&nbsp;
+<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
+<a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>
+
+[Let's connect on LinkedIn to exchange ideas and opportunities.](https://www.linkedin.com/in/eduardo-jr-pereira/)
 
 [**GitHub Portfolio**](https://github.com/eduardojr-pereira/data-science-portfolio) &nbsp;•&nbsp; [**Personal Website**](https://eduardo-pereira.webflow.io/)
 

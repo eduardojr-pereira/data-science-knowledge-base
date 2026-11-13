@@ -4,17 +4,11 @@
 
 [🇺🇸 English](./README.md) &nbsp;|&nbsp; [🇧🇷 Português](./README.pt-BR.md)
 
-</div>
-
-<div align="center">
-
 # Processamento de Linguagem Natural
-
-**Python • scikit-learn • NumPy • SciPy • Pandas • NLTK • JupyterLab**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white&style=for-the-badge) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white&style=for-the-badge)
 
-*Dezessete notebooks progressivos e reproduzíveis sobre processamento de linguagem natural clássico e moderno.*
+*Pré-processamento textual, representações linguísticas e aplicações de PLN.*
 
 </div>
 
@@ -24,7 +18,8 @@
 
 <div align="center">
 
-[Visão Geral](#overview) • [Objetivos de Aprendizagem](#objectives) • [Conteúdo](#contents) • [Tecnologias Utilizadas](#technologies) • [Estrutura de Diretórios](#directory) • [Instalação e Configuração](#installation) • [Instruções de Uso](#usage) • [Datasets e Materiais de Referência](#reference) • [Cheat Sheets](#cheats) • [Exercícios e Prática](#exercises) • [Resultados Gerados](#outputs) • [Testes e Validação](#validation) • [Referências](#references) • [Licença](#license) • [Contato](#contact)
+[Visão Geral](#overview) • [Conteúdo](#contents) • [Tecnologias Utilizadas](#technologies) • [Instalação e Configuração](#installation) • [Testes e Validação](#validation)  
+[Instruções de Uso](#usage) • [Referências](#references) • [Licença](#license) • [Contato](#contact)
 
 </div>
 
@@ -34,17 +29,11 @@
 
 ## Visão Geral
 
-Esta trilha reúne 17 notebooks Jupyter revisados sobre PLN clássica e abordagens modernas, acompanhados de guias técnicos autorais EP e referências rápidas de uma página. Os exemplos são locais e reproduzíveis. O material histórico das aulas permanece no acervo privado e não é redistribuído.
+Pré-processamento textual, representações linguísticas e aplicações de PLN.
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+### Objetivos de Aprendizagem
 
----
-
-<a id="objectives"></a>
-
-## Objetivos de Aprendizagem
-
-Compreender pré-processamento e representação de textos, construir classificadores e sistemas de recuperação, avaliar sumarização e similaridade, distinguir demonstrações conceituais de modelos neurais completos e identificar riscos de robustez, segurança e privacidade.
+Pré-processar e representar textos, construir modelos-base de classificação/recuperação e compreender conceitos modernos de modelos de linguagem.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
@@ -54,25 +43,61 @@ Compreender pré-processamento e representação de textos, construir classifica
 
 ## Conteúdo
 
-| # | Notebook | Assunto |
-|---|---|---|
-| 01 | [01_fundamentos_pln.ipynb](./01_fundamentos_pln.ipynb) | Fundamentos de PLN e Linguística Computacional |
-| 02 | [02_textos_regex.ipynb](./02_textos_regex.ipynb) | Textos, Expressões Regulares e Limpeza |
-| 03 | [03_tokenizacao_normalizacao.ipynb](./03_tokenizacao_normalizacao.ipynb) | Tokenização e Normalização de Textos |
-| 04 | [04_stemming_lematizacao_pos.ipynb](./04_stemming_lematizacao_pos.ipynb) | Stemming, Lematização e Classes Gramaticais |
-| 05 | [05_reconhecimento_entidades.ipynb](./05_reconhecimento_entidades.ipynb) | Reconhecimento de Entidades Nomeadas |
-| 06 | [06_bow_tfidf_ngramas.ipynb](./06_bow_tfidf_ngramas.ipynb) | Bag-of-Words, TF-IDF e N-gramas |
-| 07 | [07_similaridade_recuperacao.ipynb](./07_similaridade_recuperacao.ipynb) | Similaridade e Recuperação de Informação |
-| 08 | [08_sumarizacao_frequencia_luhn.ipynb](./08_sumarizacao_frequencia_luhn.ipynb) | Sumarização por Frequência e Luhn |
-| 09 | [09_sumarizacao_grafos_avaliacao.ipynb](./09_sumarizacao_grafos_avaliacao.ipynb) | Sumarização com Grafos e Avaliação |
-| 10 | [10_classificacao_sentimentos.ipynb](./10_classificacao_sentimentos.ipynb) | Classificação Textual e Sentimentos |
-| 11 | [11_word_embeddings.ipynb](./11_word_embeddings.ipynb) | Word Embeddings e Representações |
-| 12 | [12_transformers_atencao_bert.ipynb](./12_transformers_atencao_bert.ipynb) | Transformers, Atenção e BERT |
-| 13 | [13_modelos_linguagem_geracao.ipynb](./13_modelos_linguagem_geracao.ipynb) | Modelos de Linguagem e Geração |
-| 14 | [14_sentence_embeddings_busca.ipynb](./14_sentence_embeddings_busca.ipynb) | Sentence Embeddings e Busca Semântica |
-| 15 | [15_rag.ipynb](./15_rag.ipynb) | Retrieval-Augmented Generation (RAG) |
-| 16 | [16_chatbots_memoria_personalizacao.ipynb](./16_chatbots_memoria_personalizacao.ipynb) | Chatbots, Estado e Personalização |
-| 17 | [17_avaliacao_seguranca_pln.ipynb](./17_avaliacao_seguranca_pln.ipynb) | Avaliação, Segurança e Privacidade em PLN |
+### Notebooks e Materiais de Estudo
+
+| Ordem | Notebook | Guia Técnico | Cheat Sheet |
+|:---:|---|---|---|
+| 01 | [Fundamentos PLN](./01_fundamentos_pln.ipynb) | [Abrir PDF](./reference_materials/01_fundamentos_pln.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_fundamentos_pln.pdf) |
+| 02 | [Textos Regex](./02_textos_regex.ipynb) | [Abrir PDF](./reference_materials/02_textos_regex.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_textos_regex.pdf) |
+| 03 | [Tokenizacao Normalizacao](./03_tokenizacao_normalizacao.ipynb) | [Abrir PDF](./reference_materials/03_tokenizacao_normalizacao.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_tokenizacao_normalizacao.pdf) |
+| 04 | [Stemming Lematizacao POS](./04_stemming_lematizacao_pos.ipynb) | [Abrir PDF](./reference_materials/04_stemming_lematizacao_pos.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_stemming_lematizacao_pos.pdf) |
+| 05 | [Reconhecimento Entidades](./05_reconhecimento_entidades.ipynb) | [Abrir PDF](./reference_materials/05_reconhecimento_entidades.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_reconhecimento_entidades.pdf) |
+| 06 | [Bow TF-IDF Ngramas](./06_bow_tfidf_ngramas.ipynb) | [Abrir PDF](./reference_materials/06_bow_tfidf_ngramas.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_bow_tfidf_ngramas.pdf) |
+| 07 | [Similaridade Recuperacao](./07_similaridade_recuperacao.ipynb) | [Abrir PDF](./reference_materials/07_similaridade_recuperacao.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_similaridade_recuperacao.pdf) |
+| 08 | [Sumarizacao Frequencia Luhn](./08_sumarizacao_frequencia_luhn.ipynb) | [Abrir PDF](./reference_materials/08_sumarizacao_frequencia_luhn.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_sumarizacao_frequencia_luhn.pdf) |
+| 09 | [Sumarizacao Grafos Avaliacao](./09_sumarizacao_grafos_avaliacao.ipynb) | [Abrir PDF](./reference_materials/09_sumarizacao_grafos_avaliacao.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_sumarizacao_grafos_avaliacao.pdf) |
+| 10 | [Classificacao Sentimentos](./10_classificacao_sentimentos.ipynb) | [Abrir PDF](./reference_materials/10_classificacao_sentimentos.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_classificacao_sentimentos.pdf) |
+| 11 | [Word Embeddings](./11_word_embeddings.ipynb) | [Abrir PDF](./reference_materials/11_word_embeddings.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_word_embeddings.pdf) |
+| 12 | [Transformers Atencao BERT](./12_transformers_atencao_bert.ipynb) | [Abrir PDF](./reference_materials/12_transformers_atencao_bert.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_transformers_atencao_bert.pdf) |
+| 13 | [Modelos Linguagem Geracao](./13_modelos_linguagem_geracao.ipynb) | [Abrir PDF](./reference_materials/13_modelos_linguagem_geracao.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_modelos_linguagem_geracao.pdf) |
+| 14 | [Sentence Embeddings Busca](./14_sentence_embeddings_busca.ipynb) | [Abrir PDF](./reference_materials/14_sentence_embeddings_busca.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_sentence_embeddings_busca.pdf) |
+| 15 | [RAG](./15_rag.ipynb) | [Abrir PDF](./reference_materials/15_rag.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_rag.pdf) |
+| 16 | [Chatbots Memoria Personalizacao](./16_chatbots_memoria_personalizacao.ipynb) | [Abrir PDF](./reference_materials/16_chatbots_memoria_personalizacao.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_chatbots_memoria_personalizacao.pdf) |
+| 17 | [Avaliacao Seguranca PLN](./17_avaliacao_seguranca_pln.ipynb) | [Abrir PDF](./reference_materials/17_avaliacao_seguranca_pln.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_avaliacao_seguranca_pln.pdf) |
+
+### Datasets
+
+- [corpus_demo.txt](./datasets/corpus_demo.txt)
+
+### Estrutura de Diretórios
+
+```text
+06_natural_language_processing/
+├── README.md
+├── README.pt-BR.md
+├── requirements.txt
+├── 01_fundamentos_pln.ipynb
+├── 02_textos_regex.ipynb
+├── 03_tokenizacao_normalizacao.ipynb
+├── 04_stemming_lematizacao_pos.ipynb
+├── 05_reconhecimento_entidades.ipynb
+├── 06_bow_tfidf_ngramas.ipynb
+├── 07_similaridade_recuperacao.ipynb
+├── 08_sumarizacao_frequencia_luhn.ipynb
+├── 09_sumarizacao_grafos_avaliacao.ipynb
+├── 10_classificacao_sentimentos.ipynb
+├── 11_word_embeddings.ipynb
+├── 12_transformers_atencao_bert.ipynb
+├── 13_modelos_linguagem_geracao.ipynb
+├── 14_sentence_embeddings_busca.ipynb
+├── 15_rag.ipynb
+├── 16_chatbots_memoria_personalizacao.ipynb
+├── 17_avaliacao_seguranca_pln.ipynb
+├── reference_materials/
+├── cheat_sheets/
+├── datasets/
+├── outputs
+```
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
@@ -82,30 +107,18 @@ Compreender pré-processamento e representação de textos, construir classifica
 
 ## Tecnologias Utilizadas
 
-`Python 3`, `JupyterLab`, `NumPy`, `SciPy`, `scikit-learn`, `NLTK` e `pandas`. `spaCy` e o modelo `pt_core_news_sm` são opcionais e exigem instalação separada. Os exemplos de atenção, BERT e RAG não dependem de serviços externos.
+| Tecnologia | Finalidade |
+|---|---|
+| Python | Programação e automação |
+| NumPy | Arrays e operações numéricas |
+| SciPy | Computação científica e estatística |
+| Pandas | Manipulação de dados tabulares |
+| NLTK | Processamento de texto e PLN |
+| scikit-learn | Algoritmos e avaliação de aprendizado de máquina |
+| spaCy | Processamento linguístico opcional |
+| JupyterLab | Ambiente e execução dos notebooks |
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
-
----
-
-<a id="directory"></a>
-
-## Estrutura de Diretórios
-
-```text
-06_natural_language_processing/
-├── README.md
-├── README.pt-BR.md
-├── .gitignore
-├── requirements.txt
-├── 01_fundamentos_pln.ipynb
-├── ...
-├── 17_avaliacao_seguranca_pln.ipynb
-├── datasets/                   # 1 corpus TXT de demonstração
-├── reference_materials/        # 17 guias técnicos autorais EP
-├── cheat_sheets/               # 17 PDFs A4 horizontal de uma página
-└── outputs/                    # 3 tabelas CSV reproduzíveis
-```
+As dependências Python são declaradas em `requirements.txt`; ferramentas opcionais são descritas quando aplicáveis.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
@@ -115,108 +128,47 @@ Compreender pré-processamento e representação de textos, construir classifica
 
 ## Instalação e Configuração
 
+**Comandos copiáveis:** execute as etapas na ordem. Se já utiliza um ambiente funcional como `jupyter-env`, ative-o e pule a criação de `.venv`. Ao usar um clone existente, entre diretamente na pasta da área.
+
+**1. Clone o repositório e acesse a área**
+
 ```bash
-cd 06_natural_language_processing
+git clone https://github.com/eduardojr-pereira/data-science-knowledge-base.git
+cd data-science-knowledge-base/06_natural_language_processing
+```
+
+**2. Crie e ative o ambiente virtual — Linux/macOS**
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+**Alternativa no Windows PowerShell**
+
+```powershell
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+```
+
+**3. Instale as dependências e verifique o ambiente**
+
+```bash
 python -m pip install -r requirements.txt
+python -m pip install jupyterlab ipykernel
 python -m pip check
+```
+
+**4. Registre o kernel e inicie o JupyterLab**
+
+```bash
+python -m ipykernel install --user --name ds-06 --display-name "Data Science 06"
 jupyter lab
 ```
 
-Inicie o JupyterLab nesta pasta e selecione o ambiente com as dependências instaladas (por exemplo, `jupyter-env`). `spaCy` e `pt_core_news_sm` são opcionais; o fluxo principal não baixa modelos nem exige chaves de API.
+Selecione esse kernel em cada notebook. Inicie o JupyterLab na pasta da área para manter os caminhos relativos dos dados e saídas.
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
-
----
-
-<a id="usage"></a>
-
-## Instruções de Uso
-
-Siga os notebooks 01–17 na sequência. Cada capítulo inclui links para o guia técnico e a cheat sheet correspondente. Execute **Restart Kernel and Run All Cells** no JupyterLab. Os capítulos de BERT, embeddings neurais e RAG incluem demonstrações locais didáticas, não inferência com modelos remotos.
-
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
-
----
-
-<a id="reference"></a>
-
-## Datasets e Materiais de Referência
-
-Corpus de exemplo: [`datasets/corpus_demo.txt`](./datasets/corpus_demo.txt). O PDF histórico das aulas não é distribuído.
-
-| # | Guia técnico |
-|---|---|
-| 01 | [Fundamentos de PLN e Linguística Computacional](./reference_materials/01_fundamentos_pln.pdf) |
-| 02 | [Textos, Expressões Regulares e Limpeza](./reference_materials/02_textos_regex.pdf) |
-| 03 | [Tokenização e Normalização de Textos](./reference_materials/03_tokenizacao_normalizacao.pdf) |
-| 04 | [Stemming, Lematização e Classes Gramaticais](./reference_materials/04_stemming_lematizacao_pos.pdf) |
-| 05 | [Reconhecimento de Entidades Nomeadas](./reference_materials/05_reconhecimento_entidades.pdf) |
-| 06 | [Bag-of-Words, TF-IDF e N-gramas](./reference_materials/06_bow_tfidf_ngramas.pdf) |
-| 07 | [Similaridade e Recuperação de Informação](./reference_materials/07_similaridade_recuperacao.pdf) |
-| 08 | [Sumarização por Frequência e Luhn](./reference_materials/08_sumarizacao_frequencia_luhn.pdf) |
-| 09 | [Sumarização com Grafos e Avaliação](./reference_materials/09_sumarizacao_grafos_avaliacao.pdf) |
-| 10 | [Classificação Textual e Sentimentos](./reference_materials/10_classificacao_sentimentos.pdf) |
-| 11 | [Word Embeddings e Representações](./reference_materials/11_word_embeddings.pdf) |
-| 12 | [Transformers, Atenção e BERT](./reference_materials/12_transformers_atencao_bert.pdf) |
-| 13 | [Modelos de Linguagem e Geração](./reference_materials/13_modelos_linguagem_geracao.pdf) |
-| 14 | [Sentence Embeddings e Busca Semântica](./reference_materials/14_sentence_embeddings_busca.pdf) |
-| 15 | [Retrieval-Augmented Generation (RAG)](./reference_materials/15_rag.pdf) |
-| 16 | [Chatbots, Estado e Personalização](./reference_materials/16_chatbots_memoria_personalizacao.pdf) |
-| 17 | [Avaliação, Segurança e Privacidade em PLN](./reference_materials/17_avaliacao_seguranca_pln.pdf) |
-
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
-
----
-
-<a id="cheats"></a>
-
-## Cheat Sheets
-
-| # | Cheat sheet |
-|---|---|
-| 01 | [Fundamentos de PLN e Linguística Computacional](./cheat_sheets/cheat_sheet_fundamentos_pln.pdf) |
-| 02 | [Textos, Expressões Regulares e Limpeza](./cheat_sheets/cheat_sheet_textos_regex.pdf) |
-| 03 | [Tokenização e Normalização de Textos](./cheat_sheets/cheat_sheet_tokenizacao_normalizacao.pdf) |
-| 04 | [Stemming, Lematização e Classes Gramaticais](./cheat_sheets/cheat_sheet_stemming_lematizacao_pos.pdf) |
-| 05 | [Reconhecimento de Entidades Nomeadas](./cheat_sheets/cheat_sheet_reconhecimento_entidades.pdf) |
-| 06 | [Bag-of-Words, TF-IDF e N-gramas](./cheat_sheets/cheat_sheet_bow_tfidf_ngramas.pdf) |
-| 07 | [Similaridade e Recuperação de Informação](./cheat_sheets/cheat_sheet_similaridade_recuperacao.pdf) |
-| 08 | [Sumarização por Frequência e Luhn](./cheat_sheets/cheat_sheet_sumarizacao_frequencia_luhn.pdf) |
-| 09 | [Sumarização com Grafos e Avaliação](./cheat_sheets/cheat_sheet_sumarizacao_grafos_avaliacao.pdf) |
-| 10 | [Classificação Textual e Sentimentos](./cheat_sheets/cheat_sheet_classificacao_sentimentos.pdf) |
-| 11 | [Word Embeddings e Representações](./cheat_sheets/cheat_sheet_word_embeddings.pdf) |
-| 12 | [Transformers, Atenção e BERT](./cheat_sheets/cheat_sheet_transformers_atencao_bert.pdf) |
-| 13 | [Modelos de Linguagem e Geração](./cheat_sheets/cheat_sheet_modelos_linguagem_geracao.pdf) |
-| 14 | [Sentence Embeddings e Busca Semântica](./cheat_sheets/cheat_sheet_sentence_embeddings_busca.pdf) |
-| 15 | [Retrieval-Augmented Generation (RAG)](./cheat_sheets/cheat_sheet_rag.pdf) |
-| 16 | [Chatbots, Estado e Personalização](./cheat_sheets/cheat_sheet_chatbots_memoria_personalizacao.pdf) |
-| 17 | [Avaliação, Segurança e Privacidade em PLN](./cheat_sheets/cheat_sheet_avaliacao_seguranca_pln.pdf) |
-
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
-
----
-
-<a id="exercises"></a>
-
-## Exercícios e Prática
-
-Cada capítulo contém exemplos, perguntas de interpretação e limitações da técnica. Use os pequenos corpora para comparar representações, decisões de pré-processamento e métricas, sem generalizar resultados sintéticos para sistemas de produção.
-
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
-
----
-
-<a id="outputs"></a>
-
-## Resultados Gerados
-
-Os resultados abaixo são gerados pelos notebooks e versionados neste repositório:
-
-| Notebook | Arquivo | Descrição |
-|---|---|---|
-| 06 | [06_bag_of_words_exemplo.csv](./outputs/06_bag_of_words_exemplo.csv) | Matriz de frequência de termos (Bag-of-Words) |
-| 07 | [07_ranking_recuperacao.csv](./outputs/07_ranking_recuperacao.csv) | Ranking por similaridade textual |
-| 08 | [08_scores_sumarizacao.csv](./outputs/08_scores_sumarizacao.csv) | Pontuações das sentenças na sumarização |
+spaCy e modelos linguísticos são opcionais e não fazem parte do fluxo principal.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
@@ -226,7 +178,38 @@ Os resultados abaixo são gerados pelos notebooks e versionados neste repositór
 
 ## Testes e Validação
 
-Os exemplos Python locais da distribuição foram executados no ambiente de revisão. Os notebooks publicados contêm histórico de execução; a confirmação integral no ambiente JupyterLab do usuário é uma etapa separada. Modelos remotos e serviços externos não foram testados, e as demonstrações didáticas não constituem benchmarks de sistemas neurais.
+| Verificação | Situação documentada |
+|---|---|
+| Notebooks documentados | 17 |
+| Materiais complementares | 17 guias / 17 Cheat Sheets |
+| Dependências | `requirements.txt` |
+| Execução | Histórico de revisão, sem nova execução nesta atualização |
+
+Exemplos Python locais foram executados em ambiente de revisão. Uma execução integral dos 17 notebooks em ambiente limpo e serviços de modelos remotos não foi verificada independentemente.
+
+Para validar seu ambiente, execute `python -m pip check` e depois **Restart Kernel → Run All Cells** no JupyterLab, conferindo tabelas, gráficos e arquivos.
+
+<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+
+---
+
+<a id="usage"></a>
+
+## Instruções de Uso
+
+Siga os notebooks na ordem da tabela de Conteúdo, selecionando o kernel correto. Leia os Guias Técnicos para aprofundamento e consulte as Cheat Sheets como referência rápida.
+
+### Resultados Gerados
+
+Arquivos exportados pelos notebooks estão em `outputs/`. Alguns exemplos:
+
+- [06_bag_of_words_exemplo.csv](./outputs/06_bag_of_words_exemplo.csv)
+- [07_ranking_recuperacao.csv](./outputs/07_ranking_recuperacao.csv)
+- [08_scores_sumarizacao.csv](./outputs/08_scores_sumarizacao.csv)
+
+### Exercícios e Prática
+
+Compare tokenização, representações textuais e pontuações de recuperação usando corpus local; registre limitações e implicações de privacidade.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
@@ -236,12 +219,16 @@ Os exemplos Python locais da distribuição foram executados no ambiente de revi
 
 ## Referências
 
-- [Python documentation](https://docs.python.org/3/)
-- [NLTK documentation](https://www.nltk.org/)
-- [spaCy usage guide](https://spacy.io/usage)
-- [scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html)
-- [NumPy documentation](https://numpy.org/doc/)
-- [SciPy documentation](https://docs.scipy.org/doc/scipy/)
+| Recurso | Documentação / Referência |
+|---|---|
+| Python | [Abrir documentação](https://docs.python.org/3/) |
+| NumPy | [Abrir documentação](https://numpy.org/doc/stable/) |
+| SciPy | [Abrir documentação](https://docs.scipy.org/doc/scipy/) |
+| Pandas | [Abrir documentação](https://pandas.pydata.org/docs/) |
+| NLTK | [Abrir documentação](https://www.nltk.org/) |
+| scikit-learn | [Abrir documentação](https://scikit-learn.org/stable/user_guide.html) |
+| spaCy | [Abrir documentação](https://spacy.io/usage) |
+| JupyterLab | [Abrir documentação](https://jupyterlab.readthedocs.io/en/stable/) |
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
@@ -251,7 +238,13 @@ Os exemplos Python locais da distribuição foram executados no ambiente de revi
 
 ## Licença
 
-Código autoral: [MIT](../LICENSE-CODE.txt). Materiais educacionais autorais: [CC BY-NC 4.0](../LICENSE-CONTENT.md). Fontes de terceiros mantêm suas próprias licenças.
+| Material | Licença | Abrangência |
+|---|---|---|
+| Código-fonte original | [MIT](../LICENSE-CODE.txt) | Scripts e código original dos notebooks |
+| Conteúdo educacional original | [CC BY-NC 4.0](../LICENSE-CONTENT.md) | Textos, READMEs, guias e Cheat Sheets originais |
+| Conteúdo de terceiros | Licenças próprias | Datasets, imagens, marcas e outros recursos externos |
+
+As licenças acima se aplicam apenas ao material sobre o qual o autor possui os direitos necessários; código e texto no mesmo notebook podem ter licenças diferentes.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
@@ -263,16 +256,18 @@ Código autoral: [MIT](../LICENSE-CODE.txt). Materiais educacionais autorais: [C
 
 <div align="center">
 
-<a href="https://eduardo-pereira.webflow.io/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo" height="90"></a>
+<img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90">
 
 **Eduardo Junior Pereira**  
-*Data Science • Python • Artificial Intelligence*
+*Economics • Data Science • Python*
 
-<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Gmail" height="27"></a>&nbsp;&nbsp;
+<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
 <a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>
 
-[**Portfólio GitHub**](https://github.com/eduardojr-pereira/data-science-portfolio) &nbsp;•&nbsp; [**Site pessoal**](https://eduardo-pereira.webflow.io/)
+[Vamos nos conectar no LinkedIn para trocar ideias e oportunidades.](https://www.linkedin.com/in/eduardo-jr-pereira/)
+
+[**Portfólio GitHub**](https://github.com/eduardojr-pereira/data-science-portfolio) &nbsp;•&nbsp; [**Site Pessoal**](https://eduardo-pereira.webflow.io/)
 
 </div>
 
