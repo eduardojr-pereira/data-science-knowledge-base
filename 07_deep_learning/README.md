@@ -197,14 +197,14 @@ Windows and macOS users should select a TensorFlow/Python combination supported 
 
 | Verification | Recorded status |
 |---|---|
-| Notebooks included | 20 |
-| Technical guides | 20 PDF |
-| Cheat Sheets | 20 PDF |
-| Static validation | Notebook structure and metadata checked |
-| Core execution | Notebooks 01–20 run locally in JupyterLab, as reported by the author (2026-11-13) |
-| TensorFlow / Keras | CPU import and tensor calculation verified on TensorFlow 2.22.0-rc0 / Python 3.14.4; Notebook 14 and notebooks through 20 reported running successfully |
+| Notebooks documented | 20 |
+| Supporting materials | 20 guides / 20 Cheat Sheets |
+| Dependencies | `requirements.txt` |
+| Execution | Previous review; not re-executed for this README update |
 
-The author reported successful execution of all 20 notebooks after configuring the separate Deep Learning kernel. This records **execution**, not a full numerical or scientific audit of every result. Generated files in `outputs/` must be checked separately for existence and contents. TensorFlow 2.22.0-rc0 is a pre-release version; reproducibility on other machines is not guaranteed.
+All 20 notebooks were previously executed in JupyterLab, as reported by the author; this README revision is not a new execution. Optional TensorFlow/Keras laboratories require the separate compatible environment described above.
+
+To check your environment, run `python -m pip check` and then **Restart Kernel → Run All Cells** in JupyterLab, inspecting tables, plots and generated files.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -220,7 +220,19 @@ Follow notebooks 01–20 in numerical order. For each topic: study the Technical
 
 ### Generated Outputs
 
-The `outputs/` directory holds locally generated artifacts from the exercises. Notebooks **07, 09, 10, 11, 12, 17 and 19** write CSV, JSON, joblib or PNG outputs after their respective experiments; Notebook **14** additionally exports the training history if its optional TensorFlow laboratory ran. These files are ignored by Git by default to prevent accidental commits of models or large results. To publish selected outputs, review their content and licensing first and explicitly change the ignore rules. Never load untrusted `.joblib` files. An empty outputs folder is normal until the corresponding cells run.
+Files exported by notebooks are generated locally in `outputs/`. Examples include:
+
+- `07_metricas_sequential.csv`
+- `09_metricas_baselines.csv`
+- `10_resultados_grid_search.csv`
+- `11_regularizacao_resultado.csv`
+- `12_pipeline_logistic_regression.joblib`
+- `12_pipeline_metadata.json`
+- `14_historico_treinamento_cnn.csv` (optional TensorFlow lab)
+- `17_mapa_saliencia_numerica.png`
+- `19_previsoes_series_temporais.csv`
+
+Unlike outputs published in earlier areas, these files are **not tracked in Git** and therefore have no repository download links. They appear after running the corresponding notebook cells. Review models and generated artifacts before sharing them; never load untrusted `.joblib` files.
 
 ### Exercises and Practice
 

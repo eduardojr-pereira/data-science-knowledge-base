@@ -197,14 +197,14 @@ Em Windows e macOS, escolha uma combinação de TensorFlow/Python oficialmente c
 
 | Verificação | Situação documentada |
 |---|---|
-| Notebooks incluídos | 20 |
-| Guias Técnicos | 20 PDF |
-| Cheat Sheets | 20 PDF |
-| Validação estática | Estrutura e metadados conferidos |
-| Execução básica | Notebooks 01–20 executados localmente no JupyterLab, conforme relato do autor (13/11/2026) |
-| TensorFlow / Keras | Importação e cálculo de tensor verificados na CPU com TensorFlow 2.22.0-rc0 / Python 3.14.4; Notebook 14 e notebooks até o 20 executados com sucesso segundo o autor |
+| Notebooks documentados | 20 |
+| Materiais de apoio | 20 Guias Técnicos / 20 Cheat Sheets |
+| Dependências | `requirements.txt` |
+| Execução | Revisão anterior; não reexecutados nesta atualização do README |
 
-O autor informou execução bem-sucedida dos 20 notebooks após configurar o kernel separado de Deep Learning. O registro comprova o **relato de execução**, mas não substitui auditoria numérica e científica completa de cada resultado. Os arquivos gerados em `outputs/` devem ser conferidos separadamente quanto à existência e ao conteúdo. TensorFlow 2.22.0-rc0 é uma versão de pré-lançamento, sem garantia de reprodutibilidade em outros computadores.
+Os 20 notebooks foram executados anteriormente no JupyterLab, conforme relato do autor; esta revisão do README não representa uma nova execução. Os laboratórios opcionais TensorFlow/Keras exigem o ambiente separado e compatível descrito acima.
+
+Para conferir seu ambiente, execute `python -m pip check` e depois **Reiniciar Kernel → Executar Todas as Células** no JupyterLab, verificando tabelas, gráficos e arquivos gerados.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
@@ -220,7 +220,19 @@ Siga os notebooks 01–20 na ordem numérica. Para cada tema: consulte o Guia T�
 
 ### Resultados Gerados
 
-O diretório `outputs/` recebe os artefatos gerados localmente nos exercícios. Os notebooks **07, 09, 10, 11, 12, 17 e 19** exportam CSV, JSON, joblib ou PNG após os experimentos; o Notebook **14** também exporta o histórico quando o laboratório opcional TensorFlow tiver sido executado. Os arquivos são ignorados pelo Git por padrão para evitar commits acidentais de modelos ou resultados volumosos. Para publicar saídas selecionadas, revise conteúdo e licenciamento e ajuste explicitamente as regras de ignorados. Nunca carregue arquivos `.joblib` de origem desconhecida. A pasta ficará vazia até executar as células correspondentes.
+Os arquivos exportados pelos notebooks são gerados localmente em `outputs/`. Alguns exemplos:
+
+- `07_metricas_sequential.csv`
+- `09_metricas_baselines.csv`
+- `10_resultados_grid_search.csv`
+- `11_regularizacao_resultado.csv`
+- `12_pipeline_logistic_regression.joblib`
+- `12_pipeline_metadata.json`
+- `14_historico_treinamento_cnn.csv` (laboratório TensorFlow opcional)
+- `17_mapa_saliencia_numerica.png`
+- `19_previsoes_series_temporais.csv`
+
+Diferentemente das saídas publicadas em áreas anteriores, esses arquivos **não são rastreados pelo Git** e, portanto, não possuem links de download no repositório. Eles aparecem após executar as células correspondentes. Revise modelos e artefatos gerados antes de compartilhá-los; nunca carregue arquivos `.joblib` de origem desconhecida.
 
 ### Exercícios e Prática
 
