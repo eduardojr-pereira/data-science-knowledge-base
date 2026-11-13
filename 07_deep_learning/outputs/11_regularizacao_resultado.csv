@@ -1,0 +1,2 @@
+modelo,alpha,epocas_efetivas,acuracia_teste
+MLPClassifier,0.05,52,0.8444444444444444

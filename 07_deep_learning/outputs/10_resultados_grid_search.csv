@@ -1,0 +1,5 @@
+params,mean_test_score,std_test_score,rank_test_score
+"{'mlp__alpha': 0.001, 'mlp__hidden_layer_sizes': (8,)}",0.8066534914361001,0.09996149973781734,3
+"{'mlp__alpha': 0.001, 'mlp__hidden_layer_sizes': (12,)}",0.8208168642951251,0.03630965422798597,2
+"{'mlp__alpha': 0.1, 'mlp__hidden_layer_sizes': (8,)}",0.8445322793148881,0.017348081794813813,1
+"{'mlp__alpha': 0.1, 'mlp__hidden_layer_sizes': (12,)}",0.8000658761528326,0.017756036853680605,4

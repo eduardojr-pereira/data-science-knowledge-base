@@ -39,3 +39,7 @@ Thumbs.db
 # Resultados gerados
 **/outputs/
 **/saidas/
+
+# Publicar resultados da area 07
+!07_deep_learning/outputs/
+!07_deep_learning/outputs/**

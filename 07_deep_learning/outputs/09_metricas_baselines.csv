@@ -1,0 +1,3 @@
+modelo,metrica,valor
+DummyClassifier,balanced_accuracy_teste,0.5
+MLPClassifier,balanced_accuracy_teste,0.4111111111111111

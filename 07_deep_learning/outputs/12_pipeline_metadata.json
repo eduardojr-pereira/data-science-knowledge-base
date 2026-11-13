@@ -1,0 +1,6 @@
+{
+  "capitulo": 12,
+  "tipo": "sklearn_pipeline",
+  "formato": "joblib",
+  "aviso": "Arquivos joblib não confiáveis podem executar código ao carregar."
+}

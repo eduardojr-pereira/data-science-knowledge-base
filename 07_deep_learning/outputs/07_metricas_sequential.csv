@@ -1,0 +1,3 @@
+modelo,metrica,valor
+DummyRegressor,MAE_teste,82.9095394048456
+MLPRegressor,MAE_teste,11.21934486427254
