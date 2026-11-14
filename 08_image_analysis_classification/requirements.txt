@@ -1,0 +1,9 @@
+# Area 08 — core dependencies used by executable notebook cells
+# Install in an isolated environment; versions are intentionally not pinned
+# because no cross-platform lockfile has been validated.
+numpy
+scipy
+scikit-image
+scikit-learn
+matplotlib
+opencv-contrib-python
