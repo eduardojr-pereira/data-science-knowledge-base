@@ -167,10 +167,104 @@ No notebook 10, o arquivo `haarcascade_frontalface_default.xml` é obtido via `c
 |---|---|
 | Notebooks documentados | 16 |
 | Materiais de apoio | 16 Guias Técnicos / 16 Cheat Sheets |
-| Dependências | `requirements.txt` |
-| Execução | 16 notebooks executados localmente no JupyterLab, conforme confirmação do autor em 14/11/2026 |
+| Dependências | `requirements.txt` (somente bibliotecas principais) |
+| Notebooks principais | Todos os 16 executados localmente no JupyterLab, conforme confirmação do autor em 14/11/2026 |
+| Testes opcionais | TensorFlow/Keras, ONNX Runtime e dlib: testes isolados de funcionamento aprovados em 14/11/2026 |
 
-O autor confirmou a execução local dos notebooks 01–16 no JupyterLab após a padronização editorial e dos metadados. Este é um **registro de execução informado pelo autor**, não uma reexecução independente nem uma auditoria científica de desempenho. A execução dos componentes opcionais TensorFlow/Keras, ONNX Runtime e dlib **não foi confirmada separadamente** e não deve ser considerada validada apenas pela execução dos notebooks correspondentes. Para uma nova conferência, use **Reiniciar Kernel → Executar Todas as Células** e verifique saídas, gráficos, dependências e avisos.
+<a id="optional-validation"></a>
+
+### Procedimentos reproduzíveis dos laboratórios opcionais — 14 de novembro de 2026
+
+Os **três testes complementares abaixo foram executados pelo autor**, separadamente, após a revisão dos notebooks principais. Eles comprovam instalação funcional e inferência básica em ambientes Python isolados; **não** comprovam treinamento, acurácia preditiva nem desempenho em imagens reais. Os testes foram feitos fora dos notebooks, sem modificar suas células executáveis.
+
+| Notebook | Ambiente isolado | Evidência observada | Limitação |
+|---|---|---|---|
+| 13 — dlib | `~/dlib-env` · dlib 20.0.1 | `fhog_object_detector`, nenhuma detecção numa imagem RGB vazia de 128×128 | Inicialização e execução; **não** mede acurácia de detecção facial |
+| 14 — TensorFlow/Keras | `~/deep-learning-env` · Python 3.14.4 · TensorFlow 2.22.0-rc0 · CPU | CNN de quatro camadas construída (3.826 parâmetros), saída `(1, 2)` e probabilidades `[0.17734568, 0.82265437]` | Inferência sintética de uma rede **não treinada** |
+| 15 — ONNX Runtime | `~/onnx-env` · `CPUExecutionProvider` | Entrada `[[1., 2., 3.]]` → saída `[[3., 5., 7.]]`, igual ao NumPy | Carregamento do grafo e inferência em CPU; **não** avalia modelo de imagens |
+
+Os ambientes permaneceram separados: o `jupyter-env` executa as células principais, enquanto o TensorFlow foi testado com o kernel `Python 3.14 — Deep Learning`. Não é necessário instalar as dependências opcionais juntas nem adicioná-las ao `requirements.txt` principal.
+
+**A. TensorFlow/Keras — notebook 14 (ambiente `deep-learning-env`):**
+
+```bash
+source "$HOME/deep-learning-env/bin/activate"
+python -c 'import tensorflow as tf; print(tf.__version__, tf.config.list_physical_devices())'
+```
+
+Em uma célula temporária do JupyterLab com o kernel Deep Learning, ou numa sessão Python desse ambiente:
+
+```python
+import tensorflow as tf
+import numpy as np
+
+model = tf.keras.Sequential([
+    tf.keras.Input(shape=(32, 32, 3)),
+    tf.keras.layers.Conv2D(8, 3, activation="relu"),
+    tf.keras.layers.MaxPooling2D(),
+    tf.keras.layers.Flatten(),
+    tf.keras.layers.Dense(2, activation="softmax"),
+])
+model.summary()
+y = model(tf.random.uniform((1, 32, 32, 3)), training=False).numpy()
+assert y.shape == (1, 2)
+assert np.isfinite(y).all()
+assert np.allclose(y.sum(axis=1), 1, atol=1e-5)
+print("Formato da saída:", y.shape, "Probabilidades:", y)
+```
+
+Um `ModuleNotFoundError` relacionado a `skimage`, ao executar **todo** o notebook com `deep-learning-env`, indica apenas que o ambiente de TensorFlow não contém as bibliotecas principais de processamento de imagens. Não invalida o teste isolado do TensorFlow. Evite `Run All` com o kernel inadequado.
+
+**B. ONNX Runtime — notebook 15 (ambiente `onnx-env`):**
+
+```bash
+source "$HOME/onnx-env/bin/activate"
+python -m pip check
+```
+
+```python
+import numpy as np
+import onnx
+import onnxruntime as ort
+from onnx import TensorProto, helper
+
+x = helper.make_tensor_value_info("X", TensorProto.FLOAT, [1, 3])
+y = helper.make_tensor_value_info("Y", TensorProto.FLOAT, [1, 3])
+a = helper.make_tensor("two", TensorProto.FLOAT, [1], [2.0])
+b = helper.make_tensor("one", TensorProto.FLOAT, [1], [1.0])
+graph = helper.make_graph([
+    helper.make_node("Mul", ["X", "two"], ["tmp"]),
+    helper.make_node("Add", ["tmp", "one"], ["Y"]),
+], "onnx_smoke_test", [x], [y], initializer=[a, b])
+model = helper.make_model(graph, opset_imports=[helper.make_operatorsetid("", 13)])
+model.ir_version = 9
+onnx.checker.check_model(model)
+session = ort.InferenceSession(model.SerializeToString(), providers=["CPUExecutionProvider"])
+data = np.array([[1., 2., 3.]], dtype=np.float32)
+output = session.run(None, {"X": data})[0]
+assert output.shape == (1, 3) and np.allclose(output, data * 2 + 1)
+print("Provedores:", session.get_providers(), "Saída:", output)
+```
+
+**C. dlib — notebook 13 (ambiente `dlib-env`):**
+
+```bash
+source "$HOME/dlib-env/bin/activate"
+python -m pip check
+```
+
+```python
+import dlib
+import numpy as np
+
+detector = dlib.get_frontal_face_detector()
+blank_image = np.zeros((128, 128, 3), dtype=np.uint8)
+faces = detector(blank_image, 0)
+assert len(faces) == 0
+print("dlib:", dlib.__version__, "Detector:", type(detector).__name__, "Faces:", len(faces))
+```
+
+**Interpretação:** o autor confirmou que os 16 notebooks principais foram executados localmente no JupyterLab em 14/11/2026, além destes três testes independentes de funcionamento. Isso não equivale a reprodução externa nem a benchmark. Para reavaliar os notebooks principais, selecione o kernel Python padrão e use **Restart Kernel → Run All Cells**, conferindo resultados, gráficos, dependências e avisos.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
