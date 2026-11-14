@@ -43,3 +43,6 @@ Thumbs.db
 # Publicar resultados da area 07
 !07_deep_learning/outputs/
 !07_deep_learning/outputs/**
+
+# Plotly legado da área 02
+/02_data_analysis_visualization/iframe_figures/

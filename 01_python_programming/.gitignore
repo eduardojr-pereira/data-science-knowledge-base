@@ -1,7 +1,0 @@
-.ipynb_checkpoints/
-__pycache__/
-*.pyc
-.venv/
-venv/
-.ipynb_checkpoints
-# Os exemplos didáticos versionáveis em outputs/ são preservados.
