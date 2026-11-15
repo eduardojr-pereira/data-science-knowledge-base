@@ -29,7 +29,7 @@
 
 ## Overview
 
-This area contains **16 Portuguese-language notebooks**, supported by **16 original Technical Guides** and **16 Cheat Sheets**. The sequence covers interaction representations, popularity and content-based recommendation, collaborative filtering, sparse matrices, factorization, rating prediction, Top-K ranking, cold start, hybrid systems, and reproducibility. Experiments use MovieLens ratings and educational Book-Crossing samples. The repository includes the MovieLens `ratings.csv` and `movies.csv`; Book-Crossing samples are not redistributed. Historical academic materials are consulted for study but are not redistributed here.
+This area contains **16 Portuguese-language notebooks**, supported by **16 original Technical Guides** and **16 Cheat Sheets**. The sequence covers interaction representations, popularity and content-based recommendation, collaborative filtering, sparse matrices, factorization, rating prediction, Top-K ranking, cold start, hybrid systems, and reproducibility. Experiments use MovieLens ratings and educational Book-Crossing samples. The repository includes the MovieLens `ratings.csv` and `movies.csv`; Book-Crossing samples are not redistributed. The public learning references for this area are its Technical Guides and Cheat Sheets.
 
 ### Learning Objectives
 
@@ -77,7 +77,7 @@ The [`datasets/`](./datasets/README.md) directory documents the provenance and u
 
 These files are from **MovieLens Latest Small (GroupLens Research, University of Minnesota)** and remain subject to the original dataset terms, not the licenses applied to original notebook code and educational materials. Consult [dataset provenance and usage](./datasets/README.md) before reuse or redistribution.
 
-Notebook 16 additionally requires **`datasets/bx_ratings_amostra.csv` and `datasets/bx_books_amostra.csv`**, locally derived Book-Crossing samples that are **not included in the public repository** pending a redistribution-rights review. Without these files, the Book-Crossing portion of notebook 16 will not run. Obtain authorized source data and prepare matching samples locally; do not assume similarly named files have identical schemas or sampling rules.
+Notebook 16 additionally requires **`datasets/bx_ratings_amostra.csv` and `datasets/bx_books_amostra.csv`**, locally derived Book-Crossing samples that are **not included in the public repository** pending a redistribution-rights review. Without these files, notebook 16 uses an **explicitly labeled synthetic teaching fixture** to demonstrate the 0/1–10 feedback convention; these are **not Book-Crossing observations**. For real-domain analysis, obtain authorized source data and prepare matching local samples; do not assume identically named files share a schema.
 
 Launch JupyterLab **from `09_recommender_systems/`**, because notebooks use relative paths such as `Path("datasets")`. The experiments illustrate recommendation techniques; they do not establish production-quality performance.
 
@@ -164,7 +164,7 @@ python -m ipykernel install --user --name ds-09 --display-name "Data Science 09"
 jupyter lab
 ```
 
-**5. Check the data before running:** `datasets/ratings.csv` and `datasets/movies.csv` are included when cloning this repository. To execute notebook 16 fully, add authorized local `datasets/bx_ratings_amostra.csv` and `datasets/bx_books_amostra.csv` with the expected columns. Do not commit private academic materials or samples with unclear redistribution rights.
+**5. Check the data before running:** `datasets/ratings.csv` and `datasets/movies.csv` are included when cloning this repository. To run notebook 16 against actual Book-Crossing samples, add authorized local `datasets/bx_ratings_amostra.csv` and `datasets/bx_books_amostra.csv` with the expected columns. Without them, the notebook runs using synthetic teaching records, not real Book-Crossing evidence. Do not commit private academic materials or samples with unclear redistribution rights.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -210,7 +210,8 @@ The notebooks include export cells labeled `EP_OUTPUTS_09_V1`. **Run All** creat
 - `12_metricas_topk_exemplo.csv` — example ranking metrics.
 - `14_ranking_hibrido_demonstrativo.csv` — illustrative blended ranking.
 - `ranking_popularidade.csv` and `15_manifesto_ranking.json` — notebook 15 output and provenance.
-- `16_ranking_livros_amostra.csv` — Book-Crossing sample ranking.
+- `16_ranking_livros_amostra.csv` — ranking only when authorized local Book-Crossing samples are present.
+- `16_ranking_livros_amostra_sintetico.csv` — explicitly synthetic ranking when those samples are absent.
 
 **These paths denote locally generated artifacts, not published GitHub links.** Re-running notebooks may overwrite identically named files. Descriptive rankings must not be presented as held-out recommender evaluation.
 
