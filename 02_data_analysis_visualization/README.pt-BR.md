@@ -166,11 +166,16 @@ Selecione esse kernel em cada notebook. Inicie o JupyterLab na pasta da área pa
 | Notebooks documentados | 7 |
 | Materiais complementares | 7 guias / 7 Cheat Sheets |
 | Dependências | `requirements.txt` |
-| Execução | Histórico de revisão, sem nova execução nesta atualização |
+| Execução | 7 notebooks reexecutados no JupyterLab em 16/11/2026 (confirmado pelo autor) |
+| Resultados gerados | 3 CSVs, 1 PNG e 6 HTMLs finais |
+| Auditoria dos outputs | Aprovada; os 3 CSVs são equivalentes à versão anterior do Git |
+| Sanitização | Nenhuma saída sensível armazenada identificada |
 
-Os sete notebooks foram executados e aprovados anteriormente no JupyterLab. No ambiente testado, o Plotly funcionou com o renderer `iframe`; `plotly_mimetype` ocultou gráficos. Verifique gráficos interativos em ambientes novos.
+O autor informou ter reexecutado os sete notebooks no JupyterLab em 16/11/2026. A auditoria posterior validou os três CSVs, a assinatura da imagem PNG e a existência e o conteúdo não vazio dos seis HTMLs finais. **A validação dos arquivos não substitui o teste visual e de interatividade no navegador.**
 
-Para validar seu ambiente, execute `python -m pip check` e depois **Restart Kernel → Run All Cells** no JupyterLab, conferindo tabelas, gráficos e arquivos.
+No ambiente testado, o Plotly utiliza o renderer `iframe`, pois `plotly_mimetype` havia ocultado os gráficos anteriormente. Confira o funcionamento interativo em outros ambientes; os HTMLs gerados em `outputs/iframe_figures/` são arquivos auxiliares do renderer e não integram os dez outputs definitivos.
+
+Para conferir um ambiente novo, execute `python -m pip check` e depois **Restart Kernel → Run All Cells** no JupyterLab. Verifique tabelas, gráficos, filtros, interações e arquivos exportados.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
@@ -186,18 +191,15 @@ Siga os notebooks na ordem da tabela de Conteúdo, selecionando o kernel correto
 
 ### Resultados Gerados
 
-Arquivos exportados pelos notebooks estão em `outputs/`. Alguns exemplos:
+As exportações estão concentradas na seção final do respectivo notebook. Os datasets de origem em `datasets/` são preservados e não são sobrescritos durante a execução.
 
-- [altair_produtos.html](./outputs/altair_produtos.html)
-- [auditoria_v2.csv](./outputs/auditoria_v2.csv)
-- [bokeh_interativo.html](./outputs/bokeh_interativo.html)
-- [bokeh_produtos.html](./outputs/bokeh_produtos.html)
-- [grafico_v2_cdn.html](./outputs/grafico_v2_cdn.html)
-- [painel_comparativo.html](./outputs/painel_comparativo.html)
-- [receita_interativa.html](./outputs/receita_interativa.html)
-- [receita_mensal.csv](./outputs/receita_mensal.csv)
+| Notebook | Formato | Arquivos definitivos em `outputs/` |
+|---|---|---|
+| 02 — ETL e Preparação de Dados | CSV | [receita_mensal.csv](./outputs/receita_mensal.csv) · [resumo_por_regiao.csv](./outputs/resumo_por_regiao.csv) · [auditoria_v2.csv](./outputs/auditoria_v2.csv) |
+| 05 — Matplotlib e Seaborn | PNG | [temperatura_diaria.png](./outputs/temperatura_diaria.png) |
+| 07 — Visualização Interativa | HTML | [receita_interativa.html](./outputs/receita_interativa.html) · [painel_comparativo.html](./outputs/painel_comparativo.html) · [bokeh_produtos.html](./outputs/bokeh_produtos.html) · [bokeh_interativo.html](./outputs/bokeh_interativo.html) · [altair_produtos.html](./outputs/altair_produtos.html) · [grafico_v2_cdn.html](./outputs/grafico_v2_cdn.html) |
 
-Outros arquivos da área também estão disponíveis em `outputs/`.
+Os seis HTMLs interativos definitivos são distintos dos arquivos `iframe` do Plotly em `outputs/iframe_figures/`, gerados durante a renderização. O arquivo `grafico_v2_cdn.html` depende de internet para carregar o JavaScript do Plotly; as exportações independentes do Plotly e do Bokeh incluem recursos para uso offline.
 
 ### Exercícios e Prática
 
