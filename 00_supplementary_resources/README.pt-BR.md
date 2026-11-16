@@ -155,11 +155,14 @@ Selecione esse kernel em cada notebook. Inicie o JupyterLab na pasta da área pa
 | Notebooks documentados | 4 |
 | Materiais complementares | 4 guias / 3 Cheat Sheets |
 | Dependências | `requirements.txt` |
-| Execução | Histórico de revisão, sem nova execução nesta atualização |
+| Execução | 4 notebooks reexecutados e aprovados no JupyterLab em 16/11/2026 |
+| Controles interativos | Widgets do notebook 03 testados no ambiente local do JupyterLab |
+| Resultados gerados | 6/6 arquivos presentes e validados (5 CSV, 1 Parquet) |
+| Verificações de dados | Dimensões e esquemas esperados, equivalência CSV/Parquet e consistência das agregações de vendas |
 
-Os quatro notebooks foram executados e aprovados anteriormente no JupyterLab. A renderização dos widgets depende da interface e deve ser verificada em outro ambiente.
+Os quatro notebooks foram reexecutados e aprovados no ambiente local do JupyterLab. Os seis arquivos gerados passaram pelas verificações indicadas, incluindo a conciliação da **receita líquida ilustrativa de 630,00** entre os dados de vendas e os resumos por região, mês e categoria/mês. Os exemplos utilizam **dados fictícios**, não observações reais de vendas.
 
-Para validar seu ambiente, execute `python -m pip check` e depois **Restart Kernel → Run All Cells** no JupyterLab, conferindo tabelas, gráficos e arquivos.
+A renderização dos widgets depende da integração com a interface e deve ser verificada em outros ambientes. Para validar localmente, execute `python -m pip check` e depois **Restart Kernel → Run All Cells** no JupyterLab, conferindo os controles interativos, as tabelas e os arquivos exportados.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
@@ -182,9 +185,11 @@ Arquivos exportados pelos notebooks estão em `outputs/`. Alguns exemplos:
 - [polars_vendas_exemplo.csv](./outputs/polars_vendas_exemplo.csv)
 - [polars_vendas_exemplo.parquet](./outputs/polars_vendas_exemplo.parquet)
 
+O notebook 04 (Polars) utiliza arquivos CSV/Parquet temporários nas demonstrações intermediárias. Sua seção única **Exportação de resultados** grava os seis arquivos definitivos em `outputs/` após os cálculos analíticos; uma nova execução substitui os resultados gerados correspondentes. Nenhum dataset externo de entrada é necessário.
+
 ### Exercícios e Prática
 
-Verifique o interpretador e o kernel ativos; documente um notebook em Markdown; conecte um controle ipywidgets a uma análise; compare uma transformação Polars com Pandas.
+Verifique o interpretador e o kernel ativos; documente um notebook com Markdown; conecte um controle ipywidgets a uma análise; compare uma transformação Polars com Pandas.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
@@ -252,4 +257,3 @@ As licenças acima se aplicam apenas ao material sobre o qual o autor possui os 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
 ---
-

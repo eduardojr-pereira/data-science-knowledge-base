@@ -157,11 +157,14 @@ Select this kernel in each notebook. Start JupyterLab in the area directory to k
 | Notebooks documented | 4 |
 | Supporting materials | 4 guides / 3 Cheat Sheets |
 | Dependencies | `requirements.txt` |
-| Execution | Previous review; not re-executed for this update |
+| Execution | 4 notebooks re-executed and approved in JupyterLab on November 16, 2026 |
+| Interactive controls | Notebook 03 widgets tested in the local JupyterLab environment |
+| Generated outputs | 6/6 files present and validated (5 CSV, 1 Parquet) |
+| Data checks | Expected dimensions and schemas, CSV/Parquet equivalence, and consistency of sales aggregations |
 
-All four notebooks were previously executed and approved in JupyterLab. Widget rendering depends on frontend integration and must be rechecked in a different environment.
+The four notebooks were re-executed and approved in the local JupyterLab environment. All six generated files passed the checks above, including a reconciliation of the **630.00 illustrative net revenue** across the sales data and regional, monthly, and category/month summaries. These examples use **synthetic data**, not real-world sales observations.
 
-To check your environment, run `python -m pip check` and then **Restart Kernel → Run All Cells** in JupyterLab, inspecting tables, plots and files.
+Widget rendering depends on frontend integration and should be rechecked in a different environment. For local verification, run `python -m pip check`, then **Restart Kernel → Run All Cells** in JupyterLab and inspect the interactive controls, tables, and exported files.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -183,6 +186,8 @@ Files exported by notebooks are available in `outputs/`. Examples include:
 - [polars_unidades_por_produto.csv](./outputs/polars_unidades_por_produto.csv)
 - [polars_vendas_exemplo.csv](./outputs/polars_vendas_exemplo.csv)
 - [polars_vendas_exemplo.parquet](./outputs/polars_vendas_exemplo.parquet)
+
+Notebook 04 (Polars) uses temporary CSV/Parquet files for intermediate demonstrations. Its single **Exportação de resultados** section writes all six final files to `outputs/` after the analytical calculations; running it again replaces the corresponding generated results. No external input dataset is required.
 
 ### Exercises and Practice
 
@@ -254,4 +259,3 @@ These licenses apply only where the author holds the necessary rights; notebook 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
 ---
-
