@@ -87,7 +87,8 @@ Interpret distributions, simulate samples, estimate intervals, test hypotheses a
 ├── 10_modelos_estatisticos_avancados.ipynb
 ├── reference_materials/
 ├── cheat_sheets/
-├── datasets
+├── datasets/
+└── outputs/
 ```
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
@@ -169,14 +170,18 @@ Select this kernel in each notebook. Start JupyterLab in the area directory to k
 
 | Verification | Recorded status |
 |---|---|
-| Notebooks documented | 10 |
-| Supporting materials | 10 guides / 10 Cheat Sheets |
+| Notebooks | 10, re-executed locally in JupyterLab on November 16, 2026 |
+| Supporting materials | 10 technical guides, 10 cheat sheets and Student's t table |
 | Dependencies | `requirements.txt` |
-| Execution | Previous review; not re-executed for this update |
+| Generated outputs | 39 files: 24 CSV and 15 PNG |
+| Output audit | Passed: 23 CSVs equivalent to the previous commit, 1 intentional scientific change, 15 PNGs passed file checks |
+| Repository checks | `git diff --check` passed; no personal paths found by notebook sanitization |
 
-Previous review reported end-to-end execution of ten notebooks in a test environment. The current README update does not re-execute notebooks. Unemployment datasets are teaching data with limited provenance and must not be cited as current official statistics.
+The end-to-end re-execution and output audit were completed locally on November 16, 2026. The updated `10_comparacao_modelos.csv` adds `tipo_resposta` so that AIC values for models with **different response variables** are not presented as directly comparable. Count-model AICs and binary-outcome-model AICs must not be ranked together.
 
-To check your environment, run `python -m pip check` and then **Restart Kernel → Run All Cells** in JupyterLab, inspecting tables, plots and files.
+**Data provenance:** the unemployment datasets are educational materials with limited provenance; they must not be cited as current official statistics.
+
+To validate a new environment, run `python -m pip check` and **Restart Kernel → Run All Cells** for each notebook in order, checking tables, plots and generated files.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -190,7 +195,22 @@ Follow notebooks in the order shown in Contents and select the correct kernel. U
 
 ### Generated Outputs
 
-Statistics notebooks export CSV tables and PNG figures into [`outputs/`](./outputs/).
+The final export section of each notebook writes selected results to [`outputs/`](./outputs/). The November 16, 2026 audit confirmed **24 CSV tables and 15 PNG figures**. The three input datasets remain unchanged.
+
+| Notebook | CSV | PNG |
+|:---:|---|---|
+| 01 | [01_escolaridade_pareto.csv](./outputs/01_escolaridade_pareto.csv), [01_escolaridade_por_sexo.csv](./outputs/01_escolaridade_por_sexo.csv), [01_frequencia_sexo.csv](./outputs/01_frequencia_sexo.csv) | [01_escolaridade_barras.png](./outputs/01_escolaridade_barras.png), [01_histograma_idades.png](./outputs/01_histograma_idades.png) |
+| 02 | [02_resumo_idades.csv](./outputs/02_resumo_idades.csv), [02_resumo_taxas_desocupacao.csv](./outputs/02_resumo_taxas_desocupacao.csv) | [02_histograma_boxplot_idades.png](./outputs/02_histograma_boxplot_idades.png) |
+| 03 | [03_ajuste_linear.csv](./outputs/03_ajuste_linear.csv), [03_correlacao_por_grupo.csv](./outputs/03_correlacao_por_grupo.csv), [03_dados_sinteticos_correlacao.csv](./outputs/03_dados_sinteticos_correlacao.csv) | [03_ajuste_linear.png](./outputs/03_ajuste_linear.png), [03_dispersao_linear.png](./outputs/03_dispersao_linear.png), [03_relacao_mono_nao_linear.png](./outputs/03_relacao_mono_nao_linear.png) |
+| 04 | [04_comparativo_amostragem.csv](./outputs/04_comparativo_amostragem.csv), [04_resumo_experimento.csv](./outputs/04_resumo_experimento.csv) | — |
+| 05 | [05_exemplo_bayes.csv](./outputs/05_exemplo_bayes.csv), [05_probabilidades_eventos.csv](./outputs/05_probabilidades_eventos.csv) | [05_frequencia_acumulada_dado.png](./outputs/05_frequencia_acumulada_dado.png) |
+| 06 | [06_lei_grandes_numeros.csv](./outputs/06_lei_grandes_numeros.csv), [06_probabilidades_modelos.csv](./outputs/06_probabilidades_modelos.csv) | [06_binomial.png](./outputs/06_binomial.png), [06_lei_grandes_numeros.png](./outputs/06_lei_grandes_numeros.png), [06_normal.png](./outputs/06_normal.png), [06_poisson.png](./outputs/06_poisson.png), [06_teorema_central_limite.png](./outputs/06_teorema_central_limite.png) |
+| 07 | [07_medias_bootstrap.csv](./outputs/07_medias_bootstrap.csv), [07_resumo_intervalos.csv](./outputs/07_resumo_intervalos.csv) | [07_distribuicao_bootstrap.png](./outputs/07_distribuicao_bootstrap.png) |
+| 08 | [08_correcao_multiplos_testes.csv](./outputs/08_correcao_multiplos_testes.csv), [08_frequencias_esperadas.csv](./outputs/08_frequencias_esperadas.csv), [08_resumo_testes.csv](./outputs/08_resumo_testes.csv), [08_tabela_contingencia_observada.csv](./outputs/08_tabela_contingencia_observada.csv) | — |
+| 09 | [09_comparacao_posterior.csv](./outputs/09_comparacao_posterior.csv), [09_sensibilidade_prior.csv](./outputs/09_sensibilidade_prior.csv) | [09_prior_posterior_beta.png](./outputs/09_prior_posterior_beta.png) |
+| 10 | [10_comparacao_modelos.csv](./outputs/10_comparacao_modelos.csv), [10_diagnostico_poisson.csv](./outputs/10_diagnostico_poisson.csv) | [10_diagnostico_residuos_poisson.png](./outputs/10_diagnostico_residuos_poisson.png) |
+
+The only intentional deviation from the previously committed CSV results is [`10_comparacao_modelos.csv`](./outputs/10_comparacao_modelos.csv), which documents response types for valid AIC interpretation.
 
 ### Exercises and Practice
 

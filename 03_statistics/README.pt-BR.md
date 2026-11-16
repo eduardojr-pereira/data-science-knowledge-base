@@ -47,16 +47,16 @@ Interpretar distribuições, simular amostras, estimar intervalos, testar hipót
 
 | Ordem | Notebook | Guia Técnico | Cheat Sheet |
 |:---:|---|---|---|
-| 01 | [Fundamentos E Organizacao De Dados](./01_fundamentos_e_organizacao_de_dados.ipynb) | [Abrir PDF](./reference_materials/01_fundamentos_e_organizacao_de_dados.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_fundamentos_e_organizacao_de_dados.pdf) |
-| 02 | [Estatistica Descritiva E Dispersao](./02_estatistica_descritiva_e_dispersao.ipynb) | [Abrir PDF](./reference_materials/02_estatistica_descritiva_e_dispersao.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_estatistica_descritiva_e_dispersao.pdf) |
-| 03 | [Correlacao E Relacoes Entre Variaveis](./03_correlacao_e_relacoes_entre_variaveis.ipynb) | [Abrir PDF](./reference_materials/03_correlacao_e_relacoes_entre_variaveis.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_correlacao_e_relacoes_entre_variaveis.pdf) |
-| 04 | [Amostragem E Experimentos](./04_amostragem_e_experimentos.ipynb) | [Abrir PDF](./reference_materials/04_amostragem_e_experimentos.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_amostragem_e_experimentos.pdf) |
-| 05 | [Fundamentos De Probabilidade](./05_fundamentos_de_probabilidade.ipynb) | [Abrir PDF](./reference_materials/05_fundamentos_de_probabilidade.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_fundamentos_de_probabilidade.pdf) |
-| 06 | [Distribuicoes De Probabilidade](./06_distribuicoes_de_probabilidade.ipynb) | [Abrir PDF](./reference_materials/06_distribuicoes_de_probabilidade.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_distribuicoes_de_probabilidade.pdf) |
-| 07 | [Inferencia E Intervalos De Confianca](./07_inferencia_e_intervalos_de_confianca.ipynb) | [Abrir PDF](./reference_materials/07_inferencia_e_intervalos_de_confianca.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_inferencia_e_intervalos_de_confianca.pdf) |
-| 08 | [Testes De Hipoteses](./08_testes_de_hipoteses.ipynb) | [Abrir PDF](./reference_materials/08_testes_de_hipoteses.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_testes_de_hipoteses.pdf) |
-| 09 | [Inferencia Bayesiana](./09_inferencia_bayesiana.ipynb) | [Abrir PDF](./reference_materials/09_inferencia_bayesiana.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_inferencia_bayesiana.pdf) |
-| 10 | [Modelos Estatisticos Avancados](./10_modelos_estatisticos_avancados.ipynb) | [Abrir PDF](./reference_materials/10_modelos_estatisticos_avancados.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_modelos_estatisticos_avancados.pdf) |
+| 01 | [Fundamentos e Organização de Dados](./01_fundamentos_e_organizacao_de_dados.ipynb) | [Abrir PDF](./reference_materials/01_fundamentos_e_organizacao_de_dados.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_fundamentos_e_organizacao_de_dados.pdf) |
+| 02 | [Estatística Descritiva e Dispersão](./02_estatistica_descritiva_e_dispersao.ipynb) | [Abrir PDF](./reference_materials/02_estatistica_descritiva_e_dispersao.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_estatistica_descritiva_e_dispersao.pdf) |
+| 03 | [Correlação e Relações entre Variáveis](./03_correlacao_e_relacoes_entre_variaveis.ipynb) | [Abrir PDF](./reference_materials/03_correlacao_e_relacoes_entre_variaveis.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_correlacao_e_relacoes_entre_variaveis.pdf) |
+| 04 | [Amostragem e Experimentos](./04_amostragem_e_experimentos.ipynb) | [Abrir PDF](./reference_materials/04_amostragem_e_experimentos.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_amostragem_e_experimentos.pdf) |
+| 05 | [Fundamentos de Probabilidade](./05_fundamentos_de_probabilidade.ipynb) | [Abrir PDF](./reference_materials/05_fundamentos_de_probabilidade.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_fundamentos_de_probabilidade.pdf) |
+| 06 | [Distribuições de Probabilidade](./06_distribuicoes_de_probabilidade.ipynb) | [Abrir PDF](./reference_materials/06_distribuicoes_de_probabilidade.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_distribuicoes_de_probabilidade.pdf) |
+| 07 | [Inferência e Intervalos de Confiança](./07_inferencia_e_intervalos_de_confianca.ipynb) | [Abrir PDF](./reference_materials/07_inferencia_e_intervalos_de_confianca.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_inferencia_e_intervalos_de_confianca.pdf) |
+| 08 | [Testes de Hipóteses](./08_testes_de_hipoteses.ipynb) | [Abrir PDF](./reference_materials/08_testes_de_hipoteses.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_testes_de_hipoteses.pdf) |
+| 09 | [Inferência Bayesiana](./09_inferencia_bayesiana.ipynb) | [Abrir PDF](./reference_materials/09_inferencia_bayesiana.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_inferencia_bayesiana.pdf) |
+| 10 | [Modelos Estatísticos Avançados](./10_modelos_estatisticos_avancados.ipynb) | [Abrir PDF](./reference_materials/10_modelos_estatisticos_avancados.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_modelos_estatisticos_avancados.pdf) |
 
 **Referência estatística adicional:** [Tabela t de Student](./reference_materials/tabela_t.pdf).
 
@@ -85,7 +85,8 @@ Interpretar distribuições, simular amostras, estimar intervalos, testar hipót
 ├── 10_modelos_estatisticos_avancados.ipynb
 ├── reference_materials/
 ├── cheat_sheets/
-├── datasets
+├── datasets/
+└── outputs/
 ```
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
@@ -167,14 +168,18 @@ Selecione esse kernel em cada notebook. Inicie o JupyterLab na pasta da área pa
 
 | Verificação | Situação documentada |
 |---|---|
-| Notebooks documentados | 10 |
-| Materiais complementares | 10 guias / 10 Cheat Sheets |
+| Notebooks | 10, reexecutados localmente no JupyterLab em 16/11/2026 |
+| Materiais complementares | 10 guias técnicos, 10 cheat sheets e tabela t de Student |
 | Dependências | `requirements.txt` |
-| Execução | Histórico de revisão, sem nova execução nesta atualização |
+| Outputs gerados | 39 arquivos: 24 CSV e 15 PNG |
+| Auditoria dos outputs | Aprovada: 23 CSVs equivalentes ao commit anterior, 1 correção científica intencional e 15 PNGs aprovados na verificação de arquivos |
+| Verificações do repositório | `git diff --check` aprovado; sanitização não encontrou caminhos pessoais |
 
-A revisão anterior relatou execução integral de dez notebooks em ambiente de teste. A atualização atual não os reexecuta. As bases sobre desocupação são didáticas e têm proveniência limitada; não devem ser citadas como estatísticas oficiais atuais.
+A reexecução integral e a auditoria dos resultados foram concluídas localmente em 16/11/2026. O arquivo `10_comparacao_modelos.csv` passou a incluir a coluna `tipo_resposta`, evitando apresentar como diretamente comparáveis valores de AIC de modelos com **variáveis-resposta diferentes**. Os AICs de modelos de contagem e de resposta binária não devem formar um ranking único.
 
-Para validar seu ambiente, execute `python -m pip check` e depois **Restart Kernel → Run All Cells** no JupyterLab, conferindo tabelas, gráficos e arquivos.
+**Proveniência dos dados:** as bases sobre desocupação são materiais didáticos com proveniência limitada e não devem ser citadas como estatísticas oficiais atuais.
+
+Para validar outro ambiente, execute `python -m pip check` e **Restart Kernel → Run All Cells** em cada notebook, na ordem, conferindo tabelas, gráficos e arquivos gerados.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
@@ -188,7 +193,22 @@ Siga os notebooks na ordem da tabela de Conteúdo, selecionando o kernel correto
 
 ### Resultados Gerados
 
-Os notebooks de Estatística exportam tabelas CSV e figuras PNG para [`outputs/`](./outputs/).
+A seção final de exportação de cada notebook grava os resultados selecionados em [`outputs/`](./outputs/). A auditoria de 16/11/2026 confirmou **24 tabelas CSV e 15 figuras PNG**. Os três datasets de entrada permanecem inalterados.
+
+| Notebook | CSV | PNG |
+|:---:|---|---|
+| 01 | [01_escolaridade_pareto.csv](./outputs/01_escolaridade_pareto.csv), [01_escolaridade_por_sexo.csv](./outputs/01_escolaridade_por_sexo.csv), [01_frequencia_sexo.csv](./outputs/01_frequencia_sexo.csv) | [01_escolaridade_barras.png](./outputs/01_escolaridade_barras.png), [01_histograma_idades.png](./outputs/01_histograma_idades.png) |
+| 02 | [02_resumo_idades.csv](./outputs/02_resumo_idades.csv), [02_resumo_taxas_desocupacao.csv](./outputs/02_resumo_taxas_desocupacao.csv) | [02_histograma_boxplot_idades.png](./outputs/02_histograma_boxplot_idades.png) |
+| 03 | [03_ajuste_linear.csv](./outputs/03_ajuste_linear.csv), [03_correlacao_por_grupo.csv](./outputs/03_correlacao_por_grupo.csv), [03_dados_sinteticos_correlacao.csv](./outputs/03_dados_sinteticos_correlacao.csv) | [03_ajuste_linear.png](./outputs/03_ajuste_linear.png), [03_dispersao_linear.png](./outputs/03_dispersao_linear.png), [03_relacao_mono_nao_linear.png](./outputs/03_relacao_mono_nao_linear.png) |
+| 04 | [04_comparativo_amostragem.csv](./outputs/04_comparativo_amostragem.csv), [04_resumo_experimento.csv](./outputs/04_resumo_experimento.csv) | — |
+| 05 | [05_exemplo_bayes.csv](./outputs/05_exemplo_bayes.csv), [05_probabilidades_eventos.csv](./outputs/05_probabilidades_eventos.csv) | [05_frequencia_acumulada_dado.png](./outputs/05_frequencia_acumulada_dado.png) |
+| 06 | [06_lei_grandes_numeros.csv](./outputs/06_lei_grandes_numeros.csv), [06_probabilidades_modelos.csv](./outputs/06_probabilidades_modelos.csv) | [06_binomial.png](./outputs/06_binomial.png), [06_lei_grandes_numeros.png](./outputs/06_lei_grandes_numeros.png), [06_normal.png](./outputs/06_normal.png), [06_poisson.png](./outputs/06_poisson.png), [06_teorema_central_limite.png](./outputs/06_teorema_central_limite.png) |
+| 07 | [07_medias_bootstrap.csv](./outputs/07_medias_bootstrap.csv), [07_resumo_intervalos.csv](./outputs/07_resumo_intervalos.csv) | [07_distribuicao_bootstrap.png](./outputs/07_distribuicao_bootstrap.png) |
+| 08 | [08_correcao_multiplos_testes.csv](./outputs/08_correcao_multiplos_testes.csv), [08_frequencias_esperadas.csv](./outputs/08_frequencias_esperadas.csv), [08_resumo_testes.csv](./outputs/08_resumo_testes.csv), [08_tabela_contingencia_observada.csv](./outputs/08_tabela_contingencia_observada.csv) | — |
+| 09 | [09_comparacao_posterior.csv](./outputs/09_comparacao_posterior.csv), [09_sensibilidade_prior.csv](./outputs/09_sensibilidade_prior.csv) | [09_prior_posterior_beta.png](./outputs/09_prior_posterior_beta.png) |
+| 10 | [10_comparacao_modelos.csv](./outputs/10_comparacao_modelos.csv), [10_diagnostico_poisson.csv](./outputs/10_diagnostico_poisson.csv) | [10_diagnostico_residuos_poisson.png](./outputs/10_diagnostico_residuos_poisson.png) |
+
+A única diferença intencional em relação aos CSVs anteriormente versionados está em [`10_comparacao_modelos.csv`](./outputs/10_comparacao_modelos.csv), que identifica os tipos de variável-resposta para a interpretação correta dos AICs.
 
 ### Exercícios e Prática
 
