@@ -46,3 +46,10 @@ Thumbs.db
 
 # Plotly legado da área 02
 /02_data_analysis_visualization/iframe_figures/
+
+# Resultados selecionados da área 09
+!09_recommender_systems/outputs/
+!09_recommender_systems/outputs/**
+
+# Resultados Book-Crossing mantidos locais
+09_recommender_systems/outputs/16_*.csv

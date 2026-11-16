@@ -1,0 +1,6 @@
+usuario_vizinho,distancia_cosseno,usuario_consulta,criterio
+266,0.6425922903967256,1,exclui_proprio_usuario_do_topk
+313,0.6484384815090433,1,exclui_proprio_usuario_do_topk
+368,0.6548729484164695,1,exclui_proprio_usuario_do_topk
+57,0.6549657211924164,1,exclui_proprio_usuario_do_topk
+91,0.665273079581829,1,exclui_proprio_usuario_do_topk

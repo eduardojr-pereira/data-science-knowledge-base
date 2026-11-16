@@ -1,0 +1,8 @@
+{
+  "arquivo_entrada": "datasets/ratings.csv",
+  "sha256_entrada": "aa289ca83157595d0df6aea1be6a4ded676ddc4385472e8313a8ed9805352646",
+  "arquivo_saida": "outputs/ranking_popularidade.csv",
+  "metodo": "media_suavizada",
+  "regularizacao": 20,
+  "observacao": "Baseline descritivo ajustado na base integral; nao e avaliacao fora da amostra"
+}

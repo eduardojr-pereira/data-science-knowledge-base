@@ -94,10 +94,10 @@ Inicie o JupyterLab **na pasta `09_recommender_systems/`**, pois os notebooks us
 ├── reference_materials/       # 16 Technical Guides / Guias Técnicos
 ├── cheat_sheets/              # 16 Cheat Sheets
 ├── datasets/                  # README.md e MovieLens; amostras Book-Crossing locais
-└── outputs/                   # Locally generated outputs; may be Git-ignored
+└── outputs/                   # Resultados selecionados publicados; Book-Crossing local
 ```
 
-O arquivo `datasets/README.md` e os dois CSVs do MovieLens são versionados nesta publicação. As amostras Book-Crossing e os resultados gerados em `outputs/` permanecem locais. Os READMEs ficam na raiz da área e os PDFs nas pastas de materiais complementares.
+O arquivo `datasets/README.md` e os dois CSVs do MovieLens são versionados nesta publicação. As amostras Book-Crossing e seus resultados permanecem locais. Os outputs selecionados dos capítulos 01–15 são versionados em `outputs/`. Os READMEs ficam na raiz da área e os PDFs nas pastas de materiais complementares.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
@@ -201,7 +201,7 @@ Siga os notebooks 01–16 em ordem. Para cada tema, leia o Guia Técnico, execut
 
 ### Resultados Gerados
 
-Os próprios notebooks incluem células de exportação identificadas por `EP_OUTPUTS_09_V1`; ao executar **Run All**, elas criam `outputs/` e exportam CSVs (e um manifesto JSON no capítulo 15) a partir das variáveis calculadas. Exemplos locais:
+Os notebooks incluem uma seção consolidada de exportação de resultados; ao executar **Run All**, elas criam `outputs/` e exportam CSVs (e dois manifestos JSON no capítulo 15) a partir das variáveis calculadas. Exemplos locais:
 
 - `01_resumo_movielens.csv` — dimensão e cobertura da matriz observada.
 - `03_ranking_popularidade_suavizada.csv` — classificação descritiva por média suavizada.

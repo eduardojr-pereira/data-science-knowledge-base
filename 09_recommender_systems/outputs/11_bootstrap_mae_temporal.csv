@@ -1,0 +1,2 @@
+protocolo,n_teste,usuarios_teste,n_itens_conhecidos,n_itens_frios,mae_global,mae_item,delta_mae_item_menos_global,ic_95_inferior,ic_95_superior,bootstrap_replicacoes,seed,escopo
+corte_temporal_global_bootstrap_usuarios,20167,116,17123,3044,0.8539887436318004,0.8097093610320549,-0.04427938259974565,-0.07097301138283017,-0.015938929486164943,500,42,intervalo_exploratorio_condicional_ao_teste_observado

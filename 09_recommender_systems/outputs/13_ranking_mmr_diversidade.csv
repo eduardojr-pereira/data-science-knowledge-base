@@ -1,0 +1,11 @@
+movieId,title,relevancia_normalizada,posicao,metodo,lambda_mmr,escopo
+318,"Shawshank Redemption, The (1994)",1.0,1,MMR,0.8,diversidade_descritiva_sem_validacao_de_usuarios
+260,Star Wars: Episode IV - A New Hope (1977),0.6044566966758681,2,MMR,0.8,diversidade_descritiva_sem_validacao_de_usuarios
+2959,Fight Club (1999),0.650348751056489,3,MMR,0.8,diversidade_descritiva_sem_validacao_de_usuarios
+527,Schindler's List (1993),0.5696525712612146,4,MMR,0.8,diversidade_descritiva_sem_validacao_de_usuarios
+50,"Usual Suspects, The (1995)",0.5764872259756644,5,MMR,0.8,diversidade_descritiva_sem_validacao_de_usuarios
+2571,"Matrix, The (1999)",0.5530428986377935,6,MMR,0.8,diversidade_descritiva_sem_validacao_de_usuarios
+296,Pulp Fiction (1994),0.5761526735696924,7,MMR,0.8,diversidade_descritiva_sem_validacao_de_usuarios
+356,Forrest Gump (1994),0.5261067951908661,8,MMR,0.8,diversidade_descritiva_sem_validacao_de_usuarios
+1197,"Princess Bride, The (1987)",0.4842963051168377,9,MMR,0.8,diversidade_descritiva_sem_validacao_de_usuarios
+858,"Godfather, The (1972)",0.65023377403627,10,MMR,0.8,diversidade_descritiva_sem_validacao_de_usuarios

@@ -1,0 +1,9 @@
+movieId,coavaliacoes,pearson_observado,pearson_encolhido,title,item_referencia,usuario_filtro,metodo,tipo_resultado
+3114,81,0.6992110038275007,0.6223746297805226,Toy Story 2 (1999),1,1,pearson_coavaliacoes_encolhimento_10,comparacao_didatica_nao_validacao_preditiva
+8961,77,0.6433014469670845,0.5693587519133966,"Incredibles, The (2004)",1,1,pearson_coavaliacoes_encolhimento_10,comparacao_didatica_nao_validacao_preditiva
+588,107,0.611892322925559,0.5595938337866223,Aladdin (1992),1,1,pearson_coavaliacoes_encolhimento_10,comparacao_didatica_nao_validacao_preditiva
+6377,87,0.6187009323878008,0.554917331110708,Finding Nemo (2003),1,1,pearson_coavaliacoes_encolhimento_10,comparacao_didatica_nao_validacao_preditiva
+317,47,0.5697122483860079,0.4697627311253047,"Santa Clause, The (1994)",1,1,pearson_coavaliacoes_encolhimento_10,comparacao_didatica_nao_validacao_preditiva
+4886,88,0.4902312226321977,0.4402076284860551,"Monsters, Inc. (2001)",1,1,pearson_coavaliacoes_encolhimento_10,comparacao_didatica_nao_validacao_preditiva
+4973,53,0.4382365323203715,0.3686751779838046,"Amelie (Fabuleux destin d'Amélie Poulain, Le) (2001)",1,1,pearson_coavaliacoes_encolhimento_10,comparacao_didatica_nao_validacao_preditiva
+2355,69,0.4220611547316079,0.36863569210735375,"Bug's Life, A (1998)",1,1,pearson_coavaliacoes_encolhimento_10,comparacao_didatica_nao_validacao_preditiva

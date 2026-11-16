@@ -1,0 +1,9 @@
+movieId,title,similaridade_item_item,item_referencia,ja_avaliado_pelo_usuario_1
+3114,Toy Story 2 (1999),0.5726012603197153,1,False
+480,Jurassic Park (1993),0.5656368040861564,1,True
+780,Independence Day (a.k.a. ID4) (1996),0.5642616935276658,1,True
+260,Star Wars: Episode IV - A New Hope (1977),0.5573881705799365,1,True
+356,Forrest Gump (1994),0.547095907940174,1,True
+364,"Lion King, The (1994)",0.5411453494602335,1,False
+1210,Star Wars: Episode VI - Return of the Jedi (1983),0.5410893047725839,1,True
+648,Mission: Impossible (1996),0.5389127705583575,1,True

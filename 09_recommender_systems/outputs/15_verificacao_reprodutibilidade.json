@@ -1,0 +1,14 @@
+{
+  "entrada": "datasets/ratings.csv",
+  "sha256_entrada": "aa289ca83157595d0df6aea1be6a4ded676ddc4385472e8313a8ed9805352646",
+  "saida": "outputs/ranking_popularidade.csv",
+  "sha256_saida": "2370eb44696e218bed104768771cf198708db6c48c8c36ee9e89a45473fb77f4",
+  "recomputacao_igual_byte_a_byte": true,
+  "n_itens_rankeados": 9724,
+  "metodo": "media_suavizada",
+  "regularizacao": 20,
+  "python": "3.14.4",
+  "pandas": "3.1.1",
+  "numpy": "2.5.4",
+  "escopo": "reprodutibilidade local, sem avaliacao fora da amostra"
+}

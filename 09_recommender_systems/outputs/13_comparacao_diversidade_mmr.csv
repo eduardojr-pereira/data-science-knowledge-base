@@ -1,0 +1,2 @@
+k,candidatos_no_pool,lambda_mmr,diversidade_jaccard_top_original,diversidade_jaccard_top_mmr,metrica,escopo
+10,100,0.8,0.7679365079365079,0.7824867724867723,media_distancias_jaccard_de_generos,comparacao_descritiva_sem_avaliacao_offline

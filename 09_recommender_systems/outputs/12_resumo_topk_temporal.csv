@@ -1,0 +1,2 @@
+k,usuarios_elegiveis_por_treino,usuarios_sem_positivos_observados,usuarios_avaliados,cobertura_da_avaliacao,precision_media_condicional,recall_media_condicional,ndcg_media_condicional,protocolo
+10,610,20,590,0.9672131147540983,0.04949152542372882,0.04055440809068671,0.064144312508162,holdout_cronologico_por_usuario;positivos_observados;sem_logs_exposicao

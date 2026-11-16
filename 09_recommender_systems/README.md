@@ -94,10 +94,10 @@ Launch JupyterLab **from `09_recommender_systems/`**, because notebooks use rela
 ├── reference_materials/       # 16 Technical Guides / Guias Técnicos
 ├── cheat_sheets/              # 16 Cheat Sheets
 ├── datasets/                  # README.md, MovieLens CSVs; Book-Crossing samples remain local
-└── outputs/                   # Locally generated outputs; may be Git-ignored
+└── outputs/                   # Selected published outputs; Book-Crossing remains local
 ```
 
-`datasets/README.md` and the two MovieLens CSVs are tracked with the publication. Book-Crossing samples and generated `outputs/` remain local. Both READMEs belong at the area root; PDFs remain in their learning-material subdirectories.
+`datasets/README.md` and the two MovieLens CSVs are tracked with the publication. Book-Crossing samples and their derived outputs remain local. Selected MovieLens outputs from chapters 01–15 are published. Both READMEs belong at the area root; PDFs remain in their learning-material subdirectories.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -201,7 +201,7 @@ Follow notebooks 01–16 in order. For each topic, read the Technical Guide, exe
 
 ### Generated Outputs
 
-The notebooks include export cells labeled `EP_OUTPUTS_09_V1`. **Run All** creates `outputs/` and exports CSV files (plus a JSON manifest in notebook 15) from computed variables. Local examples include:
+The notebooks include a consolidated results-export section. **Run All** creates `outputs/` and exports CSV files (plus two JSON manifests in notebook 15) from computed variables. Local examples include:
 
 - `01_resumo_movielens.csv` — observed matrix dimensions and coverage.
 - `03_ranking_popularidade_suavizada.csv` — descriptive ranking by smoothed mean.

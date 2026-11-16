@@ -1,0 +1,11 @@
+movieId,title,genres,score,userId,n_positivos_treino,peso_conteudo,protocolo
+380,True Lies (1994),Action|Adventure|Comedy|Romance|Thriller,0.7932559039065632,1,200,0.7,historico_treino_ate_corte_global_80pct_sem_teste
+153,Batman Forever (1995),Action|Adventure|Comedy|Crime,0.7842291484757542,1,200,0.7,historico_treino_ate_corte_global_80pct_sem_teste
+6539,Pirates of the Caribbean: The Curse of the Black Pearl (2003),Action|Adventure|Comedy|Fantasy,0.7793756227022781,1,200,0.7,historico_treino_ate_corte_global_80pct_sem_teste
+7153,"Lord of the Rings: The Return of the King, The (2003)",Action|Adventure|Drama|Fantasy,0.778560526166757,1,200,0.7,historico_treino_ate_corte_global_80pct_sem_teste
+2683,Austin Powers: The Spy Who Shagged Me (1999),Action|Adventure|Comedy,0.7658003894379938,1,200,0.7,historico_treino_ate_corte_global_80pct_sem_teste
+6016,City of God (Cidade de Deus) (2002),Action|Adventure|Crime|Drama|Thriller,0.7548210880492395,1,200,0.7,historico_treino_ate_corte_global_80pct_sem_teste
+1527,"Fifth Element, The (1997)",Action|Adventure|Comedy|Sci-Fi,0.7539803956079097,1,200,0.7,historico_treino_ate_corte_global_80pct_sem_teste
+8961,"Incredibles, The (2004)",Action|Adventure|Animation|Children|Comedy,0.7528262735668456,1,200,0.7,historico_treino_ate_corte_global_80pct_sem_teste
+2890,Three Kings (1999),Action|Adventure|Comedy|Drama|War,0.7504973052596393,1,200,0.7,historico_treino_ate_corte_global_80pct_sem_teste
+485,Last Action Hero (1993),Action|Adventure|Comedy|Fantasy,0.7354991172094862,1,200,0.7,historico_treino_ate_corte_global_80pct_sem_teste

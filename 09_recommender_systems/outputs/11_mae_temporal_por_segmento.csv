@@ -1,0 +1,4 @@
+segmento,n_teste,mae_global,mae_item,protocolo
+total,20167,0.8539887436318004,0.8097093610320549,corte_temporal_global
+item_conhecido,17123,0.8415481573274926,0.7893971143508489,corte_temporal_global
+item_frio,3044,0.9239690850538326,0.9239690850538326,corte_temporal_global
