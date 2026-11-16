@@ -47,12 +47,12 @@ Usar coleções e funções Python, vetorizar operações, manipular DataFrames,
 
 | Ordem | Notebook | Guia Técnico | Cheat Sheet |
 |:---:|---|---|---|
-| 01 | [Fundamentos Python](./01_fundamentos_python.ipynb) | [Abrir PDF](./reference_materials/01_fundamentos_python.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_fundamentos_python.pdf) |
-| 02 | [Listas Tuplas E Lacos](./02_listas_tuplas_e_lacos.ipynb) | [Abrir PDF](./reference_materials/02_colecoes_e_lacos.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_colecoes_e_lacos.pdf) |
-| 03 | [Dicionarios E Funcoes](./03_dicionarios_e_funcoes.ipynb) | [Abrir PDF](./reference_materials/03_dicionarios_e_funcoes.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_funcoes_python.pdf) |
-| 04 | [NumPy E Matplotlib](./04_numpy_e_matplotlib.ipynb) | [04 NumPy](./reference_materials/04_numpy.pdf) · [05 Matplotlib](./reference_materials/05_matplotlib.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_numpy.pdf) |
+| 01 | [Fundamentos de Python](./01_fundamentos_python.ipynb) | [Abrir PDF](./reference_materials/01_fundamentos_python.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_fundamentos_python.pdf) |
+| 02 | [Listas, Tuplas e Laços](./02_listas_tuplas_e_lacos.ipynb) | [Abrir PDF](./reference_materials/02_colecoes_e_lacos.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_colecoes_e_lacos.pdf) |
+| 03 | [Dicionários e Funções](./03_dicionarios_e_funcoes.ipynb) | [Abrir PDF](./reference_materials/03_dicionarios_e_funcoes.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_funcoes_python.pdf) |
+| 04 | [NumPy e Matplotlib](./04_numpy_e_matplotlib.ipynb) | [04 NumPy](./reference_materials/04_numpy.pdf) · [05 Matplotlib](./reference_materials/05_matplotlib.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_numpy.pdf) |
 | 05 | [Pandas](./05_pandas.ipynb) | [Abrir PDF](./reference_materials/06_pandas.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_pandas.pdf) |
-| 06 | [Classes E Objetos](./06_classes_e_objetos.ipynb) | [Abrir PDF](./reference_materials/07_orientacao_a_objetos.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_orientacao_a_objetos.pdf) |
+| 06 | [Classes e Objetos](./06_classes_e_objetos.ipynb) | [Abrir PDF](./reference_materials/07_orientacao_a_objetos.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_orientacao_a_objetos.pdf) |
 
 ### Datasets
 
@@ -157,11 +157,13 @@ Selecione esse kernel em cada notebook. Inicie o JupyterLab na pasta da área pa
 | Notebooks documentados | 6 |
 | Materiais complementares | 7 guias / 6 Cheat Sheets |
 | Dependências | `requirements.txt` |
-| Execução | Histórico de revisão, sem nova execução nesta atualização |
+| Execução | 6 notebooks reexecutados localmente no JupyterLab em 16/11/2026 |
+| Resultados gerados | 10/10 auditados: 5 CSV e 5 Excel |
+| Comparação histórica | 9 outputs com conteúdo analítico equivalente; 1 alteração intencional (`resultado.xlsx`) |
 
-Os seis notebooks foram executados e aprovados anteriormente no JupyterLab; esta revisão dos READMEs não representa nova execução.
+Após a revisão científica, os seis notebooks foram reexecutados no ambiente local do JupyterLab. Os dez outputs passaram pela auditoria de estrutura, cálculos e consistência com os resultados previamente versionados. Em `resultado.xlsx`, as quantidades de produtos imputadas passaram a ser inteiras, e uma coluna booleana identifica os valores estimados. As saídas salvas dos notebooks também foram verificadas quanto à presença de caminhos locais sensíveis; nenhum foi encontrado na verificação final.
 
-Para validar seu ambiente, execute `python -m pip check` e depois **Restart Kernel → Run All Cells** no JupyterLab, conferindo tabelas, gráficos e arquivos.
+Para validar seu ambiente, execute `python -m pip check` e depois **Restart Kernel → Run All Cells** no JupyterLab, conferindo tabelas, gráficos e arquivos. Os resultados podem depender das versões dos pacotes e da interface utilizada.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
@@ -175,7 +177,7 @@ Siga os notebooks na ordem da tabela de Conteúdo, selecionando o kernel correto
 
 ### Resultados Gerados
 
-Arquivos exportados pelos notebooks estão em `outputs/`. Alguns exemplos:
+O notebook 05 (Pandas) cria e lê arquivos CSV/Excel intermediários em um diretório temporário. Sua seção final única **Exportação de resultados** valida e publica estes dez arquivos demonstrativos em `outputs/`:
 
 - [cidades_ponto_virgula.csv](./outputs/cidades_ponto_virgula.csv)
 - [matriz_numerica.csv](./outputs/matriz_numerica.csv)
@@ -185,8 +187,10 @@ Arquivos exportados pelos notebooks estão em `outputs/`. Alguns exemplos:
 - [planilha_multiplas_abas.xlsx](./outputs/planilha_multiplas_abas.xlsx)
 - [produtos_estoque.csv](./outputs/produtos_estoque.csv)
 - [receitas_despesas.xlsx](./outputs/receitas_despesas.xlsx)
+- [resultado.xlsx](./outputs/resultado.xlsx)
+- [vendas_simuladas.csv](./outputs/vendas_simuladas.csv)
 
-Outros arquivos da área também estão disponíveis em `outputs/`.
+O CSV de vendas simuladas utiliza intencionalmente a codificação Windows-1252 (`cp1252`) para demonstrar problemas de acentuação; leia-o com `encoding="cp1252"`. Os gráficos do Matplotlib no notebook 04 são exibidos no próprio notebook, sem exportação automática de imagens.
 
 ### Exercícios e Prática
 
@@ -255,4 +259,3 @@ As licenças acima se aplicam apenas ao material sobre o qual o autor possui os 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
 ---
-

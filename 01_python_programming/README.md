@@ -159,11 +159,13 @@ Select this kernel in each notebook. Start JupyterLab in the area directory to k
 | Notebooks documented | 6 |
 | Supporting materials | 7 guides / 6 Cheat Sheets |
 | Dependencies | `requirements.txt` |
-| Execution | Previous review; not re-executed for this update |
+| Execution | All 6 notebooks re-executed locally in JupyterLab on November 16, 2026 |
+| Generated outputs | 10/10 audited: 5 CSV and 5 Excel files |
+| Historical comparison | 9 analytically equivalent outputs; 1 intentional change (`resultado.xlsx`) |
 
-All six notebooks were previously executed and approved in JupyterLab; this README revision is not a new execution.
+Following the scientific review, all six notebooks were re-executed in the local JupyterLab environment. The ten outputs were checked for structure, calculations and consistency against the previously versioned results. In `resultado.xlsx`, imputed product quantities are now integers and a Boolean indicator distinguishes estimated values from observations. Saved notebook outputs were also checked for sensitive local paths; none were found in the final scan.
 
-To check your environment, run `python -m pip check` and then **Restart Kernel → Run All Cells** in JupyterLab, inspecting tables, plots and files.
+To check your environment, run `python -m pip check` and then **Restart Kernel → Run All Cells** in JupyterLab, inspecting tables, plots and files. Results may depend on package versions and the selected frontend.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -177,7 +179,7 @@ Follow notebooks in the order shown in Contents and select the correct kernel. U
 
 ### Generated Outputs
 
-Files exported by notebooks are available in `outputs/`. Examples include:
+Notebook 05 (Pandas) creates and reads intermediate CSV/Excel files in a temporary directory. Its single final **Exportação de resultados** section validates and publishes the following ten demonstration files in `outputs/`:
 
 - [cidades_ponto_virgula.csv](./outputs/cidades_ponto_virgula.csv)
 - [matriz_numerica.csv](./outputs/matriz_numerica.csv)
@@ -187,8 +189,10 @@ Files exported by notebooks are available in `outputs/`. Examples include:
 - [planilha_multiplas_abas.xlsx](./outputs/planilha_multiplas_abas.xlsx)
 - [produtos_estoque.csv](./outputs/produtos_estoque.csv)
 - [receitas_despesas.xlsx](./outputs/receitas_despesas.xlsx)
+- [resultado.xlsx](./outputs/resultado.xlsx)
+- [vendas_simuladas.csv](./outputs/vendas_simuladas.csv)
 
-Additional files are available under `outputs/`.
+The simulated sales CSV uses Windows-1252 (`cp1252`) encoding intentionally for the encoding exercise; read it with `encoding="cp1252"`. The Matplotlib figures in notebook 04 are displayed inside the notebook rather than exported as separate image files.
 
 ### Exercises and Practice
 
@@ -257,4 +261,3 @@ These licenses apply only where the author holds the necessary rights; notebook 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
 ---
-
