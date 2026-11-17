@@ -1,0 +1,10 @@
+# Base para execução do núcleo didático
+# Instale preferencialmente em ambiente isolado para esta área.
+numpy>=2.0,<3
+pandas>=2.2,<4
+scipy>=1.12,<2
+scikit-learn>=1.5,<2
+matplotlib>=3.8,<4
+nbformat>=5.9,<6
+# PySpark é opcional; consulte README.md (Setup and Installation).
+# Não fixamos uma versão de PySpark sem validar conjuntamente Python e Java.
