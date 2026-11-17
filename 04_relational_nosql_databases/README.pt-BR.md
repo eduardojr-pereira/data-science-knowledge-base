@@ -166,7 +166,7 @@ Leia [infra/LABORATORIOS.md](./infra/LABORATORIOS.md), configure os serviços is
 python -m pip install -r requirements-laboratorios.txt
 ```
 
-Não publique credenciais; `RUN_LIVE_DB=1` somente quando quiser executar explicitamente os laboratórios com serviços reais.
+Não publique credenciais; ative `RUN_LIVE_DB=1` e `EP04_LAB_CONFIRM=SIM` no ambiente do servidor Jupyter somente para testes reais em serviços isolados e verificados.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
@@ -178,14 +178,19 @@ Não publique credenciais; `RUN_LIVE_DB=1` somente quando quiser executar explic
 
 | Verificação | Situação documentada |
 |---|---|
-| Notebooks documentados | 10 |
-| Materiais complementares | 10 guias / 10 Cheat Sheets |
-| Dependências | `requirements.txt` |
-| Execução | Histórico de revisão, sem nova execução nesta atualização |
+| Notebooks documentados e reexecutados localmente | 10/10 — 17/11/2026 |
+| Exportações CSV do núcleo | 10/10 — estrutura e conteúdo equivalentes às referências publicadas |
+| Materiais complementares | 10 Guias Técnicos / 10 Cheat Sheets (conteúdo dos PDFs reservado à revisão editorial global) |
+| Dependências principais | `requirements.txt` |
+| Drivers opcionais de bancos reais | `requirements-laboratorios.txt` (separados do núcleo) |
+| PostgreSQL — notebook 05 | Laboratório real isolado aprovado: conexão, `CHECK`, `SAVEPOINT`, transferência e rollback em tabela temporária, sem `COMMIT` |
+| MongoDB — notebooks 07 e 08 | Laboratórios reais isolados aprovados: CRUD, agregação, criação de índice composto e inspeção do plano de consulta |
+| MongoDB — notebook 09 | Inspeção real da topologia aprovada; servidor identificado como standalone |
+| Cassandra — notebook 10 | Laboratório real em nó único aprovado: keyspace exclusivo, duas tabelas, inserções e consultas CQL |
 
-As verificações automatizadas anteriores cobriram notebooks locais sem `RUN_LIVE_DB`. Isso não comprova conexões com PostgreSQL, MongoDB ou Cassandra: serviços reais exigem testes independentes.
+**Escopo e limitações.** São testes locais realizados pelo autor em 17/11/2026, não uma reprodução independente, benchmark de produção ou comprovação de tolerância a falhas distribuída. O teste PostgreSQL utiliza tabela temporária e desfaz as alterações por rollback. Os notebooks MongoDB 07–08 criam **coleções persistentes exclusivas de laboratório**; o notebook 09 apenas consulta o servidor. O laboratório Cassandra cria um **keyspace persistente exclusivo**. A inspeção e eventual limpeza desses objetos devem ser manuais, após confirmar seus nomes e sua propriedade. O MongoDB utilizado é standalone: não foram demonstradas eleição de replica set nem fragmentação real (*sharding*). O Cassandra operou em nó único, portanto não foi demonstrada replicação nem resiliência distribuída. Os dez CSVs foram confrontados com as referências publicadas; não são evidência dos laboratórios externos.
 
-Para validar seu ambiente, execute `python -m pip check` e depois **Restart Kernel → Run All Cells** no JupyterLab, conferindo tabelas, gráficos e arquivos.
+Para reexecutar o núcleo com segurança, mantenha `RUN_LIVE_DB` e `EP04_LAB_CONFIRM` desativadas, escolha o kernel Python principal e utilize **Restart Kernel → Run All Cells**. Os laboratórios reais exigem `RUN_LIVE_DB=1` e `EP04_LAB_CONFIRM=SIM` no **ambiente do servidor Jupyter**, além de serviço isolado previamente verificado. Consulte [`infra/LABORATORIOS.md`](./infra/LABORATORIOS.md) antes de conectar; nunca use bases compartilhadas ou de produção.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 

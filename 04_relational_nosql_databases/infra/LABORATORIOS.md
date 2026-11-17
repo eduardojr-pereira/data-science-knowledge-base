@@ -15,6 +15,6 @@ docker compose -f infra/compose.yaml --profile postgres up -d
 # ou substitua postgres por mongo / cassandra
 ```
 
-Após garantir que o servidor pertence ao laboratório, configure `RUN_LIVE_DB=1` **antes de iniciar o kernel** e execute somente o notebook aplicável. Não ative todos os laboratórios indiscriminadamente. Para desligar, use `docker compose -f infra/compose.yaml --profile postgres down` (sem `-v`).
+Após garantir que o servidor pertence ao laboratório, configure `RUN_LIVE_DB=1` e `EP04_LAB_CONFIRM=SIM` **no ambiente do servidor Jupyter antes de iniciá-lo** e execute somente o notebook aplicável. Não ative todos os laboratórios indiscriminadamente. Para desligar, use `docker compose -f infra/compose.yaml --profile postgres down` (sem `-v`).
 
 O simples `ping` ao MongoDB não comprova um replica set nem sharding. PostgreSQL exige sessões concorrentes para verificar cenários de isolamento. Cassandra com `SimpleStrategy` e fator de replicação 1 é um exemplo de nó único, não uma configuração de produção.
