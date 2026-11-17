@@ -200,9 +200,11 @@ Windows and macOS users should select a TensorFlow/Python combination supported 
 | Notebooks documented | 20 |
 | Supporting materials | 20 guides / 20 Cheat Sheets |
 | Dependencies | `requirements.txt` |
-| Execution | Previous review; not re-executed for this README update |
+| Local execution | 20/20 notebooks executed with isolated Python kernel (2026-11-16) |
+| Neural laboratory | 17/17 TensorFlow-option notebooks executed in separate kernel |
+| Artifacts | 8 core artifacts audited; CNN history separately audited after real training |
 
-All 20 notebooks were previously executed in JupyterLab, as reported by the author; this README revision is not a new execution. Optional TensorFlow/Keras laboratories require the separate compatible environment described above.
+All 20 notebooks were executed in an isolated local Python environment. Eight core artifacts were regenerated and verified against the baseline, with the serialized model checked through the locally generated file rather than loading the historical binary. The TensorFlow notebooks were also executed in the dedicated neural kernel, including actual CNN training; its CSV history was validated for schema and finite metrics, not numerical equality across nondeterministic runs. Scientific corrections address integer layer dimensions, baseline comparison, persistence environment reporting, cross-correlation terminology, CNN training provenance, degenerate bounding boxes, and one-step temporal forecasting. No pretrained weights were downloaded, and these demonstrations do not establish real-world predictive performance.
 
 To check your environment, run `python -m pip check` and then **Restart Kernel → Run All Cells** in JupyterLab, inspecting tables, plots and generated files.
 

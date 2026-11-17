@@ -200,9 +200,11 @@ Em Windows e macOS, escolha uma combinação de TensorFlow/Python oficialmente c
 | Notebooks documentados | 20 |
 | Materiais de apoio | 20 Guias Técnicos / 20 Cheat Sheets |
 | Dependências | `requirements.txt` |
-| Execução | Revisão anterior; não reexecutados nesta atualização do README |
+| Execução local | 20/20 notebooks executados em kernel Python isolado (2026-11-16) |
+| Laboratório neural | 17/17 notebooks com TensorFlow opcional executados em kernel separado |
+| Artefatos | 8 artefatos locais auditados; histórico CNN verificado separadamente após treino real |
 
-Os 20 notebooks foram executados anteriormente no JupyterLab, conforme relato do autor; esta revisão do README não representa uma nova execução. Os laboratórios opcionais TensorFlow/Keras exigem o ambiente separado e compatível descrito acima.
+Os 20 notebooks foram executados em ambiente Python local isolado. Oito artefatos foram regenerados e comparados à referência, com o arquivo de modelo recém-gerado verificado sem desserializar o binário histórico. Os notebooks com TensorFlow opcional também foram executados em kernel neural separado, inclusive com treinamento real da CNN. Seu histórico foi validado quanto à estrutura e finitude das métricas, sem exigir igualdade numérica entre treinamentos potencialmente não determinísticos. A revisão científica trata de dimensões inteiras, comparação com baseline, registro do ambiente de serialização, correlação cruzada, proveniência do treino da CNN, caixas degeneradas e previsão temporal de um passo. Não houve download de pesos pré-treinados. São demonstrações didáticas, não evidências de desempenho em produção.
 
 Para conferir seu ambiente, execute `python -m pip check` e depois **Reiniciar Kernel → Executar Todas as Células** no JupyterLab, verificando tabelas, gráficos e arquivos gerados.
 
