@@ -170,6 +170,24 @@ Notebook 10 reads `haarcascade_frontalface_default.xml` from the installed OpenC
 | Dependencies | `requirements.txt` (core only) |
 | Main notebooks | All 16 executed locally in JupyterLab, as confirmed by the author on November 14, 2026 |
 | Optional checks | TensorFlow/Keras, ONNX Runtime and dlib: isolated smoke tests passed on November 14, 2026 |
+| Core revalidation | 16/16 notebooks executed in isolated copies; notebooks 02 and 11 rerun locally after correction |
+| Integrated optional labs | Executed and saved in notebooks 13, 14 and 15 (dlib, TensorFlow/Keras, ONNX Runtime) |
+
+### Scientific finalization — November 2026
+
+Following the original November 14 review recorded below, the complete core was executed again in isolated notebook copies (**16/16 passed**). The scientific corrections to notebooks [02](./02_pixels_amostragem_quantizacao.ipynb) and [11](./11_deteccao_facial_pipeline.ipynb) were also executed locally without errors, as confirmed by the author. Notebook 02 now distinguishes spatial resampling from **2-bit and 4-bit intensity quantization**, with reconstruction comparisons. Notebook 11 handles invalid or zero-area XYXY boxes safely in the **intersection over union (IoU)** calculation.
+
+Executable, optional laboratories were added directly to notebooks 13–15. They run from the main Python kernel by invoking their respective isolated environments; their results were executed and saved locally:
+
+| Notebook | New integrated experiment | Observed result and scientific scope |
+|---|---|---|
+| [13 — dlib](./13_hog_dlib_detectores.ipynb) | HOG frontal-face detector in `~/dlib-env` | dlib **20.0.1**; one candidate on the sample image; zero on an empty control. **No ground truth or face-recognition accuracy**. |
+| [14 — CNN](./14_cnn_transfer_learning_visual.ipynb) | Small CNN trained from scratch in `~/deep-learning-env` | TensorFlow **2.22.0-rc0**; **2 epochs**, 60 training and 20 test synthetic samples; 1.0 synthetic test accuracy. **No pretrained weights, real-image benchmark, or validated transfer learning**. |
+| [15 — ONNX](./15_onnx_inferencia_moderna.ipynb) | ONNX arithmetic image-tensor graph evaluated in `~/onnx-env` | ONNX Runtime **1.32.0**, `CPUExecutionProvider`; maximum numerical difference from NumPy **0.0**. **Not an image-classification model**. |
+
+The new laboratory cells are optional and depend on the local environments listed above; failure to locate an optional environment is **not** proof of a successful laboratory run. The notebooks contain saved outputs from successful local execution. No external datasets, mandatory exported artifacts, model-weight downloads, or new `outputs/` files are required. All results are educational demonstrations, not evidence of production-level accuracy, robustness, fairness, or biometric identification.
+
+**Historical note:** the separate smoke tests below describe the earlier November 14 validation, before these three laboratories were integrated into the notebooks. Those earlier tests remain documented for reproducibility.
 
 <a id="optional-validation"></a>
 

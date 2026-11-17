@@ -170,6 +170,24 @@ No notebook 10, o arquivo `haarcascade_frontalface_default.xml` é obtido via `c
 | Dependências | `requirements.txt` (somente bibliotecas principais) |
 | Notebooks principais | Todos os 16 executados localmente no JupyterLab, conforme confirmação do autor em 14/11/2026 |
 | Testes opcionais | TensorFlow/Keras, ONNX Runtime e dlib: testes isolados de funcionamento aprovados em 14/11/2026 |
+| Revalidação do núcleo | 16/16 notebooks executados em cópias isoladas; notebooks 02 e 11 reexecutados localmente após as correções |
+| Laboratórios integrados | Executados e salvos nos notebooks 13, 14 e 15 (dlib, TensorFlow/Keras e ONNX Runtime) |
+
+### Finalização científica — novembro de 2026
+
+Após a revisão original de 14/11 documentada abaixo, o núcleo completo foi reexecutado em cópias isoladas (**16/16 aprovados**). As correções científicas dos notebooks [02](./02_pixels_amostragem_quantizacao.ipynb) e [11](./11_deteccao_facial_pipeline.ipynb) também foram executadas localmente sem erros, conforme confirmação do autor. O notebook 02 agora distingue reamostragem espacial de **quantização de intensidades em 2 e 4 bits**, com comparações de reconstrução. O notebook 11 trata com segurança caixas XYXY inválidas ou sem área no cálculo de **interseção sobre união (IoU)**.
+
+Os laboratórios opcionais passaram a integrar diretamente os notebooks 13–15, com células executáveis que chamam seus ambientes isolados a partir do kernel Python principal. Seus resultados foram executados e salvos localmente:
+
+| Notebook | Novo experimento integrado | Resultado observado e alcance científico |
+|---|---|---|
+| [13 — dlib](./13_hog_dlib_detectores.ipynb) | Detector facial HOG em `~/dlib-env` | dlib **20.0.1**; uma face candidata na imagem demonstrativa; zero no controle vazio. **Sem ground truth ou medida de acurácia de reconhecimento facial**. |
+| [14 — CNN](./14_cnn_transfer_learning_visual.ipynb) | CNN pequena treinada do zero em `~/deep-learning-env` | TensorFlow **2.22.0-rc0**; **2 épocas**, 60 amostras sintéticas de treino e 20 de teste; acurácia 1,0 no teste sintético. **Sem pesos pré-treinados, avaliação em imagens reais ou transfer learning validado**. |
+| [15 — ONNX](./15_onnx_inferencia_moderna.ipynb) | Grafo aritmético ONNX com tensor de imagem em `~/onnx-env` | ONNX Runtime **1.32.0**, `CPUExecutionProvider`; diferença numérica máxima em relação ao NumPy **0,0**. **Não é um classificador de imagens**. |
+
+As novas células de laboratório são opcionais e dependem dos ambientes locais indicados; ausência de ambiente opcional **não** equivale à execução aprovada do laboratório. Os notebooks contêm outputs salvos de execuções locais bem-sucedidas. Não são necessários datasets externos, artefatos exportados obrigatórios, downloads de pesos ou novos arquivos em `outputs/`. Os resultados são demonstrações didáticas, não comprovação de acurácia, robustez, justiça de modelo em produção ou identificação biométrica.
+
+**Nota histórica:** os testes isolados descritos abaixo documentam a validação anterior, em 14/11, antes da integração dos três laboratórios aos notebooks. Permanecem registrados para reprodutibilidade.
 
 <a id="optional-validation"></a>
 
