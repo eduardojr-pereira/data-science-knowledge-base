@@ -181,9 +181,9 @@ Select this kernel in each notebook. Start JupyterLab in the area directory to k
 | Notebooks documented | 17 |
 | Supporting materials | 17 guides / 17 Cheat Sheets |
 | Dependencies | `requirements.txt` |
-| Execution | Previous review; not re-executed for this update |
+| Execution | 17/17 notebooks executed in isolated Python kernel on 16/11/2026; 3/3 outputs validated |
 
-The 17 notebooks were previously reviewed in JupyterLab. Teaching experiments and fixed seeds do not guarantee predictive performance in real-world populations.
+On 16/11/2026, all 17 notebooks were executed from start to finish by an automated Jupyter kernel in an isolated copy. The exported KNN CSV was numerically equivalent to the committed version and both PNG files were byte-identical. Scientific updates use cross-validation on training data to select models/hyperparameters; the reserved test set is evaluated only after selection. These teaching experiments and fixed seeds do not establish real-world generalization.
 
 To check your environment, run `python -m pip check` and then **Restart Kernel → Run All Cells** in JupyterLab, inspecting tables, plots and files.
 
@@ -204,6 +204,8 @@ Files exported by notebooks are available in `outputs/`. Examples include:
 - [05_comparacao_knn.csv](./outputs/05_comparacao_knn.csv)
 - [15_kmeans_sintetico.png](./outputs/15_kmeans_sintetico.png)
 - [16_dbscan_sintetico.png](./outputs/16_dbscan_sintetico.png)
+
+All three artifacts were regenerated and checked in an isolated test environment. No new datasets or downloads were needed.
 
 ### Exercises and Practice
 

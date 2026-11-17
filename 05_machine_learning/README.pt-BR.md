@@ -179,9 +179,9 @@ Selecione esse kernel em cada notebook. Inicie o JupyterLab na pasta da área pa
 | Notebooks documentados | 17 |
 | Materiais complementares | 17 guias / 17 Cheat Sheets |
 | Dependências | `requirements.txt` |
-| Execução | Histórico de revisão, sem nova execução nesta atualização |
+| Execução | 17/17 notebooks executados em kernel Python isolado em 16/11/2026; 3/3 outputs validados |
 
-Os 17 notebooks foram revisados anteriormente no JupyterLab. Experimentos didáticos e sementes fixas não garantem desempenho preditivo em populações reais.
+Em 16/11/2026, os 17 notebooks foram executados integralmente por um kernel Jupyter automatizado sobre cópias isoladas. O CSV de comparação KNN permaneceu numericamente equivalente ao arquivo versionado; as duas imagens PNG foram idênticas byte a byte. As correções científicas usam validação cruzada no treino para selecionar modelos e hiperparâmetros, preservando o conjunto de teste para avaliação posterior à seleção. Experimentos didáticos e sementes fixas não garantem generalização para populações reais.
 
 Para validar seu ambiente, execute `python -m pip check` e depois **Restart Kernel → Run All Cells** no JupyterLab, conferindo tabelas, gráficos e arquivos.
 
@@ -202,6 +202,8 @@ Arquivos exportados pelos notebooks estão em `outputs/`. Alguns exemplos:
 - [05_comparacao_knn.csv](./outputs/05_comparacao_knn.csv)
 - [15_kmeans_sintetico.png](./outputs/15_kmeans_sintetico.png)
 - [16_dbscan_sintetico.png](./outputs/16_dbscan_sintetico.png)
+
+Os três resultados foram regenerados e conferidos em ambiente isolado. Não foi necessário adicionar datasets nem baixar dados externos.
 
 ### Exercícios e Prática
 
