@@ -183,9 +183,10 @@ spaCy e modelos linguísticos são opcionais e não fazem parte do fluxo princip
 | Notebooks documentados | 17 |
 | Materiais complementares | 17 guias / 17 Cheat Sheets |
 | Dependências | `requirements.txt` |
-| Execução | Histórico de revisão, sem nova execução nesta atualização |
+| Execução | 17/17 notebooks executados em ambiente local isolado (2026-11-16) |
+| Outputs | 3/3 arquivos CSV auditados contra a referência publicada |
 
-Exemplos Python locais foram executados em ambiente de revisão. Uma execução integral dos 17 notebooks em ambiente limpo e serviços de modelos remotos não foi verificada independentemente.
+Os 17 notebooks foram reexecutados em ambiente local isolado, e os três CSVs versionados permaneceram equivalentes aos anteriores. A revisão abrange preservação da negação, avaliação ROUGE simplificada, validação cruzada em exemplo pequeno de sentimentos, indexação LSA independente da consulta, abstenção heurística em RAG, validação da amostragem de geração, limites de memória e pré-condições das métricas de ranking. Os exemplos são didáticos e não demonstram desempenho em dados reais. Modelos neurais externos e pesos opcionais do spaCy não foram validados nessa execução local.
 
 Para validar seu ambiente, execute `python -m pip check` e depois **Restart Kernel → Run All Cells** no JupyterLab, conferindo tabelas, gráficos e arquivos.
 
@@ -201,7 +202,7 @@ Siga os notebooks na ordem da tabela de Conteúdo, selecionando o kernel correto
 
 ### Resultados Gerados
 
-Arquivos exportados pelos notebooks estão em `outputs/`. Alguns exemplos:
+Os notebooks reproduzem estes três arquivos CSV em [`outputs/`](./outputs/):
 
 - [06_bag_of_words_exemplo.csv](./outputs/06_bag_of_words_exemplo.csv)
 - [07_ranking_recuperacao.csv](./outputs/07_ranking_recuperacao.csv)
