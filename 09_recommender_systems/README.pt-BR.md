@@ -29,7 +29,7 @@
 
 ## Visão Geral
 
-Esta área reúne **16 notebooks em português**, acompanhados de **16 Guias Técnicos** e **16 Cheat Sheets** autorais. A sequência aborda representação de interações, recomendação por popularidade e por conteúdo, filtragem colaborativa, matrizes esparsas, fatoração, predição de notas, ranking Top-K, partida a frio, sistemas híbridos e reprodutibilidade. Os exemplos utilizam MovieLens e amostras didáticas de Book-Crossing. O repositório inclui `ratings.csv` e `movies.csv` do MovieLens; as amostras Book-Crossing não são redistribuídas. Os materiais complementares desta área são os Guias Técnicos e as Cheat Sheets.
+Esta área reúne **16 notebooks em português**, acompanhados de **16 Guias Técnicos** e **16 Cheat Sheets** autorais. A sequência aborda representação de interações, recomendação por popularidade e por conteúdo, filtragem colaborativa, matrizes esparsas, fatoração, predição de notas, ranking Top-K, partida a frio, sistemas híbridos e reprodutibilidade. Os experimentos usam o MovieLens real e, no notebook 16, uma **base de interações com livros inteiramente sintética e identificada como tal**. O repositório inclui `ratings.csv` e `movies.csv` do MovieLens; o exemplo de livros é gerado no próprio notebook. Os materiais complementares são os Guias Técnicos e as Cheat Sheets.
 
 ### Objetivos de Aprendizagem
 
@@ -66,7 +66,7 @@ Esta área reúne **16 notebooks em português**, acompanhados de **16 Guias Té
 | 13 | [Partida a frio, diversidade e cobertura](./13_cold_start_diversidade.ipynb) | [Abrir PDF](./reference_materials/13_cold_start_diversidade.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_13_cold_start_diversidade.pdf) |
 | 14 | [Sistemas híbridos e reordenação](./14_sistemas_hibridos.ipynb) | [Abrir PDF](./reference_materials/14_sistemas_hibridos.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_14_sistemas_hibridos.pdf) |
 | 15 | [Pipelines reproduzíveis e persistência](./15_pipeline_reproduzivel.ipynb) | [Abrir PDF](./reference_materials/15_pipeline_reproduzivel.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_15_pipeline_reproduzivel.pdf) |
-| 16 | [Estudo integrador: MovieLens e Book-Crossing](./16_estudo_integrador_movielens_livros.ipynb) | [Abrir PDF](./reference_materials/16_estudo_integrador_movielens_livros.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_16_estudo_integrador_movielens_livros.pdf) |
+| 16 | [Estudo integrador: MovieLens e feedback sintético de livros](./16_estudo_integrador_movielens_livros.ipynb) | [Abrir PDF](./reference_materials/16_estudo_integrador_movielens_livros.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_16_estudo_integrador_movielens_livros.pdf) |
 
 ### Conjuntos de Dados
 
@@ -75,9 +75,9 @@ A pasta [`datasets/`](./datasets/README.md) contém a documentação de proveni�
 - [`datasets/ratings.csv`](./datasets/ratings.csv) — avaliações explícitas de usuários para filmes.
 - [`datasets/movies.csv`](./datasets/movies.csv) — títulos e gêneros dos filmes.
 
-Esses arquivos são provenientes do **MovieLens Latest Small (GroupLens Research, Universidade de Minnesota)** e seguem as condições de uso da fonte original, não as licenças aplicadas ao código e ao conteúdo didático autoral. Consulte o [documento de proveniência e uso](./datasets/README.md) antes de reutilizá-los ou redistribuí-los.
+Esses arquivos são provenientes do **MovieLens Latest Small (GroupLens Research, Universidade de Minnesota)** e seguem as condições de uso da fonte original, não as licenças aplicadas ao código e ao conteúdo didático autoral. Consulte o [documento de proveniência e uso](./datasets/README.md) antes de reutilizá-los ou redistribuí-los. A [licença específica da GroupLens](https://files.grouplens.org/datasets/movielens/ml-latest-small-README.html) exige atribuição nas publicações resultantes, proíbe alegar ou sugerir endosso da Universidade de Minnesota ou da GroupLens, permite redistribuição (inclusive de transformações) somente sob as mesmas condições e requer autorização prévia para usos comerciais ou geradores de receita. Os outputs derivados do MovieLens também devem ser avaliados sob essas condições; as licenças MIT/CC BY-NC do repositório não substituem a licença do dataset.
 
-O notebook 16 também requer **`datasets/bx_ratings_amostra.csv` e `datasets/bx_books_amostra.csv`**, amostras derivadas do Book-Crossing que **não estão incluídas no repositório público**, enquanto seus direitos de redistribuição não forem confirmados. Sem esses arquivos, o notebook 16 utiliza uma **base didática sintética explicitamente identificada** para demonstrar a convenção de notas 0 e 1–10; esses registros **não são observações reais de Book-Crossing**. Para analisar o domínio real, obtenha dados de fonte autorizada e prepare as amostras localmente, respeitando as colunas e a proveniência.
+O notebook 16 **não requer bases externas de livros**: constrói em memória um catálogo e interações de usuários totalmente sintéticos. Na convenção didática adotada, a nota `0` representa uma interação sem avaliação explícita, enquanto notas de `1` a `10` são avaliações explícitas. Essa convenção é **específica do exemplo sintético**, não uma regra universal. Os resultados não representam usuários ou livros reais.
 
 Inicie o JupyterLab **na pasta `09_recommender_systems/`**, pois os notebooks usam caminhos relativos como `Path("datasets")`. Os experimentos ilustram técnicas de recomendação e não comprovam desempenho de produção.
 
@@ -93,11 +93,11 @@ Inicie o JupyterLab **na pasta `09_recommender_systems/`**, pois os notebooks us
 ├── 16_estudo_integrador_movielens_livros.ipynb
 ├── reference_materials/       # 16 Technical Guides / Guias Técnicos
 ├── cheat_sheets/              # 16 Cheat Sheets
-├── datasets/                  # README.md e MovieLens; amostras Book-Crossing locais
-└── outputs/                   # Resultados selecionados publicados; Book-Crossing local
+├── datasets/                  # README.md e dois CSVs MovieLens versionados
+└── outputs/                   # Outputs MovieLens selecionados; capítulo 16 sintético local
 ```
 
-O arquivo `datasets/README.md` e os dois CSVs do MovieLens são versionados nesta publicação. As amostras Book-Crossing e seus resultados permanecem locais. Os outputs selecionados dos capítulos 01–15 são versionados em `outputs/`. Os READMEs ficam na raiz da área e os PDFs nas pastas de materiais complementares.
+O arquivo `datasets/README.md` e os dois CSVs do MovieLens são versionados. Os dados sintéticos do notebook 16 são gerados em memória, e os novos resultados ficam locais até aprovação específica. Os outputs selecionados dos capítulos 01–15 são versionados em `outputs/`. Os READMEs ficam na raiz da área e os PDFs nas pastas de materiais complementares.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
@@ -164,7 +164,7 @@ python -m ipykernel install --user --name ds-09 --display-name "Data Science 09"
 jupyter lab
 ```
 
-**5. Confira os dados antes de executar:** `datasets/ratings.csv` e `datasets/movies.csv` já acompanham o clone do repositório. Para executar o notebook 16 com dados reais de Book-Crossing, adicione localmente os arquivos autorizados `datasets/bx_ratings_amostra.csv` e `datasets/bx_books_amostra.csv`, com as colunas esperadas. Sem eles, o experimento usa uma base sintética, não resultados reais do domínio. Não versione materiais acadêmicos privados ou amostras sem autorização de redistribuição.
+**5. Confira os dados antes de executar:** `datasets/ratings.csv` e `datasets/movies.csv` já acompanham o clone do repositório. O notebook 16 cria seu próprio catálogo e interações fictícias de livros; nenhum outro arquivo é necessário. Não versione materiais acadêmicos privados nem datasets com direitos de redistribuição indefinidos.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
@@ -210,8 +210,8 @@ Os notebooks incluem uma seção consolidada de exportação de resultados; ao e
 - `12_metricas_topk_exemplo.csv` — métricas do exemplo de ranking.
 - `14_ranking_hibrido_demonstrativo.csv` — pontuação combinada ilustrativa.
 - `ranking_popularidade.csv` e `15_manifesto_ranking.json` — resultado e proveniência do notebook 15.
-- `16_ranking_livros_amostra.csv` — ranking gerado somente com amostras Book-Crossing locais e autorizadas.
-- `16_ranking_livros_amostra_sintetico.csv` — ranking didático explicitamente sintético quando as amostras estão ausentes.
+- `16_ranking_livros_sintetico.csv` — ranking demonstrativo usando exclusivamente feedback sintético de livros.
+- `16_resumo_feedback_livros_sintetico.csv` — resumo das interações implícitas e explícitas sintéticas.
 
 **Esses caminhos identificam artefatos gerados localmente; não são links para arquivos publicados no GitHub.** Reexecutar os notebooks pode substituir arquivos com o mesmo nome. Não confunda os rankings descritivos com validação offline de um recomendador.
 
@@ -250,9 +250,9 @@ Reproduza os exemplos, explique suas premissas, avalie suporte estatístico e vi
 |---|---|---|
 | Código-fonte original | [MIT](../LICENSE-CODE.txt) | Código autoral dos notebooks e scripts |
 | Conteúdo educacional original | [CC BY-NC 4.0](../LICENSE-CONTENT.md) | Textos, Guias Técnicos e Cheat Sheets autorais |
-| Bibliotecas e dados de terceiros | Licenças próprias | MovieLens, Book-Crossing e componentes externos |
+| Bibliotecas e dados de terceiros | Licenças próprias | MovieLens e componentes externos |
 
-Essas condições aplicam-se **somente ao conteúdo cujos direitos pertencem ao autor**. Os arquivos MovieLens incluídos seguem os termos originais da GroupLens, descritos em [`datasets/README.md`](./datasets/README.md). As amostras Book-Crossing e os materiais históricos privados não são redistribuídos.
+Essas condições aplicam-se **somente ao conteúdo cujos direitos pertencem ao autor**. Os arquivos MovieLens incluídos seguem os termos originais da GroupLens, descritos em [`datasets/README.md`](./datasets/README.md). Os registros de livros do notebook 16 são exemplos sintéticos originais; materiais históricos privados não são redistribuídos.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 

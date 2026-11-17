@@ -79,6 +79,8 @@ The notebooks were validated with **authorized local copies** of the input datas
 | `datasets/airports.csv` | Joins and lookup | Withheld pending source/redistribution verification |
 | `datasets/crx_data.data` | Credit-data governance | Corresponds to UCI Credit Approval; confirm source integrity and attribution before inclusion |
 
+**Potential upstream sources (not verified against local copies):** The [`pnwflights14` package](https://github.com/ismayc/pnwflights14) declares `License: CC0` in its `DESCRIPTION`, but this does **not** establish that the local 10,000-row `flights.csv` sample or `airports.csv` lookup came from that package or has matching schema, records or permitted transformations. Both remain local. [UCI Credit Approval](https://archive.ics.uci.edu/dataset/27/credit+approval) lists 690 instances and CC BY 4.0; the exact identity of the local `crx_data.data` copy is not yet verified. Do not add these files or the three locally derived CSV summaries to the public repository pending provenance, data integrity, attribution and publication review.
+
 Four additional historical local files are not referenced by the revised notebook code: `airplanes.csv`, `sms.csv`, `points.tsv` and `2017_real_estate.csv`. They are not required to execute this notebook sequence and are not offered for download here. Without the three required input files, notebooks that read them will not complete on a fresh public clone.
 
 ### Directory Structure

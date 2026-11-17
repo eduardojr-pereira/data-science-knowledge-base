@@ -51,5 +51,20 @@ Thumbs.db
 !09_recommender_systems/outputs/
 !09_recommender_systems/outputs/**
 
-# Resultados Book-Crossing mantidos locais
+# Resultados sinteticos do capitulo 16 ainda nao autorizados para publicacao
 09_recommender_systems/outputs/16_*.csv
+
+# 13 arquivos historicos locais: preservar fora do Git (sem excluir do disco)
+/09_recommender_systems/datasets/PROVENIENCIA.md
+/09_recommender_systems/datasets/bx_books_amostra.csv
+/09_recommender_systems/datasets/bx_ratings_amostra.csv
+/10_big_data_distributed_processing/GUIA_INSTALACAO_E_TESTES.md
+/10_big_data_distributed_processing/MANIFESTO_PRESERVACAO.md
+/10_big_data_distributed_processing/RELATORIO_TESTES.md
+/10_big_data_distributed_processing/datasets/2017_real_estate.csv
+/10_big_data_distributed_processing/datasets/airplanes.csv
+/10_big_data_distributed_processing/datasets/airports.csv
+/10_big_data_distributed_processing/datasets/crx_data.data
+/10_big_data_distributed_processing/datasets/flights.csv
+/10_big_data_distributed_processing/datasets/points.tsv
+/10_big_data_distributed_processing/datasets/sms.csv
