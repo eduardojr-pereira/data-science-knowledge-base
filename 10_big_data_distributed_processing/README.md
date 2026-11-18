@@ -38,7 +38,7 @@ This area includes **16 Portuguese-language Jupyter notebooks** covering distrib
 - Build leakage-aware temporal machine-learning baselines and interpret their limits.
 - Describe streaming event-time, watermark semantics, provenance and governance.
 
-**Learning materials:** Technical Guides and Cheat Sheets for this area have **not yet been released**; no PDF links are presented as available.
+**Learning materials:** This area includes **16 Technical Guides and 16 one-page Cheat Sheets**, one pair for each notebook. Follow the links in the table below. The PDFs provide explanations, examples and methodological cautions; notebooks remain the executable reference.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -50,24 +50,24 @@ This area includes **16 Portuguese-language Jupyter notebooks** covering distrib
 
 ### Notebooks
 
-| Order | Notebook | Scope |
-|:---:|---|---|
-| 01 | [Big Data Foundations and Architecture](./01_fundamentos_big_data.ipynb) | Core only |
-| 02 | [Hadoop, HDFS, and Data Locality](./02_hdfs_hadoop.ipynb) | Core only |
-| 03 | [MapReduce: Map, Shuffle, Reduce](./03_mapreduce_fundamentos.ipynb) | Core only |
-| 04 | [MapReduce Applied to Flights](./04_mapreduce_voos.ipynb) | Core only |
-| 05 | [TF-IDF and MapReduce](./05_tfidf_mapreduce.ipynb) | Core only |
-| 06 | [Apache Spark Architecture](./06_spark_arquitetura.ipynb) | Spark lab |
-| 07 | [Spark RDD](./07_spark_rdd.ipynb) | Spark lab |
-| 08 | [DataFrames and Explicit Schemas](./08_dataframes_esquemas.ipynb) | Spark lab |
-| 09 | [Spark SQL and Joins](./09_spark_sql_joins.ipynb) | Spark lab |
-| 10 | [Partitioning, Shuffle, and Data Skew](./10_particionamento_shuffle.ipynb) | Spark lab |
-| 11 | [ETL and Data Quality](./11_etl_qualidade.ipynb) | Core only |
-| 12 | [Features and Machine-Learning Pipelines](./12_ml_features_pipelines.ipynb) | Spark lab |
-| 13 | [Classification and Evaluation](./13_ml_classificacao.ipynb) | Spark lab |
-| 14 | [Credit Data and Governance](./14_dados_credito_governanca.ipynb) | Core only |
-| 15 | [Structured Streaming Concepts](./15_spark_streaming_conceitos.ipynb) | Spark lab |
-| 16 | [Integrative Case Study](./16_estudo_integrador.ipynb) | Spark lab |
+| Order | Notebook | Technical Guide | Cheat Sheet | Scope |
+|:---:|---|---|---|---|
+| 01 | [Big Data Foundations and Architecture](./01_fundamentos_big_data.ipynb) | [Open guide](./reference_materials/01_fundamentos_big_data.pdf) | [Open sheet](./cheat_sheets/cheat_sheet_fundamentos_big_data.pdf) | Core only |
+| 02 | [Hadoop, HDFS, and Data Locality](./02_hdfs_hadoop.ipynb) | [Open guide](./reference_materials/02_hdfs_hadoop.pdf) | [Open sheet](./cheat_sheets/cheat_sheet_hdfs_hadoop.pdf) | Core only |
+| 03 | [MapReduce: Map, Shuffle, Reduce](./03_mapreduce_fundamentos.ipynb) | [Open guide](./reference_materials/03_mapreduce_fundamentos.pdf) | [Open sheet](./cheat_sheets/cheat_sheet_mapreduce_fundamentos.pdf) | Core only |
+| 04 | [MapReduce Applied to Flights](./04_mapreduce_voos.ipynb) | [Open guide](./reference_materials/04_mapreduce_voos.pdf) | [Open sheet](./cheat_sheets/cheat_sheet_mapreduce_voos.pdf) | Core only |
+| 05 | [TF-IDF and MapReduce](./05_tfidf_mapreduce.ipynb) | [Open guide](./reference_materials/05_tfidf_mapreduce.pdf) | [Open sheet](./cheat_sheets/cheat_sheet_tfidf_mapreduce.pdf) | Core only |
+| 06 | [Apache Spark Architecture](./06_spark_arquitetura.ipynb) | [Open guide](./reference_materials/06_spark_arquitetura.pdf) | [Open sheet](./cheat_sheets/cheat_sheet_spark_arquitetura.pdf) | Spark lab |
+| 07 | [Spark RDD](./07_spark_rdd.ipynb) | [Open guide](./reference_materials/07_spark_rdd.pdf) | [Open sheet](./cheat_sheets/cheat_sheet_spark_rdd.pdf) | Spark lab |
+| 08 | [DataFrames and Explicit Schemas](./08_dataframes_esquemas.ipynb) | [Open guide](./reference_materials/08_dataframes_esquemas.pdf) | [Open sheet](./cheat_sheets/cheat_sheet_dataframes_esquemas.pdf) | Spark lab |
+| 09 | [Spark SQL and Joins](./09_spark_sql_joins.ipynb) | [Open guide](./reference_materials/09_spark_sql_joins.pdf) | [Open sheet](./cheat_sheets/cheat_sheet_spark_sql_joins.pdf) | Spark lab |
+| 10 | [Partitioning, Shuffle, and Data Skew](./10_particionamento_shuffle.ipynb) | [Open guide](./reference_materials/10_particionamento_shuffle.pdf) | [Open sheet](./cheat_sheets/cheat_sheet_particionamento_shuffle.pdf) | Spark lab |
+| 11 | [ETL and Data Quality](./11_etl_qualidade.ipynb) | [Open guide](./reference_materials/11_etl_qualidade.pdf) | [Open sheet](./cheat_sheets/cheat_sheet_etl_qualidade.pdf) | Core only |
+| 12 | [Features and Machine-Learning Pipelines](./12_ml_features_pipelines.ipynb) | [Open guide](./reference_materials/12_ml_features_pipelines.pdf) | [Open sheet](./cheat_sheets/cheat_sheet_ml_features_pipelines.pdf) | Spark lab |
+| 13 | [Classification and Evaluation](./13_ml_classificacao.ipynb) | [Open guide](./reference_materials/13_ml_classificacao.pdf) | [Open sheet](./cheat_sheets/cheat_sheet_ml_classificacao.pdf) | Spark lab |
+| 14 | [Credit Data and Governance](./14_dados_credito_governanca.ipynb) | [Open guide](./reference_materials/14_dados_credito_governanca.pdf) | [Open sheet](./cheat_sheets/cheat_sheet_dados_credito_governanca.pdf) | Core only |
+| 15 | [Structured Streaming Concepts](./15_spark_streaming_conceitos.ipynb) | [Open guide](./reference_materials/15_spark_streaming_conceitos.pdf) | [Open sheet](./cheat_sheets/cheat_sheet_spark_streaming_conceitos.pdf) | Spark lab |
+| 16 | [Integrative Case Study](./16_estudo_integrador.ipynb) | [Open guide](./reference_materials/16_estudo_integrador.pdf) | [Open sheet](./cheat_sheets/cheat_sheet_estudo_integrador.pdf) | Spark lab |
 
 ### Data Availability and Provenance
 
@@ -91,6 +91,8 @@ Four additional historical local files are not referenced by the revised noteboo
 ├── README.md
 ├── README.pt-BR.md
 ├── requirements.txt
+├── reference_materials/           # 16 original Technical Guides (PDF)
+├── cheat_sheets/                  # 16 one-page Cheat Sheets (PDF)
 ├── datasets/
 │   └── README.md                   # source register; local data not redistributed
 └── outputs/                        # selectively published CSV summaries, when approved

@@ -38,7 +38,7 @@ Esta área reúne **16 notebooks Jupyter em português**, cobrindo conceitos de 
 - Construir baselines de aprendizado de máquina com separação temporal e sem vazamento.
 - Compreender event-time, watermarks, proveniência e governança.
 
-**Materiais de estudo:** os Guias Técnicos e Cheat Sheets desta área **ainda não foram publicados**; não são apresentados links de PDF inexistentes.
+**Materiais de estudo:** esta área inclui **16 Guias Técnicos e 16 Cheat Sheets de uma página**, um par por notebook. Consulte os links na tabela abaixo. Os PDFs aprofundam conceitos, exemplos e cuidados metodológicos; os notebooks continuam sendo a referência executável.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
@@ -50,24 +50,24 @@ Esta área reúne **16 notebooks Jupyter em português**, cobrindo conceitos de 
 
 ### Notebooks
 
-| Ordem | Notebook | Escopo |
-|:---:|---|---|
-| 01 | [Fundamentos de Big Data e Arquiteturas](./01_fundamentos_big_data.ipynb) | Apenas núcleo |
-| 02 | [Hadoop, HDFS e Localidade](./02_hdfs_hadoop.ipynb) | Apenas núcleo |
-| 03 | [MapReduce: Map, Shuffle e Reduce](./03_mapreduce_fundamentos.ipynb) | Apenas núcleo |
-| 04 | [MapReduce Aplicado a Voos](./04_mapreduce_voos.ipynb) | Apenas núcleo |
-| 05 | [TF-IDF e MapReduce](./05_tfidf_mapreduce.ipynb) | Apenas núcleo |
-| 06 | [Arquitetura Apache Spark](./06_spark_arquitetura.ipynb) | Laboratório Spark |
-| 07 | [Spark RDD](./07_spark_rdd.ipynb) | Laboratório Spark |
-| 08 | [DataFrames e Esquemas Explícitos](./08_dataframes_esquemas.ipynb) | Laboratório Spark |
-| 09 | [Spark SQL e Joins](./09_spark_sql_joins.ipynb) | Laboratório Spark |
-| 10 | [Particionamento, Shuffle e Assimetria de Carga](./10_particionamento_shuffle.ipynb) | Laboratório Spark |
-| 11 | [ETL e Qualidade dos Dados](./11_etl_qualidade.ipynb) | Apenas núcleo |
-| 12 | [Features e Pipelines de Aprendizado de Máquina](./12_ml_features_pipelines.ipynb) | Laboratório Spark |
-| 13 | [Classificação e Avaliação](./13_ml_classificacao.ipynb) | Laboratório Spark |
-| 14 | [Dados de Crédito e Governança](./14_dados_credito_governanca.ipynb) | Apenas núcleo |
-| 15 | [Conceitos de Structured Streaming](./15_spark_streaming_conceitos.ipynb) | Laboratório Spark |
-| 16 | [Estudo Integrador](./16_estudo_integrador.ipynb) | Laboratório Spark |
+| Ordem | Notebook | Guia Técnico | Cheat Sheet | Escopo |
+|:---:|---|---|---|---|
+| 01 | [Fundamentos de Big Data e Arquiteturas](./01_fundamentos_big_data.ipynb) | [Abrir guia](./reference_materials/01_fundamentos_big_data.pdf) | [Abrir folha](./cheat_sheets/cheat_sheet_fundamentos_big_data.pdf) | Apenas núcleo |
+| 02 | [Hadoop, HDFS e Localidade](./02_hdfs_hadoop.ipynb) | [Abrir guia](./reference_materials/02_hdfs_hadoop.pdf) | [Abrir folha](./cheat_sheets/cheat_sheet_hdfs_hadoop.pdf) | Apenas núcleo |
+| 03 | [MapReduce: Map, Shuffle e Reduce](./03_mapreduce_fundamentos.ipynb) | [Abrir guia](./reference_materials/03_mapreduce_fundamentos.pdf) | [Abrir folha](./cheat_sheets/cheat_sheet_mapreduce_fundamentos.pdf) | Apenas núcleo |
+| 04 | [MapReduce Aplicado a Voos](./04_mapreduce_voos.ipynb) | [Abrir guia](./reference_materials/04_mapreduce_voos.pdf) | [Abrir folha](./cheat_sheets/cheat_sheet_mapreduce_voos.pdf) | Apenas núcleo |
+| 05 | [TF-IDF e MapReduce](./05_tfidf_mapreduce.ipynb) | [Abrir guia](./reference_materials/05_tfidf_mapreduce.pdf) | [Abrir folha](./cheat_sheets/cheat_sheet_tfidf_mapreduce.pdf) | Apenas núcleo |
+| 06 | [Arquitetura Apache Spark](./06_spark_arquitetura.ipynb) | [Abrir guia](./reference_materials/06_spark_arquitetura.pdf) | [Abrir folha](./cheat_sheets/cheat_sheet_spark_arquitetura.pdf) | Laboratório Spark |
+| 07 | [Spark RDD](./07_spark_rdd.ipynb) | [Abrir guia](./reference_materials/07_spark_rdd.pdf) | [Abrir folha](./cheat_sheets/cheat_sheet_spark_rdd.pdf) | Laboratório Spark |
+| 08 | [DataFrames e Esquemas Explícitos](./08_dataframes_esquemas.ipynb) | [Abrir guia](./reference_materials/08_dataframes_esquemas.pdf) | [Abrir folha](./cheat_sheets/cheat_sheet_dataframes_esquemas.pdf) | Laboratório Spark |
+| 09 | [Spark SQL e Joins](./09_spark_sql_joins.ipynb) | [Abrir guia](./reference_materials/09_spark_sql_joins.pdf) | [Abrir folha](./cheat_sheets/cheat_sheet_spark_sql_joins.pdf) | Laboratório Spark |
+| 10 | [Particionamento, Shuffle e Assimetria de Carga](./10_particionamento_shuffle.ipynb) | [Abrir guia](./reference_materials/10_particionamento_shuffle.pdf) | [Abrir folha](./cheat_sheets/cheat_sheet_particionamento_shuffle.pdf) | Laboratório Spark |
+| 11 | [ETL e Qualidade dos Dados](./11_etl_qualidade.ipynb) | [Abrir guia](./reference_materials/11_etl_qualidade.pdf) | [Abrir folha](./cheat_sheets/cheat_sheet_etl_qualidade.pdf) | Apenas núcleo |
+| 12 | [Features e Pipelines de Aprendizado de Máquina](./12_ml_features_pipelines.ipynb) | [Abrir guia](./reference_materials/12_ml_features_pipelines.pdf) | [Abrir folha](./cheat_sheets/cheat_sheet_ml_features_pipelines.pdf) | Laboratório Spark |
+| 13 | [Classificação e Avaliação](./13_ml_classificacao.ipynb) | [Abrir guia](./reference_materials/13_ml_classificacao.pdf) | [Abrir folha](./cheat_sheets/cheat_sheet_ml_classificacao.pdf) | Laboratório Spark |
+| 14 | [Dados de Crédito e Governança](./14_dados_credito_governanca.ipynb) | [Abrir guia](./reference_materials/14_dados_credito_governanca.pdf) | [Abrir folha](./cheat_sheets/cheat_sheet_dados_credito_governanca.pdf) | Apenas núcleo |
+| 15 | [Conceitos de Structured Streaming](./15_spark_streaming_conceitos.ipynb) | [Abrir guia](./reference_materials/15_spark_streaming_conceitos.pdf) | [Abrir folha](./cheat_sheets/cheat_sheet_spark_streaming_conceitos.pdf) | Laboratório Spark |
+| 16 | [Estudo Integrador](./16_estudo_integrador.ipynb) | [Abrir guia](./reference_materials/16_estudo_integrador.pdf) | [Abrir folha](./cheat_sheets/cheat_sheet_estudo_integrador.pdf) | Laboratório Spark |
 
 ### Disponibilidade e Proveniência dos Dados
 
@@ -91,6 +91,8 @@ Quatro arquivos históricos locais adicionais não são referenciados pelo códi
 ├── README.md
 ├── README.pt-BR.md
 ├── requirements.txt
+├── reference_materials/           # 16 Guias Técnicos autorais (PDF)
+├── cheat_sheets/                  # 16 Cheat Sheets de uma página (PDF)
 ├── datasets/
 │   └── README.md                   # proveniência; dados locais não redistribuídos
 └── outputs/                        # resumos CSV publicados seletivamente, após aprovação
