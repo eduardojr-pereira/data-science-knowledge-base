@@ -2,7 +2,7 @@
 %ÂµÂ¶
 
 1 0 obj
-<</F1 2 0 R/F2+0 11 0 R/F3+0 15 0 R>>
+<</F1 2 0 R/F2+0 10 0 R/F3+0 14 0 R>>
 endobj
 
 2 0 obj
@@ -21,18 +21,14 @@ endobj
 endobj
 
 5 0 obj
-<</Type/Annot/Subtype/Link/A<</Type/Action/S/URI/URI(https://github.com/eduardojr-pereira/data-science-knowledge-base)>>/Border[0 0 0]/Rect[83 551.28 300 565.28]>>
-endobj
-
-6 0 obj
 <</Type/Annot/Subtype/Link/A<</Type/Action/S/URI/URI(https://github.com/eduardojr-pereira/data-science-knowledge-base/tree/main/07_deep_learning)>>/Border[0 0 0]/Rect[83 538.28 205 550.28]>>
 endobj
 
-7 0 obj
-<</Type/Page/Annots[4 0 R 5 0 R 6 0 R]/Contents 19 0 R/MediaBox[0 0 841.89 595.28]/Parent 18 0 R/Resources<</Font 1 0 R/ProcSet[/PDF/Text/ImageB/ImageC/ImageI]/XObject<</FormXob.3c4bc8664bb785f4fbacef702c929690 3 0 R>>>>/Rotate 0/Trans<<>>>>
+6 0 obj
+<</Type/Page/Annots[4 0 R 5 0 R]/Contents 18 0 R/MediaBox[0 0 841.89 595.28]/Parent 17 0 R/Resources<</Font 1 0 R/ProcSet[/PDF/Text/ImageB/ImageC/ImageI]/XObject<</FormXob.3c4bc8664bb785f4fbacef702c929690 3 0 R>>>>/Rotate 0/Trans<<>>>>
 endobj
 
-8 0 obj
+7 0 obj
 <</Filter/FlateDecode/Length 696>>
 stream
 xœ}ÕMkQÆñı|ŠY¶”¢3ç-’˜@}¡–î^SK‡Qùö½Ï<’^J©`ÎßÌó#³8“»ÇÅc·;Õ“¯Ãa½L§z»ë6C:ÎÃ:ÕOéy×UM[ovëÓåÓøs½_õÕ$ß¼|=Òş±ÛªÙ¬|Ë§áµ~w3¾>,Ò¯ÕórÕ?Ş^6ï«É—a“†]÷üŸ#Ësß¿¤}êNõ´šÏëMÚæ?öiÕ^íS=ù÷}N}íSİŸ¢×‡M:ö«uVİsªfÓé¼ÅÃ¼Jİæ¯kM{Å{¶ëŸ«árvš_óÜÍØ÷‚nÙ–±ïÆVöxÆxæíì:xfüıUñı×Eß}[ô]Ñ‹¢ï‹~øÓMáoš¢Û¢¥h-ÚŠö¢£èÂßş¦ğ7…¿)üMáo
@@ -48,7 +44,7 @@ xœ}ÕMkQÆñı|ŠY¶”¢3ç-’˜@}¡–î^SK‡Qùö½Ï<’^J©`ÎßÌó#³8“»ÇÅc·;Õ“¯Ãa½L§z»ë6C:Î
 endstream
 endobj
 
-9 0 obj
+8 0 obj
 <</Filter/FlateDecode/Length 18985/Length1 36364>>
 stream
 xœíı	|Eö Wuu÷t÷ÜÉÌ$“k:	C„$„C&@b§	É„’LÌ" ¨ë-¢‹  Ê!‹ˆ,"²Šˆˆ]Xu]DE¾Âê®]¬bLšß«ê™ˆ®ëºÇÿÿù¥éêîªWï~¯^÷#„Ìh"¨pâ¤´ŒS×İWŞ‡}JYMi²ÇØ€ »«la£zÅÓı$„¸|Ø‹+êæÕ\Å-ø!~3ôß5¯zqÅà‘÷ôFH€û¾}•şÒò^óó‡!”·ÑÀJ¸`yÌğ!œ†ó•5×¤LJÿÎgü}Õ²Rã˜¨B„ÆÚ(5¥×Ô‰{Å¾pŞçjmi¿>áşOÊ3!4<³.ĞĞxñ$šĞÍ£éıºzİÒÒ­ŸÀy9B†‡æ×p‘ øôÖÃqú'yUpa@Q"Dä9ÿÕ^ü#j¿¨ô(Iæ‘j*¬È)G*R/^šo0ÔàK¾xñ"Òÿ0ÂìÓ„D¬°Ö
@@ -132,22 +128,22 @@ g‰ÈÇ„àµÖ¶	VÙ}zq0#Á±ìnrÃ1ÅÁ1Š]q³c$;F°£‹Ø, ÕÉÎh›àpÖcG+¶ epßÊÎh›`36¡;áš
 endstream
 endobj
 
+9 0 obj
+<</Type/FontDescriptor/Ascent 759.7656/CapHeight 759.7656/Descent -240.2344/Flags 262148/FontBBox[-1069.336 -415.0391 1975.098 1175.293]/FontFile2 8 0 R/FontName/AAAAAA+DejaVuSans-Bold/ItalicAngle 0/MissingWidth 600.0977/StemV 165>>
+endobj
+
 10 0 obj
-<</Type/FontDescriptor/Ascent 759.7656/CapHeight 759.7656/Descent -240.2344/Flags 262148/FontBBox[-1069.336 -415.0391 1975.098 1175.293]/FontFile2 9 0 R/FontName/AAAAAA+DejaVuSans-Bold/ItalicAngle 0/MissingWidth 600.0977/StemV 165>>
+<</Type/Font/Subtype/TrueType/BaseFont/AAAAAA+DejaVuSans-Bold/FirstChar 0/FontDescriptor 9 0 R/LastChar 127/Name/F2+0/ToUnicode 7 0 R/Widths[600.0977 674.8047 592.7734 733.8867 773.9258 678.2227 342.7734 683.1055 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 348.1445 456.0547 520.9961 837.8906 695.8008 1001.953 872.0703 306.1523 457.0312 457.0312 522.9492 837.8906 379.8828 415.0391 379.8828 365.2344 695.8008 695.8008 695.8008 695.8008 695.8008 695.8008 695.8008 695.8008 695.8008 695.8008 399.9023 399.9023 837.8906 837.8906 837.8906 580.0781 1000 773.9258 762.207 733.8867 830.0781 683.1055 683.1055 820.8008 836.9141 372.0703 372.0703 774.9023 637.207 995.1172 836.9141 850.0977 732.9102 850.0977 770.0195 720.2148 682.1289 812.0117 773.9258 1103.027 770.9961 724.1211 725.0977 457.0312 365.2344 457.0312 837.8906 500 500 674.8047 715.8203 592.7734 715.8203 678.2227 435.0586 715.8203 711.9141 342.7734 342.7734 665.0391 342.7734 1041.992 711.9141 687.0117 715.8203 715.8203 493.1641 595.2148 478.0273 711.9141 651.8555 923.8281 645.0195 651.8555 582.0312 711.9141 365.2344 711.9141 837.8906 600.0977]>>
 endobj
 
 11 0 obj
-<</Type/Font/Subtype/TrueType/BaseFont/AAAAAA+DejaVuSans-Bold/FirstChar 0/FontDescriptor 10 0 R/LastChar 127/Name/F2+0/ToUnicode 8 0 R/Widths[600.0977 674.8047 592.7734 733.8867 773.9258 678.2227 342.7734 683.1055 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 348.1445 456.0547 520.9961 837.8906 695.8008 1001.953 872.0703 306.1523 457.0312 457.0312 522.9492 837.8906 379.8828 415.0391 379.8828 365.2344 695.8008 695.8008 695.8008 695.8008 695.8008 695.8008 695.8008 695.8008 695.8008 695.8008 399.9023 399.9023 837.8906 837.8906 837.8906 580.0781 1000 773.9258 762.207 733.8867 830.0781 683.1055 683.1055 820.8008 836.9141 372.0703 372.0703 774.9023 637.207 995.1172 836.9141 850.0977 732.9102 850.0977 770.0195 720.2148 682.1289 812.0117 773.9258 1103.027 770.9961 724.1211 725.0977 457.0312 365.2344 457.0312 837.8906 500 500 674.8047 715.8203 592.7734 715.8203 678.2227 435.0586 715.8203 711.9141 342.7734 342.7734 665.0391 342.7734 1041.992 711.9141 687.0117 715.8203 715.8203 493.1641 595.2148 478.0273 711.9141 651.8555 923.8281 645.0195 651.8555 582.0312 711.9141 365.2344 711.9141 837.8906 600.0977]>>
-endobj
-
-12 0 obj
 <</Filter/FlateDecode/Length 692>>
 stream
 xœmÕÍnÚ@†á=Wáe«.Àsş	!¥!‘²èJÕ½CJU2°Èİw>Q2j‹ó‚=ò#fq¦·Ë‡~wn¦_‡Ãz•ÏÍv×o†|:\†unóÓ®Ÿ´©ÙìÖç—oãçzß'Ó²yõ|:çıC¿=Læófú­\<‡çæİÍøú°Ì¿º—U×ŸŞO¦_†MvıÓÿ¯®.Çãï¼Ïı¹™M‹f“·åŸºãçnŸ›é?[Şnøş|ÌM¿·T®›|:vë<tıSÌg³E3ûÅ$÷›¿®µéŠ{·ëŸİğrï¬¼¥Û±ïÆ¾7´ğ÷´²mìk´³—èàŞñş+öxÿuõ¬›ª?V}[õ²ê»ªïßº­üm[uªZªÖª­j¯:ª¾ªºò·•¿­ümåo+[ùÛÊŸèOcÓ_–Òô—¥4ı	ÿa¢¿,¥éO8£DYJÓŸp‰ş²”¦?á¼ı	g”è/KiúËRšş„3Mô—¥4ıe™Ì…~_èø…~_èø…~_èø…~_èø…~_èø…~_èø…~_èø…~_èø•~…_éWø•~…_éWø•~…_éWø•~…_éWø•~…_éWø•~…_éWø•~…_éWø•~…_éWø~ƒßè7ø~ƒßè7ø~ƒßè7ø~ƒßè7ø~ƒßè7ø~ƒßè7ø~ƒßè7ø~ƒßè7ø~‡ßéwø~‡ßéwø~‡ßéwø~‡ßéwø~‡ßéwø~‡ßéwø~‡ßéwø~‡ßéwøƒş€?èøƒş€?èøƒş€?èøƒş€?èøƒş€?èøƒş€?èøƒş€?èøƒş€?è™/“ ³sîu­/ÃPÆÓ8ÇÁƒ‘³ëóë¼<Ø…÷êËŸ›
 endstream
 endobj
 
-13 0 obj
+12 0 obj
 <</Filter/FlateDecode/Length 19162/Length1 36320>>
 stream
 xœí½	|Eö8^ÕÕ×ôÜ“™„Ü›@HBÂa a!†Š&ä áÈÄœ²\B@Ğ€Dˆ
@@ -226,27 +222,27 @@ K|ºç?¡©óõw³¤AI„Sâ?óÁ$V·›	G«•²·z‰ìıj5´u[øÃß0Lš[9³2©œÕ¼ÄêŠê$¯ÇüIßå$ú ¯ıMA
 endstream
 endobj
 
+13 0 obj
+<</Type/FontDescriptor/Ascent 759.7656/CapHeight 759.7656/Descent -240.2344/Flags 4/FontBBox[-1020.508 -462.8906 1793.457 1232.422]/FontFile2 12 0 R/FontName/AAAAAA+DejaVuSans/ItalicAngle 0/MissingWidth 600.0977/StemV 87>>
+endobj
+
 14 0 obj
-<</Type/FontDescriptor/Ascent 759.7656/CapHeight 759.7656/Descent -240.2344/Flags 4/FontBBox[-1020.508 -462.8906 1793.457 1232.422]/FontFile2 13 0 R/FontName/AAAAAA+DejaVuSans/ItalicAngle 0/MissingWidth 600.0977/StemV 87>>
+<</Type/Font/Subtype/TrueType/BaseFont/AAAAAA+DejaVuSans/FirstChar 0/FontDescriptor 13 0 R/LastChar 127/Name/F3+0/ToUnicode 11 0 R/Widths[600.0977 549.8047 611.8164 615.2344 612.793 615.2344 277.832 633.7891 611.8164 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 317.8711 400.8789 459.9609 837.8906 636.2305 950.1953 779.7852 274.9023 390.1367 390.1367 500 837.8906 317.8711 360.8398 317.8711 336.9141 636.2305 636.2305 636.2305 636.2305 636.2305 636.2305 636.2305 636.2305 636.2305 636.2305 336.9141 336.9141 837.8906 837.8906 837.8906 530.7617 1000 684.082 686.0352 698.2422 770.0195 631.8359 575.1953 774.9023 751.9531 294.9219 294.9219 655.7617 557.1289 862.793 748.0469 787.1094 603.0273 787.1094 694.8242 634.7656 610.8398 731.9336 684.082 988.7695 685.0586 610.8398 685.0586 390.1367 336.9141 390.1367 837.8906 500 500 612.793 634.7656 549.8047 634.7656 615.2344 352.0508 634.7656 633.7891 277.832 277.832 579.1016 277.832 974.1211 633.7891 611.8164 634.7656 634.7656 411.1328 520.9961 392.0898 633.7891 591.7969 817.8711 591.7969 591.7969 524.9023 636.2305 336.9141 636.2305 837.8906 600.0977]>>
 endobj
 
 15 0 obj
-<</Type/Font/Subtype/TrueType/BaseFont/AAAAAA+DejaVuSans/FirstChar 0/FontDescriptor 14 0 R/LastChar 127/Name/F3+0/ToUnicode 12 0 R/Widths[600.0977 549.8047 611.8164 615.2344 612.793 615.2344 277.832 633.7891 611.8164 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 600.0977 317.8711 400.8789 459.9609 837.8906 636.2305 950.1953 779.7852 274.9023 390.1367 390.1367 500 837.8906 317.8711 360.8398 317.8711 336.9141 636.2305 636.2305 636.2305 636.2305 636.2305 636.2305 636.2305 636.2305 636.2305 636.2305 336.9141 336.9141 837.8906 837.8906 837.8906 530.7617 1000 684.082 686.0352 698.2422 770.0195 631.8359 575.1953 774.9023 751.9531 294.9219 294.9219 655.7617 557.1289 862.793 748.0469 787.1094 603.0273 787.1094 694.8242 634.7656 610.8398 731.9336 684.082 988.7695 685.0586 610.8398 685.0586 390.1367 336.9141 390.1367 837.8906 500 500 612.793 634.7656 549.8047 634.7656 615.2344 352.0508 634.7656 633.7891 277.832 277.832 579.1016 277.832 974.1211 633.7891 611.8164 634.7656 634.7656 411.1328 520.9961 392.0898 633.7891 591.7969 817.8711 591.7969 591.7969 524.9023 636.2305 336.9141 636.2305 837.8906 600.0977]>>
+<</Type/Catalog/PageMode/UseNone/Pages 17 0 R>>
 endobj
 
 16 0 obj
-<</Type/Catalog/PageMode/UseNone/Pages 18 0 R>>
-endobj
-
-17 0 obj
 <</Author(Eduardo Pereira | EP \204 Data Science Knowledge Base)/CreationDate(D:20261114002923+00'00')/Creator(anonymous)/Keywords(Deep Learning; Keras Sequential; Cheat Sheet; EP; Python; Keras)/ModDate(D:20261114002923+00'00')/Producer(ReportLab PDF Library - \(opensource\))/Subject(Deep Learning | Cap\355tulo 07/20 | resumo de consulta t\351cnica)/Title(Cheat Sheet 07 \204 Keras Sequential)/Trapped/False>>
 endobj
 
-18 0 obj
-<</Type/Pages/Count 1/Kids[7 0 R]>>
+17 0 obj
+<</Type/Pages/Count 1/Kids[6 0 R]>>
 endobj
 
-19 0 obj
+18 0 obj
 <</Filter[/ASCII85Decode/FlateDecode]/Length 2344>>
 stream
 Gatm=>B?Q!(4PFJW:H1sVJ)%oLn2\@VrMlE-FZ^^[8SrSlB8F-TpLZBY]kGCr>pM80U2h%SoS:5a4@fckgLp<+pVFlr>qd@rNns7mTeg^[+ljlg(Z.-d<o[,@8U)*L_AHt-GdcE*Lh@=%'r.Qj[K#]^:$U$f+IV&\m>WcgX>JX7q*Ds3!sZhLCUo?XaaG2_62sV#di?X'/G?;iemu;?0)M?aRc?i)-Woq&,r&NR-dM469E!2V9@WHEe[mb0'83:kNJ8QVgmOKDa2Lo:UA[K'j?&Tb9*P7[d/0s@:UoEif\i)@ue.?*!(,3*AlntSUjE]pq.2JpGihuaPuR0HT#+I3q.\lLgC$$'5hb'OW-n#(u).#n;A]>M-e.CH]_;_:V%<:ad5AT!aq#bI]`K9C]mAi%%Ki7MKm9&?qd4N085X7NA2o("K;`=$eZ]sBS]tY_)LRB<[O`9L:+9#0dj>2W;?mI*QU]^&KalrX%->QJD>m.TI#GKR1%CGTpB(UoIg:#n_'$MPeW$U<YA62`CPBGL/>snhLO.&NTI#ZeUBCC`$3,0(t_^f)6?k<\#C9t[1c-\<\Bj"9akmWOnE='J$<<p_<Z@>.#dmlYM/=5P:N`6^Y/3f8jQ;KUW4hdRn/g;\Z(F8QMKTq,1VkU6?0Y-05^>Fa2o8jAXr0$;5-saW8MC&N?c/X*#JUZ..+0K5R%SK[6lE2JPVp632e>sVOXkOc.I*,=X+t;"G0UEPQZ1i$1k5J?n%V2#\PCps-=&H?=^Zr[CRpHpeKVG0!il._5hu-b3RU.l>#=K&iL_i>j(:g6@tD1Bu+M+q3q`8[dDVq27aN*.9;e<IuS\P`<T_gH$47+Lh(u9hfkUU=nWlj+0qs_YHE==:=h2F&1?]#N08:%7S+"t&-0%HS0>&i_\n()*mP>@H8n9JF+c?L?fR)[[lC,cZI$"R]'UH,;,5V#@pCk.Ri'k8LN/'YhD!6rrUYL.31j<?3:oZIo*^e1.1tJheA7(P([16M9tr,-H%GNLHAORf@&qK"*:RDf$F!71.-=I4#</aB4RBo`E)(l=QW5U,n1=@NhFL*W7%&)&M%?jb43_2B-ANT7r"Q_K<<+/r;eML,8+a1f.U_Y92oBkcSsmQ5`'L'"13%>%.8U/l*:Z`C!Sm1_4qSoVGYC;!bG3_`6:+j:i_aGX(-F2=W3:]EpA0e;d?.J(kt"===@B4!@2Q+X9h/CU1b$6aQt2d+;_PUiP1*%%f&@^4V5,WhKZ`LYPcL.;!AG[W<]3EQ5!D+l0CEInrQ.BRRSn7GTutL`S%6kgEcTj@g;cb/]Spl&CSErG_GNgrM?Ber=A>Wf2?)`[=>@.$5-\i#*hbMg<Lh'Y8e:H;d+__B@lnD=&W$s9]8I?TYOc%:=qin3^ou1ECQuUCh-?bP\<oa4N!j.VkJ?*1q-f9rTp^k$B5[i7biWr8C!dW3TKWupQ<gdho?!@f>h6e<-0\g#Or/9af]cfWJV3&=-4pm_0StmqLIn;pn64#bm9u0@F>-9Xg:Gj=4-H7l8]nZ@.rfm&Ugi]RjV1Bdo]cBcdbWBq_sI'/13EH119:fJq%X1V0t%T^@L]gl%hr]"\`QoaG)c-n@WaOKLp2ZL(Pm#aS<R*/P2DB<Il&gI@ab2C0QNf))nlp9lJ?"`f4hA8iOGHeZ&/J^Gf=2=\cuJbdTfbfoMg*uEO8LR0+.^G</gAFA!W<^%$h;0>Lp\3"q"V:-2N3`1Bu<0N(<V"h_BPu93Q`QF4'\<f4dCr>fVI1+^s"\r5`Ar#1Z<[f4cP"lZ=D@XVng0ch2<5J1I4pQ&TdSji`&A3/QU=I\:eD0V#bbRTs4%nhGaFeCQU5'E,+7EK.]S[f]E6%EXh3BDCCDnD3("gS'+:0a'7D*mSC[D%Iq.#M*:eb9K3A#du)"B[/u:`N]'okg:ZrD"Bk8EJUZ!r[1K1<ooMVa*9;XEgEH$VJe,iqD!TN'S:l!p:M$D)MG0rZ+<9+iFKSh=cTr\KYs*YBSP.f&2:K2J:s(6&2BEbo^NOW(d_a/@1RGo2:;+SR;"h4AB'.P-:"GE%7P"X5nA&GRH[84*p@:Sf#u#]TJK2PmM?Clja7]1C$T2\c+O'=@Tq$9;OYXP"eftObDV80PWD@8GR$_Cq5bdchOkHnPpis9oXeTh)s?g^2M;Zk1J=Nb>[Df,8"R^KcJ:[BWqrFlm<I#QP^JkI>\06DoSKq;%tMYJchtO%g7M/d>!$5YkFSjXBWIEY3^oR6k5!Y!!!q*k6"kP!lGH^M_``f#4DLH-q!A_EB\-%X7[Y><>OVX'T?j.WrI">0\9RrDrhVMo*#jnkT$c!ik;IY!k38`&Fp92WIh?(O[/~>
@@ -254,30 +250,29 @@ endstream
 endobj
 
 xref
-0 20
+0 19
 0000000000 65535 f 
 0000000016 00000 n 
 0000000070 00000 n 
 0000000167 00000 n 
 0000037606 00000 n 
 0000037742 00000 n 
-0000037922 00000 n 
-0000038129 00000 n 
-0000038387 00000 n 
-0000039152 00000 n 
-0000058222 00000 n 
-0000058472 00000 n 
-0000059770 00000 n 
-0000060532 00000 n 
-0000079780 00000 n 
-0000080020 00000 n 
-0000081302 00000 n 
-0000081367 00000 n 
-0000081797 00000 n 
-0000081850 00000 n 
+0000037949 00000 n 
+0000038201 00000 n 
+0000038966 00000 n 
+0000058036 00000 n 
+0000058285 00000 n 
+0000059582 00000 n 
+0000060344 00000 n 
+0000079592 00000 n 
+0000079832 00000 n 
+0000081114 00000 n 
+0000081179 00000 n 
+0000081609 00000 n 
+0000081662 00000 n 
 
 trailer
-<</Size 20/Info 17 0 R/Root 16 0 R/ID[<DEBFDC6F76E8B5CD7BCAAD50C8A0AAEC><FBE5F4F8369B46AF6EEB291EE93D56A0>]>>
+<</Size 19/Info 16 0 R/Root 15 0 R/ID[<DEBFDC6F76E8B5CD7BCAAD50C8A0AAEC><19AB422E34C174454C713714A72344F6>]>>
 startxref
-84281
+84093
 %%EOF
