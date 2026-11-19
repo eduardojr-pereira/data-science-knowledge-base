@@ -38,7 +38,16 @@ Treat published derived rankings, predictions and summaries in `../outputs/` as 
 
 Notebook [`16_estudo_integrador_movielens_livros.ipynb`](../16_estudo_integrador_movielens_livros.ipynb) creates a small fictional book catalog and interactions in Python. It does **not** use or publish a third-party book dataset. In this **example only**, `0` means an interaction without an explicit rating; scores 1–10 are explicitly defined ratings. These records are not evidence about real readers.
 
-New CSVs produced by notebook 16, matching `outputs/16_*.csv`, remain excluded from Git by the root `.gitignore`. Other outputs require a specific publication and rights review before being staged.
+Two synthetic CSVs produced by notebook 16 have passed individual content and provenance review and are included in this publication; the root `.gitignore` continues to block the two historical Book-Crossing-derived files (`16_ranking_livros_amostra.csv` and `16_resumo_feedback_livros.csv`) pending reuse-rights clearance. All other new outputs likewise require review before staging.
+
+**Reviewed synthetic outputs (SHA-256 of the publication candidates):**
+
+| Output | Rows | SHA-256 |
+|---|---:|---|
+| [`16_ranking_livros_sintetico.csv`](../outputs/16_ranking_livros_sintetico.csv) | 5 fictional books | `ba8e2513cf5152e798d9be0545ae5993d45989324255cad862c9a61783c8c043` |
+| [`16_resumo_feedback_livros_sintetico.csv`](../outputs/16_resumo_feedback_livros_sintetico.csv) | 1 aggregate record (12 interactions) | `15600176828031a28080ca67d31a307b168fc458eab6baa3e6896dff4de55193` |
+
+These files are produced from in-notebook fictional book records, **not** from MovieLens or Book-Crossing book ratings. They are educational demonstrations, not evidence of recommendation effectiveness.
 
 ## Reproducibility
 

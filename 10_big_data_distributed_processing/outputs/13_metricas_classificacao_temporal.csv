@@ -1,0 +1,2 @@
+modelo,treino,teste,prevalencia_teste,balanced_accuracy,roc_auc,average_precision
+logistic_regression,7538,2387,0.15877670716380393,0.5,0.5529392982161065,0.17464767801318756

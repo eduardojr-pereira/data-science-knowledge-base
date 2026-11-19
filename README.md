@@ -85,7 +85,7 @@ data-science-knowledge-base/
 └── 10_big_data_distributed_processing/
 ```
 
-Area folders typically include notebooks, `reference_materials/`, `cheat_sheets/`, and, when relevant, `datasets/`, `outputs/`, and `requirements.txt`. Some datasets and locally generated outputs are intentionally **not** published because provenance, rights or release approval remain pending. The root `.gitignore` excludes many *new* generated outputs, but it does not remove previously tracked approved files. Consult each area README for its actual structure and publication limits.
+Area folders typically include notebooks, `reference_materials/`, `cheat_sheets/`, and, when relevant, `datasets/`, `outputs/`, and `requirements.txt`. Some datasets and locally generated outputs are intentionally **not** published because provenance, rights or release approval remain pending. The root `.gitignore` retains specific restrictions for files with unresolved rights, but no longer excludes generated outputs as a general category. Consult each area README for its actual structure and publication limits.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -158,7 +158,7 @@ The areas are learning modules, not all independently validated production appli
 
 ### Dataset and output publication policy
 
-As of commit `4ff0a4a` (November 19, 2026), **128 files under `outputs/` are already tracked**. The root `.gitignore` ignores most *new, untracked* outputs through `**/outputs/`; it does not stop tracking files already committed. Its explicit exceptions allow new files under `07_deep_learning/outputs/` and `09_recommender_systems/outputs/`, while `09_recommender_systems/outputs/16_*.csv` remains excluded. These exceptions are **technical Git rules, not publication authorization**.
+**Publication policy:** publish reproducible notebook outputs whenever source-data rights, derived-data redistribution conditions, absence of sensitive information, and output integrity are established. The single root `.gitignore` no longer excludes `outputs/` globally; it explicitly blocks certain local results whose provenance or redistribution rights remain unresolved, as well as unreviewed model binaries. **Visible in Git does not mean approved for publication.** The 128 outputs already tracked at commit `0456c19` remain unchanged by this policy update.
 
 Before committing any new dataset or generated output, review its source and usage rights (including derived-data restrictions), accidental personal/sensitive information, reproducibility and relevance; approve the specific files before staging. Use explicit Git paths and keep historical local files protected by `.gitignore` outside commits. Published third-party data are governed by their own license terms, not the repository’s MIT/CC BY-NC licenses. See the dataset registers for [area 03](./03_statistics/datasets/README.md), [area 09](./09_recommender_systems/datasets/README.md), and [area 10](./10_big_data_distributed_processing/datasets/README.md) for known limitations.
 

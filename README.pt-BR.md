@@ -85,7 +85,7 @@ data-science-knowledge-base/
 └── 10_big_data_distributed_processing/
 ```
 
-As pastas das áreas geralmente incluem notebooks, `reference_materials/`, `cheat_sheets/` e, quando aplicável, `datasets/`, `outputs/` e `requirements.txt`. Alguns datasets e resultados locais **não** são publicados enquanto existirem pendências de proveniência, direitos ou autorização. O `.gitignore` da raiz ignora muitos *novos* outputs, mas não remove arquivos aprovados já rastreados. Consulte o README de cada área para conhecer sua estrutura e os limites de publicação.
+As pastas das áreas geralmente incluem notebooks, `reference_materials/`, `cheat_sheets/` e, quando aplicável, `datasets/`, `outputs/` e `requirements.txt`. Alguns datasets e resultados locais **não** são publicados enquanto existirem pendências de proveniência, direitos ou autorização. O `.gitignore` da raiz preserva restrições específicas para arquivos com direitos ainda não esclarecidos, mas deixa de excluir outputs gerados como categoria geral. Consulte o README de cada área para conhecer sua estrutura e os limites de publicação.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
@@ -158,7 +158,7 @@ As áreas são módulos de estudo, não necessariamente aplicações de produç�
 
 ### Política de publicação de datasets e outputs
 
-No commit `4ff0a4a` (19/11/2026), **128 arquivos em `outputs/` já estão rastreados**. O `.gitignore` da raiz ignora a maioria dos *novos arquivos ainda não rastreados* via `**/outputs/`; isso não interrompe o rastreamento dos arquivos já commitados. As exceções explícitas permitem novos arquivos em `07_deep_learning/outputs/` e `09_recommender_systems/outputs/`, mas `09_recommender_systems/outputs/16_*.csv` continua excluído. Essas exceções são **regras técnicas do Git, não autorização de publicação**.
+**Política de publicação:** publicar os outputs reproduzíveis dos notebooks sempre que estiverem comprovados os direitos sobre os dados de origem e seus derivados, a ausência de informações sensíveis indevidas e a integridade dos arquivos. O único `.gitignore`, na raiz, deixa de excluir `outputs/` de forma geral; mantém bloqueios explícitos para resultados locais com proveniência ou direitos de redistribuição pendentes e modelos binários não revisados. **Aparecer no Git não significa estar aprovado para publicação.** Os 128 outputs já versionados no commit `0456c19` permanecem inalterados por esta atualização.
 
 Antes de versionar novos datasets ou resultados, conferir a fonte e os direitos de uso (inclusive de dados derivados), a ausência de informações pessoais/sensíveis indevidas, a reprodutibilidade e a pertinência; aprovar os arquivos específicos antes do `git add`. Usar caminhos explícitos e manter arquivos históricos locais protegidos pelo `.gitignore` fora dos commits. Dados de terceiros seguem suas licenças próprias, não as licenças MIT/CC BY-NC do material autoral. Consulte os registros de datasets das [áreas 03](./03_statistics/datasets/README.pt-BR.md), [09](./09_recommender_systems/datasets/README.pt-BR.md) e [10](./10_big_data_distributed_processing/datasets/README.pt-BR.md) para conhecer as limitações identificadas.
 

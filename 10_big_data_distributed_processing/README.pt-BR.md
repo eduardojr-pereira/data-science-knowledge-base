@@ -75,11 +75,11 @@ Os notebooks foram validados com **cópias locais autorizadas** dos conjuntos de
 
 | Arquivo local necessário | Finalidade | Publicação |
 |---|---|---|
-| `datasets/flights.csv` | Exemplos de voos, ETL e baselines | Retido até verificar origem e permissão de redistribuição |
+| `datasets/flights.csv` | Exemplos de voos, ETL e baselines | Correspondência confirmada com pnwflights14 (CC0); dataset local ainda não publicado |
 | `datasets/airports.csv` | Joins e consultas | Retido até verificar origem e permissão de redistribuição |
 | `datasets/crx_data.data` | Governança de dados de crédito | Corresponde ao Credit Approval da UCI; confirmar integridade e atribuição antes de incluir |
 
-**Possíveis fontes de origem (ainda não comparadas com as cópias locais):** o pacote [`pnwflights14`](https://github.com/ismayc/pnwflights14) declara `License: CC0` no arquivo `DESCRIPTION`, mas isso **não** comprova que a amostra local `flights.csv` de 10.000 linhas ou a tabela `airports.csv` vieram desse pacote, nem que seus esquemas, registros e transformações sejam equivalentes. Ambos permanecem locais. O [UCI Credit Approval](https://archive.ics.uci.edu/dataset/27/credit+approval) informa 690 observações e licença CC BY 4.0; ainda falta conferir a identidade exata da cópia local `crx_data.data`. Não publicar esses arquivos nem os três resumos CSV derivados enquanto não forem examinadas a proveniência, a integridade, a atribuição e as condições de publicação.
+**Proveniência confirmada da amostra de voos:** teste somente leitura verificou que os **10.000/10.000 registros locais de `flights.csv`** (16 colunas, considerando multiplicidades) aparecem na [fonte pública `pnwflights14` no commit `0a122d9`](https://github.com/ismayc/pnwflights14/tree/0a122d90c17075aad22ecedfade7d581310e0fcc), com **162.049 registros**, cujo [`DESCRIPTION` declara CC0](https://github.com/ismayc/pnwflights14/blob/0a122d90c17075aad22ecedfade7d581310e0fcc/DESCRIPTION). A metodologia exata de seleção da amostra ainda é desconhecida. **Somente os três resumos CSV derivados revisados estão aprovados para publicação**, não o dataset de entrada local. A comparação não estabelece a origem de `airports.csv`. A fonte [UCI Credit Approval](https://archive.ics.uci.edu/dataset/27/credit+approval) indica 690 registros e CC BY 4.0; a identidade da cópia local `crx_data.data` permanece não verificada. Os sete datasets locais continuam excluídos até decisões específicas.
 
 Quatro arquivos históricos locais adicionais não são referenciados pelo código dos notebooks revisados: `airplanes.csv`, `sms.csv`, `points.tsv` e `2017_real_estate.csv`. Eles não são necessários para executar esta sequência nem são oferecidos para download. Sem os três arquivos de entrada necessários, alguns notebooks não poderão ser executados integralmente após um clone público.
 
@@ -96,7 +96,7 @@ Quatro arquivos históricos locais adicionais não são referenciados pelo códi
 ├── datasets/
 │   ├── README.md                   # proveniência (en-US)
 │   └── README.pt-BR.md             # proveniência (pt-BR); dados não publicados
-└── outputs/                        # resumos CSV locais, não versionados atualmente
+└── outputs/                        # três resumos CSV revisados e liberados neste lote
 ```
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
@@ -193,13 +193,15 @@ Execute os notebooks **01–16** em ordem. Diferencie simulações conceituais d
 
 ### Resultados Gerados
 
-Três resumos CSV foram gerados e validados **localmente**. A publicação é seletiva porque o `.gitignore` da raiz ignora `**/outputs/` por padrão:
+Três resumos CSV foram gerados e conferidos independentemente com os dados locais e invariantes dos notebooks. Seus registros de entrada correspondem à fonte pública `pnwflights14`, licenciada sob CC0. **Esses três outputs derivados estão incluídos nesta publicação**; os datasets de entrada continuam locais e excluídos pelo `.gitignore`:
 
 | Notebook | Arquivo | Descrição |
 |---|---|---|
-| 12 | `outputs/12_avaliacao_temporal.csv` | Resumo da avaliação temporal |
-| 13 | `outputs/13_metricas_classificacao_temporal.csv` | Métricas de classificação |
-| 16 | `outputs/16_resumo_distancia_por_companhia.csv` | Resumo da distância por companhia |
+| 12 | [`outputs/12_avaliacao_temporal.csv`](./outputs/12_avaliacao_temporal.csv) | Resumo da avaliação temporal |
+| 13 | [`outputs/13_metricas_classificacao_temporal.csv`](./outputs/13_metricas_classificacao_temporal.csv) | Métricas de classificação |
+| 16 | [`outputs/16_resumo_distancia_por_companhia.csv`](./outputs/16_resumo_distancia_por_companhia.csv) | Resumo da distância por companhia |
+
+O baseline de regressão logística apresenta **balanced accuracy de 0,500**, **ROC AUC de aproximadamente 0,553** e **average precision de aproximadamente 0,175** (prevalência no teste de aproximadamente 0,159). É um desempenho preditivo fraco, mantido como exemplo didático transparente, **não** como classificador adequado à produção. O resumo por companhia cobre os 10.000 voos locais. Consulte o registro de proveniência bilíngue para o commit público fixo e os hashes SHA-256.
 
 ### Exercícios e Prática
 

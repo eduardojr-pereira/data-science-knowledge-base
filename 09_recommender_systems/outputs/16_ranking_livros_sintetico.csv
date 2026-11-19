@@ -1,0 +1,6 @@
+livro_id,titulo,n_notas_explicitas,media_suavizada_explicita,origem
+SYN-001,Livro A (fictício),3,7.9743589743589745,sintetico_autoral
+SYN-005,Livro E (fictício),2,7.805555555555556,sintetico_autoral
+SYN-003,Livro C (fictício),1,7.606060606060606,sintetico_autoral
+SYN-002,Livro B (fictício),2,7.472222222222222,sintetico_autoral
+SYN-004,Livro D (fictício),1,7.424242424242425,sintetico_autoral

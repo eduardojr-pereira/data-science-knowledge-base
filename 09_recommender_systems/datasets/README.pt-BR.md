@@ -38,7 +38,16 @@ Rankings, predições e resumos derivados publicados em `../outputs/` também po
 
 O notebook [`16_estudo_integrador_movielens_livros.ipynb`](../16_estudo_integrador_movielens_livros.ipynb) gera, em Python, um pequeno catálogo fictício e interações simuladas. **Não** utiliza nem publica bases de livros de terceiros. **Nesse exemplo específico**, `0` significa interação sem avaliação explícita, enquanto notas de 1–10 são avaliações explícitas segundo a convenção didática. Esses registros não descrevem leitores reais.
 
-Novos CSVs gerados pelo notebook 16 com nomes `outputs/16_*.csv` continuam excluídos do Git pelo `.gitignore` da raiz. Outros outputs exigem revisão específica de publicação e direitos antes do versionamento.
+Os dois CSVs sintéticos gerados pelo notebook 16 passaram por revisão individual de conteúdo e proveniência e estão incluídos nesta publicação; o `.gitignore` da raiz continua bloqueando apenas os dois arquivos históricos derivados de Book-Crossing (`16_ranking_livros_amostra.csv` e `16_resumo_feedback_livros.csv`) até comprovar os direitos de reutilização. Os demais outputs novos também exigem revisão antes do versionamento.
+
+**Outputs sintéticos revisados (SHA-256 dos candidatos à publicação):**
+
+| Output | Registros | SHA-256 |
+|---|---:|---|
+| [`16_ranking_livros_sintetico.csv`](../outputs/16_ranking_livros_sintetico.csv) | 5 livros fictícios | `ba8e2513cf5152e798d9be0545ae5993d45989324255cad862c9a61783c8c043` |
+| [`16_resumo_feedback_livros_sintetico.csv`](../outputs/16_resumo_feedback_livros_sintetico.csv) | 1 resumo (12 interações) | `15600176828031a28080ca67d31a307b168fc458eab6baa3e6896dff4de55193` |
+
+Esses arquivos derivam de livros e interações fictícios criados no próprio notebook, **não** de avaliações reais de livros do MovieLens ou Book-Crossing. São exercícios didáticos, não comprovação de eficácia de recomendação.
 
 ## Reprodutibilidade
 

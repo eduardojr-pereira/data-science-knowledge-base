@@ -12,7 +12,7 @@ This register describes the inputs used during local validation of the [Big Data
 
 | Local filename | Notebook references | Evidence and outstanding verification | Publication status |
 |---|---|---|---|
-| `flights.csv` | 01, 04, 08–13, 16 | Historical local sample of **10,000 flight records**. Its 2014 SEA/PDX structure resembles the [`pnwflights14`](https://github.com/ismayc/pnwflights14) data, which refer to U.S. Bureau of Transportation Statistics records. **Exact source, transformations, and redistribution terms for this local file are unverified.** | **Local only — do not commit** |
+| `flights.csv` | 01, 04, 08–13, 16 | A 10,000-row, 16-column local flight sample. A read-only record-by-record multiplicity check confirmed **10,000/10,000 rows occur** in the 162,049-row [`pnwflights14` source at fixed commit `0a122d9`](https://github.com/ismayc/pnwflights14/tree/0a122d90c17075aad22ecedfade7d581310e0fcc), which declares **CC0**. **Exact subset selection method is not known.** | **Local only — do not commit** |
 | `airports.csv` | 09 | Airport lookup used in joins. **Exact source, version, and redistribution terms are unverified.** | **Local only — do not commit** |
 | `crx_data.data` | 14 | Local file in the 690-record format associated with [UCI Credit Approval](https://archive.ics.uci.edu/dataset/27/credit+approval), attributed to J. R. Quinlan (1987). The UCI source is listed under **CC BY 4.0**, but the exact identity of the local copy has not been verified against the official data. | **Local only pending source comparison and attribution** |
 
@@ -29,7 +29,7 @@ The four historical files in the second table are **not prerequisites** for the 
 
 ## 2. Known sources are not verified copies
 
-- **Possible flight-data origin:** The `pnwflights14` package [declares `License: CC0` in its `DESCRIPTION`](https://github.com/ismayc/pnwflights14/blob/master/DESCRIPTION). This is a **lineage hypothesis**, not proof that the local `flights.csv` or `airports.csv` is identical to the package data or covered by that declaration. No full record-by-record or hash comparison has been documented.
+- **Verified flight sample correspondence:** A local read-only check on **November 19, 2026** compared the 10,000-row, 16-column `flights.csv` sample against the 162,049-row public [`pnwflights14` file at fixed commit `0a122d9`](https://github.com/ismayc/pnwflights14/tree/0a122d90c17075aad22ecedfade7d581310e0fcc), accounting for duplicate multiplicities. **All 10,000 rows matched**. The package's immutable [`DESCRIPTION` declares CC0](https://github.com/ismayc/pnwflights14/blob/0a122d90c17075aad22ecedfade7d581310e0fcc/DESCRIPTION). SHA-256 of the reviewed local sample: `1c627a069e38eff38094abd6a5251820e37af77396048531f1664f5112b53f38`. **This does not identify the original sampling algorithm** or verify the separate `airports.csv`. The input sample remains local by publication choice; only three aggregate/metric outputs are released.
 - **Credit Approval:** The [UCI dataset](https://archive.ics.uci.edu/dataset/27/credit+approval) identifies **690 instances**, J. R. Quinlan (1987), [DOI 10.24432/C5FS30](https://doi.org/10.24432/C5FS30), and **CC BY 4.0** for the official source. The local `crx_data.data` copy still requires an exact-source comparison and appropriate attribution.
 - **SMS Spam Collection:** The [UCI source](https://archive.ics.uci.edu/dataset/228/sms+spam+collection) is associated with Almeida and Hidalgo (2011), [DOI 10.24432/C5CC84](https://doi.org/10.24432/C5CC84), and **CC BY 4.0** for the official source. The local `sms.csv` includes formatting changes and has not been verified as an exact derivative.
 
@@ -57,7 +57,15 @@ git check-ignore -v \
 
 **Do not force-add these files** using `git add -f`. Ignoring a path prevents routine staging; it is not a license decision, a privacy assessment, or a substitute for reviewing previously tracked data.
 
-Three locally generated CSV summaries are also withheld pending publication review: `outputs/12_avaliacao_temporal.csv`, `outputs/13_metricas_classificacao_temporal.csv`, and `outputs/16_resumo_distancia_por_companhia.csv`. They are outputs, not input datasets, and the root `.gitignore` excludes `outputs/` by default.
+**Three derived CSV outputs have been approved** after source-row matching and independent consistency tests. They are not input datasets and are no longer blocked in root `.gitignore`:
+
+| Published derived output | Records | SHA-256 |
+|---|---:|---|
+| [`12_avaliacao_temporal.csv`](../outputs/12_avaliacao_temporal.csv) | 1 | `b63a8af849a67020e5d53eb14c9abbbe74f1b64bed0d4010784dc4e539681212` |
+| [`13_metricas_classificacao_temporal.csv`](../outputs/13_metricas_classificacao_temporal.csv) | 1 | `0bf8b3002efbb0dc3c74e8a68fcb224fae3fd6f7c093d19bdbf89882b85022cf` |
+| [`16_resumo_distancia_por_companhia.csv`](../outputs/16_resumo_distancia_por_companhia.csv) | 11 carriers; 10,000 flights | `df5250feb324f5330970808c00cf44db579787349f91f062debbdd66884e632b` |
+
+The two classification summaries agree on shared metrics; the carrier distances and counts match the local `flights.csv` when independently grouped. The classification baseline's balanced accuracy is 0.500 and ROC AUC is about 0.553: **teaching evidence, not a reliable predictive model**.
 
 ## 5. Publication review checklist
 
@@ -70,7 +78,7 @@ Before any local dataset or derivative is approved for a public commit, document
 - **Reproducibility:** exact filenames, expected columns, preprocessing steps, environment, and a test with the intended public inputs.
 - **Approval:** an explicit publication decision and corresponding updates to this register and `.gitignore` (if publication is authorized).
 
-**Current decision: do not publish the seven historical datasets or the three derived CSV summaries.** This README contains documentation only, not the underlying records.
+**Current decision: keep all seven historical input datasets local; publish only the three individually verified derived CSV summaries listed above.** This `datasets/` directory contains documentation, not underlying source records.
 
 ---
 

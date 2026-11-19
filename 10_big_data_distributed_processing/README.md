@@ -75,11 +75,11 @@ The notebooks were validated with **authorized local copies** of the input datas
 
 | Required local file | Purpose | Public distribution |
 |---|---|---|
-| `datasets/flights.csv` | Flight examples, ETL, baselines | Withheld pending source/redistribution verification |
+| `datasets/flights.csv` | Flight examples, ETL, baselines | Correspondence verified against CC0 pnwflights14; local dataset still not distributed |
 | `datasets/airports.csv` | Joins and lookup | Withheld pending source/redistribution verification |
 | `datasets/crx_data.data` | Credit-data governance | Corresponds to UCI Credit Approval; confirm source integrity and attribution before inclusion |
 
-**Potential upstream sources (not verified against local copies):** The [`pnwflights14` package](https://github.com/ismayc/pnwflights14) declares `License: CC0` in its `DESCRIPTION`, but this does **not** establish that the local 10,000-row `flights.csv` sample or `airports.csv` lookup came from that package or has matching schema, records or permitted transformations. Both remain local. [UCI Credit Approval](https://archive.ics.uci.edu/dataset/27/credit+approval) lists 690 instances and CC BY 4.0; the exact identity of the local `crx_data.data` copy is not yet verified. Do not add these files or the three locally derived CSV summaries to the public repository pending provenance, data integrity, attribution and publication review.
+**Verified flight sample provenance:** A read-only test confirmed that **10,000/10,000 local `flights.csv` rows** (16 columns, including multiplicity) match the **162,049-row** public [`pnwflights14` source at commit `0a122d9`](https://github.com/ismayc/pnwflights14/tree/0a122d90c17075aad22ecedfade7d581310e0fcc); its [`DESCRIPTION` declares CC0](https://github.com/ismayc/pnwflights14/blob/0a122d90c17075aad22ecedfade7d581310e0fcc/DESCRIPTION). The precise method used to select the local subset is still unknown. **Only the three reviewed derived CSV summaries are approved for publication**, not the 10,000-row local input dataset. The `airports.csv` source is **not** established by the flight-row comparison. [UCI Credit Approval](https://archive.ics.uci.edu/dataset/27/credit+approval) lists 690 instances and CC BY 4.0; the local `crx_data.data` identity remains unverified. All seven local datasets stay excluded pending their own release decisions.
 
 Four additional historical local files are not referenced by the revised notebook code: `airplanes.csv`, `sms.csv`, `points.tsv` and `2017_real_estate.csv`. They are not required to execute this notebook sequence and are not offered for download here. Without the three required input files, notebooks that read them will not complete on a fresh public clone.
 
@@ -96,7 +96,7 @@ Four additional historical local files are not referenced by the revised noteboo
 ├── datasets/
 │   ├── README.md                   # source register (en-US)
 │   └── README.pt-BR.md             # source register (pt-BR); data not redistributed
-└── outputs/                        # local CSV summaries, not currently tracked
+└── outputs/                        # three reviewed CSV summaries approved for this publication
 ```
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
@@ -193,13 +193,15 @@ Work through notebooks **01–16** in order. Differentiate conceptual simulation
 
 ### Generated Outputs
 
-Three CSV summaries were generated and validated **locally**; publication is selective because the root `.gitignore` ignores `**/outputs/` by default:
+Three CSV summaries were generated and independently checked against the local input and notebook invariants. Their source records match the CC0-licensed `pnwflights14` public dataset. **These three derived outputs are included in this publication**; input datasets remain local and excluded by `.gitignore`:
 
 | Notebook | File | Description |
 |---|---|---|
-| 12 | `outputs/12_avaliacao_temporal.csv` | Temporal evaluation summary |
-| 13 | `outputs/13_metricas_classificacao_temporal.csv` | Classification metrics |
-| 16 | `outputs/16_resumo_distancia_por_companhia.csv` | Flight-distance summary by carrier |
+| 12 | [`outputs/12_avaliacao_temporal.csv`](./outputs/12_avaliacao_temporal.csv) | Temporal evaluation summary |
+| 13 | [`outputs/13_metricas_classificacao_temporal.csv`](./outputs/13_metricas_classificacao_temporal.csv) | Classification metrics |
+| 16 | [`outputs/16_resumo_distancia_por_companhia.csv`](./outputs/16_resumo_distancia_por_companhia.csv) | Flight-distance summary by carrier |
+
+The logistic-regression baseline has **balanced accuracy 0.500**, **ROC AUC approximately 0.553**, and **average precision approximately 0.175** (test prevalence approximately 0.159). These weak predictive results are retained as a transparent teaching example, **not** a production-ready classifier. The carrier summary accounts for all 10,000 local flight records. See the bilingual datasets register for fixed upstream commit and output SHA-256 values.
 
 ### Exercises and Practice
 
@@ -238,7 +240,7 @@ Source identification does not by itself grant permission to redistribute every 
 | Author-owned educational text | [CC BY-NC 4.0](../LICENSE-CONTENT.md) | Original explanations and learning material |
 | Third-party datasets and software | Their respective terms | No sublicensing by this repository |
 
-The UCI Credit Approval source is listed as **CC BY 4.0**; attribution and exact-copy integrity must be checked if a local copy is ever distributed. Local flight and airport datasets remain withheld pending provenance and permissions.
+The UCI Credit Approval source is listed as **CC BY 4.0**; attribution and exact-copy integrity must be checked if a local copy is ever distributed. The local `flights.csv` sample has verified row correspondence to the CC0 upstream source but remains excluded by the current publication decision; the local airport dataset remains withheld pending separate provenance checks.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 

@@ -94,10 +94,10 @@ Inicie o JupyterLab **na pasta `09_recommender_systems/`**, pois os notebooks us
 ├── reference_materials/       # 16 Technical Guides / Guias Técnicos
 ├── cheat_sheets/              # 16 Cheat Sheets
 ├── datasets/                  # READMEs EN/PT e dois CSVs MovieLens versionados
-└── outputs/                   # Outputs MovieLens selecionados; capítulo 16 sintético local
+└── outputs/                   # 30 outputs MovieLens e dois CSVs sintéticos do capítulo 16
 ```
 
-Os arquivos `datasets/README.md`, `datasets/README.pt-BR.md` e os dois CSVs do MovieLens são versionados. Os dados sintéticos do notebook 16 são gerados em memória, e os novos resultados ficam locais até aprovação específica. Os outputs selecionados dos capítulos 01–15 são versionados em `outputs/`. Os READMEs ficam na raiz da área e os PDFs nas pastas de materiais complementares.
+Os arquivos `datasets/README.md`, `datasets/README.pt-BR.md` e os dois CSVs do MovieLens são versionados. Os dados sintéticos do notebook 16 são gerados em memória; os dois novos resultados sintéticos foram conferidos por execução isolada e revisão de conteúdo e serão incluídos nesta publicação. Outputs históricos locais derivados de Book-Crossing continuam excluídos até confirmar os direitos de reutilização. Os resultados MovieLens dos capítulos 01–15 estão publicados. Os READMEs ficam na raiz da área e os PDFs nas pastas de materiais complementares.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
@@ -201,7 +201,7 @@ Siga os notebooks 01–16 em ordem. Para cada tema, leia o Guia Técnico, execut
 
 ### Resultados Gerados
 
-As execuções dos notebooks podem gerar arquivos CSV e, no notebook 15, manifestos JSON. **Há 30 arquivos em `outputs/` já versionados no GitHub**, relativos aos capítulos 01–15. Eles representam resultados de execuções anteriores, não uma garantia de que novas execuções reproduzirão arquivos idênticos.
+As execuções dos notebooks podem gerar arquivos CSV e, no notebook 15, manifestos JSON. **Havia 30 arquivos em `outputs/` versionados no GitHub**, relativos aos capítulos 01–15; esta publicação acrescenta dois CSVs sintéticos revisados do capítulo 16, totalizando **32 após o commit**. Eles representam resultados de execuções anteriores, não uma garantia de que novas execuções reproduzirão arquivos idênticos.
 
 **Exemplos de resultados publicados:**
 
@@ -215,9 +215,9 @@ As execuções dos notebooks podem gerar arquivos CSV e, no notebook 15, manifes
 | 14 | [`14_ranking_hibrido_demonstrativo.csv`](./outputs/14_ranking_hibrido_demonstrativo.csv) | Ranking híbrido ilustrativo |
 | 15 | [`ranking_popularidade.csv`](./outputs/ranking_popularidade.csv) e [`15_manifesto_ranking.json`](./outputs/15_manifesto_ranking.json) | Ranking e manifesto de proveniência |
 
-**Capítulo 16 — arquivos somente locais, ainda não publicados:** `16_ranking_livros_sintetico.csv` e `16_resumo_feedback_livros_sintetico.csv` são nomes produzidos pelo código atual do notebook. Há versões históricas locais com outros nomes; elas não devem ser incluídas automaticamente no Git.
+**Capítulo 16 — diferenciar as duas origens:** [`16_ranking_livros_sintetico.csv`](./outputs/16_ranking_livros_sintetico.csv) e [`16_resumo_feedback_livros_sintetico.csv`](./outputs/16_resumo_feedback_livros_sintetico.csv) foram produzidos pelo notebook atual exclusivamente com registros fictícios. Duas execuções isoladas produziram hashes SHA-256 idênticos; a coluna `origem=sintetico_autoral` identifica a fonte. Os arquivos históricos locais `16_ranking_livros_amostra.csv` e `16_resumo_feedback_livros.csv` derivam de amostras Book-Crossing e continuam explicitamente excluídos pelo `.gitignore` da raiz até haver comprovação de direitos.
 
-O `.gitignore` preserva a exclusão de novos `outputs/16_*.csv`, sem remover os resultados anteriores já rastreados. Reexecutar notebooks pode sobrescrever arquivos locais. Rankings descritivos não equivalem a métricas de avaliação fora da amostra. Os dados e derivados de MovieLens continuam sujeitos aos termos de sua fonte.
+Novos outputs deixam de ser ignorados por categoria de diretório, mas exigem revisão individual antes do `git add`. Reexecutar notebooks pode sobrescrever arquivos locais. Rankings descritivos não equivalem a métricas de avaliação fora da amostra. Os dados e derivados de MovieLens continuam sujeitos aos termos de sua fonte.
 
 ### Exercícios e Prática
 

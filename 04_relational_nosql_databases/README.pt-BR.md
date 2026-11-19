@@ -160,13 +160,24 @@ Selecione esse kernel em cada notebook. Inicie o JupyterLab na pasta da área pa
 
 **Laboratórios opcionais com bancos reais**
 
-Leia [infra/LABORATORIOS.md](./infra/LABORATORIOS.md), configure os serviços isolados e então instale os drivers opcionais:
+Por padrão, os notebooks executam exemplos locais sem serviços externos. Somente em **ambiente isolado de estudos e previamente verificado** (nunca bases compartilhadas ou de produção), instale os drivers e inicie **um serviço de cada vez**, a partir de `04_relational_nosql_databases/`:
 
 ```bash
 python -m pip install -r requirements-laboratorios.txt
+docker compose -f infra/compose.yaml --profile postgres up -d
+# Substitua postgres por mongo ou cassandra para o laboratório correspondente.
 ```
 
-Não publique credenciais; ative `RUN_LIVE_DB=1` e `EP04_LAB_CONFIRM=SIM` no ambiente do servidor Jupyter somente para testes reais em serviços isolados e verificados.
+Configure as credenciais por variáveis de ambiente ou no arquivo local não versionado `infra/.env`; use `infra/.env.example` apenas como modelo. **Nunca publique credenciais.** Configure `RUN_LIVE_DB=1` e `EP04_LAB_CONFIRM=SIM` no ambiente **antes de iniciar o servidor Jupyter** e execute somente o notebook correspondente. Não ative todos os laboratórios indiscriminadamente.
+
+Para desligar o serviço selecionado sem apagar seu volume de dados, execute:
+
+```bash
+docker compose -f infra/compose.yaml --profile postgres down
+# Altere o perfil para mongo ou cassandra conforme necessário; não use -v.
+```
+
+O `ping` do MongoDB não comprova eleição de replica set nem sharding; testar isolamento no PostgreSQL exige sessões concorrentes; `SimpleStrategy` com fator de replicação 1 no Cassandra é apenas um exemplo de nó único, não uma implantação de produção. Consulte as [limitações documentadas dos laboratórios](#validation).
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
@@ -190,7 +201,7 @@ Não publique credenciais; ative `RUN_LIVE_DB=1` e `EP04_LAB_CONFIRM=SIM` no amb
 
 **Escopo e limitações.** São testes locais realizados pelo autor em 17/11/2026, não uma reprodução independente, benchmark de produção ou comprovação de tolerância a falhas distribuída. O teste PostgreSQL utiliza tabela temporária e desfaz as alterações por rollback. Os notebooks MongoDB 07–08 criam **coleções persistentes exclusivas de laboratório**; o notebook 09 apenas consulta o servidor. O laboratório Cassandra cria um **keyspace persistente exclusivo**. A inspeção e eventual limpeza desses objetos devem ser manuais, após confirmar seus nomes e sua propriedade. O MongoDB utilizado é standalone: não foram demonstradas eleição de replica set nem fragmentação real (*sharding*). O Cassandra operou em nó único, portanto não foi demonstrada replicação nem resiliência distribuída. Os dez CSVs foram confrontados com as referências publicadas; não são evidência dos laboratórios externos.
 
-Para reexecutar o núcleo com segurança, mantenha `RUN_LIVE_DB` e `EP04_LAB_CONFIRM` desativadas, escolha o kernel Python principal e utilize **Restart Kernel → Run All Cells**. Os laboratórios reais exigem `RUN_LIVE_DB=1` e `EP04_LAB_CONFIRM=SIM` no **ambiente do servidor Jupyter**, além de serviço isolado previamente verificado. Consulte [`infra/LABORATORIOS.md`](./infra/LABORATORIOS.md) antes de conectar; nunca use bases compartilhadas ou de produção.
+Para reexecutar o núcleo com segurança, mantenha `RUN_LIVE_DB` e `EP04_LAB_CONFIRM` desativadas, escolha o kernel Python principal e utilize **Restart Kernel → Run All Cells**. Os laboratórios reais exigem `RUN_LIVE_DB=1` e `EP04_LAB_CONFIRM=SIM` no **ambiente do servidor Jupyter**, além de serviço isolado previamente verificado. Siga as [instruções de laboratórios opcionais](#installation) antes de conectar; nunca use bases compartilhadas ou de produção.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
@@ -223,7 +234,7 @@ Examine scripts SQL e CQL, compare saídas locais com suas premissas e pratique 
 
 ### Laboratórios Opcionais com Bancos Reais
 
-Os notebooks executam exemplos locais por padrão. Para PostgreSQL, MongoDB e Cassandra, siga o manual [infra/LABORATORIOS.md](./infra/LABORATORIOS.md) e use as configurações isoladas em `infra/`. Não confunda simulações locais com testes de conexão real.
+Os notebooks executam exemplos locais por padrão. Para PostgreSQL, MongoDB e Cassandra, siga as [instruções de laboratórios opcionais](#installation) e use as configurações isoladas em `infra/`. Não confunda simulações locais com testes de conexão real.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 

@@ -12,7 +12,7 @@ Este registro documenta os dados utilizados na validação local da [Área 10 �
 
 | Arquivo local | Notebooks que o referenciam | Evidências e verificações pendentes | Situação de publicação |
 |---|---|---|---|
-| `flights.csv` | 01, 04, 08–13, 16 | Amostra histórica local de **10.000 registros de voos**. Sua estrutura de 2014 para SEA/PDX se assemelha aos dados do [`pnwflights14`](https://github.com/ismayc/pnwflights14), associados a registros do órgão norte-americano Bureau of Transportation Statistics. **Origem exata, transformações e condições de redistribuição desta cópia não foram verificadas.** | **Somente local — não versionar** |
+| `flights.csv` | 01, 04, 08–13, 16 | Amostra local de **10.000 voos e 16 colunas**. Teste de correspondência considerando multiplicidades confirmou **10.000/10.000 registros presentes** na [fonte pública `pnwflights14` no commit fixo `0a122d9`](https://github.com/ismayc/pnwflights14/tree/0a122d90c17075aad22ecedfade7d581310e0fcc), com 162.049 registros, licenciada sob **CC0**. **Método exato de amostragem ainda desconhecido.** | **Somente local — não versionar** |
 | `airports.csv` | 09 | Tabela de aeroportos utilizada em junções. **Fonte exata, versão e condições de redistribuição não verificadas.** | **Somente local — não versionar** |
 | `crx_data.data` | 14 | Arquivo local no formato de 690 registros associado ao [UCI Credit Approval](https://archive.ics.uci.edu/dataset/27/credit+approval), atribuído a J. R. Quinlan (1987). A fonte oficial da UCI está indicada sob **CC BY 4.0**, mas a identidade exata da cópia local ainda não foi confrontada com os dados oficiais. | **Somente local até conferência da fonte e atribuição** |
 
@@ -29,7 +29,7 @@ Os quatro arquivos históricos da segunda tabela **não são pré-requisitos** p
 
 ## 2. Fontes conhecidas não significam cópias verificadas
 
-- **Possível origem dos dados de voos:** o pacote `pnwflights14` [declara `License: CC0` em seu `DESCRIPTION`](https://github.com/ismayc/pnwflights14/blob/master/DESCRIPTION). Trata-se de uma **hipótese de proveniência**, não de comprovação de que `flights.csv` ou `airports.csv` sejam idênticos aos dados do pacote ou abrangidos por essa declaração. Não há comparação completa documentada de registros ou hashes.
+- **Correspondência verificada da amostra de voos:** em **19 de novembro de 2026**, teste local somente leitura comparou o arquivo `flights.csv` de 10.000 linhas e 16 colunas com os 162.049 registros da [fonte pública `pnwflights14` no commit fixo `0a122d9`](https://github.com/ismayc/pnwflights14/tree/0a122d90c17075aad22ecedfade7d581310e0fcc), incluindo multiplicidade de duplicatas. **Os 10.000 registros foram encontrados**. O [`DESCRIPTION` imutável declara CC0](https://github.com/ismayc/pnwflights14/blob/0a122d90c17075aad22ecedfade7d581310e0fcc/DESCRIPTION). SHA-256 da amostra local conferida: `1c627a069e38eff38094abd6a5251820e37af77396048531f1664f5112b53f38`. **Isso não identifica o algoritmo de amostragem original** nem verifica a fonte separada `airports.csv`. O dataset de entrada permanece local por decisão de publicação; somente três resumos e métricas derivados são liberados.
 - **Credit Approval:** a [UCI](https://archive.ics.uci.edu/dataset/27/credit+approval) informa **690 observações**, J. R. Quinlan (1987), [DOI 10.24432/C5FS30](https://doi.org/10.24432/C5FS30) e **CC BY 4.0** para a fonte oficial. A cópia local `crx_data.data` ainda exige comparação com a origem e atribuição adequada.
 - **SMS Spam Collection:** a [fonte da UCI](https://archive.ics.uci.edu/dataset/228/sms+spam+collection) é associada a Almeida e Hidalgo (2011), [DOI 10.24432/C5CC84](https://doi.org/10.24432/C5CC84) e **CC BY 4.0** para a fonte oficial. O arquivo local `sms.csv` contém mudanças de formatação e não foi validado como derivação exata.
 
@@ -57,7 +57,15 @@ git check-ignore -v \
 
 **Não force o versionamento desses arquivos** com `git add -f`. Uma regra de exclusão impede o estágio normal, mas não substitui a análise de licenças, privacidade ou dados já rastreados pelo Git.
 
-Três resumos CSV gerados localmente também permanecem fora da publicação até nova avaliação: `outputs/12_avaliacao_temporal.csv`, `outputs/13_metricas_classificacao_temporal.csv` e `outputs/16_resumo_distancia_por_companhia.csv`. São resultados gerados, não datasets de entrada, e o `.gitignore` da raiz ignora `outputs/` por padrão.
+**Três outputs CSV derivados foram aprovados** após validação de correspondência com a fonte e testes independentes de consistência. Não são datasets de entrada e não permanecem bloqueados no `.gitignore` da raiz:
+
+| Output derivado publicado | Registros | SHA-256 |
+|---|---:|---|
+| [`12_avaliacao_temporal.csv`](../outputs/12_avaliacao_temporal.csv) | 1 | `b63a8af849a67020e5d53eb14c9abbbe74f1b64bed0d4010784dc4e539681212` |
+| [`13_metricas_classificacao_temporal.csv`](../outputs/13_metricas_classificacao_temporal.csv) | 1 | `0bf8b3002efbb0dc3c74e8a68fcb224fae3fd6f7c093d19bdbf89882b85022cf` |
+| [`16_resumo_distancia_por_companhia.csv`](../outputs/16_resumo_distancia_por_companhia.csv) | 11 companhias; 10.000 voos | `df5250feb324f5330970808c00cf44db579787349f91f062debbdd66884e632b` |
+
+As métricas comuns dos notebooks 12 e 13 coincidem; as contagens e distâncias por companhia conferem com o agrupamento independente de `flights.csv`. O baseline de classificação obteve balanced accuracy de 0,500 e ROC AUC próxima de 0,553: **evidência didática, não um modelo preditivo confiável**.
 
 ## 5. Checklist para autorização de publicação
 
@@ -70,7 +78,7 @@ Antes de aprovar o commit público de qualquer dataset local ou derivado, docume
 - **Reprodutibilidade:** nomes dos arquivos, colunas esperadas, pré-processamento, ambiente e testes com as entradas destinadas ao público.
 - **Aprovação:** decisão explícita de publicação e atualização deste registro e do `.gitignore`, se a publicação for autorizada.
 
-**Decisão atual: não publicar os sete datasets históricos nem os três resumos CSV derivados.** Este README contém apenas documentação, sem os registros originais.
+**Decisão atual: manter locais os sete datasets históricos de entrada; publicar somente os três outputs derivados individualmente validados e descritos acima.** Esta pasta `datasets/` contém apenas documentação, sem os registros de origem.
 
 ---
 

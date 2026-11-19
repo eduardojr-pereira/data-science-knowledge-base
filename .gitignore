@@ -1,29 +1,17 @@
-# Python
+# Python: caches and local environments
 __pycache__/
 *.py[cod]
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
-
-# Ambientes virtuais
 .venv/
 venv/
 env/
 jupyter-env/
 
-# Jupyter
+# Jupyter, operating systems and editors
 .ipynb_checkpoints/
 .virtual_documents/
-
-# Credenciais e configurações locais
-.env
-.env.*
-!.env.example
-*.pem
-*.key
-secrets.json
-
-# Sistema operacional e editores
 .DS_Store
 Thumbs.db
 *~
@@ -31,30 +19,32 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Arquivos temporários
+# Credentials and local settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.json
+
+# Temporary files and non-curated legacy output directories
 *.tmp
 *.log
 *.bak
-
-# Resultados gerados
-**/outputs/
 **/saidas/
-
-# Publicar resultados da area 07
-!07_deep_learning/outputs/
-!07_deep_learning/outputs/**
-
-# Plotly legado da área 02
 /02_data_analysis_visualization/iframe_figures/
 
-# Resultados selecionados da área 09
-!09_recommender_systems/outputs/
-!09_recommender_systems/outputs/**
+# Model binaries in Area 08: inspect provenance, weights and size before publication.
+# Consolidated from 08_image_analysis_classification/.gitignore.
+/08_image_analysis_classification/**/*.h5
+/08_image_analysis_classification/**/*.onnx
 
-# Resultados sinteticos do capitulo 16 ainda nao autorizados para publicacao
-09_recommender_systems/outputs/16_*.csv
+# Auxiliary renderer files and outputs with unresolved reuse rights: keep locally
+/02_data_analysis_visualization/outputs/iframe_figures/figure_*.html
+/09_recommender_systems/outputs/16_ranking_livros_amostra.csv
+/09_recommender_systems/outputs/16_resumo_feedback_livros.csv
 
-# 13 arquivos historicos locais: preservar fora do Git (sem excluir do disco)
+# Historical local files: preserve on disk, do not publish
 /09_recommender_systems/datasets/PROVENIENCIA.md
 /09_recommender_systems/datasets/bx_books_amostra.csv
 /09_recommender_systems/datasets/bx_ratings_amostra.csv

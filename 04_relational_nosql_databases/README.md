@@ -162,13 +162,24 @@ Select this kernel in each notebook. Start JupyterLab in the area directory to k
 
 **Optional live-database labs**
 
-Read [infra/LABORATORIOS.md](./infra/LABORATORIOS.md), configure isolated services, and only then install the optional drivers:
+Notebooks run local examples without external services by default. Only for a **verified, isolated study environment** (never a shared or production database), install optional drivers and start **one service at a time** from the `04_relational_nosql_databases/` directory:
 
 ```bash
 python -m pip install -r requirements-laboratorios.txt
+docker compose -f infra/compose.yaml --profile postgres up -d
+# Replace postgres with mongo or cassandra to run the corresponding lab.
 ```
 
-Never commit credentials; start the Jupyter server with both `RUN_LIVE_DB=1` and `EP04_LAB_CONFIRM=SIM` only for verified, isolated live-database labs.
+Configure database credentials through environment variables or an untracked `infra/.env` file; use `infra/.env.example` only as a template. **Never commit actual credentials.** Before starting the Jupyter server, set `RUN_LIVE_DB=1` and `EP04_LAB_CONFIRM=SIM` in its environment, then execute *only* the appropriate notebook. Do not activate all laboratories indiscriminately.
+
+To shut down the selected service without deleting its data volume, run:
+
+```bash
+docker compose -f infra/compose.yaml --profile postgres down
+# Change the profile to mongo or cassandra as appropriate; do not add -v.
+```
+
+A MongoDB `ping` proves neither replica-set election nor sharding; PostgreSQL isolation tests require concurrent sessions; Cassandra `SimpleStrategy` with replication factor 1 is a single-node illustration, not a production deployment. Review the [documented lab limitations](#validation) before relying on these experiments.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -192,7 +203,7 @@ Never commit credentials; start the Jupyter server with both `RUN_LIVE_DB=1` and
 
 **Scope and limitations.** These are author-run local tests on November 17, 2026, not an independent reproduction, production benchmark, or certification of distributed fault tolerance. The PostgreSQL experiment uses a temporary table and rolls back its changes. MongoDB notebooks 07–08 create uniquely named **persistent lab collections**; notebook 09 only inspects the server. The Cassandra lab creates a **persistent, dedicated keyspace**. Inspect and clean up those objects manually, only after verifying their names and ownership. The MongoDB server is standalone, so no live replica-set election or sharding was demonstrated; the single-node Cassandra lab does not demonstrate distributed replication or resilience. The 10 CSV exports were checked against the published references; they do not constitute evidence of live-database experiments.
 
-For a safe core rerun, leave `RUN_LIVE_DB` and `EP04_LAB_CONFIRM` unset, select the main Python kernel, and use **Restart Kernel → Run All Cells**. Live labs require both `RUN_LIVE_DB=1` and `EP04_LAB_CONFIRM=SIM` in the **Jupyter server environment** plus a verified isolated service. Consult [`infra/LABORATORIOS.md`](./infra/LABORATORIOS.md) before connecting; do not run live labs against production or shared databases.
+For a safe core rerun, leave `RUN_LIVE_DB` and `EP04_LAB_CONFIRM` unset, select the main Python kernel, and use **Restart Kernel → Run All Cells**. Live labs require both `RUN_LIVE_DB=1` and `EP04_LAB_CONFIRM=SIM` in the **Jupyter server environment** plus a verified isolated service. Follow the [optional live-lab instructions](#installation) before connecting; do not run live labs against production or shared databases.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -225,7 +236,7 @@ Inspect SQL and CQL scripts, compare local outputs with their assumptions and ex
 
 ### Optional Live-Database Laboratories
 
-Notebooks run local examples by default. For PostgreSQL, MongoDB and Cassandra, follow [infra/LABORATORIOS.md](./infra/LABORATORIOS.md) and use isolated settings under `infra/`. Do not mistake local simulations for successful live connections.
+Notebooks run local examples by default. For PostgreSQL, MongoDB and Cassandra, follow the [optional live-lab instructions](#installation) and use isolated settings under `infra/`. Do not mistake local simulations for successful live connections.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
