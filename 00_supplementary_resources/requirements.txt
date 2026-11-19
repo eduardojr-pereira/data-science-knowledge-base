@@ -7,5 +7,6 @@ pandas
 numpy
 matplotlib
 ipykernel
+ipython
 jupyterlab
 # pyarrow é opcional para conversões de Polars para Pandas.

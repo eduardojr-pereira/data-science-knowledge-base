@@ -71,7 +71,7 @@ This area includes **16 Portuguese-language Jupyter notebooks** covering distrib
 
 ### Data Availability and Provenance
 
-The notebooks were validated with **authorized local copies** of the input datasets. The files are **not automatically redistributed** in this repository. See [`datasets/README.md`](./datasets/README.md) for the provenance register and access limitations.
+The notebooks were validated with **authorized local copies** of the input datasets. The files are **not automatically redistributed** in this repository. See the [dataset provenance register in English](./datasets/README.md) for per-file status and access limitations. A [Brazilian Portuguese version](./datasets/README.pt-BR.md) is also available.
 
 | Required local file | Purpose | Public distribution |
 |---|---|---|
@@ -94,8 +94,9 @@ Four additional historical local files are not referenced by the revised noteboo
 ├── reference_materials/           # 16 original Technical Guides (PDF)
 ├── cheat_sheets/                  # 16 one-page Cheat Sheets (PDF)
 ├── datasets/
-│   └── README.md                   # source register; local data not redistributed
-└── outputs/                        # selectively published CSV summaries, when approved
+│   ├── README.md                   # source register (en-US)
+│   └── README.pt-BR.md             # source register (pt-BR); data not redistributed
+└── outputs/                        # local CSV summaries, not currently tracked
 ```
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>

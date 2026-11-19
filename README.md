@@ -30,11 +30,11 @@
 
 ## Overview
 
-This repository is a curated learning collection covering programming, statistics, databases, machine learning and natural language processing. Materials are organized by subject, with runnable notebooks and complementary PDF resources.
+This repository is a curated learning collection covering programming, statistics, relational and NoSQL databases, machine learning, natural language processing, deep learning, computer vision, recommender systems and distributed data processing. Materials are organized by study area, with runnable notebooks and complementary PDF resources.
 
-**Currently published:** areas **00–06**, containing **71 notebooks**, **73 technical-reference PDFs** (72 guides plus one Student’s t table), and **70 Cheat Sheets**. Areas **07–10** are reserved for future review; their folders currently contain placeholders, **not published study materials**.
+**Published collection:** areas **00–10**, containing **139 notebooks**, **141 technical-reference PDFs** (140 Technical Guides plus one Student’s t table), and **138 Cheat Sheets**. All **11 areas** have their own bilingual READMEs. Publication does not imply that every notebook can be rerun from a public clone: see each area’s data-availability and validation notes.
 
-**Languages:** this overview and each completed area's README are available in English and Brazilian Portuguese. The notebooks and most of their PDF learning materials are written in **Brazilian Portuguese**.
+**Languages:** this overview and all 11 area READMEs are available in English and Brazilian Portuguese. The notebooks and most of their PDF learning materials are written in **Brazilian Portuguese**.
 
 **Learning goals:** progress from Python and data preparation to statistical reasoning, reproducible analysis, machine learning, and specialized applications. These resources are for study and portfolio demonstration, not a substitute for independent validation of a production solution.
 
@@ -57,12 +57,12 @@ This repository is a curated learning collection covering programming, statistic
 | 04 | [Relational & NoSQL Databases](./04_relational_nosql_databases/) | SQL, data modeling and optional database laboratories. | 10 | Published |
 | 05 | [Machine Learning](./05_machine_learning/) | Classical machine learning, evaluation and interpretability. | 17 | Published |
 | 06 | [Natural Language Processing](./06_natural_language_processing/) | Text processing, classification, retrieval and NLP concepts. | 17 | Published |
-| 07 | [Deep Learning](./07_deep_learning/) | Reserved for upcoming review and publication. | — | Planned — awaiting review |
-| 08 | [Image Analysis & Classification](./08_image_analysis_classification/) | Reserved for upcoming review and publication. | — | Planned — awaiting review |
-| 09 | [Recommender Systems](./09_recommender_systems/) | Reserved for upcoming review and publication. | — | Planned — awaiting review |
-| 10 | [Big Data & Distributed Processing](./10_big_data_distributed_processing/) | Reserved for upcoming review and publication. | — | Planned — awaiting review |
+| 07 | [Deep Learning](./07_deep_learning/) | Neural networks, training, regularization and attention architectures. | 20 | Published |
+| 08 | [Image Analysis & Classification](./08_image_analysis_classification/) | Image processing, feature extraction, detection and classification. | 16 | Published |
+| 09 | [Recommender Systems](./09_recommender_systems/) | Collaborative filtering, recommendation ranking and evaluation. | 16 | Published |
+| 10 | [Big Data & Distributed Processing](./10_big_data_distributed_processing/) | MapReduce, Hadoop, Spark and data-engineering workflows. | 16 | Published |
 
-**The area links lead to the exact directories published on GitHub.** Areas 07–10 will receive their own bilingual READMEs and materials only after review.
+**The area links lead to the corresponding published directories.** Consult each area’s README for the documented validation scope, optional laboratories, dataset access conditions and limitations.
 
 ### Directory Organization
 
@@ -79,13 +79,13 @@ data-science-knowledge-base/
 ├── 04_relational_nosql_databases/
 ├── 05_machine_learning/
 ├── 06_natural_language_processing/
-├── 07_deep_learning/                 # placeholder
-├── 08_image_analysis_classification/ # placeholder
-├── 09_recommender_systems/           # placeholder
-└── 10_big_data_distributed_processing/ # placeholder
+├── 07_deep_learning/
+├── 08_image_analysis_classification/
+├── 09_recommender_systems/
+└── 10_big_data_distributed_processing/
 ```
 
-Published subject folders typically include notebooks, `reference_materials/`, `cheat_sheets/`, and, when relevant, `datasets/`, `outputs/`, and `requirements.txt`. Consult each area README for its actual structure.
+Area folders typically include notebooks, `reference_materials/`, `cheat_sheets/`, and, when relevant, `datasets/`, `outputs/`, and `requirements.txt`. Some datasets and locally generated outputs are intentionally **not** published because provenance, rights or release approval remain pending. The root `.gitignore` excludes many *new* generated outputs, but it does not remove previously tracked approved files. Consult each area README for its actual structure and publication limits.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -156,6 +156,12 @@ Read the README for your chosen area, then follow its **Notebooks & Learning Mat
 
 The areas are learning modules, not all independently validated production applications. Some interactive visualizations and optional database services need additional local setup.
 
+### Dataset and output publication policy
+
+As of commit `4ff0a4a` (November 19, 2026), **128 files under `outputs/` are already tracked**. The root `.gitignore` ignores most *new, untracked* outputs through `**/outputs/`; it does not stop tracking files already committed. Its explicit exceptions allow new files under `07_deep_learning/outputs/` and `09_recommender_systems/outputs/`, while `09_recommender_systems/outputs/16_*.csv` remains excluded. These exceptions are **technical Git rules, not publication authorization**.
+
+Before committing any new dataset or generated output, review its source and usage rights (including derived-data restrictions), accidental personal/sensitive information, reproducibility and relevance; approve the specific files before staging. Use explicit Git paths and keep historical local files protected by `.gitignore` outside commits. Published third-party data are governed by their own license terms, not the repository’s MIT/CC BY-NC licenses. See the dataset registers for [area 03](./03_statistics/datasets/README.md), [area 09](./09_recommender_systems/datasets/README.md), and [area 10](./10_big_data_distributed_processing/datasets/README.md) for known limitations.
+
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
 ---
@@ -166,11 +172,11 @@ The areas are learning modules, not all independently validated production appli
 
 | Verification | Recorded status |
 |---|---|
-| Areas with bilingual documentation | 7 (00–06) |
-| Indexed study notebooks | 71 |
-| Technical reference PDFs | 73 (72 guides + Student’s t table) |
-| Cheat Sheets | 70 |
-| Areas reserved for future review | 4 (07–10) |
+| Areas with bilingual documentation | 11 (00–10) |
+| Indexed study notebooks | 139 |
+| Technical reference PDFs | 141 (140 guides + Student’s t table) |
+| Cheat Sheets | 138 |
+| Published study areas | 11 (00–10) |
 
 Previously recorded execution and review histories vary by area. See **Testing and Validation** in each published subject README for specific statements and limitations. **This repository-level README update does not mean all notebooks have been re-executed in a clean environment.**
 

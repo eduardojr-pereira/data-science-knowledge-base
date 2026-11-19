@@ -70,12 +70,12 @@ Esta área reúne **16 notebooks em português**, acompanhados de **16 Guias Té
 
 ### Conjuntos de Dados
 
-A pasta [`datasets/`](./datasets/README.md) contém a documentação de proveniência e das condições de uso dos dados. O repositório inclui dois arquivos do MovieLens:
+A pasta [`datasets/`](./datasets/README.pt-BR.md) contém a documentação de proveniência e das condições de uso dos dados. O repositório inclui dois arquivos do MovieLens:
 
 - [`datasets/ratings.csv`](./datasets/ratings.csv) — avaliações explícitas de usuários para filmes.
 - [`datasets/movies.csv`](./datasets/movies.csv) — títulos e gêneros dos filmes.
 
-Esses arquivos são provenientes do **MovieLens Latest Small (GroupLens Research, Universidade de Minnesota)** e seguem as condições de uso da fonte original, não as licenças aplicadas ao código e ao conteúdo didático autoral. Consulte o [documento de proveniência e uso](./datasets/README.md) antes de reutilizá-los ou redistribuí-los. A [licença específica da GroupLens](https://files.grouplens.org/datasets/movielens/ml-latest-small-README.html) exige atribuição nas publicações resultantes, proíbe alegar ou sugerir endosso da Universidade de Minnesota ou da GroupLens, permite redistribuição (inclusive de transformações) somente sob as mesmas condições e requer autorização prévia para usos comerciais ou geradores de receita. Os outputs derivados do MovieLens também devem ser avaliados sob essas condições; as licenças MIT/CC BY-NC do repositório não substituem a licença do dataset.
+Esses arquivos são provenientes do **MovieLens Latest Small (GroupLens Research, Universidade de Minnesota)** e seguem as condições de uso da fonte original, não as licenças aplicadas ao código e ao conteúdo didático autoral. Consulte o [documento de proveniência e uso](./datasets/README.pt-BR.md) antes de reutilizá-los ou redistribuí-los. A [licença específica da GroupLens](https://files.grouplens.org/datasets/movielens/ml-latest-small-README.html) exige atribuição nas publicações resultantes, proíbe alegar ou sugerir endosso da Universidade de Minnesota ou da GroupLens, permite redistribuição (inclusive de transformações) somente sob as mesmas condições e requer autorização prévia para usos comerciais ou geradores de receita. Os outputs derivados do MovieLens também devem ser avaliados sob essas condições; as licenças MIT/CC BY-NC do repositório não substituem a licença do dataset.
 
 O notebook 16 **não requer bases externas de livros**: constrói em memória um catálogo e interações de usuários totalmente sintéticos. Na convenção didática adotada, a nota `0` representa uma interação sem avaliação explícita, enquanto notas de `1` a `10` são avaliações explícitas. Essa convenção é **específica do exemplo sintético**, não uma regra universal. Os resultados não representam usuários ou livros reais.
 
@@ -93,11 +93,11 @@ Inicie o JupyterLab **na pasta `09_recommender_systems/`**, pois os notebooks us
 ├── 16_estudo_integrador_movielens_livros.ipynb
 ├── reference_materials/       # 16 Technical Guides / Guias Técnicos
 ├── cheat_sheets/              # 16 Cheat Sheets
-├── datasets/                  # README.md e dois CSVs MovieLens versionados
+├── datasets/                  # READMEs EN/PT e dois CSVs MovieLens versionados
 └── outputs/                   # Outputs MovieLens selecionados; capítulo 16 sintético local
 ```
 
-O arquivo `datasets/README.md` e os dois CSVs do MovieLens são versionados. Os dados sintéticos do notebook 16 são gerados em memória, e os novos resultados ficam locais até aprovação específica. Os outputs selecionados dos capítulos 01–15 são versionados em `outputs/`. Os READMEs ficam na raiz da área e os PDFs nas pastas de materiais complementares.
+Os arquivos `datasets/README.md`, `datasets/README.pt-BR.md` e os dois CSVs do MovieLens são versionados. Os dados sintéticos do notebook 16 são gerados em memória, e os novos resultados ficam locais até aprovação específica. Os outputs selecionados dos capítulos 01–15 são versionados em `outputs/`. Os READMEs ficam na raiz da área e os PDFs nas pastas de materiais complementares.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
@@ -201,19 +201,23 @@ Siga os notebooks 01–16 em ordem. Para cada tema, leia o Guia Técnico, execut
 
 ### Resultados Gerados
 
-Os notebooks incluem uma seção consolidada de exportação de resultados; ao executar **Run All**, elas criam `outputs/` e exportam CSVs (e dois manifestos JSON no capítulo 15) a partir das variáveis calculadas. Exemplos locais:
+As execuções dos notebooks podem gerar arquivos CSV e, no notebook 15, manifestos JSON. **Há 30 arquivos em `outputs/` já versionados no GitHub**, relativos aos capítulos 01–15. Eles representam resultados de execuções anteriores, não uma garantia de que novas execuções reproduzirão arquivos idênticos.
 
-- `01_resumo_movielens.csv` — dimensão e cobertura da matriz observada.
-- `03_ranking_popularidade_suavizada.csv` — classificação descritiva por média suavizada.
-- `10_predicoes_teste.csv` — notas reais e previsões do experimento.
-- `11_metricas_baselines.csv` — comparação de baselines de notas.
-- `12_metricas_topk_exemplo.csv` — métricas do exemplo de ranking.
-- `14_ranking_hibrido_demonstrativo.csv` — pontuação combinada ilustrativa.
-- `ranking_popularidade.csv` e `15_manifesto_ranking.json` — resultado e proveniência do notebook 15.
-- `16_ranking_livros_sintetico.csv` — ranking demonstrativo usando exclusivamente feedback sintético de livros.
-- `16_resumo_feedback_livros_sintetico.csv` — resumo das interações implícitas e explícitas sintéticas.
+**Exemplos de resultados publicados:**
 
-**Esses caminhos identificam artefatos gerados localmente; não são links para arquivos publicados no GitHub.** Reexecutar os notebooks pode substituir arquivos com o mesmo nome. Não confunda os rankings descritivos com validação offline de um recomendador.
+| Notebook | Arquivo publicado | Descrição |
+|---|---|---|
+| 01 | [`01_resumo_movielens.csv`](./outputs/01_resumo_movielens.csv) | Dimensão e cobertura da matriz observada |
+| 03 | [`03_ranking_popularidade_suavizada.csv`](./outputs/03_ranking_popularidade_suavizada.csv) | Ranqueamento descritivo por média suavizada |
+| 10 | [`10_predicoes_teste.csv`](./outputs/10_predicoes_teste.csv) | Notas observadas e previstas no experimento |
+| 11 | [`11_metricas_baselines.csv`](./outputs/11_metricas_baselines.csv) | Comparação de modelos baselines |
+| 12 | [`12_metricas_topk_exemplo.csv`](./outputs/12_metricas_topk_exemplo.csv) | Exemplo de métricas de ranking |
+| 14 | [`14_ranking_hibrido_demonstrativo.csv`](./outputs/14_ranking_hibrido_demonstrativo.csv) | Ranking híbrido ilustrativo |
+| 15 | [`ranking_popularidade.csv`](./outputs/ranking_popularidade.csv) e [`15_manifesto_ranking.json`](./outputs/15_manifesto_ranking.json) | Ranking e manifesto de proveniência |
+
+**Capítulo 16 — arquivos somente locais, ainda não publicados:** `16_ranking_livros_sintetico.csv` e `16_resumo_feedback_livros_sintetico.csv` são nomes produzidos pelo código atual do notebook. Há versões históricas locais com outros nomes; elas não devem ser incluídas automaticamente no Git.
+
+O `.gitignore` preserva a exclusão de novos `outputs/16_*.csv`, sem remover os resultados anteriores já rastreados. Reexecutar notebooks pode sobrescrever arquivos locais. Rankings descritivos não equivalem a métricas de avaliação fora da amostra. Os dados e derivados de MovieLens continuam sujeitos aos termos de sua fonte.
 
 ### Exercícios e Prática
 
@@ -252,7 +256,7 @@ Reproduza os exemplos, explique suas premissas, avalie suporte estatístico e vi
 | Conteúdo educacional original | [CC BY-NC 4.0](../LICENSE-CONTENT.md) | Textos, Guias Técnicos e Cheat Sheets autorais |
 | Bibliotecas e dados de terceiros | Licenças próprias | MovieLens e componentes externos |
 
-Essas condições aplicam-se **somente ao conteúdo cujos direitos pertencem ao autor**. Os arquivos MovieLens incluídos seguem os termos originais da GroupLens, descritos em [`datasets/README.md`](./datasets/README.md). Os registros de livros do notebook 16 são exemplos sintéticos originais; materiais históricos privados não são redistribuídos.
+Essas condições aplicam-se **somente ao conteúdo cujos direitos pertencem ao autor**. Os arquivos MovieLens incluídos seguem os termos originais da GroupLens, descritos em [`datasets/README.pt-BR.md`](./datasets/README.pt-BR.md). Os registros de livros do notebook 16 são exemplos sintéticos originais; materiais históricos privados não são redistribuídos.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 

@@ -180,7 +180,7 @@ Não publique credenciais; ative `RUN_LIVE_DB=1` e `EP04_LAB_CONFIRM=SIM` no amb
 |---|---|
 | Notebooks documentados e reexecutados localmente | 10/10 — 17/11/2026 |
 | Exportações CSV do núcleo | 10/10 — estrutura e conteúdo equivalentes às referências publicadas |
-| Materiais complementares | 10 Guias Técnicos / 10 Cheat Sheets (conteúdo dos PDFs reservado à revisão editorial global) |
+| Materiais complementares | 10 Guias Técnicos corrigidos e validados editorialmente na Fase 5 / 10 Cheat Sheets disponíveis (sem nova auditoria das Cheat Sheets nesta atualização) |
 | Dependências principais | `requirements.txt` |
 | Drivers opcionais de bancos reais | `requirements-laboratorios.txt` (separados do núcleo) |
 | PostgreSQL — notebook 05 | Laboratório real isolado aprovado: conexão, `CHECK`, `SAVEPOINT`, transferência e rollback em tabela temporária, sem `COMMIT` |

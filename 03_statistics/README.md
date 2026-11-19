@@ -68,6 +68,8 @@ Interpret distributions, simulate samples, estimate intervals, test hypotheses a
 - [tx_desocupacao_estados_br.csv](./datasets/tx_desocupacao_estados_br.csv)
 - [tx_desocupacao_estados_br_original.csv](./datasets/tx_desocupacao_estados_br_original.csv)
 
+[Dataset provenance and usage](./datasets/README.md) — source evidence, limitations and permitted-use cautions.
+
 ### Directory Structure
 
 ```text
@@ -87,7 +89,7 @@ Interpret distributions, simulate samples, estimate intervals, test hypotheses a
 ├── 10_modelos_estatisticos_avancados.ipynb
 ├── reference_materials/
 ├── cheat_sheets/
-├── datasets/
+├── datasets/                        # 3 CSV inputs; bilingual provenance register
 └── outputs/
 ```
 
@@ -179,7 +181,7 @@ Select this kernel in each notebook. Start JupyterLab in the area directory to k
 
 The end-to-end re-execution and output audit were completed locally on November 16, 2026. The updated `10_comparacao_modelos.csv` adds `tipo_resposta` so that AIC values for models with **different response variables** are not presented as directly comparable. Count-model AICs and binary-outcome-model AICs must not be ranked together.
 
-**Data provenance (2026-11-17 review):** The 27 state-level unemployment rates in `tx_desocupacao_estados_br_original.csv` match the 27 Federation Unit figures in [IBGE's PNAD Contínua, second quarter of 2020](https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/28700-desemprego-avanca-em-11-estados-no-2-trimestre-amapa-e-para-tem-queda). The cleaned file `tx_desocupacao_estados_br.csv` preserves the 27 state/rate pairs while removing an initial UTF-8 BOM, trimming surrounding whitespace and changing the separator from semicolon to comma. This establishes numerical equivalence and an official source for the historical values, **not** the archived file's complete chain of custody. These figures must not be cited as current labor statistics. `candidatos_reconstruidos.csv` contains 20 educationally reconstructed candidate records; its upstream source and reconstruction procedure still need documentation. The historical caveat inside notebook 02 has not been revised as part of this documentation-only update.
+**Data provenance (2026-11-17 review):** The 27 state-level unemployment rates in `tx_desocupacao_estados_br_original.csv` match the 27 Federation Unit figures in [IBGE's PNAD Contínua, second quarter of 2020](https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/28700-desemprego-avanca-em-11-estados-no-2-trimestre-amapa-e-para-tem-queda). The cleaned file `tx_desocupacao_estados_br.csv` preserves the 27 state/rate pairs while removing an initial UTF-8 BOM, trimming surrounding whitespace and changing the separator from semicolon to comma. This establishes numerical equivalence and an official source for the historical values, **not** the archived file's complete chain of custody. These figures must not be cited as current labor statistics. `candidatos_reconstruidos.csv` contains 20 educationally reconstructed candidate records; its original source, reconstruction method and permission for further redistribution are not established. The [dataset provenance register](./datasets/README.md) documents this limitation without claiming that the records are fully synthetic. The historical caveat inside notebook 02 has not been revised as part of this documentation-only update.
 
 To validate a new environment, run `python -m pip check` and **Restart Kernel → Run All Cells** for each notebook in order, checking tables, plots and generated files.
 

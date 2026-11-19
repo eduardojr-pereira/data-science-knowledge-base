@@ -71,7 +71,7 @@ Esta área reúne **16 notebooks Jupyter em português**, cobrindo conceitos de 
 
 ### Disponibilidade e Proveniência dos Dados
 
-Os notebooks foram validados com **cópias locais autorizadas** dos conjuntos de dados. Os arquivos **não são automaticamente redistribuídos** neste repositório. Consulte [`datasets/README.md`](./datasets/README.md) para conferir a situação de proveniência e as limitações de acesso.
+Os notebooks foram validados com **cópias locais autorizadas** dos conjuntos de dados. Os arquivos **não são automaticamente redistribuídos** neste repositório. Consulte o [registro de proveniência em português](./datasets/README.pt-BR.md) para conferir a situação de cada arquivo e as limitações de acesso. Há também uma [versão em inglês](./datasets/README.md).
 
 | Arquivo local necessário | Finalidade | Publicação |
 |---|---|---|
@@ -94,8 +94,9 @@ Quatro arquivos históricos locais adicionais não são referenciados pelo códi
 ├── reference_materials/           # 16 Guias Técnicos autorais (PDF)
 ├── cheat_sheets/                  # 16 Cheat Sheets de uma página (PDF)
 ├── datasets/
-│   └── README.md                   # proveniência; dados locais não redistribuídos
-└── outputs/                        # resumos CSV publicados seletivamente, após aprovação
+│   ├── README.md                   # proveniência (en-US)
+│   └── README.pt-BR.md             # proveniência (pt-BR); dados não publicados
+└── outputs/                        # resumos CSV locais, não versionados atualmente
 ```
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>

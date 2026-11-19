@@ -1,30 +1,77 @@
-# Data provenance and local-use register / Registro de proveniência e uso local
+# Dataset Provenance and Local Reproducibility
 
-The reviewed notebooks were validated with historical **local** copies. The public repository must not automatically redistribute these files. / Os notebooks revisados foram validados com cópias **locais** históricas. O repositório público não deve redistribuí-las automaticamente.
+[🇺🇸 English (US)](./README.md) | [🇧🇷 Português (Brasil)](./README.pt-BR.md)
 
-| Local file | Needed by revised notebooks? | Provenance / publication status |
+> **Public repository status:** Documentation only. The seven historical datasets listed below are **not distributed** by this repository. Their local copies remain outside version control pending individual provenance, privacy, and publication reviews.
+
+This register describes the inputs used during local validation of the [Big Data and Distributed Processing area](../README.md), the evidence currently available about their sources, and the conditions that must be met before any dataset can be published. It does **not** certify ownership or redistribution rights over third-party records.
+
+## 1. Dataset inventory
+
+**Inputs referenced by the reviewed notebooks**
+
+| Local filename | Notebook references | Evidence and outstanding verification | Publication status |
+|---|---|---|---|
+| `flights.csv` | 01, 04, 08–13, 16 | Historical local sample of **10,000 flight records**. Its 2014 SEA/PDX structure resembles the [`pnwflights14`](https://github.com/ismayc/pnwflights14) data, which refer to U.S. Bureau of Transportation Statistics records. **Exact source, transformations, and redistribution terms for this local file are unverified.** | **Local only — do not commit** |
+| `airports.csv` | 09 | Airport lookup used in joins. **Exact source, version, and redistribution terms are unverified.** | **Local only — do not commit** |
+| `crx_data.data` | 14 | Local file in the 690-record format associated with [UCI Credit Approval](https://archive.ics.uci.edu/dataset/27/credit+approval), attributed to J. R. Quinlan (1987). The UCI source is listed under **CC BY 4.0**, but the exact identity of the local copy has not been verified against the official data. | **Local only pending source comparison and attribution** |
+
+**Additional historical files, not referenced by the current reviewed notebook code**
+
+| Local filename | Recorded information | Publication status |
 |---|---|---|
-| `flights.csv` | Yes / Sim | 10,000-record local sample. Its 2014 SEA/PDX structure resembles `pnwflights14`, which uses US Bureau of Transportation Statistics data. The sample's exact lineage and redistribution conditions are **not yet verified**. Do not commit. |
-| `airports.csv` | Yes / Sim | Airport lookup; source and redistribution terms **not verified**. Do not commit. |
-| `crx_data.data` | Yes / Sim | 690-row format corresponding to [UCI Credit Approval](https://archive.ics.uci.edu/dataset/27/credit+approval), J. R. Quinlan (1987), DOI [10.24432/C5FS30](https://doi.org/10.24432/C5FS30), CC BY 4.0. Confirm exact copy/source integrity and document attribution before redistributing. |
-| `airplanes.csv` | No / Não | Historical aircraft metadata; exact source/licensing unverified. Do not commit. |
-| `sms.csv` | No / Não | 5,574 local rows (semicolon-separated, added ID); resembles [UCI SMS Spam Collection](https://archive.ics.uci.edu/dataset/228/sms+spam+collection), Almeida and Hidalgo (2011), DOI [10.24432/C5CC84](https://doi.org/10.24432/C5CC84), CC BY 4.0. Local transformations and exact record correspondence **not verified**. Do not commit. |
-| `points.tsv` | No / Não | Local point sample; source unverified. Do not commit. |
-| `2017_real_estate.csv` | No / Não | Historical property listings including street-address fields; potential privacy/provenance considerations. Do not commit. |
+| `airplanes.csv` | Historical aircraft metadata; exact source and licensing unverified. | Local only |
+| `sms.csv` | **5,574 local rows**, semicolon-separated with an added identifier; resembles the [UCI SMS Spam Collection](https://archive.ics.uci.edu/dataset/228/sms+spam+collection). The local transformations and record-level correspondence are unverified. | Local only |
+| `points.tsv` | Historical point sample; origin and terms unverified. | Local only |
+| `2017_real_estate.csv` | Historical real-estate listings containing street-address fields; provenance and potential privacy implications require review. | Local only |
 
-## Source candidates and publication gates / Fontes possíveis e condições de publicação
+The four historical files in the second table are **not prerequisites** for the current 16-notebook learning sequence. Their presence in an author's local archive does not imply that they should be published or deleted.
 
-- `pnwflights14`: the upstream package [`DESCRIPTION`](https://github.com/ismayc/pnwflights14/blob/master/DESCRIPTION) declares `License: CC0`. This is a source hypothesis only; no record-by-record or hash comparison against the local `flights.csv` / `airports.csv` has been performed. / O pacote declara CC0, mas a correspondência com os arquivos locais não foi demonstrada.
-- UCI Credit Approval: [official dataset](https://archive.ics.uci.edu/dataset/27/credit+approval), 690 instances, CC BY 4.0 (J. R. Quinlan, 1987; DOI 10.24432/C5FS30). The local `crx_data.data` has not been compared with the official source. / A cópia local ainda não foi confrontada com a fonte oficial.
-- Do not infer a redistribution license from a similar name, sample size or schema. Before publication, document the download/source location, version/date, schema, any transformations, attribution and applicable rights; compare records or hashes with the known original where feasible. / Antes de publicar, registrar origem, versão/data, esquema, transformações, atribuição e direitos; comparar registros ou hashes quando possível.
-- Keep the unverified input files, four unused historical datasets, and the three locally derived CSV summaries out of version control until their publication status is independently reviewed. / Preservar esses arquivos exclusivamente no ambiente local até uma revisão específica.
+## 2. Known sources are not verified copies
 
-## Reproduction / Reproduzibilidade
+- **Possible flight-data origin:** The `pnwflights14` package [declares `License: CC0` in its `DESCRIPTION`](https://github.com/ismayc/pnwflights14/blob/master/DESCRIPTION). This is a **lineage hypothesis**, not proof that the local `flights.csv` or `airports.csv` is identical to the package data or covered by that declaration. No full record-by-record or hash comparison has been documented.
+- **Credit Approval:** The [UCI dataset](https://archive.ics.uci.edu/dataset/27/credit+approval) identifies **690 instances**, J. R. Quinlan (1987), [DOI 10.24432/C5FS30](https://doi.org/10.24432/C5FS30), and **CC BY 4.0** for the official source. The local `crx_data.data` copy still requires an exact-source comparison and appropriate attribution.
+- **SMS Spam Collection:** The [UCI source](https://archive.ics.uci.edu/dataset/228/sms+spam+collection) is associated with Almeida and Hidalgo (2011), [DOI 10.24432/C5CC84](https://doi.org/10.24432/C5CC84), and **CC BY 4.0** for the official source. The local `sms.csv` includes formatting changes and has not been verified as an exact derivative.
 
-- The notebooks use relative `datasets/` paths, especially `flights.csv`, `airports.csv`, and `crx_data.data`.
-- To reproduce the author's local run, obtain datasets through their legitimate source or from an authorized local copy, and preserve the expected schema and filenames.
-- An identified upstream project is **not** proof that a particular local file is an unmodified copy or may be redistributed.
-- Notebook execution was validated **locally**; cloning the public repository alone is **not sufficient** to rerun all 16 notebooks until a documented, legally distributable dataset setup is supplied.
-- Do not publish raw historical data, property addresses, privately sourced datasets, or licenses inferred from filenames alone.
+**Do not infer a license from a matching filename, schema, row count, or possible upstream project.** The repository's [MIT code license](../../LICENSE-CODE.txt) and [CC BY-NC 4.0 content license](../../LICENSE-CONTENT.md) do not automatically apply to third-party datasets.
 
-This file is documentation only; it contains no raw dataset records. / Este arquivo contém apenas documentação, sem registros dos datasets.
+## 3. Reproducing the notebooks locally
+
+1. Obtain any required dataset from a **legitimate, independently verified source** or an authorized local copy. Do not assume the candidate sources above are drop-in replacements.
+2. Place the files you are authorized to use in this local directory, preserving the filenames `flights.csv`, `airports.csv`, and `crx_data.data` and confirming the schemas expected by the notebooks.
+3. Follow the [Area 10 setup instructions](../README.md#installation) to configure the Python environment and, where applicable, the optional local Spark labs.
+4. Run notebooks from the Area 10 directory, check their output and document any differences caused by the input data or environment.
+
+The author's 16 reviewed notebooks were validated with historical authorized **local** copies on **November 17, 2026**. **A fresh public clone is not, by itself, sufficient to reproduce every notebook**, and local Spark validation is not proof of production cluster behavior.
+
+## 4. Local files and Git protection
+
+The repository's root [`.gitignore`](../../.gitignore) explicitly excludes these seven historical datasets. From the repository root, you can inspect the applicable rules without changing files:
+
+```bash
+git check-ignore -v \
+  10_big_data_distributed_processing/datasets/flights.csv \
+  10_big_data_distributed_processing/datasets/airports.csv \
+  10_big_data_distributed_processing/datasets/crx_data.data
+```
+
+**Do not force-add these files** using `git add -f`. Ignoring a path prevents routine staging; it is not a license decision, a privacy assessment, or a substitute for reviewing previously tracked data.
+
+Three locally generated CSV summaries are also withheld pending publication review: `outputs/12_avaliacao_temporal.csv`, `outputs/13_metricas_classificacao_temporal.csv`, and `outputs/16_resumo_distancia_por_companhia.csv`. They are outputs, not input datasets, and the root `.gitignore` excludes `outputs/` by default.
+
+## 5. Publication review checklist
+
+Before any local dataset or derivative is approved for a public commit, document and verify:
+
+- **Provenance:** original publisher, exact download URL, acquisition date, version, and chain of custody.
+- **Integrity:** schema, record counts, hashes or record-level comparison where feasible, and all local transformations.
+- **Rights:** dataset-specific license/terms, attribution requirements, redistribution and commercial-use restrictions, and rights to transformed copies.
+- **Privacy and suitability:** personal or location-related fields, especially street addresses, plus any necessary redaction or exclusion.
+- **Reproducibility:** exact filenames, expected columns, preprocessing steps, environment, and a test with the intended public inputs.
+- **Approval:** an explicit publication decision and corresponding updates to this register and `.gitignore` (if publication is authorized).
+
+**Current decision: do not publish the seven historical datasets or the three derived CSV summaries.** This README contains documentation only, not the underlying records.
+
+---
+
+[← Area 10 overview](../README.md) · [Português (Brasil)](./README.pt-BR.md)

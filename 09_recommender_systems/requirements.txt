@@ -1,5 +1,5 @@
-# Disciplina 09 — núcleo obrigatório, sem Surprise/Colab
-# Versões-alvo compatíveis com o ambiente Python 3.14 do Projeto PUC.
+# Área 09 — dependências básicas dos notebooks, sem Surprise/Colab
+# Restrições de versão alinhadas ao ambiente Python 3.14 registrado nos testes.
 numpy>=2.0,<3
 pandas>=2.2,<3
 scipy>=1.15,<2

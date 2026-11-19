@@ -182,7 +182,7 @@ Never commit credentials; start the Jupyter server with both `RUN_LIVE_DB=1` and
 |---|---|
 | Notebooks documented and locally re-executed | 10/10 — November 17, 2026 |
 | Core CSV exports | 10/10 — structures and contents equivalent to the published references |
-| Supporting materials | 10 guides / 10 Cheat Sheets (PDF content to be revisited in the global editorial review) |
+| Supporting materials | 10 Technical Guides editorially corrected and validated in Phase 5 / 10 Cheat Sheets available (no new Cheat Sheet review implied by this update) |
 | Core dependencies | `requirements.txt` |
 | Optional database drivers | `requirements-laboratorios.txt` (kept separate from the core) |
 | PostgreSQL — notebook 05 | Live isolated lab passed: connection, `CHECK`, `SAVEPOINT`, transfer and rollback in a temporary table, without `COMMIT` |

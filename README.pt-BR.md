@@ -30,11 +30,11 @@
 
 ## Visão Geral
 
-Este repositório reúne materiais de estudo revisados sobre programação, estatística, bancos de dados, aprendizado de máquina e processamento de linguagem natural. O acervo é organizado por tema, com notebooks executáveis e PDFs complementares.
+Este repositório reúne materiais de estudo sobre programação, estatística, bancos de dados relacionais e NoSQL, aprendizado de máquina, processamento de linguagem natural, aprendizado profundo, visão computacional, sistemas de recomendação e processamento distribuído. O acervo é organizado por área de estudo, com notebooks executáveis e PDFs complementares.
 
-**Conteúdo já publicado:** áreas **00–06**, com **71 notebooks**, **73 referências técnicas em PDF** (72 guias mais uma tabela t de Student) e **70 Cheat Sheets**. As áreas **07–10** estão reservadas para revisão futura; suas pastas contêm apenas arquivos marcadores, **não materiais didáticos publicados**.
+**Acervo publicado:** áreas **00–10**, com **139 notebooks**, **141 PDFs de referência técnica** (140 Guias Técnicos e uma tabela t de Student) e **138 Cheat Sheets**. As **11 áreas** possuem READMEs em inglês e português brasileiro. A publicação não garante execução integral a partir de um clone público: consulte as limitações de dados e validação de cada área.
 
-**Idiomas:** esta apresentação e os READMEs das áreas concluídas estão disponíveis em inglês e português brasileiro. Os notebooks e a maior parte dos materiais em PDF estão escritos em **português brasileiro**.
+**Idiomas:** esta apresentação e os READMEs das 11 áreas estão disponíveis em inglês e português brasileiro. Os notebooks e a maior parte dos materiais em PDF estão escritos em **português brasileiro**.
 
 **Objetivos:** avançar de Python e preparação de dados até raciocínio estatístico, análise reproduzível, aprendizado de máquina e aplicações especializadas. O acervo é destinado a estudo e demonstração de portfólio, não substituindo validação independente para uso em produção.
 
@@ -57,12 +57,12 @@ Este repositório reúne materiais de estudo revisados sobre programação, esta
 | 04 | [Bancos de Dados Relacionais e NoSQL](./04_relational_nosql_databases/) | SQL, modelagem de dados e laboratórios opcionais. | 10 | Publicada |
 | 05 | [Aprendizado de Máquina](./05_machine_learning/) | Aprendizado de máquina clássico, avaliação e interpretabilidade. | 17 | Publicada |
 | 06 | [Processamento de Linguagem Natural](./06_natural_language_processing/) | Processamento de textos, classificação, recuperação e conceitos de PLN. | 17 | Publicada |
-| 07 | [Aprendizado Profundo](./07_deep_learning/) | Reservada para revisão e publicação futura. | — | Planejada — aguardando revisão |
-| 08 | [Análise e Classificação de Imagens](./08_image_analysis_classification/) | Reservada para revisão e publicação futura. | — | Planejada — aguardando revisão |
-| 09 | [Sistemas de Recomendação](./09_recommender_systems/) | Reservada para revisão e publicação futura. | — | Planejada — aguardando revisão |
-| 10 | [Big Data e Processamento Distribuído](./10_big_data_distributed_processing/) | Reservada para revisão e publicação futura. | — | Planejada — aguardando revisão |
+| 07 | [Aprendizado Profundo](./07_deep_learning/) | Redes neurais, treinamento, regularização e arquiteturas de atenção. | 20 | Publicada |
+| 08 | [Análise e Classificação de Imagens](./08_image_analysis_classification/) | Processamento de imagens, descritores, detecção e classificação. | 16 | Publicada |
+| 09 | [Sistemas de Recomendação](./09_recommender_systems/) | Filtragem colaborativa, ranqueamento de recomendações e avaliação. | 16 | Publicada |
+| 10 | [Big Data e Processamento Distribuído](./10_big_data_distributed_processing/) | MapReduce, Hadoop, Spark e fluxos de engenharia de dados. | 16 | Publicada |
 
-**Os links levam aos diretórios reais publicados no GitHub.** As áreas 07–10 receberão READMEs bilíngues e materiais apenas após a revisão.
+**Os links levam aos diretórios publicados correspondentes.** Consulte o README de cada área para verificar o escopo da validação, os laboratórios opcionais, as condições de acesso aos datasets e as limitações.
 
 ### Organização de Diretórios
 
@@ -79,13 +79,13 @@ data-science-knowledge-base/
 ├── 04_relational_nosql_databases/
 ├── 05_machine_learning/
 ├── 06_natural_language_processing/
-├── 07_deep_learning/                 # placeholder
-├── 08_image_analysis_classification/ # placeholder
-├── 09_recommender_systems/           # placeholder
-└── 10_big_data_distributed_processing/ # placeholder
+├── 07_deep_learning/
+├── 08_image_analysis_classification/
+├── 09_recommender_systems/
+└── 10_big_data_distributed_processing/
 ```
 
-As pastas já publicadas geralmente incluem notebooks, `reference_materials/`, `cheat_sheets/` e, quando aplicável, `datasets/`, `outputs/` e `requirements.txt`. Consulte o README de cada área para conhecer sua estrutura real.
+As pastas das áreas geralmente incluem notebooks, `reference_materials/`, `cheat_sheets/` e, quando aplicável, `datasets/`, `outputs/` e `requirements.txt`. Alguns datasets e resultados locais **não** são publicados enquanto existirem pendências de proveniência, direitos ou autorização. O `.gitignore` da raiz ignora muitos *novos* outputs, mas não remove arquivos aprovados já rastreados. Consulte o README de cada área para conhecer sua estrutura e os limites de publicação.
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
@@ -156,6 +156,12 @@ Leia o README da área escolhida e siga a tabela **Notebooks e Materiais de Estu
 
 As áreas são módulos de estudo, não necessariamente aplicações de produção validadas de maneira independente. Visualizações interativas e serviços de bancos de dados opcionais podem exigir configuração local adicional.
 
+### Política de publicação de datasets e outputs
+
+No commit `4ff0a4a` (19/11/2026), **128 arquivos em `outputs/` já estão rastreados**. O `.gitignore` da raiz ignora a maioria dos *novos arquivos ainda não rastreados* via `**/outputs/`; isso não interrompe o rastreamento dos arquivos já commitados. As exceções explícitas permitem novos arquivos em `07_deep_learning/outputs/` e `09_recommender_systems/outputs/`, mas `09_recommender_systems/outputs/16_*.csv` continua excluído. Essas exceções são **regras técnicas do Git, não autorização de publicação**.
+
+Antes de versionar novos datasets ou resultados, conferir a fonte e os direitos de uso (inclusive de dados derivados), a ausência de informações pessoais/sensíveis indevidas, a reprodutibilidade e a pertinência; aprovar os arquivos específicos antes do `git add`. Usar caminhos explícitos e manter arquivos históricos locais protegidos pelo `.gitignore` fora dos commits. Dados de terceiros seguem suas licenças próprias, não as licenças MIT/CC BY-NC do material autoral. Consulte os registros de datasets das [áreas 03](./03_statistics/datasets/README.pt-BR.md), [09](./09_recommender_systems/datasets/README.pt-BR.md) e [10](./10_big_data_distributed_processing/datasets/README.pt-BR.md) para conhecer as limitações identificadas.
+
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
 ---
@@ -166,11 +172,11 @@ As áreas são módulos de estudo, não necessariamente aplicações de produç�
 
 | Verificação | Situação documentada |
 |---|---|
-| Áreas com documentação bilíngue | 7 (00–06) |
-| Notebooks de estudo indexados | 71 |
-| PDFs de referência técnica | 73 (72 guias + tabela t de Student) |
-| Cheat Sheets | 70 |
-| Áreas reservadas para revisão futura | 4 (07–10) |
+| Áreas com documentação bilíngue | 11 (00–10) |
+| Notebooks de estudo indexados | 139 |
+| PDFs de referência técnica | 141 (140 guias + tabela t de Student) |
+| Cheat Sheets | 138 |
+| Áreas de estudo publicadas | 11 (00–10) |
 
 Os registros anteriores de execução e revisão variam por área. Consulte **Testes e Validação** no README de cada área publicada para conhecer informações específicas e limitações. **A atualização do README principal não significa que todos os notebooks tenham sido novamente executados em ambiente limpo.**
 
