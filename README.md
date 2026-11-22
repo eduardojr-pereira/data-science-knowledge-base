@@ -8,7 +8,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white&style=for-the-badge) ![Data Science](https://img.shields.io/badge/Data-Science-21618C?style=for-the-badge)
 
-*A structured, bilingual entry point to a growing collection of hands-on Data Science study materials, Jupyter notebooks and technical references.*
+*A structured, entry point to a growing collection of hands-on Data Science study materials, Jupyter notebooks and technical references.*
 
 </div>
 
