@@ -71,6 +71,14 @@ Preprocess and represent text, build classical classification/retrieval baseline
 
 - [corpus_demo.txt](./datasets/corpus_demo.txt)
 
+### Generated Outputs
+
+The notebooks reproduce these three CSV files in [`outputs/`](./outputs/):
+
+- [06_bag_of_words_exemplo.csv](./outputs/06_bag_of_words_exemplo.csv)
+- [07_ranking_recuperacao.csv](./outputs/07_ranking_recuperacao.csv)
+- [08_scores_sumarizacao.csv](./outputs/08_scores_sumarizacao.csv)
+
 ### Directory Structure
 
 ```text
@@ -98,7 +106,7 @@ Preprocess and represent text, build classical classification/retrieval baseline
 ├── reference_materials/
 ├── cheat_sheets/
 ├── datasets/
-├── outputs
+└── outputs/
 ```
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
@@ -200,15 +208,9 @@ To check your environment, run `python -m pip check` and then **Restart Kernel �
 
 ## How to Use
 
+### Recommended Learning Path
+
 Follow notebooks in the order shown in Contents and select the correct kernel. Use Technical Guides for in-depth explanations and Cheat Sheets for quick reference.
-
-### Generated Outputs
-
-The notebooks reproduce these three CSV files in [`outputs/`](./outputs/):
-
-- [06_bag_of_words_exemplo.csv](./outputs/06_bag_of_words_exemplo.csv)
-- [07_ranking_recuperacao.csv](./outputs/07_ranking_recuperacao.csv)
-- [08_scores_sumarizacao.csv](./outputs/08_scores_sumarizacao.csv)
 
 ### Exercises and Practice
 
@@ -255,14 +257,16 @@ These licenses apply only where the author holds the necessary rights; notebook 
 
 <a id="contact"></a>
 
+<!-- EP-FOOTER:START -->
 ## Contact
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90">
+<a href="https://eduardo-pereira.webflow.io/" title="Personal website — Eduardo Junior Pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90"></a>
 
-**Eduardo Junior Pereira**  
-*Economics • Data Science • Python*
+**Eduardo Junior Pereira**
+
+*Economics · Data Science · Analytics*
 
 <a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
@@ -270,11 +274,11 @@ These licenses apply only where the author holds the necessary rights; notebook 
 
 [Let's connect on LinkedIn to exchange ideas and opportunities.](https://www.linkedin.com/in/eduardo-jr-pereira/)
 
-[**GitHub Portfolio**](https://github.com/eduardojr-pereira/data-science-portfolio) &nbsp;•&nbsp; [**Personal Website**](https://eduardo-pereira.webflow.io/)
+[**GitHub Portfolio**](https://github.com/eduardojr-pereira/data-science-portfolio)
 
 </div>
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
 ---
-
+<!-- EP-FOOTER:END -->

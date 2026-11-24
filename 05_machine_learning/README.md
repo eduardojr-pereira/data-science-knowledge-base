@@ -71,6 +71,16 @@ Develop leakage-safe preprocessing, evaluate models, compare algorithms and inte
 
 No mandatory input dataset is distributed in this area; examples are generated within the notebooks.
 
+### Generated Outputs
+
+Files exported by notebooks are available in `outputs/`. Examples include:
+
+- [05_comparacao_knn.csv](./outputs/05_comparacao_knn.csv)
+- [15_kmeans_sintetico.png](./outputs/15_kmeans_sintetico.png)
+- [16_dbscan_sintetico.png](./outputs/16_dbscan_sintetico.png)
+
+All three artifacts were regenerated and checked in an isolated test environment. No new datasets or downloads were needed.
+
 ### Directory Structure
 
 ```text
@@ -97,7 +107,8 @@ No mandatory input dataset is distributed in this area; examples are generated w
 ├── 17_interpretabilidade_reprodutibilidade.ipynb
 ├── reference_materials/
 ├── cheat_sheets/
-├── outputs
+├── datasets/
+└── outputs/
 ```
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
@@ -195,17 +206,9 @@ To check your environment, run `python -m pip check` and then **Restart Kernel �
 
 ## How to Use
 
+### Recommended Learning Path
+
 Follow notebooks in the order shown in Contents and select the correct kernel. Use Technical Guides for in-depth explanations and Cheat Sheets for quick reference.
-
-### Generated Outputs
-
-Files exported by notebooks are available in `outputs/`. Examples include:
-
-- [05_comparacao_knn.csv](./outputs/05_comparacao_knn.csv)
-- [15_kmeans_sintetico.png](./outputs/15_kmeans_sintetico.png)
-- [16_dbscan_sintetico.png](./outputs/16_dbscan_sintetico.png)
-
-All three artifacts were regenerated and checked in an isolated test environment. No new datasets or downloads were needed.
 
 ### Exercises and Practice
 
@@ -251,14 +254,16 @@ These licenses apply only where the author holds the necessary rights; notebook 
 
 <a id="contact"></a>
 
+<!-- EP-FOOTER:START -->
 ## Contact
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90">
+<a href="https://eduardo-pereira.webflow.io/" title="Personal website — Eduardo Junior Pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90"></a>
 
-**Eduardo Junior Pereira**  
-*Economics • Data Science • Python*
+**Eduardo Junior Pereira**
+
+*Economics · Data Science · Analytics*
 
 <a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
@@ -266,11 +271,11 @@ These licenses apply only where the author holds the necessary rights; notebook 
 
 [Let's connect on LinkedIn to exchange ideas and opportunities.](https://www.linkedin.com/in/eduardo-jr-pereira/)
 
-[**GitHub Portfolio**](https://github.com/eduardojr-pereira/data-science-portfolio) &nbsp;•&nbsp; [**Personal Website**](https://eduardo-pereira.webflow.io/)
+[**GitHub Portfolio**](https://github.com/eduardojr-pereira/data-science-portfolio)
 
 </div>
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
 ---
-
+<!-- EP-FOOTER:END -->

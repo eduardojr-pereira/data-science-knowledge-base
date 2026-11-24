@@ -64,6 +64,18 @@ Audit data quality, design ETL steps, aggregate data, analyze time series and co
 - [regioes_exemplo.csv](./datasets/regioes_exemplo.csv)
 - [vendas_exemplo.csv](./datasets/vendas_exemplo.csv)
 
+### Generated Outputs
+
+The exports are consolidated in the final section of the respective notebook. Source datasets in `datasets/` are preserved and are not overwritten by notebook execution.
+
+| Notebook | Format | Curated files in `outputs/` |
+|---|---|---|
+| 02 — ETL and Data Preparation | CSV | [receita_mensal.csv](./outputs/receita_mensal.csv) · [resumo_por_regiao.csv](./outputs/resumo_por_regiao.csv) · [auditoria_v2.csv](./outputs/auditoria_v2.csv) |
+| 05 — Matplotlib and Seaborn | PNG | [temperatura_diaria.png](./outputs/temperatura_diaria.png) |
+| 07 — Interactive Visualization | HTML | [receita_interativa.html](./outputs/receita_interativa.html) · [painel_comparativo.html](./outputs/painel_comparativo.html) · [bokeh_produtos.html](./outputs/bokeh_produtos.html) · [bokeh_interativo.html](./outputs/bokeh_interativo.html) · [altair_produtos.html](./outputs/altair_produtos.html) · [grafico_v2_cdn.html](./outputs/grafico_v2_cdn.html) |
+
+The six final interactive HTMLs are distinct from the Plotly `iframe` files in `outputs/iframe_figures/`, which are generated during rendering. `grafico_v2_cdn.html` requires internet access for its Plotly JavaScript dependency; the standalone Plotly and Bokeh exports include their resources for offline use.
+
 ### Directory Structure
 
 ```text
@@ -81,7 +93,7 @@ Audit data quality, design ETL steps, aggregate data, analyze time series and co
 ├── reference_materials/
 ├── cheat_sheets/
 ├── datasets/
-├── outputs
+└── outputs/
 ```
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
@@ -187,21 +199,11 @@ To check a fresh environment, run `python -m pip check` and then **Restart Kerne
 
 ## How to Use
 
+### Recommended Learning Path
+
 Follow notebooks in the order shown in Contents and select the correct kernel. Use Technical Guides for in-depth explanations and Cheat Sheets for quick reference.
 
 **Plotly:** keep the `iframe` renderer in the tested environment; related HTML files can appear under `outputs/iframe_figures/`. GitHub previews do not necessarily run interactive charts.
-
-### Generated Outputs
-
-The exports are consolidated in the final section of the respective notebook. Source datasets in `datasets/` are preserved and are not overwritten by notebook execution.
-
-| Notebook | Format | Curated files in `outputs/` |
-|---|---|---|
-| 02 — ETL and Data Preparation | CSV | [receita_mensal.csv](./outputs/receita_mensal.csv) · [resumo_por_regiao.csv](./outputs/resumo_por_regiao.csv) · [auditoria_v2.csv](./outputs/auditoria_v2.csv) |
-| 05 — Matplotlib and Seaborn | PNG | [temperatura_diaria.png](./outputs/temperatura_diaria.png) |
-| 07 — Interactive Visualization | HTML | [receita_interativa.html](./outputs/receita_interativa.html) · [painel_comparativo.html](./outputs/painel_comparativo.html) · [bokeh_produtos.html](./outputs/bokeh_produtos.html) · [bokeh_interativo.html](./outputs/bokeh_interativo.html) · [altair_produtos.html](./outputs/altair_produtos.html) · [grafico_v2_cdn.html](./outputs/grafico_v2_cdn.html) |
-
-The six final interactive HTMLs are distinct from the Plotly `iframe` files in `outputs/iframe_figures/`, which are generated during rendering. `grafico_v2_cdn.html` requires internet access for its Plotly JavaScript dependency; the standalone Plotly and Bokeh exports include their resources for offline use.
 
 ### Exercises and Practice
 
@@ -250,14 +252,16 @@ These licenses apply only where the author holds the necessary rights; notebook 
 
 <a id="contact"></a>
 
+<!-- EP-FOOTER:START -->
 ## Contact
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90">
+<a href="https://eduardo-pereira.webflow.io/" title="Personal website — Eduardo Junior Pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90"></a>
 
-**Eduardo Junior Pereira**  
-*Economics • Data Science • Python*
+**Eduardo Junior Pereira**
+
+*Economics · Data Science · Analytics*
 
 <a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
@@ -265,11 +269,11 @@ These licenses apply only where the author holds the necessary rights; notebook 
 
 [Let's connect on LinkedIn to exchange ideas and opportunities.](https://www.linkedin.com/in/eduardo-jr-pereira/)
 
-[**GitHub Portfolio**](https://github.com/eduardojr-pereira/data-science-portfolio) &nbsp;•&nbsp; [**Personal Website**](https://eduardo-pereira.webflow.io/)
+[**GitHub Portfolio**](https://github.com/eduardojr-pereira/data-science-portfolio)
 
 </div>
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
 ---
-
+<!-- EP-FOOTER:END -->

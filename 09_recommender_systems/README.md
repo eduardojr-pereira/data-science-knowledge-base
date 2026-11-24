@@ -68,18 +68,57 @@ This area contains **16 Portuguese-language notebooks**, supported by **16 origi
 | 15 | [Reproducible Pipelines and Persistence](./15_pipeline_reproduzivel.ipynb) | [Open PDF](./reference_materials/15_pipeline_reproduzivel.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_15_pipeline_reproduzivel.pdf) |
 | 16 | [Integrated Study: MovieLens and Synthetic Book Feedback](./16_estudo_integrador_movielens_livros.ipynb) | [Open PDF](./reference_materials/16_estudo_integrador_movielens_livros.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_16_estudo_integrador_movielens_livros.pdf) |
 
+<a id="dataset-provenance"></a>
+
 ### Datasets
 
-The [`datasets/`](./datasets/README.md) directory documents the provenance and usage terms of the source data. The repository includes two MovieLens CSVs:
+This repository tracks **two** MovieLens Latest Small CSV files from **GroupLens Research, University of Minnesota**. The [official dataset README](https://files.grouplens.org/datasets/movielens/ml-latest-small-README.html) describes a dataset generated on **September 26, 2018**, containing 100,836 ratings across 9,742 movies. The published subset below contains only `movies.csv` and `ratings.csv`; the official archive also includes `links.csv` and `tags.csv`, which are **not included here**.
 
-- [`datasets/ratings.csv`](./datasets/ratings.csv) — explicit user–movie ratings.
-- [`datasets/movies.csv`](./datasets/movies.csv) — movie titles and genres.
+| Published file | Rows | Columns | SHA-256 of published bytes |
+|---|---:|---|---|
+| [`movies.csv`](./datasets/movies.csv) | 9,742 | `movieId`, `title`, `genres` | `5a5f32dd9bb3797b8e728a1b98958789d2b13f294a69fdfbc5727f8a9611aa07` |
+| [`ratings.csv`](./datasets/ratings.csv) | 100,836 | `userId`, `movieId`, `rating`, `timestamp` | `aa289ca83157595d0df6aea1be6a4ded676ddc4385472e8313a8ed9805352646` |
 
-These files are from **MovieLens Latest Small (GroupLens Research, University of Minnesota)** and remain subject to the original dataset terms, not the licenses applied to original notebook code and educational materials. Consult [dataset provenance and usage](./datasets/README.md) before reuse or redistribution. The [dataset-specific GroupLens usage license](https://files.grouplens.org/datasets/movielens/ml-latest-small-README.html) requires attribution in resulting publications, forbids stating or implying endorsement by the University of Minnesota or GroupLens, permits redistribution (including transformations) only under the same conditions, and requires prior permission for commercial or revenue-bearing uses. Published derived MovieLens outputs must also be reviewed under those conditions; the repository's MIT/CC BY-NC licenses do not override the dataset license.
+The hashes were calculated from the area archive and verified to identify the **same Git blobs published in commit `4ff0a4a`**. Record counts and schemas agree with the official documentation; however, **an independent byte-for-byte comparison to the original GroupLens download has not been performed**. The exact download date and acquisition steps are not established. These are **local/published-file integrity checks**, not official upstream checksums.
 
-Notebook 16 requires **no external book dataset**: it creates a small, entirely synthetic catalog and user–book interactions in memory. In this teaching convention, rating `0` denotes an interaction without an explicit rating, and ratings `1`–`10` are explicit scores. This convention is **specific to the synthetic experiment**, not a universal rule. The outputs describe only fictional users and books, never real-world recommendation quality.
+`ratings.csv` contains explicit user–movie ratings; `movies.csv` contains movie titles and genres.
 
 Launch JupyterLab **from `09_recommender_systems/`**, because notebooks use relative paths such as `Path("datasets")`. The experiments illustrate recommendation techniques; they do not establish production-quality performance.
+
+### Generated Outputs
+
+Notebook runs can generate CSV exports and, in notebook 15, JSON manifests. The `outputs/` directory contains **32 tracked files**: 30 from chapters 01–15 and two reviewed synthetic CSVs from chapter 16. They are artifacts of prior runs, not a guarantee that reruns will produce byte-identical outputs.
+
+**Examples of published outputs:**
+
+| Notebook | Published file | Description |
+|---|---|---|
+| 01 | [`01_resumo_movielens.csv`](./outputs/01_resumo_movielens.csv) | Observed matrix dimensions and coverage |
+| 03 | [`03_ranking_popularidade_suavizada.csv`](./outputs/03_ranking_popularidade_suavizada.csv) | Descriptive smoothed-mean ranking |
+| 10 | [`10_predicoes_teste.csv`](./outputs/10_predicoes_teste.csv) | Observed and predicted ratings |
+| 11 | [`11_metricas_baselines.csv`](./outputs/11_metricas_baselines.csv) | Rating baseline comparison |
+| 12 | [`12_metricas_topk_exemplo.csv`](./outputs/12_metricas_topk_exemplo.csv) | Example ranking metrics |
+| 14 | [`14_ranking_hibrido_demonstrativo.csv`](./outputs/14_ranking_hibrido_demonstrativo.csv) | Illustrative blended ranking |
+| 15 | [`ranking_popularidade.csv`](./outputs/ranking_popularidade.csv) and [`15_manifesto_ranking.json`](./outputs/15_manifesto_ranking.json) | Ranking and provenance manifest |
+
+**Chapter 16 — separate the two sources:** [`16_ranking_livros_sintetico.csv`](./outputs/16_ranking_livros_sintetico.csv) and [`16_resumo_feedback_livros_sintetico.csv`](./outputs/16_resumo_feedback_livros_sintetico.csv) were generated by the current notebook using only fictional book records. Two isolated executions produced identical SHA-256 hashes; `origem=sintetico_autoral` identifies the data source. Historical local files `16_ranking_livros_amostra.csv` and `16_resumo_feedback_livros.csv` derive from Book-Crossing samples and remain explicitly excluded by the root `.gitignore` pending rights clearance.
+
+New outputs are no longer ignored as a directory class, but a deliberate file-level review is required before staging. Reruns can overwrite local files. Descriptive rankings are not held-out evaluation metrics. MovieLens data and derivatives remain subject to the upstream usage terms.
+
+#### Synthetic Book-Feedback Teaching Example
+
+Notebook [`16_estudo_integrador_movielens_livros.ipynb`](./16_estudo_integrador_movielens_livros.ipynb) creates a small fictional book catalog and interactions in Python. It does **not** use or publish a third-party book dataset. In this **example only**, `0` means an interaction without an explicit rating; scores 1–10 are explicitly defined ratings. These records are not evidence about real readers.
+
+Two synthetic CSVs produced by notebook 16 have passed individual content and provenance review and are included in the repository; the root `.gitignore` continues to block the two historical Book-Crossing-derived files (`16_ranking_livros_amostra.csv` and `16_resumo_feedback_livros.csv`) pending reuse-rights clearance. All other new outputs likewise require review before staging.
+
+**Reviewed synthetic outputs (SHA-256 of the publication candidates):**
+
+| Output | Rows | SHA-256 |
+|---|---:|---|
+| [`16_ranking_livros_sintetico.csv`](./outputs/16_ranking_livros_sintetico.csv) | 5 fictional books | `ba8e2513cf5152e798d9be0545ae5993d45989324255cad862c9a61783c8c043` |
+| [`16_resumo_feedback_livros_sintetico.csv`](./outputs/16_resumo_feedback_livros_sintetico.csv) | 1 aggregate record (12 interactions) | `15600176828031a28080ca67d31a307b168fc458eab6baa3e6896dff4de55193` |
+
+These files are produced from in-notebook fictional book records, **not** from MovieLens or Book-Crossing book ratings. They are educational demonstrations, not evidence of recommendation effectiveness.
 
 ### Directory Structure
 
@@ -89,15 +128,28 @@ Launch JupyterLab **from `09_recommender_systems/`**, because notebooks use rela
 ├── README.pt-BR.md
 ├── requirements.txt
 ├── 01_introducao_taxonomia.ipynb
-├── ...
+├── 02_dados_interacoes.ipynb
+├── 03_popularidade_baselines.ipynb
+├── 04_filtragem_conteudo.ipynb
+├── 05_similaridade_usuarios.ipynb
+├── 06_similaridade_itens.ipynb
+├── 07_knn_matrizes_esparsas.ipynb
+├── 08_esparsidade_regularizacao.ipynb
+├── 09_svd_fatoracao.ipynb
+├── 10_feedback_explicito_modelo.ipynb
+├── 11_avaliacao_mae_rmse.ipynb
+├── 12_metricas_ranking.ipynb
+├── 13_cold_start_diversidade.ipynb
+├── 14_sistemas_hibridos.ipynb
+├── 15_pipeline_reproduzivel.ipynb
 ├── 16_estudo_integrador_movielens_livros.ipynb
-├── reference_materials/       # 16 Technical Guides / Guias Técnicos
-├── cheat_sheets/              # 16 Cheat Sheets
-├── datasets/                  # Bilingual READMEs and two tracked MovieLens CSVs
-└── outputs/                   # 30 MovieLens-related outputs and two synthetic chapter-16 CSVs
+├── reference_materials/
+├── cheat_sheets/
+├── datasets/
+└── outputs/
 ```
 
-Both `datasets/README.md` and `datasets/README.pt-BR.md`, along with the two MovieLens CSVs, are tracked with the publication. The current notebook 16 generates fictional book data in memory; its two CSV exports have now passed an isolated reexecution and content review and are included in the planned publication. Historical Book-Crossing-derived local outputs remain excluded until their reuse rights are verified. MovieLens outputs from chapters 01–15 are published. Both READMEs belong at the area root; PDFs remain in their learning-material subdirectories.
+The two MovieLens CSVs are tracked with the publication. The current notebook 16 generates fictional book data in memory; its two CSV exports have now passed an isolated reexecution and content review and are included in the repository. Historical Book-Crossing-derived local outputs remain excluded until their reuse rights are verified. MovieLens outputs from chapters 01–15 are published. Both READMEs belong at the area root; PDFs remain in their learning-material subdirectories.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -126,30 +178,30 @@ Both `datasets/README.md` and `datasets/README.pt-BR.md`, along with the two Mov
 
 ## Setup and Installation
 
-**Prerequisites:** Python, Git, a terminal, and JupyterLab. If you already have a working `jupyter-env`, activate it and skip creating another environment.
+**Copyable commands:** run the steps in order. If an environment such as `jupyter-env` already works for you, activate it and skip creating `.venv`. If the repository is already cloned, go straight to the area directory.
 
-**1. Clone the repository and enter this area**
+**1. Clone the repository and open this area**
 
 ```bash
 git clone https://github.com/eduardojr-pereira/data-science-knowledge-base.git
 cd data-science-knowledge-base/09_recommender_systems
 ```
 
-**2. Create and activate a virtual environment (Linux/macOS)**
+**2. Create and activate a virtual environment — Linux/macOS**
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 ```
 
-**Windows PowerShell:**
+**Windows PowerShell alternative**
 
 ```powershell
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
-**3. Install and verify dependencies**
+**3. Install dependencies and verify the environment**
 
 ```bash
 python -m pip install -r requirements.txt
@@ -157,14 +209,16 @@ python -m pip install jupyterlab ipykernel
 python -m pip check
 ```
 
-**4. Register the kernel and launch JupyterLab**
+**4. Register the kernel and start JupyterLab**
 
 ```bash
 python -m ipykernel install --user --name ds-09 --display-name "Data Science 09"
 jupyter lab
 ```
 
-**5. Check the data before running:** `datasets/ratings.csv` and `datasets/movies.csv` are included when cloning this repository. Notebook 16 generates its own synthetic book catalog and interactions; no additional book files are needed. Do not commit private academic materials or datasets of uncertain redistribution status.
+Select this kernel in each notebook. Start JupyterLab in the area directory to keep relative data and output paths consistent.
+
+**Before running the notebooks:** `datasets/ratings.csv` and `datasets/movies.csv` are included when cloning this repository. Notebook 16 generates its own synthetic book catalog and interactions; no additional book files are needed. Do not commit private academic materials or datasets of uncertain redistribution status.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -187,6 +241,16 @@ Successful execution shows that cells completed in the tested environment; it **
 
 In particular, imputed zeros are not observed ratings (05–09); `TruncatedSVD` is not a substitute for factorization trained on observed interactions (09); MAE/RMSE are not substitutes for Top-K metrics (11–12); and full-dataset signals must not be reused as training information in held-out evaluation (14).
 
+### Dataset Reproducibility and Integrity
+
+Run the notebooks from `09_recommender_systems/`, retaining the filenames and CSV schemas above. To check the checked-in data without changing any file:
+
+```bash
+sha256sum datasets/movies.csv datasets/ratings.csv
+```
+
+Compare these values with the table. A matching SHA-256 validates your copy against the **repository snapshot**, not against an independently obtained GroupLens archive. Use explicit train/validation/test separation when interpreting recommendation metrics, and consult the [installation](#installation) and validation sections on this page.
+
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
 ---
@@ -198,26 +262,6 @@ In particular, imputed zeros are not observed ratings (05–09); `TruncatedSVD` 
 ### Recommended Learning Path
 
 Follow notebooks 01–16 in order. For each topic, read the Technical Guide, execute the notebook with a fresh kernel, and consult the Cheat Sheet for quick review. Record hypotheses before changing parameters, and distinguish descriptive results from held-out evaluation metrics.
-
-### Generated Outputs
-
-Notebook runs can generate CSV exports and, in notebook 15, JSON manifests. **Thirty files in `outputs/` were previously tracked on GitHub** (chapters 01–15); this publication adds two reviewed synthetic CSVs for chapter 16, for **32 total** once committed. They are artifacts of prior runs, not a guarantee that reruns will produce byte-identical outputs.
-
-**Examples of published outputs:**
-
-| Notebook | Published file | Description |
-|---|---|---|
-| 01 | [`01_resumo_movielens.csv`](./outputs/01_resumo_movielens.csv) | Observed matrix dimensions and coverage |
-| 03 | [`03_ranking_popularidade_suavizada.csv`](./outputs/03_ranking_popularidade_suavizada.csv) | Descriptive smoothed-mean ranking |
-| 10 | [`10_predicoes_teste.csv`](./outputs/10_predicoes_teste.csv) | Observed and predicted ratings |
-| 11 | [`11_metricas_baselines.csv`](./outputs/11_metricas_baselines.csv) | Rating baseline comparison |
-| 12 | [`12_metricas_topk_exemplo.csv`](./outputs/12_metricas_topk_exemplo.csv) | Example ranking metrics |
-| 14 | [`14_ranking_hibrido_demonstrativo.csv`](./outputs/14_ranking_hibrido_demonstrativo.csv) | Illustrative blended ranking |
-| 15 | [`ranking_popularidade.csv`](./outputs/ranking_popularidade.csv) and [`15_manifesto_ranking.json`](./outputs/15_manifesto_ranking.json) | Ranking and provenance manifest |
-
-**Chapter 16 — separate the two sources:** [`16_ranking_livros_sintetico.csv`](./outputs/16_ranking_livros_sintetico.csv) and [`16_resumo_feedback_livros_sintetico.csv`](./outputs/16_resumo_feedback_livros_sintetico.csv) were generated by the current notebook using only fictional book records. Two isolated executions produced identical SHA-256 hashes; `origem=sintetico_autoral` identifies the data source. Historical local files `16_ranking_livros_amostra.csv` and `16_resumo_feedback_livros.csv` derive from Book-Crossing samples and remain explicitly excluded by the root `.gitignore` pending rights clearance.
-
-New outputs are no longer ignored as a directory class, but a deliberate file-level review is required before staging. Reruns can overwrite local files. Descriptive rankings are not held-out evaluation metrics. MovieLens data and derivatives remain subject to the upstream usage terms.
 
 ### Exercises and Practice
 
@@ -231,7 +275,7 @@ Reproduce the examples, state their assumptions, inspect statistical support and
 
 ## References
 
-| Recurso | Documentação |
+| Resource | Documentation / Reference |
 |---|---|
 | Python | [Open documentation](https://docs.python.org/3/) |
 | NumPy | [Open documentation](https://numpy.org/doc/stable/) |
@@ -256,7 +300,20 @@ Reproduce the examples, state their assumptions, inspect statistical support and
 | Original educational content | [CC BY-NC 4.0](../LICENSE-CONTENT.md) | Author-owned explanations, Technical Guides and Cheat Sheets |
 | Third-party libraries and datasets | Their own licenses | MovieLens and external components |
 
-These terms apply **only to material owned by the author**. The included MovieLens files follow the original GroupLens usage terms described in [`datasets/README.md`](./datasets/README.md). The synthetic book records in notebook 16 are original teaching examples; private historical source materials are not redistributed.
+These terms apply **only to material owned by the author**. The included MovieLens files follow the original GroupLens usage terms described below. The synthetic book records in notebook 16 are original teaching examples; private historical source materials are not redistributed.
+
+### Upstream Usage Terms
+
+The dataset is **not** covered by this repository's MIT code license or CC BY-NC content license. Consult the [official GroupLens usage license](https://files.grouplens.org/datasets/movielens/ml-latest-small-README.html) before reuse, including for derived tables. Its conditions include:
+
+- Acknowledge the dataset in resulting publications (citation below).
+- Do not state or imply endorsement by GroupLens or the University of Minnesota.
+- Redistribution, including transformed files, is permitted only under the same dataset usage conditions.
+- Obtain prior GroupLens permission for commercial or revenue-bearing uses.
+
+Treat published derived rankings, predictions and summaries in `outputs/` as potentially subject to these upstream terms; the mere presence of files in Git does not create new rights.
+
+**Recommended citation:** Harper, F. M., & Konstan, J. A. (2015). *The MovieLens Datasets: History and Context*. ACM Transactions on Interactive Intelligent Systems. https://doi.org/10.1145/2827872
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -264,24 +321,28 @@ These terms apply **only to material owned by the author**. The included MovieLe
 
 <a id="contact"></a>
 
+<!-- EP-FOOTER:START -->
 ## Contact
 
 <div align="center">
 
-<a href="https://eduardo-pereira.webflow.io/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo" height="90"></a>
+<a href="https://eduardo-pereira.webflow.io/" title="Personal website — Eduardo Junior Pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90"></a>
 
-**Eduardo Junior Pereira**  
-*Economics • Data Science • Python*
+**Eduardo Junior Pereira**
 
-<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;<a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>
+*Economics · Data Science · Analytics*
 
-[Let’s connect on LinkedIn to exchange ideas and opportunities.](https://www.linkedin.com/in/eduardo-jr-pereira/)
+<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
+<a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>
 
-[**GitHub Portfolio**](https://github.com/eduardojr-pereira/data-science-portfolio) &nbsp;•&nbsp; [**Personal Website**](https://eduardo-pereira.webflow.io/)
+[Let's connect on LinkedIn to exchange ideas and opportunities.](https://www.linkedin.com/in/eduardo-jr-pereira/)
+
+[**GitHub Portfolio**](https://github.com/eduardojr-pereira/data-science-portfolio)
 
 </div>
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
 ---
-
+<!-- EP-FOOTER:END -->

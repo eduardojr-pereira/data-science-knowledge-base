@@ -52,9 +52,22 @@ Criar ambientes Python/Jupyter confiáveis, documentar análises, desenvolver in
 | 03 | [Widgets E Interatividade](./03_widgets_e_interatividade.ipynb) | [Abrir PDF](./reference_materials/widgets_e_interatividade.pdf) | — |
 | 04 | [Polars E Analise De Dados](./04_polars_e_analise_de_dados.ipynb) | [Abrir PDF](./reference_materials/polars_e_analise_de_dados.pdf) | — |
 
-### Datasets
+### Conjuntos de Dados
 
 Nenhum dataset obrigatório é distribuído nesta área; os exemplos são gerados pelos notebooks.
+
+### Resultados Gerados
+
+Arquivos exportados pelos notebooks estão em `outputs/`. Alguns exemplos:
+
+- [polars_receita_categoria_mes.csv](./outputs/polars_receita_categoria_mes.csv)
+- [polars_receita_mensal.csv](./outputs/polars_receita_mensal.csv)
+- [polars_receita_por_regiao.csv](./outputs/polars_receita_por_regiao.csv)
+- [polars_unidades_por_produto.csv](./outputs/polars_unidades_por_produto.csv)
+- [polars_vendas_exemplo.csv](./outputs/polars_vendas_exemplo.csv)
+- [polars_vendas_exemplo.parquet](./outputs/polars_vendas_exemplo.parquet)
+
+O notebook 04 (Polars) utiliza arquivos CSV/Parquet temporários nas demonstrações intermediárias. Sua seção única **Exportação de resultados** grava os seis arquivos definitivos em `outputs/` após os cálculos analíticos; uma nova execução substitui os resultados gerados correspondentes. Nenhum dataset externo de entrada é necessário.
 
 ### Estrutura de Diretórios
 
@@ -69,7 +82,7 @@ Nenhum dataset obrigatório é distribuído nesta área; os exemplos são gerado
 ├── 04_polars_e_analise_de_dados.ipynb
 ├── reference_materials/
 ├── cheat_sheets/
-├── outputs
+└── outputs/
 ```
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
@@ -172,20 +185,9 @@ A renderização dos widgets depende da integração com a interface e deve ser 
 
 ## Instruções de Uso
 
+### Percurso de Estudo Recomendado
+
 Siga os notebooks na ordem da tabela de Conteúdo, selecionando o kernel correto. Leia os Guias Técnicos para aprofundamento e consulte as Cheat Sheets como referência rápida.
-
-### Resultados Gerados
-
-Arquivos exportados pelos notebooks estão em `outputs/`. Alguns exemplos:
-
-- [polars_receita_categoria_mes.csv](./outputs/polars_receita_categoria_mes.csv)
-- [polars_receita_mensal.csv](./outputs/polars_receita_mensal.csv)
-- [polars_receita_por_regiao.csv](./outputs/polars_receita_por_regiao.csv)
-- [polars_unidades_por_produto.csv](./outputs/polars_unidades_por_produto.csv)
-- [polars_vendas_exemplo.csv](./outputs/polars_vendas_exemplo.csv)
-- [polars_vendas_exemplo.parquet](./outputs/polars_vendas_exemplo.parquet)
-
-O notebook 04 (Polars) utiliza arquivos CSV/Parquet temporários nas demonstrações intermediárias. Sua seção única **Exportação de resultados** grava os seis arquivos definitivos em `outputs/` após os cálculos analíticos; uma nova execução substitui os resultados gerados correspondentes. Nenhum dataset externo de entrada é necessário.
 
 ### Exercícios e Prática
 
@@ -235,25 +237,28 @@ As licenças acima se aplicam apenas ao material sobre o qual o autor possui os 
 
 <a id="contact"></a>
 
+<!-- EP-FOOTER:START -->
 ## Contato
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90">
+<a href="https://eduardo-pereira.webflow.io/" title="Site pessoal — Eduardo Junior Pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="Logo EP — Eduardo Junior Pereira" height="90"></a>
 
-**Eduardo Junior Pereira**  
-*Economics • Data Science • Python*
+**Eduardo Junior Pereira**
 
-<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;
+*Economics · Data Science · Analytics*
+
+<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="E-mail" height="27"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
 <a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>
 
 [Vamos nos conectar no LinkedIn para trocar ideias e oportunidades.](https://www.linkedin.com/in/eduardo-jr-pereira/)
 
-[**Portfólio GitHub**](https://github.com/eduardojr-pereira/data-science-portfolio) &nbsp;•&nbsp; [**Site Pessoal**](https://eduardo-pereira.webflow.io/)
+[**Portfólio GitHub**](https://github.com/eduardojr-pereira/data-science-portfolio)
 
 </div>
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
 ---
+<!-- EP-FOOTER:END -->

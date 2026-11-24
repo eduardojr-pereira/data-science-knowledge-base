@@ -65,6 +65,21 @@ Model databases and relationships, write queries, assess transactions and compar
 - [leituras_sensores.csv](./datasets/leituras_sensores.csv)
 - [usuarios_sinteticos.json](./datasets/usuarios_sinteticos.json)
 
+### Generated Outputs
+
+Files exported by notebooks are available in `outputs/`. Examples include:
+
+- [01_comparacao_modelos.csv](./outputs/01_comparacao_modelos.csv)
+- [02_sensores_comodos.csv](./outputs/02_sensores_comodos.csv)
+- [03_temperatura_media_por_sensor.csv](./outputs/03_temperatura_media_por_sensor.csv)
+- [04_ultima_leitura_por_sensor.csv](./outputs/04_ultima_leitura_por_sensor.csv)
+- [05_validacao_rollback.csv](./outputs/05_validacao_rollback.csv)
+- [06_comparacao_familias_nosql.csv](./outputs/06_comparacao_familias_nosql.csv)
+- [07_usuarios_sinteticos_resumo.csv](./outputs/07_usuarios_sinteticos_resumo.csv)
+- [08_interesses_contagem_local.csv](./outputs/08_interesses_contagem_local.csv)
+
+Additional files are available under `outputs/`.
+
 ### Directory Structure
 
 ```text
@@ -72,6 +87,7 @@ Model databases and relationships, write queries, assess transactions and compar
 ├── README.md
 ├── README.pt-BR.md
 ├── requirements.txt
+├── requirements-laboratorios.txt
 ├── 01_fundamentos_bancos_dados.ipynb
 ├── 02_modelagem_relacional_normalizacao.ipynb
 ├── 03_sql_fundamentos_consultas.ipynb
@@ -87,8 +103,7 @@ Model databases and relationships, write queries, assess transactions and compar
 ├── datasets/
 ├── outputs/
 ├── infra/
-├── sql/
-└── requirements-laboratorios.txt
+└── sql/
 ```
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
@@ -213,22 +228,9 @@ For a safe core rerun, leave `RUN_LIVE_DB` and `EP04_LAB_CONFIRM` unset, select 
 
 ## How to Use
 
+### Recommended Learning Path
+
 Follow notebooks in the order shown in Contents and select the correct kernel. Use Technical Guides for in-depth explanations and Cheat Sheets for quick reference.
-
-### Generated Outputs
-
-Files exported by notebooks are available in `outputs/`. Examples include:
-
-- [01_comparacao_modelos.csv](./outputs/01_comparacao_modelos.csv)
-- [02_sensores_comodos.csv](./outputs/02_sensores_comodos.csv)
-- [03_temperatura_media_por_sensor.csv](./outputs/03_temperatura_media_por_sensor.csv)
-- [04_ultima_leitura_por_sensor.csv](./outputs/04_ultima_leitura_por_sensor.csv)
-- [05_validacao_rollback.csv](./outputs/05_validacao_rollback.csv)
-- [06_comparacao_familias_nosql.csv](./outputs/06_comparacao_familias_nosql.csv)
-- [07_usuarios_sinteticos_resumo.csv](./outputs/07_usuarios_sinteticos_resumo.csv)
-- [08_interesses_contagem_local.csv](./outputs/08_interesses_contagem_local.csv)
-
-Additional files are available under `outputs/`.
 
 ### Exercises and Practice
 
@@ -280,14 +282,16 @@ These licenses apply only where the author holds the necessary rights; notebook 
 
 <a id="contact"></a>
 
+<!-- EP-FOOTER:START -->
 ## Contact
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90">
+<a href="https://eduardo-pereira.webflow.io/" title="Personal website — Eduardo Junior Pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90"></a>
 
-**Eduardo Junior Pereira**  
-*Economics • Data Science • Python*
+**Eduardo Junior Pereira**
+
+*Economics · Data Science · Analytics*
 
 <a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
@@ -295,11 +299,11 @@ These licenses apply only where the author holds the necessary rights; notebook 
 
 [Let's connect on LinkedIn to exchange ideas and opportunities.](https://www.linkedin.com/in/eduardo-jr-pereira/)
 
-[**GitHub Portfolio**](https://github.com/eduardojr-pereira/data-science-portfolio) &nbsp;•&nbsp; [**Personal Website**](https://eduardo-pereira.webflow.io/)
+[**GitHub Portfolio**](https://github.com/eduardojr-pereira/data-science-portfolio)
 
 </div>
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
 ---
-
+<!-- EP-FOOTER:END -->

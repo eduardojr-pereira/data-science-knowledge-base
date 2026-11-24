@@ -54,9 +54,26 @@ Usar coleções e funções Python, vetorizar operações, manipular DataFrames,
 | 05 | [Pandas](./05_pandas.ipynb) | [Abrir PDF](./reference_materials/06_pandas.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_pandas.pdf) |
 | 06 | [Classes e Objetos](./06_classes_e_objetos.ipynb) | [Abrir PDF](./reference_materials/07_orientacao_a_objetos.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_orientacao_a_objetos.pdf) |
 
-### Datasets
+### Conjuntos de Dados
 
 Nenhum dataset obrigatório é distribuído nesta área; os exemplos são gerados pelos notebooks.
+
+### Resultados Gerados
+
+O notebook 05 (Pandas) cria e lê arquivos CSV/Excel intermediários em um diretório temporário. Sua seção final única **Exportação de resultados** valida e publica estes dez arquivos demonstrativos em `outputs/`:
+
+- [cidades_ponto_virgula.csv](./outputs/cidades_ponto_virgula.csv)
+- [matriz_numerica.csv](./outputs/matriz_numerica.csv)
+- [matriz_transformada.csv](./outputs/matriz_transformada.csv)
+- [movimentacoes_financeiras.xlsx](./outputs/movimentacoes_financeiras.xlsx)
+- [movimentacoes_tratadas.xlsx](./outputs/movimentacoes_tratadas.xlsx)
+- [planilha_multiplas_abas.xlsx](./outputs/planilha_multiplas_abas.xlsx)
+- [produtos_estoque.csv](./outputs/produtos_estoque.csv)
+- [receitas_despesas.xlsx](./outputs/receitas_despesas.xlsx)
+- [resultado.xlsx](./outputs/resultado.xlsx)
+- [vendas_simuladas.csv](./outputs/vendas_simuladas.csv)
+
+O CSV de vendas simuladas utiliza intencionalmente a codificação Windows-1252 (`cp1252`) para demonstrar problemas de acentuação; leia-o com `encoding="cp1252"`. Os gráficos do Matplotlib no notebook 04 são exibidos no próprio notebook, sem exportação automática de imagens.
 
 ### Estrutura de Diretórios
 
@@ -73,7 +90,7 @@ Nenhum dataset obrigatório é distribuído nesta área; os exemplos são gerado
 ├── 06_classes_e_objetos.ipynb
 ├── reference_materials/
 ├── cheat_sheets/
-├── outputs
+└── outputs/
 ```
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
@@ -173,24 +190,9 @@ Para validar seu ambiente, execute `python -m pip check` e depois **Restart Kern
 
 ## Instruções de Uso
 
+### Percurso de Estudo Recomendado
+
 Siga os notebooks na ordem da tabela de Conteúdo, selecionando o kernel correto. Leia os Guias Técnicos para aprofundamento e consulte as Cheat Sheets como referência rápida.
-
-### Resultados Gerados
-
-O notebook 05 (Pandas) cria e lê arquivos CSV/Excel intermediários em um diretório temporário. Sua seção final única **Exportação de resultados** valida e publica estes dez arquivos demonstrativos em `outputs/`:
-
-- [cidades_ponto_virgula.csv](./outputs/cidades_ponto_virgula.csv)
-- [matriz_numerica.csv](./outputs/matriz_numerica.csv)
-- [matriz_transformada.csv](./outputs/matriz_transformada.csv)
-- [movimentacoes_financeiras.xlsx](./outputs/movimentacoes_financeiras.xlsx)
-- [movimentacoes_tratadas.xlsx](./outputs/movimentacoes_tratadas.xlsx)
-- [planilha_multiplas_abas.xlsx](./outputs/planilha_multiplas_abas.xlsx)
-- [produtos_estoque.csv](./outputs/produtos_estoque.csv)
-- [receitas_despesas.xlsx](./outputs/receitas_despesas.xlsx)
-- [resultado.xlsx](./outputs/resultado.xlsx)
-- [vendas_simuladas.csv](./outputs/vendas_simuladas.csv)
-
-O CSV de vendas simuladas utiliza intencionalmente a codificação Windows-1252 (`cp1252`) para demonstrar problemas de acentuação; leia-o com `encoding="cp1252"`. Os gráficos do Matplotlib no notebook 04 são exibidos no próprio notebook, sem exportação automática de imagens.
 
 ### Exercícios e Prática
 
@@ -237,25 +239,28 @@ As licenças acima se aplicam apenas ao material sobre o qual o autor possui os 
 
 <a id="contact"></a>
 
+<!-- EP-FOOTER:START -->
 ## Contato
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90">
+<a href="https://eduardo-pereira.webflow.io/" title="Site pessoal — Eduardo Junior Pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="Logo EP — Eduardo Junior Pereira" height="90"></a>
 
-**Eduardo Junior Pereira**  
-*Economics • Data Science • Python*
+**Eduardo Junior Pereira**
 
-<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;
+*Economics · Data Science · Analytics*
+
+<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="E-mail" height="27"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
 <a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>
 
 [Vamos nos conectar no LinkedIn para trocar ideias e oportunidades.](https://www.linkedin.com/in/eduardo-jr-pereira/)
 
-[**Portfólio GitHub**](https://github.com/eduardojr-pereira/data-science-portfolio) &nbsp;•&nbsp; [**Site Pessoal**](https://eduardo-pereira.webflow.io/)
+[**Portfólio GitHub**](https://github.com/eduardojr-pereira/data-science-portfolio)
 
 </div>
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
 ---
+<!-- EP-FOOTER:END -->

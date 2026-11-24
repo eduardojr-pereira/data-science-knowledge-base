@@ -8,7 +8,7 @@
 
 ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white&style=for-the-badge) ![Data Science](https://img.shields.io/badge/Data-Science-21618C?style=for-the-badge)
 
-*A structured, entry point to a growing collection of hands-on Data Science study materials, Jupyter notebooks and technical references.*
+*A structured entry point to a growing collection of hands-on Data Science study materials, Jupyter notebooks and technical references.*
 
 </div>
 
@@ -18,9 +18,7 @@
 
 <div align="center">
 
-[Overview](#overview) • [Contents](#contents) • [Setup and Installation](#setup) • [How to Use](#usage)
-
-[Testing and Validation](#validation) • [References](#references) • [License](#license) • [Contact](#contact)
+[Overview](#overview) • [Study Areas](#study-areas) • [Directory Structure](#directory-structure) • [Related Repositories](#related-repositories) • [License](#license) • [Contact](#contact)
 
 </div>
 
@@ -30,7 +28,7 @@
 
 ## Overview
 
-This repository is a curated learning collection covering programming, statistics, relational and NoSQL databases, machine learning, natural language processing, deep learning, computer vision, recommender systems and distributed data processing. Materials are organized by study area, with runnable notebooks and complementary PDF resources.
+This repository is a curated learning collection covering programming, statistics, relational and NoSQL databases, machine learning, natural language processing, deep learning, computer vision, recommender systems and distributed data processing. Materials are organized by study area, with notebooks and complementary PDF resources.
 
 **Published collection:** areas **00–10**, containing **139 notebooks**, **141 technical-reference PDFs** (140 Technical Guides plus one Student’s t table), and **138 Cheat Sheets**. All **11 areas** have their own bilingual READMEs. Publication does not imply that every notebook can be rerun from a public clone: see each area’s data-availability and validation notes.
 
@@ -43,28 +41,36 @@ This repository is a curated learning collection covering programming, statistic
 ---
 
 <a id="contents"></a>
+<a id="setup"></a>
+<a id="validation"></a>
+<a id="usage"></a>
+<a id="study-areas"></a>
 
-## Contents
+## Study Areas
 
-### Study Areas
+| # | Area | Focus | Notebooks |
+|:---:|---|---|:---: |
+| 00 | [Supplementary Resources](./00_supplementary_resources/README.md) | Development environments, documentation, widgets and Polars. | 4 |
+| 01 | [Python Programming](./01_python_programming/README.md) | Python foundations, collections, NumPy, Pandas and OOP. | 6 |
+| 02 | [Data Analysis & Visualization](./02_data_analysis_visualization/README.md) | Exploratory analysis, ETL, time series and visualization. | 7 |
+| 03 | [Statistics](./03_statistics/README.md) | Probability, inference, hypothesis testing and statistical models. | 10 |
+| 04 | [Relational & NoSQL Databases](./04_relational_nosql_databases/README.md) | SQL, data modeling and optional database laboratories. | 10 |
+| 05 | [Machine Learning](./05_machine_learning/README.md) | Classical machine learning, evaluation and interpretability. | 17 |
+| 06 | [Natural Language Processing](./06_natural_language_processing/README.md) | Text processing, classification, retrieval and NLP concepts. | 17 |
+| 07 | [Deep Learning](./07_deep_learning/README.md) | Neural networks, training, regularization and attention architectures. | 20 |
+| 08 | [Image Analysis & Classification](./08_image_analysis_classification/README.md) | Image processing, feature extraction, detection and classification. | 16 |
+| 09 | [Recommender Systems](./09_recommender_systems/README.md) | Collaborative filtering, recommendation ranking and evaluation. | 16 |
+| 10 | [Big Data & Distributed Processing](./10_big_data_distributed_processing/README.md) | MapReduce, Hadoop, Spark and data-engineering workflows. | 16 |
 
-| # | Area | Focus | Notebooks | Status |
-|:---:|---|---|:---:|---|
-| 00 | [Supplementary Resources](./00_supplementary_resources/) | Development environments, documentation, widgets and Polars. | 4 | Published |
-| 01 | [Python Programming](./01_python_programming/) | Python foundations, collections, NumPy, Pandas and OOP. | 6 | Published |
-| 02 | [Data Analysis & Visualization](./02_data_analysis_visualization/) | Exploratory analysis, ETL, time series and visualization. | 7 | Published |
-| 03 | [Statistics](./03_statistics/) | Probability, inference, hypothesis testing and statistical models. | 10 | Published |
-| 04 | [Relational & NoSQL Databases](./04_relational_nosql_databases/) | SQL, data modeling and optional database laboratories. | 10 | Published |
-| 05 | [Machine Learning](./05_machine_learning/) | Classical machine learning, evaluation and interpretability. | 17 | Published |
-| 06 | [Natural Language Processing](./06_natural_language_processing/) | Text processing, classification, retrieval and NLP concepts. | 17 | Published |
-| 07 | [Deep Learning](./07_deep_learning/) | Neural networks, training, regularization and attention architectures. | 20 | Published |
-| 08 | [Image Analysis & Classification](./08_image_analysis_classification/) | Image processing, feature extraction, detection and classification. | 16 | Published |
-| 09 | [Recommender Systems](./09_recommender_systems/) | Collaborative filtering, recommendation ranking and evaluation. | 16 | Published |
-| 10 | [Big Data & Distributed Processing](./10_big_data_distributed_processing/) | MapReduce, Hadoop, Spark and data-engineering workflows. | 16 | Published |
+Select an area to open its English README. Follow its **Notebooks and Learning Materials** table in order; consult the area-specific installation instructions, dependencies, exercises, validation and data limitations. Recorded execution histories vary by area; this documentation review does not represent a new clean-environment notebook run.
 
-**The area links lead to the corresponding published directories.** Consult each area’s README for the documented validation scope, optional laboratories, dataset access conditions and limitations.
+<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
-### Directory Organization
+---
+
+<a id="directory-structure"></a>
+
+## Directory Structure
 
 ```text
 data-science-knowledge-base/
@@ -85,118 +91,21 @@ data-science-knowledge-base/
 └── 10_big_data_distributed_processing/
 ```
 
-Area folders typically include notebooks, `reference_materials/`, `cheat_sheets/`, and, when relevant, `datasets/`, `outputs/`, and `requirements.txt`. Some datasets and locally generated outputs are intentionally **not** published because provenance, rights or release approval remain pending. The root `.gitignore` retains specific restrictions for files with unresolved rights, but no longer excludes generated outputs as a general category. Consult each area README for its actual structure and publication limits.
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
-
-<a id="setup"></a>
-
-## Setup and Installation
-
-### Prerequisites
-
-- Git and a compatible Python 3 installation.
-- A terminal and internet access for the initial clone and package installation.
-- JupyterLab and Python dependencies, installed in a **virtual environment**.
-
-**1. Clone the repository:**
-
-```bash
-git clone https://github.com/eduardojr-pereira/data-science-knowledge-base.git
-cd data-science-knowledge-base
-```
-
-**2. Choose a published subject area** (example: Python Programming):
-
-```bash
-cd 01_python_programming
-```
-
-**3. Create and activate a virtual environment on Linux/macOS:**
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-```
-
-**Windows PowerShell alternative:**
-
-```powershell
-py -m venv .venv
-.\.venv\Scripts\Activate.ps1
-```
-
-**4. Install the selected area's dependencies, check the environment and start JupyterLab:**
-
-```bash
-python -m pip install -r requirements.txt
-python -m pip install jupyterlab ipykernel
-python -m pip check
-jupyter lab
-```
-
-Select the kernel associated with your environment in JupyterLab. **Do not install every area's requirements into one environment indiscriminately.** If you already have a functioning environment, skip creating a new one and follow the area's README to avoid unnecessary package upgrades. Some laboratories require additional services or optional packages; see the corresponding area instructions.
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
-
-<a id="usage"></a>
-
-## How to Use
-
-Read the README for your chosen area, then follow its **Notebooks & Learning Materials** table in order. Each row links to the notebook and matching Technical Guide and Cheat Sheet when available.
-
-1. Run notebooks from the respective area directory, with the correct Python kernel.
-2. Use **Restart Kernel → Run All Cells** for reproducibility checks.
-3. Preserve input datasets; inspect `outputs/` for generated files.
-4. Work through the **Exercises and Practice** subsection and document your conclusions.
-
-The areas are learning modules, not all independently validated production applications. Some interactive visualizations and optional database services need additional local setup.
-
-### Dataset and output publication policy
-
-**Publication policy:** publish reproducible notebook outputs whenever source-data rights, derived-data redistribution conditions, absence of sensitive information, and output integrity are established. The single root `.gitignore` no longer excludes `outputs/` globally; it explicitly blocks certain local results whose provenance or redistribution rights remain unresolved, as well as unreviewed model binaries. **Visible in Git does not mean approved for publication.** The 128 outputs already tracked at commit `0456c19` remain unchanged by this policy update.
-
-Before committing any new dataset or generated output, review its source and usage rights (including derived-data restrictions), accidental personal/sensitive information, reproducibility and relevance; approve the specific files before staging. Use explicit Git paths and keep historical local files protected by `.gitignore` outside commits. Published third-party data are governed by their own license terms, not the repository’s MIT/CC BY-NC licenses. See the dataset registers for [area 03](./03_statistics/datasets/README.md), [area 09](./09_recommender_systems/datasets/README.md), and [area 10](./10_big_data_distributed_processing/datasets/README.md) for known limitations.
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
-
-<a id="validation"></a>
-
-## Testing and Validation
-
-| Verification | Recorded status |
-|---|---|
-| Areas with bilingual documentation | 11 (00–10) |
-| Indexed study notebooks | 139 |
-| Technical reference PDFs | 141 (140 guides + Student’s t table) |
-| Cheat Sheets | 138 |
-| Published study areas | 11 (00–10) |
-
-Previously recorded execution and review histories vary by area. See **Testing and Validation** in each published subject README for specific statements and limitations. **This repository-level README update does not mean all notebooks have been re-executed in a clean environment.**
+Each area has its own documentation, notebooks, guides and cheat sheets, plus datasets, outputs and dependencies where applicable.
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
 ---
 
 <a id="references"></a>
+<a id="related-repositories"></a>
 
-## References
+## Related Repositories
 
-| Resource | Documentation / Reference |
+| Repository | Purpose |
 |---|---|
-| Python | [Python Documentation](https://docs.python.org/3/) |
-| JupyterLab | [JupyterLab Documentation](https://jupyterlab.readthedocs.io/en/stable/) |
-| NumPy | [NumPy Documentation](https://numpy.org/doc/stable/) |
-| Pandas | [Pandas Documentation](https://pandas.pydata.org/docs/) |
-| scikit-learn | [scikit-learn User Guide](https://scikit-learn.org/stable/user_guide.html) |
-
-For subject-specific references, consult the **References** section of each published area.
+| [Data Science Portfolio](https://github.com/eduardojr-pereira/data-science-portfolio) | Applied projects and case studies |
+| [EP Brand Assets](https://github.com/eduardojr-pereira/ep-brand-assets) | Visual identity and shared infrastructure |
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -214,32 +123,40 @@ For subject-specific references, consult the **References** section of each publ
 
 These licenses cover only material for which the author holds the necessary rights. See the license files for details.
 
+### Dataset and output publication policy
+
+**Publication policy:** publish reproducible notebook outputs whenever source-data rights, derived-data redistribution conditions, absence of sensitive information, and output integrity are established. The single root `.gitignore` no longer excludes `outputs/` globally; it explicitly blocks certain local results whose provenance or redistribution rights remain unresolved, as well as unreviewed model binaries. **Visible in Git does not mean approved for publication.**
+
+Before committing any new dataset or generated output, review its source and usage rights (including derived-data restrictions), accidental personal/sensitive information, reproducibility and relevance; approve the specific files before staging. Use explicit Git paths and keep historical local files protected by `.gitignore` outside commits. Published third-party data are governed by their own license terms, not the repository’s MIT/CC BY-NC licenses. See the dataset registers for [area 03](./03_statistics/README.md#dataset-provenance), [area 09](./09_recommender_systems/README.md#dataset-provenance), and [area 10](./10_big_data_distributed_processing/README.md#dataset-provenance) for known limitations. Inclusion of the three audited Area 10 inputs in the next release has been authorized, under their documented licenses and attribution terms.
+
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
 ---
 
 <a id="contact"></a>
 
+<!-- EP-FOOTER:START -->
 ## Contact
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90">
+<a href="https://eduardo-pereira.webflow.io/" title="Personal website — Eduardo Junior Pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90"></a>
 
 **Eduardo Junior Pereira**
 
-*Economics • Data Science • Python*
+*Economics · Data Science · Analytics*
 
 <a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
 <a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>
 
-[Let’s connect on LinkedIn to exchange ideas and opportunities.](https://www.linkedin.com/in/eduardo-jr-pereira/)
+[Let's connect on LinkedIn to exchange ideas and opportunities.](https://www.linkedin.com/in/eduardo-jr-pereira/)
 
-[**GitHub Portfolio**](https://github.com/eduardojr-pereira/data-science-portfolio) &nbsp;•&nbsp; [**Personal Website**](https://eduardo-pereira.webflow.io/)
+[**GitHub Portfolio**](https://github.com/eduardojr-pereira/data-science-portfolio)
 
 </div>
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
 ---
+<!-- EP-FOOTER:END -->

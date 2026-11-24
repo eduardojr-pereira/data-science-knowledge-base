@@ -53,8 +53,5 @@ secrets.json
 /10_big_data_distributed_processing/RELATORIO_TESTES.md
 /10_big_data_distributed_processing/datasets/2017_real_estate.csv
 /10_big_data_distributed_processing/datasets/airplanes.csv
-/10_big_data_distributed_processing/datasets/airports.csv
-/10_big_data_distributed_processing/datasets/crx_data.data
-/10_big_data_distributed_processing/datasets/flights.csv
 /10_big_data_distributed_processing/datasets/points.tsv
 /10_big_data_distributed_processing/datasets/sms.csv

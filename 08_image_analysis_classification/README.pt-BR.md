@@ -71,6 +71,10 @@ Esta área reúne **16 notebooks em português**, acompanhados de **16 Guias Té
 
 **Não há dataset externo obrigatório e não há arquivos próprios a disponibilizar em `datasets/`.** Os notebooks 01, 08, 09 e 12 utilizam `load_digits()` do scikit-learn; os notebooks 02–07, 10, 13 e 14 utilizam imagens de demonstração do `scikit-image` (por exemplo, `camera()`, `astronaut()` e `coins()`); os demais utilizam arrays sintéticos ou exemplos NumPy. Os dados de exemplo são carregados pelas bibliotecas instaladas e não devem ser confundidos com uma base para validar modelos em ambientes reais.
 
+### Resultados Gerados
+
+**Não há arquivos de output obrigatórios no repositório para esta área.** Os exemplos exibem resultados em memória e nas células do notebook (`print`, gráficos Matplotlib). Os blocos atuais não contêm comandos de exportação como `to_csv`, `savefig`, `np.save` ou `joblib.dump`. Caso um projeto futuro gere resultados reproduzíveis e apropriados para publicação, documente e versione esses arquivos separadamente, mediante revisão.
+
 ### Estrutura de Diretórios
 
 ```text
@@ -79,10 +83,23 @@ Esta área reúne **16 notebooks em português**, acompanhados de **16 Guias Té
 ├── README.pt-BR.md
 ├── requirements.txt
 ├── 01_fundamentos_visao_computacional.ipynb
-├── ...
+├── 02_pixels_amostragem_quantizacao.ipynb
+├── 03_cores_histogramas_realce.ipynb
+├── 04_filtragem_ruido.ipynb
+├── 05_bordas_gradientes_morfologia.ipynb
+├── 06_limiarizacao_segmentacao_contornos.ipynb
+├── 07_geometria_interpolacao.ipynb
+├── 08_descritores_hog.ipynb
+├── 09_svm_ocr_classificacao.ipynb
+├── 10_detector_haar_cascade.ipynb
+├── 11_deteccao_facial_pipeline.ipynb
+├── 12_eigenfaces_fisherfaces_lbph.ipynb
+├── 13_hog_dlib_detectores.ipynb
+├── 14_cnn_transfer_learning_visual.ipynb
+├── 15_onnx_inferencia_moderna.ipynb
 ├── 16_avaliacao_etica_reproducibilidade.ipynb
-├── reference_materials/   # 16 Guias Técnicos
-└── cheat_sheets/         # 16 Cheat Sheets
+├── reference_materials/
+└── cheat_sheets/
 ```
 
 Não incluímos `datasets/` nem `outputs/` vazias: os exemplos não dependem de arquivos externos e não salvam artefatos obrigatórios.
@@ -115,7 +132,7 @@ Não incluímos `datasets/` nem `outputs/` vazias: os exemplos não dependem de 
 
 ## Instalação e Configuração
 
-**Pré-requisitos:** Python, Git, terminal e JupyterLab. Use um ambiente isolado; se já tiver um `jupyter-env` funcional, ative-o e pule a criação.
+**Comandos copiáveis:** execute as etapas na ordem. Se já utiliza um ambiente funcional como `jupyter-env`, ative-o e pule a criação de `.venv`. Ao usar um clone existente, entre diretamente na pasta da área.
 
 **1. Clone o repositório e acesse a área**
 
@@ -124,21 +141,21 @@ git clone https://github.com/eduardojr-pereira/data-science-knowledge-base.git
 cd data-science-knowledge-base/08_image_analysis_classification
 ```
 
-**2. Crie e ative o ambiente virtual (Linux/macOS)**
+**2. Crie e ative o ambiente virtual — Linux/macOS**
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 ```
 
-**Windows PowerShell:**
+**Alternativa no Windows PowerShell**
 
 ```powershell
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
-**3. Instale e confira as dependências básicas**
+**3. Instale as dependências e verifique o ambiente**
 
 ```bash
 python -m pip install -r requirements.txt
@@ -152,6 +169,8 @@ python -m pip check
 python -m ipykernel install --user --name ds-08 --display-name "Data Science 08"
 jupyter lab
 ```
+
+Selecione esse kernel em cada notebook. Inicie o JupyterLab na pasta da área para manter os caminhos relativos dos dados e saídas.
 
 No notebook 10, o arquivo `haarcascade_frontalface_default.xml` é obtido via `cv2.data.haarcascades`, da instalação local do OpenCV. Não se exige webcam, download externo nem dados biométricos privados. A compatibilidade de versões deve ser verificada no ambiente efetivamente utilizado.
 
@@ -296,10 +315,6 @@ print("dlib:", dlib.__version__, "Detector:", type(detector).__name__, "Faces:",
 
 Siga os notebooks 01–16 em ordem numérica. Consulte o Guia Técnico, execute o notebook em kernel limpo e utilize a Cheat Sheet como referência rápida. Experimentos que tratam de reconhecimento de faces incluem ressalvas metodológicas e de privacidade; não use fotografias de terceiros sem autorização.
 
-### Resultados Gerados
-
-**Não há arquivos de output obrigatórios no repositório para esta área.** Os exemplos exibem resultados em memória e nas células do notebook (`print`, gráficos Matplotlib). Os blocos atuais não contêm comandos de exportação como `to_csv`, `savefig`, `np.save` ou `joblib.dump`. Caso um projeto futuro gere resultados reproduzíveis e apropriados para publicação, documente e versione esses arquivos separadamente, mediante revisão.
-
 ### Exercícios e Prática
 
 Modifique um parâmetro de cada vez, registre uma hipótese, compare com um baseline pertinente e preserve a separação entre treino, validação e teste quando aplicável.
@@ -312,7 +327,7 @@ Modifique um parâmetro de cada vez, registre uma hipótese, compare com um base
 
 ## Referências
 
-| Recurso | Documentação |
+| Recurso | Documentação / Referência |
 |---|---|
 | Python | [Abrir documentação](https://docs.python.org/3/) |
 | NumPy | [Abrir documentação](https://numpy.org/doc/stable/) |
@@ -346,24 +361,28 @@ Essas condições se aplicam somente aos materiais sobre os quais o autor possui
 
 <a id="contact"></a>
 
+<!-- EP-FOOTER:START -->
 ## Contato
 
 <div align="center">
 
-<a href="https://eduardo-pereira.webflow.io/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo" height="90"></a>
+<a href="https://eduardo-pereira.webflow.io/" title="Site pessoal — Eduardo Junior Pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="Logo EP — Eduardo Junior Pereira" height="90"></a>
 
-**Eduardo Junior Pereira**  
-*Economics • Data Science • Python*
+**Eduardo Junior Pereira**
 
-<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;<a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>
+*Economics · Data Science · Analytics*
+
+<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="E-mail" height="27"></a>&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
+<a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>
 
 [Vamos nos conectar no LinkedIn para trocar ideias e oportunidades.](https://www.linkedin.com/in/eduardo-jr-pereira/)
 
-[**Portfólio GitHub**](https://github.com/eduardojr-pereira/data-science-portfolio) &nbsp;•&nbsp; [**Site Pessoal**](https://eduardo-pereira.webflow.io/)
+[**Portfólio GitHub**](https://github.com/eduardojr-pereira/data-science-portfolio)
 
 </div>
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
 ---
-
+<!-- EP-FOOTER:END -->

@@ -58,10 +58,25 @@ Modelar bancos e relacionamentos, escrever consultas, avaliar transações e com
 | 09 | [MongoDB Replicacao Sharding](./09_mongodb_replicacao_sharding.ipynb) | [Abrir PDF](./reference_materials/09_mongodb_replicacao_sharding.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_mongodb_replicacao_sharding.pdf) |
 | 10 | [Cassandra Modelagem Cql](./10_cassandra_modelagem_cql.ipynb) | [Abrir PDF](./reference_materials/10_cassandra_modelagem_cql.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_cassandra_modelagem_cql.pdf) |
 
-### Datasets
+### Conjuntos de Dados
 
 - [leituras_sensores.csv](./datasets/leituras_sensores.csv)
 - [usuarios_sinteticos.json](./datasets/usuarios_sinteticos.json)
+
+### Resultados Gerados
+
+Arquivos exportados pelos notebooks estão em `outputs/`. Alguns exemplos:
+
+- [01_comparacao_modelos.csv](./outputs/01_comparacao_modelos.csv)
+- [02_sensores_comodos.csv](./outputs/02_sensores_comodos.csv)
+- [03_temperatura_media_por_sensor.csv](./outputs/03_temperatura_media_por_sensor.csv)
+- [04_ultima_leitura_por_sensor.csv](./outputs/04_ultima_leitura_por_sensor.csv)
+- [05_validacao_rollback.csv](./outputs/05_validacao_rollback.csv)
+- [06_comparacao_familias_nosql.csv](./outputs/06_comparacao_familias_nosql.csv)
+- [07_usuarios_sinteticos_resumo.csv](./outputs/07_usuarios_sinteticos_resumo.csv)
+- [08_interesses_contagem_local.csv](./outputs/08_interesses_contagem_local.csv)
+
+Outros arquivos da área também estão disponíveis em `outputs/`.
 
 ### Estrutura de Diretórios
 
@@ -70,6 +85,7 @@ Modelar bancos e relacionamentos, escrever consultas, avaliar transações e com
 ├── README.md
 ├── README.pt-BR.md
 ├── requirements.txt
+├── requirements-laboratorios.txt
 ├── 01_fundamentos_bancos_dados.ipynb
 ├── 02_modelagem_relacional_normalizacao.ipynb
 ├── 03_sql_fundamentos_consultas.ipynb
@@ -85,8 +101,7 @@ Modelar bancos e relacionamentos, escrever consultas, avaliar transações e com
 ├── datasets/
 ├── outputs/
 ├── infra/
-├── sql/
-└── requirements-laboratorios.txt
+└── sql/
 ```
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
@@ -211,22 +226,9 @@ Para reexecutar o núcleo com segurança, mantenha `RUN_LIVE_DB` e `EP04_LAB_CON
 
 ## Instruções de Uso
 
+### Percurso de Estudo Recomendado
+
 Siga os notebooks na ordem da tabela de Conteúdo, selecionando o kernel correto. Leia os Guias Técnicos para aprofundamento e consulte as Cheat Sheets como referência rápida.
-
-### Resultados Gerados
-
-Arquivos exportados pelos notebooks estão em `outputs/`. Alguns exemplos:
-
-- [01_comparacao_modelos.csv](./outputs/01_comparacao_modelos.csv)
-- [02_sensores_comodos.csv](./outputs/02_sensores_comodos.csv)
-- [03_temperatura_media_por_sensor.csv](./outputs/03_temperatura_media_por_sensor.csv)
-- [04_ultima_leitura_por_sensor.csv](./outputs/04_ultima_leitura_por_sensor.csv)
-- [05_validacao_rollback.csv](./outputs/05_validacao_rollback.csv)
-- [06_comparacao_familias_nosql.csv](./outputs/06_comparacao_familias_nosql.csv)
-- [07_usuarios_sinteticos_resumo.csv](./outputs/07_usuarios_sinteticos_resumo.csv)
-- [08_interesses_contagem_local.csv](./outputs/08_interesses_contagem_local.csv)
-
-Outros arquivos da área também estão disponíveis em `outputs/`.
 
 ### Exercícios e Prática
 
@@ -278,26 +280,28 @@ As licenças acima se aplicam apenas ao material sobre o qual o autor possui os 
 
 <a id="contact"></a>
 
+<!-- EP-FOOTER:START -->
 ## Contato
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90">
+<a href="https://eduardo-pereira.webflow.io/" title="Site pessoal — Eduardo Junior Pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="Logo EP — Eduardo Junior Pereira" height="90"></a>
 
-**Eduardo Junior Pereira**  
-*Economics • Data Science • Python*
+**Eduardo Junior Pereira**
 
-<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;
+*Economics · Data Science · Analytics*
+
+<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="E-mail" height="27"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
 <a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>
 
 [Vamos nos conectar no LinkedIn para trocar ideias e oportunidades.](https://www.linkedin.com/in/eduardo-jr-pereira/)
 
-[**Portfólio GitHub**](https://github.com/eduardojr-pereira/data-science-portfolio) &nbsp;•&nbsp; [**Site Pessoal**](https://eduardo-pereira.webflow.io/)
+[**Portfólio GitHub**](https://github.com/eduardojr-pereira/data-science-portfolio)
 
 </div>
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
 ---
-
+<!-- EP-FOOTER:END -->

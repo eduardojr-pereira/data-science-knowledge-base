@@ -58,6 +58,19 @@ Build reliable Python/Jupyter environments, document analyses, develop interacti
 
 No mandatory input dataset is distributed in this area; examples are generated within the notebooks.
 
+### Generated Outputs
+
+Files exported by notebooks are available in `outputs/`. Examples include:
+
+- [polars_receita_categoria_mes.csv](./outputs/polars_receita_categoria_mes.csv)
+- [polars_receita_mensal.csv](./outputs/polars_receita_mensal.csv)
+- [polars_receita_por_regiao.csv](./outputs/polars_receita_por_regiao.csv)
+- [polars_unidades_por_produto.csv](./outputs/polars_unidades_por_produto.csv)
+- [polars_vendas_exemplo.csv](./outputs/polars_vendas_exemplo.csv)
+- [polars_vendas_exemplo.parquet](./outputs/polars_vendas_exemplo.parquet)
+
+Notebook 04 (Polars) uses temporary CSV/Parquet files for intermediate demonstrations. Its single **Exportação de resultados** section writes all six final files to `outputs/` after the analytical calculations; running it again replaces the corresponding generated results. No external input dataset is required.
+
 ### Directory Structure
 
 ```text
@@ -71,7 +84,7 @@ No mandatory input dataset is distributed in this area; examples are generated w
 ├── 04_polars_e_analise_de_dados.ipynb
 ├── reference_materials/
 ├── cheat_sheets/
-├── outputs
+└── outputs/
 ```
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
@@ -174,20 +187,9 @@ Widget rendering depends on frontend integration and should be rechecked in a di
 
 ## How to Use
 
+### Recommended Learning Path
+
 Follow notebooks in the order shown in Contents and select the correct kernel. Use Technical Guides for in-depth explanations and Cheat Sheets for quick reference.
-
-### Generated Outputs
-
-Files exported by notebooks are available in `outputs/`. Examples include:
-
-- [polars_receita_categoria_mes.csv](./outputs/polars_receita_categoria_mes.csv)
-- [polars_receita_mensal.csv](./outputs/polars_receita_mensal.csv)
-- [polars_receita_por_regiao.csv](./outputs/polars_receita_por_regiao.csv)
-- [polars_unidades_por_produto.csv](./outputs/polars_unidades_por_produto.csv)
-- [polars_vendas_exemplo.csv](./outputs/polars_vendas_exemplo.csv)
-- [polars_vendas_exemplo.parquet](./outputs/polars_vendas_exemplo.parquet)
-
-Notebook 04 (Polars) uses temporary CSV/Parquet files for intermediate demonstrations. Its single **Exportação de resultados** section writes all six final files to `outputs/` after the analytical calculations; running it again replaces the corresponding generated results. No external input dataset is required.
 
 ### Exercises and Practice
 
@@ -237,14 +239,16 @@ These licenses apply only where the author holds the necessary rights; notebook 
 
 <a id="contact"></a>
 
+<!-- EP-FOOTER:START -->
 ## Contact
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90">
+<a href="https://eduardo-pereira.webflow.io/" title="Personal website — Eduardo Junior Pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90"></a>
 
-**Eduardo Junior Pereira**  
-*Economics • Data Science • Python*
+**Eduardo Junior Pereira**
+
+*Economics · Data Science · Analytics*
 
 <a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
@@ -252,10 +256,11 @@ These licenses apply only where the author holds the necessary rights; notebook 
 
 [Let's connect on LinkedIn to exchange ideas and opportunities.](https://www.linkedin.com/in/eduardo-jr-pereira/)
 
-[**GitHub Portfolio**](https://github.com/eduardojr-pereira/data-science-portfolio) &nbsp;•&nbsp; [**Personal Website**](https://eduardo-pereira.webflow.io/)
+[**GitHub Portfolio**](https://github.com/eduardojr-pereira/data-science-portfolio)
 
 </div>
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
 ---
+<!-- EP-FOOTER:END -->

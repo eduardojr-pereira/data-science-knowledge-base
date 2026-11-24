@@ -60,6 +60,23 @@ Use Python collections and functions, vectorize operations, manipulate DataFrame
 
 No mandatory input dataset is distributed in this area; examples are generated within the notebooks.
 
+### Generated Outputs
+
+Notebook 05 (Pandas) creates and reads intermediate CSV/Excel files in a temporary directory. Its single final **Exportação de resultados** section validates and publishes the following ten demonstration files in `outputs/`:
+
+- [cidades_ponto_virgula.csv](./outputs/cidades_ponto_virgula.csv)
+- [matriz_numerica.csv](./outputs/matriz_numerica.csv)
+- [matriz_transformada.csv](./outputs/matriz_transformada.csv)
+- [movimentacoes_financeiras.xlsx](./outputs/movimentacoes_financeiras.xlsx)
+- [movimentacoes_tratadas.xlsx](./outputs/movimentacoes_tratadas.xlsx)
+- [planilha_multiplas_abas.xlsx](./outputs/planilha_multiplas_abas.xlsx)
+- [produtos_estoque.csv](./outputs/produtos_estoque.csv)
+- [receitas_despesas.xlsx](./outputs/receitas_despesas.xlsx)
+- [resultado.xlsx](./outputs/resultado.xlsx)
+- [vendas_simuladas.csv](./outputs/vendas_simuladas.csv)
+
+The simulated sales CSV uses Windows-1252 (`cp1252`) encoding intentionally for the encoding exercise; read it with `encoding="cp1252"`. The Matplotlib figures in notebook 04 are displayed inside the notebook rather than exported as separate image files.
+
 ### Directory Structure
 
 ```text
@@ -75,7 +92,7 @@ No mandatory input dataset is distributed in this area; examples are generated w
 ├── 06_classes_e_objetos.ipynb
 ├── reference_materials/
 ├── cheat_sheets/
-├── outputs
+└── outputs/
 ```
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
@@ -175,24 +192,9 @@ To check your environment, run `python -m pip check` and then **Restart Kernel �
 
 ## How to Use
 
+### Recommended Learning Path
+
 Follow notebooks in the order shown in Contents and select the correct kernel. Use Technical Guides for in-depth explanations and Cheat Sheets for quick reference.
-
-### Generated Outputs
-
-Notebook 05 (Pandas) creates and reads intermediate CSV/Excel files in a temporary directory. Its single final **Exportação de resultados** section validates and publishes the following ten demonstration files in `outputs/`:
-
-- [cidades_ponto_virgula.csv](./outputs/cidades_ponto_virgula.csv)
-- [matriz_numerica.csv](./outputs/matriz_numerica.csv)
-- [matriz_transformada.csv](./outputs/matriz_transformada.csv)
-- [movimentacoes_financeiras.xlsx](./outputs/movimentacoes_financeiras.xlsx)
-- [movimentacoes_tratadas.xlsx](./outputs/movimentacoes_tratadas.xlsx)
-- [planilha_multiplas_abas.xlsx](./outputs/planilha_multiplas_abas.xlsx)
-- [produtos_estoque.csv](./outputs/produtos_estoque.csv)
-- [receitas_despesas.xlsx](./outputs/receitas_despesas.xlsx)
-- [resultado.xlsx](./outputs/resultado.xlsx)
-- [vendas_simuladas.csv](./outputs/vendas_simuladas.csv)
-
-The simulated sales CSV uses Windows-1252 (`cp1252`) encoding intentionally for the encoding exercise; read it with `encoding="cp1252"`. The Matplotlib figures in notebook 04 are displayed inside the notebook rather than exported as separate image files.
 
 ### Exercises and Practice
 
@@ -239,14 +241,16 @@ These licenses apply only where the author holds the necessary rights; notebook 
 
 <a id="contact"></a>
 
+<!-- EP-FOOTER:START -->
 ## Contact
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90">
+<a href="https://eduardo-pereira.webflow.io/" title="Personal website — Eduardo Junior Pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90"></a>
 
-**Eduardo Junior Pereira**  
-*Economics • Data Science • Python*
+**Eduardo Junior Pereira**
+
+*Economics · Data Science · Analytics*
 
 <a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
@@ -254,10 +258,11 @@ These licenses apply only where the author holds the necessary rights; notebook 
 
 [Let's connect on LinkedIn to exchange ideas and opportunities.](https://www.linkedin.com/in/eduardo-jr-pereira/)
 
-[**GitHub Portfolio**](https://github.com/eduardojr-pereira/data-science-portfolio) &nbsp;•&nbsp; [**Personal Website**](https://eduardo-pereira.webflow.io/)
+[**GitHub Portfolio**](https://github.com/eduardojr-pereira/data-science-portfolio)
 
 </div>
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
 ---
+<!-- EP-FOOTER:END -->

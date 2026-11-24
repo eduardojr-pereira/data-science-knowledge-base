@@ -76,6 +76,22 @@ This area contains twenty Portuguese-language notebooks with original technical 
 
 No mandatory external dataset is included. The notebooks use synthetic examples or datasets distributed with scikit-learn; optional neural labs should not download external model weights without explicit setup.
 
+### Generated Outputs
+
+Files exported by notebooks are generated locally in `outputs/`. Examples include:
+
+- [07_metricas_sequential.csv](./outputs/07_metricas_sequential.csv)
+- [09_metricas_baselines.csv](./outputs/09_metricas_baselines.csv)
+- [10_resultados_grid_search.csv](./outputs/10_resultados_grid_search.csv)
+- [11_regularizacao_resultado.csv](./outputs/11_regularizacao_resultado.csv)
+- [12_pipeline_logistic_regression.joblib](./outputs/12_pipeline_logistic_regression.joblib)
+- [12_pipeline_metadata.json](./outputs/12_pipeline_metadata.json)
+- [14_historico_treinamento_cnn.csv](./outputs/14_historico_treinamento_cnn.csv) (optional TensorFlow lab)
+- [17_mapa_saliencia_numerica.png](./outputs/17_mapa_saliencia_numerica.png)
+- [19_previsoes_series_temporais.csv](./outputs/19_previsoes_series_temporais.csv)
+
+The files linked above are available in the repository under `outputs/`. Review models and generated artifacts before sharing them; never load untrusted `.joblib` files.
+
 ### Directory Structure
 
 ```text
@@ -83,13 +99,29 @@ No mandatory external dataset is included. The notebooks use synthetic examples 
 ├── README.md
 ├── README.pt-BR.md
 ├── requirements.txt
-├── .gitattributes
 ├── 01_fundamentos_deep_learning.ipynb
-├── ...
+├── 02_tensores_tensorflow_keras.ipynb
+├── 03_preparacao_para_redes.ipynb
+├── 04_neuronio_perceptron.ipynb
+├── 05_perdas_gradientes_otimizacao.ipynb
+├── 06_backpropagation_mlp_xor.ipynb
+├── 07_keras_sequential.ipynb
+├── 08_keras_functional.ipynb
+├── 09_avaliacao_baselines.ipynb
+├── 10_hiperparametros_inicializacao.ipynb
+├── 11_regularizacao_callbacks.ipynb
+├── 12_persistencia_reproducibilidade.ipynb
+├── 13_convolucao_cnn_matematica.ipynb
+├── 14_cnn_na_pratica.ipynb
+├── 15_augmentation_robustez.ipynb
+├── 16_arquiteturas_transfer_learning.ipynb
+├── 17_interpretabilidade_visao.ipynb
+├── 18_rnn_lstm_gru.ipynb
+├── 19_sequencias_series_sentimentos.ipynb
 ├── 20_atencao_transformers.ipynb
 ├── reference_materials/
 ├── cheat_sheets/
-└── outputs/               # Local generated artifacts (Git-ignored)
+└── outputs/
 ```
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
@@ -120,30 +152,30 @@ The basic environment is described in `requirements.txt`. TensorFlow/Keras must 
 
 ## Setup and Installation
 
-**Prerequisites:** Python, Git, a terminal and JupyterLab. The commands below can be copied. If a working environment (`jupyter-env`) is already configured, activate it and skip creating another one.
+**Copyable commands:** run the steps in order. If an environment such as `jupyter-env` already works for you, activate it and skip creating `.venv`. If the repository is already cloned, go straight to the area directory.
 
-**1. Clone and enter this area**
+**1. Clone the repository and open this area**
 
 ```bash
 git clone https://github.com/eduardojr-pereira/data-science-knowledge-base.git
 cd data-science-knowledge-base/07_deep_learning
 ```
 
-**2. Create and activate a virtual environment (Linux/macOS)**
+**2. Create and activate a virtual environment — Linux/macOS**
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate
 ```
 
-**Windows PowerShell:**
+**Windows PowerShell alternative**
 
 ```powershell
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
-**3. Install and validate core dependencies**
+**3. Install dependencies and verify the environment**
 
 ```bash
 python -m pip install -r requirements.txt
@@ -157,6 +189,8 @@ python -m pip check
 python -m ipykernel install --user --name ds-07 --display-name "Data Science 07"
 jupyter lab
 ```
+
+Select this kernel in each notebook. Start JupyterLab in the area directory to keep relative data and output paths consistent.
 
 <!-- TF_KERNEL07_DOCUMENTADO -->
 
@@ -185,7 +219,6 @@ TF_CPP_MIN_LOG_LEVEL=2 python -c "import tensorflow as tf; print(tf.__version__)
 The locally observed test returned TensorFlow `2.22.0-rc0`, a CPU device and `6.0`. Launch the **JupyterLab server with the original `jupyter-env`**, open the relevant notebook and select the **Python 3.14 — Deep Learning** kernel in the notebook interface. Restart the kernel and run all cells. On machines with limited RAM, close unused notebook kernels and keep training workloads small. The TensorFlow lab in Notebook 14 must really run before `outputs/14_historico_treinamento_cnn.csv` can be generated; an optional skipped lab is not a completed training run.
 
 Windows and macOS users should select a TensorFlow/Python combination supported on their platforms rather than copying the Linux-specific CPU wheel version verbatim.
-
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
@@ -220,22 +253,6 @@ To check your environment, run `python -m pip check` and then **Restart Kernel �
 
 Follow notebooks 01–20 in numerical order. For each topic: study the Technical Guide, execute the notebook, compare outputs to expectations, and consult the Cheat Sheet for quick recipes. Keep local changes in a separate copy until the review is approved.
 
-### Generated Outputs
-
-Files exported by notebooks are generated locally in `outputs/`. Examples include:
-
-- [07_metricas_sequential.csv](./outputs/07_metricas_sequential.csv)
-- [09_metricas_baselines.csv](./outputs/09_metricas_baselines.csv)
-- [10_resultados_grid_search.csv](./outputs/10_resultados_grid_search.csv)
-- [11_regularizacao_resultado.csv](./outputs/11_regularizacao_resultado.csv)
-- [12_pipeline_logistic_regression.joblib](./outputs/12_pipeline_logistic_regression.joblib)
-- [12_pipeline_metadata.json](./outputs/12_pipeline_metadata.json)
-- [14_historico_treinamento_cnn.csv](./outputs/14_historico_treinamento_cnn.csv) (optional TensorFlow lab)
-- [17_mapa_saliencia_numerica.png](./outputs/17_mapa_saliencia_numerica.png)
-- [19_previsoes_series_temporais.csv](./outputs/19_previsoes_series_temporais.csv)
-
-The files linked above are available in the repository under `outputs/`. Review models and generated artifacts before sharing them; never load untrusted `.joblib` files.
-
 ### Exercises and Practice
 
 Explain a model assumption, run a controlled variation, and assess whether the evidence supports a claim. In particular, distinguish demonstrations using random weights from real training, and preserve chronology in time-series experiments.
@@ -249,7 +266,7 @@ Explain a model assumption, run a controlled variation, and assess whether the e
 
 ## References
 
-| Resource | Official Documentation / Reference |
+| Resource | Documentation / Reference |
 |---|---|
 | Python | [Open documentation](https://docs.python.org/3/) |
 | NumPy | [Open documentation](https://numpy.org/doc/stable/) |
@@ -284,25 +301,28 @@ These terms apply only to material owned by the author.
 
 <a id="contact"></a>
 
+<!-- EP-FOOTER:START -->
 ## Contact
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo" height="90">
+<a href="https://eduardo-pereira.webflow.io/" title="Personal website — Eduardo Junior Pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90"></a>
 
-**Eduardo Junior Pereira**  
-*Economics • Data Science • Python*
+**Eduardo Junior Pereira**
+
+*Economics · Data Science · Analytics*
 
 <a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
 <a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>
 
-[Let’s connect on LinkedIn to exchange ideas and opportunities.](https://www.linkedin.com/in/eduardo-jr-pereira/)
+[Let's connect on LinkedIn to exchange ideas and opportunities.](https://www.linkedin.com/in/eduardo-jr-pereira/)
 
-[**GitHub Portfolio**](https://github.com/eduardojr-pereira/data-science-portfolio) &nbsp;•&nbsp; [**Personal Website**](https://eduardo-pereira.webflow.io/)
+[**GitHub Portfolio**](https://github.com/eduardojr-pereira/data-science-portfolio)
 
 </div>
 
 <p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
 
 ---
+<!-- EP-FOOTER:END -->

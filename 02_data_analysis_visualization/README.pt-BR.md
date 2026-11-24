@@ -55,12 +55,24 @@ Auditar a qualidade dos dados, preparar ETL, agregar dados, analisar séries tem
 | 06 | [Analises Praticas E Interpretacao](./06_analises_praticas_e_interpretacao.ipynb) | [Abrir PDF](./reference_materials/06_analises_praticas_e_interpretacao.pdf) | — |
 | 07 | [Visualizacao Interativa Com Plotly E Bokeh](./07_visualizacao_interativa_com_plotly_e_bokeh.ipynb) | [Abrir PDF](./reference_materials/07_visualizacao_interativa_com_plotly_e_bokeh.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_interatividade.pdf) |
 
-### Datasets
+### Conjuntos de Dados
 
 - [clima_sintetico.csv](./datasets/clima_sintetico.csv)
 - [reclamacoes_sinteticas.csv](./datasets/reclamacoes_sinteticas.csv)
 - [regioes_exemplo.csv](./datasets/regioes_exemplo.csv)
 - [vendas_exemplo.csv](./datasets/vendas_exemplo.csv)
+
+### Resultados Gerados
+
+As exportações estão concentradas na seção final do respectivo notebook. Os datasets de origem em `datasets/` são preservados e não são sobrescritos durante a execução.
+
+| Notebook | Formato | Arquivos definitivos em `outputs/` |
+|---|---|---|
+| 02 — ETL e Preparação de Dados | CSV | [receita_mensal.csv](./outputs/receita_mensal.csv) · [resumo_por_regiao.csv](./outputs/resumo_por_regiao.csv) · [auditoria_v2.csv](./outputs/auditoria_v2.csv) |
+| 05 — Matplotlib e Seaborn | PNG | [temperatura_diaria.png](./outputs/temperatura_diaria.png) |
+| 07 — Visualização Interativa | HTML | [receita_interativa.html](./outputs/receita_interativa.html) · [painel_comparativo.html](./outputs/painel_comparativo.html) · [bokeh_produtos.html](./outputs/bokeh_produtos.html) · [bokeh_interativo.html](./outputs/bokeh_interativo.html) · [altair_produtos.html](./outputs/altair_produtos.html) · [grafico_v2_cdn.html](./outputs/grafico_v2_cdn.html) |
+
+Os seis HTMLs interativos definitivos são distintos dos arquivos `iframe` do Plotly em `outputs/iframe_figures/`, gerados durante a renderização. O arquivo `grafico_v2_cdn.html` depende de internet para carregar o JavaScript do Plotly; as exportações independentes do Plotly e do Bokeh incluem recursos para uso offline.
 
 ### Estrutura de Diretórios
 
@@ -79,7 +91,7 @@ Auditar a qualidade dos dados, preparar ETL, agregar dados, analisar séries tem
 ├── reference_materials/
 ├── cheat_sheets/
 ├── datasets/
-├── outputs
+└── outputs/
 ```
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
@@ -185,21 +197,11 @@ Para conferir um ambiente novo, execute `python -m pip check` e depois **Restart
 
 ## Instruções de Uso
 
+### Percurso de Estudo Recomendado
+
 Siga os notebooks na ordem da tabela de Conteúdo, selecionando o kernel correto. Leia os Guias Técnicos para aprofundamento e consulte as Cheat Sheets como referência rápida.
 
 **Plotly:** mantenha o renderer `iframe` no ambiente testado; os HTMLs correspondentes podem aparecer em `outputs/iframe_figures/`. A pré-visualização do GitHub não executa necessariamente gráficos interativos.
-
-### Resultados Gerados
-
-As exportações estão concentradas na seção final do respectivo notebook. Os datasets de origem em `datasets/` são preservados e não são sobrescritos durante a execução.
-
-| Notebook | Formato | Arquivos definitivos em `outputs/` |
-|---|---|---|
-| 02 — ETL e Preparação de Dados | CSV | [receita_mensal.csv](./outputs/receita_mensal.csv) · [resumo_por_regiao.csv](./outputs/resumo_por_regiao.csv) · [auditoria_v2.csv](./outputs/auditoria_v2.csv) |
-| 05 — Matplotlib e Seaborn | PNG | [temperatura_diaria.png](./outputs/temperatura_diaria.png) |
-| 07 — Visualização Interativa | HTML | [receita_interativa.html](./outputs/receita_interativa.html) · [painel_comparativo.html](./outputs/painel_comparativo.html) · [bokeh_produtos.html](./outputs/bokeh_produtos.html) · [bokeh_interativo.html](./outputs/bokeh_interativo.html) · [altair_produtos.html](./outputs/altair_produtos.html) · [grafico_v2_cdn.html](./outputs/grafico_v2_cdn.html) |
-
-Os seis HTMLs interativos definitivos são distintos dos arquivos `iframe` do Plotly em `outputs/iframe_figures/`, gerados durante a renderização. O arquivo `grafico_v2_cdn.html` depende de internet para carregar o JavaScript do Plotly; as exportações independentes do Plotly e do Bokeh incluem recursos para uso offline.
 
 ### Exercícios e Prática
 
@@ -248,26 +250,28 @@ As licenças acima se aplicam apenas ao material sobre o qual o autor possui os 
 
 <a id="contact"></a>
 
+<!-- EP-FOOTER:START -->
 ## Contato
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90">
+<a href="https://eduardo-pereira.webflow.io/" title="Site pessoal — Eduardo Junior Pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="Logo EP — Eduardo Junior Pereira" height="90"></a>
 
-**Eduardo Junior Pereira**  
-*Economics • Data Science • Python*
+**Eduardo Junior Pereira**
 
-<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;
+*Economics · Data Science · Analytics*
+
+<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="E-mail" height="27"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
 <a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>
 
 [Vamos nos conectar no LinkedIn para trocar ideias e oportunidades.](https://www.linkedin.com/in/eduardo-jr-pereira/)
 
-[**Portfólio GitHub**](https://github.com/eduardojr-pereira/data-science-portfolio) &nbsp;•&nbsp; [**Site Pessoal**](https://eduardo-pereira.webflow.io/)
+[**Portfólio GitHub**](https://github.com/eduardojr-pereira/data-science-portfolio)
 
 </div>
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
 ---
-
+<!-- EP-FOOTER:END -->

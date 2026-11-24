@@ -65,9 +65,17 @@ Pré-processar e representar textos, construir modelos-base de classificação/r
 | 16 | [Chatbots Memoria Personalizacao](./16_chatbots_memoria_personalizacao.ipynb) | [Abrir PDF](./reference_materials/16_chatbots_memoria_personalizacao.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_chatbots_memoria_personalizacao.pdf) |
 | 17 | [Avaliacao Seguranca PLN](./17_avaliacao_seguranca_pln.ipynb) | [Abrir PDF](./reference_materials/17_avaliacao_seguranca_pln.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_avaliacao_seguranca_pln.pdf) |
 
-### Datasets
+### Conjuntos de Dados
 
 - [corpus_demo.txt](./datasets/corpus_demo.txt)
+
+### Resultados Gerados
+
+Os notebooks reproduzem estes três arquivos CSV em [`outputs/`](./outputs/):
+
+- [06_bag_of_words_exemplo.csv](./outputs/06_bag_of_words_exemplo.csv)
+- [07_ranking_recuperacao.csv](./outputs/07_ranking_recuperacao.csv)
+- [08_scores_sumarizacao.csv](./outputs/08_scores_sumarizacao.csv)
 
 ### Estrutura de Diretórios
 
@@ -96,7 +104,7 @@ Pré-processar e representar textos, construir modelos-base de classificação/r
 ├── reference_materials/
 ├── cheat_sheets/
 ├── datasets/
-├── outputs
+└── outputs/
 ```
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
@@ -198,15 +206,9 @@ Para validar seu ambiente, execute `python -m pip check` e depois **Restart Kern
 
 ## Instruções de Uso
 
+### Percurso de Estudo Recomendado
+
 Siga os notebooks na ordem da tabela de Conteúdo, selecionando o kernel correto. Leia os Guias Técnicos para aprofundamento e consulte as Cheat Sheets como referência rápida.
-
-### Resultados Gerados
-
-Os notebooks reproduzem estes três arquivos CSV em [`outputs/`](./outputs/):
-
-- [06_bag_of_words_exemplo.csv](./outputs/06_bag_of_words_exemplo.csv)
-- [07_ranking_recuperacao.csv](./outputs/07_ranking_recuperacao.csv)
-- [08_scores_sumarizacao.csv](./outputs/08_scores_sumarizacao.csv)
 
 ### Exercícios e Prática
 
@@ -253,26 +255,28 @@ As licenças acima se aplicam apenas ao material sobre o qual o autor possui os 
 
 <a id="contact"></a>
 
+<!-- EP-FOOTER:START -->
 ## Contato
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90">
+<a href="https://eduardo-pereira.webflow.io/" title="Site pessoal — Eduardo Junior Pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="Logo EP — Eduardo Junior Pereira" height="90"></a>
 
-**Eduardo Junior Pereira**  
-*Economics • Data Science • Python*
+**Eduardo Junior Pereira**
 
-<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;
+*Economics · Data Science · Analytics*
+
+<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="E-mail" height="27"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
 <a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>
 
 [Vamos nos conectar no LinkedIn para trocar ideias e oportunidades.](https://www.linkedin.com/in/eduardo-jr-pereira/)
 
-[**Portfólio GitHub**](https://github.com/eduardojr-pereira/data-science-portfolio) &nbsp;•&nbsp; [**Site Pessoal**](https://eduardo-pereira.webflow.io/)
+[**Portfólio GitHub**](https://github.com/eduardojr-pereira/data-science-portfolio)
 
 </div>
 
 <p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
 
 ---
-
+<!-- EP-FOOTER:END -->
