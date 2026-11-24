@@ -2,23 +2,18 @@
 
 <div align="center">
 
-[🇺🇸 English](./README.md) &nbsp;|&nbsp; [🇧🇷 Português](./README.pt-BR.md)
+| [English](./README.md) · [Português](./README.pt-BR.md) |
 
 # Data Science Knowledge Base
 
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white&style=for-the-badge) ![Data Science](https://img.shields.io/badge/Data-Science-21618C?style=for-the-badge)
-
-*A structured entry point to a growing collection of hands-on Data Science study materials, Jupyter notebooks and technical references.*
+*Structured learning in data science, from foundational methods to specialized applications.*
 
 </div>
 
----
-
-## On This Page
-
 <div align="center">
 
-[Overview](#overview) • [Study Areas](#study-areas) • [Directory Structure](#directory-structure) • [Related Repositories](#related-repositories) • [License](#license) • [Contact](#contact)
+[Overview](#overview) · [Study Areas](#study-areas) · [Directory Structure](#directory-structure)<br>
+[Related Repositories](#related-repositories) · [License](#license) · [Contact](#contact)
 
 </div>
 
@@ -28,15 +23,16 @@
 
 ## Overview
 
-This repository is a curated learning collection covering programming, statistics, relational and NoSQL databases, machine learning, natural language processing, deep learning, computer vision, recommender systems and distributed data processing. Materials are organized by study area, with notebooks and complementary PDF resources.
+This repository brings together structured study materials for developing practical and analytical skills in data science, from Python programming, data preparation and statistical reasoning to databases, machine learning and specialized applications. Each study area combines Jupyter notebooks with complementary technical references, supporting independent learning, reproducible analysis and portfolio development.
 
-**Published collection:** areas **00–10**, containing **139 notebooks**, **141 technical-reference PDFs** (140 Technical Guides plus one Student’s t table), and **138 Cheat Sheets**. All **11 areas** have their own bilingual READMEs. Publication does not imply that every notebook can be rerun from a public clone: see each area’s data-availability and validation notes.
+| Study Areas | Notebooks | Technical Guides | Cheat Sheets |
+| :---: | :---: | :---: | :---: |
+| 11 | 139 | 140 | 138 |
 
-**Languages:** this overview and all 11 area READMEs are available in English and Brazilian Portuguese. The notebooks and most of their PDF learning materials are written in **Brazilian Portuguese**.
+The reference collection also includes a Student’s t table. All 11 areas have bilingual READMEs.
 
-**Learning goals:** progress from Python and data preparation to statistical reasoning, reproducible analysis, machine learning, and specialized applications. These resources are for study and portfolio demonstration, not a substitute for independent validation of a production solution.
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+> [!WARNING]
+> Notebooks and most study PDFs are written in Brazilian Portuguese. This README provides navigation and documentation in English.
 
 ---
 
@@ -47,6 +43,13 @@ This repository is a curated learning collection covering programming, statistic
 <a id="study-areas"></a>
 
 ## Study Areas
+
+The collection is organized into 11 study areas, each with a dedicated bilingual README that introduces its topics and provides access to notebooks, technical guides, Cheat Sheets and supporting resources.
+
+> [!TIP]
+> **Recommended Learning Path**
+>
+> Start with supplementary resources and Python foundations, then explore data analysis, statistics and databases before progressing to machine learning and specialized areas. Open each area's README and follow its notebook sequence, technical guides and Cheat Sheets. Consult the area-specific dependencies, installation instructions, exercises and validation notes.
 
 | # | Area | Focus | Notebooks |
 |:---:|---|---|:---: |
@@ -62,9 +65,10 @@ This repository is a curated learning collection covering programming, statistic
 | 09 | [Recommender Systems](./09_recommender_systems/README.md) | Collaborative filtering, recommendation ranking and evaluation. | 16 |
 | 10 | [Big Data & Distributed Processing](./10_big_data_distributed_processing/README.md) | MapReduce, Hadoop, Spark and data-engineering workflows. | 16 |
 
-Select an area to open its English README. Follow its **Notebooks and Learning Materials** table in order; consult the area-specific installation instructions, dependencies, exercises, validation and data limitations. Recorded execution histories vary by area; this documentation review does not represent a new clean-environment notebook run.
+> [!CAUTION]
+> Recorded execution histories and data availability vary by area. Publication does not guarantee that every notebook can be rerun from a public clone. The materials support learning and portfolio demonstration; production use requires independent validation.
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+<p align="right"><sub><a href="#readme-top">↑ Back to top</a></sub></p>
 
 ---
 
@@ -72,8 +76,15 @@ Select an area to open its English README. Follow its **Notebooks and Learning M
 
 ## Directory Structure
 
+Each area contains its own bilingual documentation, notebooks and complementary PDF resources, with datasets, outputs and dependencies where applicable.
+
+<details>
+<summary><strong>Repository tree</strong></summary>
+
 ```text
 data-science-knowledge-base/
+├── .gitattributes
+├── .gitignore
 ├── README.md
 ├── README.pt-BR.md
 ├── LICENSE-CODE.txt
@@ -91,9 +102,9 @@ data-science-knowledge-base/
 └── 10_big_data_distributed_processing/
 ```
 
-Each area has its own documentation, notebooks, guides and cheat sheets, plus datasets, outputs and dependencies where applicable.
+</details>
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+<p align="right"><sub><a href="#readme-top">↑ Back to top</a></sub></p>
 
 ---
 
@@ -107,7 +118,7 @@ Each area has its own documentation, notebooks, guides and cheat sheets, plus da
 | [Data Science Portfolio](https://github.com/eduardojr-pereira/data-science-portfolio) | Applied projects and case studies |
 | [EP Brand Assets](https://github.com/eduardojr-pereira/ep-brand-assets) | Visual identity and shared infrastructure |
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+<p align="right"><sub><a href="#readme-top">↑ Back to top</a></sub></p>
 
 ---
 
@@ -115,21 +126,31 @@ Each area has its own documentation, notebooks, guides and cheat sheets, plus da
 
 ## License
 
-| Material | License | Scope |
-|---|---|---|
-| Original code | [MIT](./LICENSE-CODE.txt) | Original executable scripts and notebook code |
-| Original educational content | [CC BY-NC 4.0](./LICENSE-CONTENT.md) | Original explanations, READMEs, Technical Guides and Cheat Sheets |
-| Third-party materials | Respective terms | External data, images, libraries, brands and other material |
+These licenses apply only where the author holds the necessary rights; notebook code and educational prose may have different licenses.
 
-These licenses cover only material for which the author holds the necessary rights. See the license files for details.
+<table>
+<tr>
+<td align="center" valign="middle"><a href="./LICENSE-CODE.txt"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/licenses/mit.svg" alt="MIT"></a></td>
+<td valign="middle"><strong>Source code</strong> | Scripts and original notebook code.</td>
+</tr>
+<tr>
+<td align="center" valign="middle"><a href="./LICENSE-CONTENT.md"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/licenses/cc_by_nc_4_0.svg" alt="CC BY-NC 4.0"></a></td>
+<td valign="middle"><strong>Educational content</strong> | Original explanations, READMEs, guides and Cheat Sheets.</td>
+</tr>
+<tr>
+<td align="center" valign="middle">Third-party terms</td>
+<td valign="middle"><strong>External content</strong> | Datasets, images, trademarks and other assets; their respective terms apply.</td>
+</tr>
+</table>
 
-### Dataset and output publication policy
+Publish reproducible notebook outputs whenever source-data rights, derived-data redistribution conditions, absence of sensitive information, and output integrity are established. The single root `.gitignore` does not exclude `outputs/` globally; it explicitly blocks certain local results whose provenance or redistribution rights remain unresolved, as well as unreviewed model binaries.
 
-**Publication policy:** publish reproducible notebook outputs whenever source-data rights, derived-data redistribution conditions, absence of sensitive information, and output integrity are established. The single root `.gitignore` no longer excludes `outputs/` globally; it explicitly blocks certain local results whose provenance or redistribution rights remain unresolved, as well as unreviewed model binaries. **Visible in Git does not mean approved for publication.**
+> [!CAUTION]
+> **Visible in Git does not mean approved for publication.**
 
-Before committing any new dataset or generated output, review its source and usage rights (including derived-data restrictions), accidental personal/sensitive information, reproducibility and relevance; approve the specific files before staging. Use explicit Git paths and keep historical local files protected by `.gitignore` outside commits. Published third-party data are governed by their own license terms, not the repository’s MIT/CC BY-NC licenses. See the dataset registers for [area 03](./03_statistics/README.md#dataset-provenance), [area 09](./09_recommender_systems/README.md#dataset-provenance), and [area 10](./10_big_data_distributed_processing/README.md#dataset-provenance) for known limitations. Inclusion of the three audited Area 10 inputs in the next release has been authorized, under their documented licenses and attribution terms.
+Before committing any new dataset or generated output, review its source and usage rights (including derived-data restrictions), accidental personal/sensitive information, reproducibility and relevance; approve the specific files before staging. Use explicit Git paths and keep historical local files protected by `.gitignore` outside commits. Published third-party data are governed by their own license terms, not the repository’s MIT/CC BY-NC licenses. See the dataset registers for [area 03](./03_statistics/README.md#dataset-provenance), [area 09](./09_recommender_systems/README.md#dataset-provenance), and [area 10](./10_big_data_distributed_processing/README.md#dataset-provenance) for known limitations. The three audited Area 10 inputs (flights.csv, airports.csv and crx_data.data) are included under their documented licenses and attribution terms.
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+<p align="right"><sub><a href="#readme-top">↑ Back to top</a></sub></p>
 
 ---
 
@@ -140,23 +161,15 @@ Before committing any new dataset or generated output, review its source and usa
 
 <div align="center">
 
-<a href="https://eduardo-pereira.webflow.io/" title="Personal website — Eduardo Junior Pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90"></a>
+<a href="https://eduardo-pereira.webflow.io/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo" height="90"></a>
 
-**Eduardo Junior Pereira**
-
-*Economics · Data Science · Analytics*
+Let's connect and exchange ideas and opportunities.
 
 <a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
-<a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>
-
-[Let's connect on LinkedIn to exchange ideas and opportunities.](https://www.linkedin.com/in/eduardo-jr-pereira/)
-
-[**GitHub Portfolio**](https://github.com/eduardojr-pereira/data-science-portfolio)
+<a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>&nbsp;&nbsp;
+<a href="https://discord.com/users/533043855122235393"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/discord_icon.svg" alt="Discord" height="27"></a>
 
 </div>
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
 <!-- EP-FOOTER:END -->

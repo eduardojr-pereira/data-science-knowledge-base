@@ -2,23 +2,18 @@
 
 <div align="center">
 
-[🇺🇸 English](./README.md) &nbsp;|&nbsp; [🇧🇷 Português](./README.pt-BR.md)
+| [English](./README.md) · [Português](./README.pt-BR.md) |
 
 # Base de Conhecimento em Ciência de Dados
 
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white&style=for-the-badge) ![Data Science](https://img.shields.io/badge/Data-Science-21618C?style=for-the-badge)
-
-*Acervo em evolução de estudos práticos em Ciência de Dados, notebooks Jupyter e referências técnicas.*
+*Aprendizado estruturado em ciência de dados, dos fundamentos às aplicações especializadas.*
 
 </div>
 
----
-
-## Nesta Página
-
 <div align="center">
 
-[Visão Geral](#overview) • [Áreas de Estudo](#study-areas) • [Estrutura de Diretórios](#directory-structure) • [Repositórios Relacionados](#related-repositories) • [Licença](#license) • [Contato](#contact)
+[Visão Geral](#overview) · [Áreas de Estudo](#study-areas) · [Estrutura de Diretórios](#directory-structure)<br>
+[Repositórios Relacionados](#related-repositories) · [Licença](#license) · [Contato](#contact)
 
 </div>
 
@@ -28,15 +23,16 @@
 
 ## Visão Geral
 
-Este repositório reúne materiais de estudo sobre programação, estatística, bancos de dados relacionais e NoSQL, aprendizado de máquina, processamento de linguagem natural, aprendizado profundo, visão computacional, sistemas de recomendação e processamento distribuído. O acervo é organizado por área de estudo, com notebooks e PDFs complementares.
+Este repositório reúne materiais de estudo estruturados para desenvolver competências práticas e analíticas em ciência de dados, desde programação em Python, preparação de dados e raciocínio estatístico até bancos de dados, aprendizado de máquina e aplicações especializadas. Cada área de estudo combina notebooks Jupyter com referências técnicas complementares, favorecendo o aprendizado autônomo, a análise reproduzível e o desenvolvimento de portfólio.
 
-**Acervo publicado:** áreas **00–10**, com **139 notebooks**, **141 PDFs de referência técnica** (140 Guias Técnicos e uma tabela t de Student) e **138 Cheat Sheets**. As **11 áreas** possuem READMEs em inglês e português brasileiro. A publicação não garante execução integral a partir de um clone público: consulte as limitações de dados e validação de cada área.
+| Áreas de Estudo | Notebooks | Guias Técnicos | Cheat Sheets |
+| :---: | :---: | :---: | :---: |
+| 11 | 139 | 140 | 138 |
 
-**Idiomas:** esta apresentação e os READMEs das 11 áreas estão disponíveis em inglês e português brasileiro. Os notebooks e a maior parte dos materiais em PDF estão escritos em **português brasileiro**.
+O acervo de referências também inclui uma tabela t de Student. Todas as 11 áreas possuem READMEs bilíngues.
 
-**Objetivos:** avançar de Python e preparação de dados até raciocínio estatístico, análise reproduzível, aprendizado de máquina e aplicações especializadas. O acervo é destinado a estudo e demonstração de portfólio, não substituindo validação independente para uso em produção.
-
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+> [!WARNING]
+> Os notebooks e a maior parte dos PDFs de estudo estão escritos em português brasileiro. Este README oferece navegação e documentação em português.
 
 ---
 
@@ -48,23 +44,31 @@ Este repositório reúne materiais de estudo sobre programação, estatística, 
 
 ## Áreas de Estudo
 
-| # | Área | Conteúdo | Notebooks |
+O acervo está organizado em 11 áreas de estudo, cada uma com um README bilíngue que apresenta seus tópicos e oferece acesso a notebooks, Guias Técnicos, Cheat Sheets e recursos complementares.
+
+> [!TIP]
+> **Percurso de Aprendizagem Recomendado**
+>
+> Comece pelos recursos complementares e fundamentos de Python, depois explore análise de dados, estatística e bancos de dados antes de avançar para aprendizado de máquina e áreas especializadas. Abra o README de cada área e siga a sequência de notebooks, Guias Técnicos e Cheat Sheets. Consulte as dependências, instruções de instalação, exercícios e notas de validação de cada área.
+
+| # | Área | Foco | Notebooks |
 |:---:|---|---|:---: |
-| 00 | [Recursos Complementares](./00_supplementary_resources/README.pt-BR.md) | Ambientes Python, documentação, widgets e Polars. | 4 |
-| 01 | [Programação Python](./01_python_programming/README.pt-BR.md) | Fundamentos, coleções, NumPy, Pandas e orientação a objetos. | 6 |
+| 00 | [Recursos Complementares](./00_supplementary_resources/README.pt-BR.md) | Ambientes de desenvolvimento, documentação, widgets e Polars. | 4 |
+| 01 | [Programação Python](./01_python_programming/README.pt-BR.md) | Fundamentos de Python, coleções, NumPy, pandas e orientação a objetos. | 6 |
 | 02 | [Análise e Visualização de Dados](./02_data_analysis_visualization/README.pt-BR.md) | Análise exploratória, ETL, séries temporais e visualização. | 7 |
 | 03 | [Estatística](./03_statistics/README.pt-BR.md) | Probabilidade, inferência, testes de hipóteses e modelos estatísticos. | 10 |
-| 04 | [Bancos de Dados Relacionais e NoSQL](./04_relational_nosql_databases/README.pt-BR.md) | SQL, modelagem de dados e laboratórios opcionais. | 10 |
+| 04 | [Bancos de Dados Relacionais e NoSQL](./04_relational_nosql_databases/README.pt-BR.md) | SQL, modelagem de dados e laboratórios opcionais de bancos de dados. | 10 |
 | 05 | [Aprendizado de Máquina](./05_machine_learning/README.pt-BR.md) | Aprendizado de máquina clássico, avaliação e interpretabilidade. | 17 |
-| 06 | [Processamento de Linguagem Natural](./06_natural_language_processing/README.pt-BR.md) | Processamento de textos, classificação, recuperação e conceitos de PLN. | 17 |
+| 06 | [Processamento de Linguagem Natural](./06_natural_language_processing/README.pt-BR.md) | Processamento de textos, classificação, recuperação de informação e conceitos de PLN. | 17 |
 | 07 | [Aprendizado Profundo](./07_deep_learning/README.pt-BR.md) | Redes neurais, treinamento, regularização e arquiteturas de atenção. | 20 |
-| 08 | [Análise e Classificação de Imagens](./08_image_analysis_classification/README.pt-BR.md) | Processamento de imagens, descritores, detecção e classificação. | 16 |
+| 08 | [Análise e Classificação de Imagens](./08_image_analysis_classification/README.pt-BR.md) | Processamento de imagens, extração de características, detecção e classificação. | 16 |
 | 09 | [Sistemas de Recomendação](./09_recommender_systems/README.pt-BR.md) | Filtragem colaborativa, ranqueamento de recomendações e avaliação. | 16 |
 | 10 | [Big Data e Processamento Distribuído](./10_big_data_distributed_processing/README.pt-BR.md) | MapReduce, Hadoop, Spark e fluxos de engenharia de dados. | 16 |
 
-Selecione uma área para acessar seu README em português. Siga a tabela **Notebooks e Materiais de Estudo** na ordem apresentada; consulte as instruções de instalação, dependências, exercícios, validação e limitações de dados de cada área. Os registros de execução variam por área; esta revisão documental não representa nova execução dos notebooks em ambiente limpo.
+> [!CAUTION]
+> Os registros de execução e a disponibilidade de dados variam por área. A publicação não garante que todos os notebooks possam ser reexecutados a partir de um clone público. Os materiais apoiam o aprendizado e a demonstração de portfólio; o uso em produção exige validação independente.
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+<p align="right"><sub><a href="#readme-top">↑ Voltar ao topo</a></sub></p>
 
 ---
 
@@ -72,8 +76,15 @@ Selecione uma área para acessar seu README em português. Siga a tabela **Noteb
 
 ## Estrutura de Diretórios
 
+Cada área possui documentação bilíngue, notebooks e recursos complementares em PDF, além de datasets, outputs e dependências quando aplicável.
+
+<details>
+<summary><strong>Árvore do repositório</strong></summary>
+
 ```text
 data-science-knowledge-base/
+├── .gitattributes
+├── .gitignore
 ├── README.md
 ├── README.pt-BR.md
 ├── LICENSE-CODE.txt
@@ -91,9 +102,9 @@ data-science-knowledge-base/
 └── 10_big_data_distributed_processing/
 ```
 
-Cada área possui sua própria documentação, notebooks, guias e cheat sheets, além de datasets, outputs e dependências quando aplicáveis.
+</details>
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+<p align="right"><sub><a href="#readme-top">↑ Voltar ao topo</a></sub></p>
 
 ---
 
@@ -107,7 +118,7 @@ Cada área possui sua própria documentação, notebooks, guias e cheat sheets, 
 | [Data Science Portfolio](https://github.com/eduardojr-pereira/data-science-portfolio) | Projetos aplicados e estudos de caso |
 | [EP Brand Assets](https://github.com/eduardojr-pereira/ep-brand-assets) | Identidade visual e infraestrutura compartilhada |
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+<p align="right"><sub><a href="#readme-top">↑ Voltar ao topo</a></sub></p>
 
 ---
 
@@ -115,21 +126,31 @@ Cada área possui sua própria documentação, notebooks, guias e cheat sheets, 
 
 ## Licença
 
-| Material | Licença | Abrangência |
-|---|---|---|
-| Código original | [MIT](./LICENSE-CODE.txt) | Scripts e códigos originais dos notebooks |
-| Conteúdo educacional original | [CC BY-NC 4.0](./LICENSE-CONTENT.md) | Explicações, READMEs, Guias Técnicos e Cheat Sheets originais |
-| Materiais de terceiros | Termos próprios | Dados externos, imagens, bibliotecas, marcas e outros recursos |
+Estas licenças aplicam-se apenas aos materiais sobre os quais o autor possui os direitos necessários; o código dos notebooks e o texto educacional podem ter licenças diferentes.
 
-As licenças cobrem apenas os materiais sobre os quais o autor possui os direitos necessários. Consulte os arquivos de licença para detalhes.
+<table>
+<tr>
+<td align="center" valign="middle"><a href="./LICENSE-CODE.txt"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/licenses/mit.svg" alt="MIT"></a></td>
+<td valign="middle"><strong>Código-fonte</strong> | Scripts e código original dos notebooks.</td>
+</tr>
+<tr>
+<td align="center" valign="middle"><a href="./LICENSE-CONTENT.md"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/licenses/cc_by_nc_4_0.svg" alt="CC BY-NC 4.0"></a></td>
+<td valign="middle"><strong>Conteúdo educacional</strong> | Explicações, READMEs, guias e Cheat Sheets originais.</td>
+</tr>
+<tr>
+<td align="center" valign="middle">Termos de terceiros</td>
+<td valign="middle"><strong>Conteúdo externo</strong> | Datasets, imagens, marcas e outros recursos; aplicam-se seus respectivos termos.</td>
+</tr>
+</table>
 
-### Política de publicação de datasets e outputs
+Publique outputs reproduzíveis dos notebooks sempre que estiverem comprovados os direitos sobre os dados de origem, as condições de redistribuição dos dados derivados, a ausência de informações sensíveis e a integridade dos resultados. O único `.gitignore`, na raiz, não exclui `outputs/` globalmente; bloqueia explicitamente determinados resultados locais cuja proveniência ou direitos de redistribuição permanecem pendentes, além de modelos binários não revisados.
 
-**Política de publicação:** publicar os outputs reproduzíveis dos notebooks sempre que estiverem comprovados os direitos sobre os dados de origem e seus derivados, a ausência de informações sensíveis indevidas e a integridade dos arquivos. O único `.gitignore`, na raiz, deixa de excluir `outputs/` de forma geral; mantém bloqueios explícitos para resultados locais com proveniência ou direitos de redistribuição pendentes e modelos binários não revisados. **Aparecer no Git não significa estar aprovado para publicação.**
+> [!CAUTION]
+> **Aparecer no Git não significa estar aprovado para publicação.**
 
-Antes de versionar novos datasets ou resultados, conferir a fonte e os direitos de uso (inclusive de dados derivados), a ausência de informações pessoais/sensíveis indevidas, a reprodutibilidade e a pertinência; aprovar os arquivos específicos antes do `git add`. Usar caminhos explícitos e manter arquivos históricos locais protegidos pelo `.gitignore` fora dos commits. Dados de terceiros seguem suas licenças próprias, não as licenças MIT/CC BY-NC do material autoral. Consulte os registros de datasets das [áreas 03](./03_statistics/README.pt-BR.md#dataset-provenance), [09](./09_recommender_systems/README.pt-BR.md#dataset-provenance) e [10](./10_big_data_distributed_processing/README.pt-BR.md#dataset-provenance) para conhecer as limitações identificadas. A inclusão das três entradas auditadas da área 10 foi autorizada para a próxima publicação, sob as respectivas licenças e atribuições documentadas.
+Antes de versionar qualquer novo dataset ou output gerado, verifique sua fonte e os direitos de uso (incluindo restrições sobre dados derivados), a presença indevida de informações pessoais ou sensíveis, a reprodutibilidade e a pertinência; aprove os arquivos específicos antes de adicioná-los ao staging. Use caminhos explícitos no Git e mantenha os arquivos históricos locais protegidos pelo `.gitignore` fora dos commits. Os dados publicados de terceiros seguem suas próprias licenças, não as licenças MIT/CC BY-NC do repositório. Consulte os registros de datasets das [área 03](./03_statistics/README.pt-BR.md#dataset-provenance), [área 09](./09_recommender_systems/README.pt-BR.md#dataset-provenance) e [área 10](./10_big_data_distributed_processing/README.pt-BR.md#dataset-provenance) para conhecer as limitações identificadas. Os três datasets de entrada auditados da área 10 (flights.csv, airports.csv e crx_data.data) estão incluídos sob suas respectivas licenças e condições de atribuição documentadas.
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+<p align="right"><sub><a href="#readme-top">↑ Voltar ao topo</a></sub></p>
 
 ---
 
@@ -140,23 +161,15 @@ Antes de versionar novos datasets ou resultados, conferir a fonte e os direitos 
 
 <div align="center">
 
-<a href="https://eduardo-pereira.webflow.io/" title="Site pessoal — Eduardo Junior Pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="Logo EP — Eduardo Junior Pereira" height="90"></a>
+<a href="https://eduardo-pereira.webflow.io/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="Logo EP" height="90"></a>
 
-**Eduardo Junior Pereira**
-
-*Economics · Data Science · Analytics*
+Vamos nos conectar e trocar ideias e oportunidades.
 
 <a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="E-mail" height="27"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
-<a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>
-
-[Vamos nos conectar no LinkedIn para trocar ideias e oportunidades.](https://www.linkedin.com/in/eduardo-jr-pereira/)
-
-[**Portfólio GitHub**](https://github.com/eduardojr-pereira/data-science-portfolio)
+<a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>&nbsp;&nbsp;
+<a href="https://discord.com/users/533043855122235393"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/discord_icon.svg" alt="Discord" height="27"></a>
 
 </div>
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
-
----
 <!-- EP-FOOTER:END -->
