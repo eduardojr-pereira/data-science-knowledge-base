@@ -31,9 +31,6 @@ Este repositório reúne materiais de estudo estruturados para desenvolver compe
 
 O acervo de referências também inclui uma tabela t de Student. Todas as 11 áreas possuem READMEs bilíngues.
 
-> [!WARNING]
-> Os notebooks e a maior parte dos PDFs de estudo estão escritos em português brasileiro. Este README oferece navegação e documentação em português.
-
 ---
 
 <a id="contents"></a>
