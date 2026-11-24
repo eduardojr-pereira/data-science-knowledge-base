@@ -2,24 +2,18 @@
 
 <div align="center">
 
-[🇺🇸 English](./README.md) &nbsp;|&nbsp; [🇧🇷 Português](./README.pt-BR.md)
+| [English](./README.md) · [Português](./README.pt-BR.md) |
 
 # Data Analysis & Visualization
-
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge) ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white&style=for-the-badge) ![Plotly](https://img.shields.io/badge/Plotly-3F4F75?logo=plotly&logoColor=white&style=for-the-badge)
 
 *Exploratory analysis, ETL, time series, and interactive visualization.*
 
 </div>
 
----
-
-## On This Page
-
 <div align="center">
 
-[Overview](#overview) • [Contents](#contents) • [Technologies](#technologies) • [Setup and Installation](#installation) • [Testing and Validation](#validation)  
-[How to Use](#usage) • [References](#references) • [License](#license) • [Contact](#contact)
+[Overview](#overview) · [Contents](#contents) · [Technologies](#technologies) · [Installation](#installation)  
+[Validation](#validation) · [License](#license) · [Contact](#contact)
 
 </div>
 
@@ -29,15 +23,10 @@
 
 ## Overview
 
-Exploratory analysis, ETL, time series, and interactive visualization.
+This study area covers the analytical workflow from exploratory data analysis and ETL to comparative aggregation, time series, visual interpretation and interactive charts. Using synthetic sales, complaints and weather data, the notebooks demonstrate data preparation, defensible comparisons and the communication of findings through static and interactive visualizations.
 
-**Language note:** notebooks and study PDFs are in Brazilian Portuguese; this README provides navigation in English.
-
-### Learning Objectives
-
-Audit data quality, design ETL steps, aggregate data, analyze time series and communicate findings through static and interactive charts.
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+> [!WARNING]
+> Notebooks and study PDFs are written in Brazilian Portuguese. This README provides navigation and documentation in English.
 
 ---
 
@@ -47,42 +36,63 @@ Audit data quality, design ETL steps, aggregate data, analyze time series and co
 
 ### Notebooks and Learning Materials
 
-| Order | Notebook | Technical Guide | Cheat Sheet |
-|:---:|---|---|---|
-| 01 | [Exploratory Data Analysis](./01_analise_exploratoria_de_dados.ipynb) | [Open PDF](./reference_materials/01_analise_exploratoria_de_dados.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_eda.pdf) |
-| 02 | [ETL and Data Preparation](./02_etl_e_preparacao_de_dados.ipynb) | [Open PDF](./reference_materials/02_etl_e_preparacao_de_dados.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_etl.pdf) |
-| 03 | [Grouping and Comparative Analysis](./03_agrupamentos_e_analise_comparativa.ipynb) | [Open PDF](./reference_materials/03_agrupamentos_e_analise_comparativa.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_agrupamentos.pdf) |
-| 04 | [Time Series Analysis](./04_analise_de_series_temporais.ipynb) | [Open PDF](./reference_materials/04_analise_de_series_temporais.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_series_temporais.pdf) |
-| 05 | [Matplotlib and Seaborn Visualization](./05_visualizacao_com_matplotlib_e_seaborn.ipynb) | [Open PDF](./reference_materials/05_visualizacao_com_matplotlib_e_seaborn.pdf) | [Matplotlib](./cheat_sheets/cheat_sheet_matplotlib.pdf) · [Seaborn](./cheat_sheets/cheat_sheet_seaborn.pdf) |
-| 06 | [Practical Analysis and Interpretation](./06_analises_praticas_e_interpretacao.ipynb) | [Open PDF](./reference_materials/06_analises_praticas_e_interpretacao.pdf) | — |
-| 07 | [Interactive Plotly and Bokeh Visualization](./07_visualizacao_interativa_com_plotly_e_bokeh.ipynb) | [Open PDF](./reference_materials/07_visualizacao_interativa_com_plotly_e_bokeh.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_interatividade.pdf) |
+| Notebook | Technical Guide | Cheat Sheet |
+| --- | :---: | :---: |
+| [01 - Exploratory Data Analysis](./01_analise_exploratoria_de_dados.ipynb) | [PDF](./reference_materials/01_analise_exploratoria_de_dados.pdf) | [PDF](./cheat_sheets/cheat_sheet_eda.pdf) |
+| [02 - ETL and Data Preparation](./02_etl_e_preparacao_de_dados.ipynb) | [PDF](./reference_materials/02_etl_e_preparacao_de_dados.pdf) | [PDF](./cheat_sheets/cheat_sheet_etl.pdf) |
+| [03 - Grouping and Comparative Analysis](./03_agrupamentos_e_analise_comparativa.ipynb) | [PDF](./reference_materials/03_agrupamentos_e_analise_comparativa.pdf) | [PDF](./cheat_sheets/cheat_sheet_agrupamentos.pdf) |
+| [04 - Time Series Analysis](./04_analise_de_series_temporais.ipynb) | [PDF](./reference_materials/04_analise_de_series_temporais.pdf) | [PDF](./cheat_sheets/cheat_sheet_series_temporais.pdf) |
+| [05 - Matplotlib and Seaborn Visualization](./05_visualizacao_com_matplotlib_e_seaborn.ipynb) | [PDF](./reference_materials/05_visualizacao_com_matplotlib_e_seaborn.pdf) | [Matplotlib](./cheat_sheets/cheat_sheet_matplotlib.pdf) · [Seaborn](./cheat_sheets/cheat_sheet_seaborn.pdf) |
+| [06 - Practical Analysis and Interpretation](./06_analises_praticas_e_interpretacao.ipynb) | [PDF](./reference_materials/06_analises_praticas_e_interpretacao.pdf) | [EDA](./cheat_sheets/cheat_sheet_eda.pdf) · [Grouping](./cheat_sheets/cheat_sheet_agrupamentos.pdf) |
+| [07 - Interactive Visualization with Plotly and Bokeh](./07_visualizacao_interativa_com_plotly_e_bokeh.ipynb) | [PDF](./reference_materials/07_visualizacao_interativa_com_plotly_e_bokeh.pdf) | [PDF](./cheat_sheets/cheat_sheet_interatividade.pdf) |
+
+> [!TIP]
+> **Recommended Learning Path**
+>
+> 1. Configure the environment and run the notebooks in sequence.
+> 2. Inspect the datasets, duplicates and missing values before applying ETL.
+> 3. Vary grouping levels and filters; check the denominators used in comparisons.
+> 4. Explore temporal patterns and compare static visual encodings.
+> 5. Interpret the practical analyses and compare interactive charts; consult the guides and Cheat Sheets at each stage.
 
 ### Datasets
 
-- [clima_sintetico.csv](./datasets/clima_sintetico.csv)
-- [reclamacoes_sinteticas.csv](./datasets/reclamacoes_sinteticas.csv)
-- [regioes_exemplo.csv](./datasets/regioes_exemplo.csv)
-- [vendas_exemplo.csv](./datasets/vendas_exemplo.csv)
+The four CSV inputs are provided in `datasets/`. They are illustrative, not empirical observations; the counts below refer to rows in the raw files, before cleaning. Notebook execution preserves these inputs.
 
-### Generated Outputs
+| Dataset | Rows | Purpose |
+| --- | :---: | --- |
+| [clima_sintetico.csv](./datasets/clima_sintetico.csv) | 180 | Weather indicators |
+| [reclamacoes_sinteticas.csv](./datasets/reclamacoes_sinteticas.csv) | 160 | Complaints and response times |
+| [regioes_exemplo.csv](./datasets/regioes_exemplo.csv) | 4 | Regional reference and targets |
+| [vendas_exemplo.csv](./datasets/vendas_exemplo.csv) | 49 | Illustrative sales transactions |
 
-The exports are consolidated in the final section of the respective notebook. Source datasets in `datasets/` are preserved and are not overwritten by notebook execution.
+<details>
+<summary><strong>Generated Outputs</strong></summary>
 
-| Notebook | Format | Curated files in `outputs/` |
-|---|---|---|
-| 02 — ETL and Data Preparation | CSV | [receita_mensal.csv](./outputs/receita_mensal.csv) · [resumo_por_regiao.csv](./outputs/resumo_por_regiao.csv) · [auditoria_v2.csv](./outputs/auditoria_v2.csv) |
-| 05 — Matplotlib and Seaborn | PNG | [temperatura_diaria.png](./outputs/temperatura_diaria.png) |
-| 07 — Interactive Visualization | HTML | [receita_interativa.html](./outputs/receita_interativa.html) · [painel_comparativo.html](./outputs/painel_comparativo.html) · [bokeh_produtos.html](./outputs/bokeh_produtos.html) · [bokeh_interativo.html](./outputs/bokeh_interativo.html) · [altair_produtos.html](./outputs/altair_produtos.html) · [grafico_v2_cdn.html](./outputs/grafico_v2_cdn.html) |
+The ten final outputs are exported in the corresponding notebooks. The Plotly `iframe` HTML files under `outputs/iframe_figures/` are auxiliary rendering artifacts, not part of this curated set.
 
-The six final interactive HTMLs are distinct from the Plotly `iframe` files in `outputs/iframe_figures/`, which are generated during rendering. `grafico_v2_cdn.html` requires internet access for its Plotly JavaScript dependency; the standalone Plotly and Bokeh exports include their resources for offline use.
+| Notebook | File | Format |
+| :---: | --- | :---: |
+| [02](./02_etl_e_preparacao_de_dados.ipynb) | [Monthly revenue](./outputs/receita_mensal.csv) | CSV |
+| [02](./02_etl_e_preparacao_de_dados.ipynb) | [Regional summary](./outputs/resumo_por_regiao.csv) | CSV |
+| [02](./02_etl_e_preparacao_de_dados.ipynb) | [ETL audit](./outputs/auditoria_v2.csv) | CSV |
+| [05](./05_visualizacao_com_matplotlib_e_seaborn.ipynb) | [Daily temperature](./outputs/temperatura_diaria.png) | PNG |
+| [07](./07_visualizacao_interativa_com_plotly_e_bokeh.ipynb) | [Interactive revenue chart](./outputs/receita_interativa.html) | HTML |
+| [07](./07_visualizacao_interativa_com_plotly_e_bokeh.ipynb) | [Comparative dashboard](./outputs/painel_comparativo.html) | HTML |
+| [07](./07_visualizacao_interativa_com_plotly_e_bokeh.ipynb) | [Bokeh product chart](./outputs/bokeh_produtos.html) | HTML |
+| [07](./07_visualizacao_interativa_com_plotly_e_bokeh.ipynb) | [Interactive Bokeh chart](./outputs/bokeh_interativo.html) | HTML |
+| [07](./07_visualizacao_interativa_com_plotly_e_bokeh.ipynb) | [Altair product chart](./outputs/altair_produtos.html) | HTML |
+| [07](./07_visualizacao_interativa_com_plotly_e_bokeh.ipynb) | [Plotly chart (CDN)](./outputs/grafico_v2_cdn.html) | HTML |
 
-### Directory Structure
+The two standalone Plotly charts and two Bokeh exports embed their JavaScript resources. `grafico_v2_cdn.html` requires internet access; the Altair export uses the default HTML save method, so verify its external resources before offline use. Open the downloaded HTML files in a browser rather than relying on GitHub preview.
+
+</details>
+
+<details>
+<summary><strong>Directory Structure</strong></summary>
 
 ```text
 02_data_analysis_visualization/
-├── README.md
-├── README.pt-BR.md
-├── requirements.txt
 ├── 01_analise_exploratoria_de_dados.ipynb
 ├── 02_etl_e_preparacao_de_dados.ipynb
 ├── 03_agrupamentos_e_analise_comparativa.ipynb
@@ -90,13 +100,54 @@ The six final interactive HTMLs are distinct from the Plotly `iframe` files in `
 ├── 05_visualizacao_com_matplotlib_e_seaborn.ipynb
 ├── 06_analises_praticas_e_interpretacao.ipynb
 ├── 07_visualizacao_interativa_com_plotly_e_bokeh.ipynb
-├── reference_materials/
+├── README.md
+├── README.pt-BR.md
+├── requirements.txt
 ├── cheat_sheets/
+│   ├── cheat_sheet_agrupamentos.pdf
+│   ├── cheat_sheet_eda.pdf
+│   ├── cheat_sheet_etl.pdf
+│   ├── cheat_sheet_interatividade.pdf
+│   ├── cheat_sheet_matplotlib.pdf
+│   ├── cheat_sheet_seaborn.pdf
+│   └── cheat_sheet_series_temporais.pdf
 ├── datasets/
-└── outputs/
+│   ├── clima_sintetico.csv
+│   ├── reclamacoes_sinteticas.csv
+│   ├── regioes_exemplo.csv
+│   └── vendas_exemplo.csv
+├── outputs/
+│   ├── altair_produtos.html
+│   ├── auditoria_v2.csv
+│   ├── bokeh_interativo.html
+│   ├── bokeh_produtos.html
+│   ├── grafico_v2_cdn.html
+│   ├── painel_comparativo.html
+│   ├── receita_interativa.html
+│   ├── receita_mensal.csv
+│   ├── resumo_por_regiao.csv
+│   ├── temperatura_diaria.png
+│   └── iframe_figures/
+│       ├── figure_17.html
+│       ├── figure_2.html
+│       ├── figure_3.html
+│       ├── figure_5.html
+│       ├── figure_6.html
+│       ├── figure_7.html
+│       └── figure_8.html
+└── reference_materials/
+    ├── 01_analise_exploratoria_de_dados.pdf
+    ├── 02_etl_e_preparacao_de_dados.pdf
+    ├── 03_agrupamentos_e_analise_comparativa.pdf
+    ├── 04_analise_de_series_temporais.pdf
+    ├── 05_visualizacao_com_matplotlib_e_seaborn.pdf
+    ├── 06_analises_praticas_e_interpretacao.pdf
+    └── 07_visualizacao_interativa_com_plotly_e_bokeh.pdf
 ```
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+</details>
+
+<p align="right"><sub><a href="#readme-top">↑ Back to top</a></sub></p>
 
 ---
 
@@ -104,22 +155,30 @@ The six final interactive HTMLs are distinct from the Plotly `iframe` files in `
 
 ## Technologies
 
-| Technology | Purpose |
-|---|---|
-| Python | Programming and automation |
-| NumPy | Numerical arrays and operations |
-| Pandas | Tabular data handling |
-| Matplotlib | Static data visualization |
-| Seaborn | Statistical visualization |
-| Plotly | Interactive plotting |
-| Bokeh | Interactive web charts |
-| Altair | Declarative data visualization |
-| scikit-learn | Machine learning algorithms and evaluation |
-| JupyterLab | Notebook workspace and execution |
+> Programming and notebook development
 
-Python dependencies are declared in `requirements.txt`; optional tools are documented where applicable.
+[![Python](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/python.svg)](https://docs.python.org/3/) &nbsp;&nbsp; [![JupyterLab](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/jupyterlab.svg)](https://jupyterlab.readthedocs.io/en/stable/)
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+> Data preparation and numerical computing
+
+[![pandas](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/pandas.svg)](https://pandas.pydata.org/docs/) &nbsp;&nbsp; [![NumPy](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/numpy.svg)](https://numpy.org/doc/stable/)
+
+> Static and statistical visualization
+
+[![Matplotlib](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/matplotlib.svg)](https://matplotlib.org/stable/) &nbsp;&nbsp; [![Seaborn](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/seaborn.svg)](https://seaborn.pydata.org/)
+
+> Interactive and declarative visualization
+
+[![Plotly](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/plotly.svg)](https://plotly.com/python/) &nbsp;&nbsp; [![Bokeh](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/bokeh.svg)](https://docs.bokeh.org/) &nbsp;&nbsp; [![Altair](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/altair.svg)](https://altair-viz.github.io/)
+
+> Additional environment dependencies
+
+[![scikit-learn](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/scikit_learn.svg)](https://scikit-learn.org/stable/) &nbsp;&nbsp; [![nbformat](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/nbformat.svg)](https://nbformat.readthedocs.io/)
+
+> [!WARNING]
+> Python dependencies are listed in `requirements.txt`. Additional tools and installation requirements are described in Setup and Installation.
+
+<p align="right"><sub><a href="#readme-top">↑ Back to top</a></sub></p>
 
 ---
 
@@ -127,7 +186,7 @@ Python dependencies are declared in `requirements.txt`; optional tools are docum
 
 ## Setup and Installation
 
-**Copyable commands:** run the steps in order. If an environment such as `jupyter-env` already works for you, activate it and skip creating `.venv`. If the repository is already cloned, go straight to the area directory.
+Run the steps in order. If you already have a compatible Python environment, activate it and skip creating `.venv`. If the repository is already cloned, open the area directory directly.
 
 **1. Clone the repository and open this area**
 
@@ -143,12 +202,15 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-**Windows PowerShell alternative**
+<details>
+<summary><strong>Windows PowerShell alternative</strong></summary>
 
 ```powershell
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
+
+</details>
 
 **3. Install dependencies and verify the environment**
 
@@ -167,7 +229,9 @@ jupyter lab
 
 Select this kernel in each notebook. Start JupyterLab in the area directory to keep relative data and output paths consistent.
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+The requirements specify minimum versions (and an Altair upper bound), not a locked environment. Recheck compatibility if package versions change.
+
+<p align="right"><sub><a href="#readme-top">↑ Back to top</a></sub></p>
 
 ---
 
@@ -175,62 +239,42 @@ Select this kernel in each notebook. Start JupyterLab in the area directory to k
 
 ## Testing and Validation
 
-| Verification | Recorded status |
-|---|---|
-| Notebooks documented | 7 |
-| Supporting materials | 7 guides / 7 Cheat Sheets |
-| Dependencies | `requirements.txt` |
-| Execution | All 7 notebooks re-executed in JupyterLab on 2026-11-16 (author-confirmed) |
-| Generated results | 3 CSV, 1 PNG and 6 final HTML files |
-| Output audit | Passed; all 3 CSV files equivalent to the previous Git revision |
-| Sanitization | No sensitive saved output detected |
+### Validation results
 
-The author reported re-executing all seven notebooks in JupyterLab on November 16, 2026. The subsequent output audit verified the three CSV exports, the PNG signature and the existence and nonempty content of the six final HTMLs. **File validation is not the same as a visual or interactive browser test.**
+| Verification | Status | Result |
+| --- | :---: | --- |
+| Notebook execution | ![Passed](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/status/passed_en.svg) | 7/7 re-executed in JupyterLab (author-confirmed) |
+| CSV audit | ![Passed](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/status/passed_en.svg) | 3/3 equivalent to the prior Git revision |
+| Image and HTML file checks | ![Passed](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/status/passed_en.svg) | PNG signature and 6 nonempty final HTML files checked |
+| Saved output scan | ![Passed](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/status/passed_en.svg) | No sensitive saved output detected in the recorded audit |
+| Browser interactivity | ![Pending](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/status/pending_en.svg) | File validation does not establish visual or interactive behavior in a new environment |
 
-In the tested environment, Plotly uses the `iframe` renderer because `plotly_mimetype` previously hid plots. Check interactive behavior when changing environments; HTML files generated under `outputs/iframe_figures/` are auxiliary renderer artifacts, not part of the ten curated final outputs.
+*Last recorded notebook validation: November 16, 2026. Results are historical, not a new execution audit.*
 
-To check a fresh environment, run `python -m pip check` and then **Restart Kernel → Run All Cells** in JupyterLab. Inspect tables, plots, filters, interactions and exported files.
+<details>
+<summary><strong>Technical validation details</strong></summary>
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+The recorded output audit checked CSV equivalence, the PNG file signature and the existence and nonempty content of the six final HTML exports. Notebook 07 also checks that each final HTML exists and exceeds 1,000 bytes. These checks do not verify browser rendering or the behavior of interactive controls.
 
----
+</details>
 
-<a id="usage"></a>
+<details>
+<summary><strong>Reproduce the validation</strong></summary>
 
-## How to Use
+Check the active Python environment:
 
-### Recommended Learning Path
+```bash
+python -m pip check
+```
 
-Follow notebooks in the order shown in Contents and select the correct kernel. Use Technical Guides for in-depth explanations and Cheat Sheets for quick reference.
+In JupyterLab, select the correct kernel and choose **Restart Kernel → Run All Cells**. Inspect tables, plots, interactive controls and exported files as appropriate to the notebook.
 
-**Plotly:** keep the `iframe` renderer in the tested environment; related HTML files can appear under `outputs/iframe_figures/`. GitHub previews do not necessarily run interactive charts.
+</details>
 
-### Exercises and Practice
+> [!CAUTION]
+> The datasets are synthetic. In the tested environment Plotly uses the `iframe` renderer because `plotly_mimetype` previously hid charts. Keep the tested renderer when reproducing the notebooks, and verify visual and interactive behavior separately when changing environments.
 
-Change filters and aggregation levels; audit missing values and denominator choices; compare visual encodings and interactive results.
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
-
-<a id="references"></a>
-
-## References
-
-| Resource | Documentation / Reference |
-|---|---|
-| Python | [Open documentation](https://docs.python.org/3/) |
-| NumPy | [Open documentation](https://numpy.org/doc/stable/) |
-| Pandas | [Open documentation](https://pandas.pydata.org/docs/) |
-| Matplotlib | [Open documentation](https://matplotlib.org/stable/) |
-| Seaborn | [Open documentation](https://seaborn.pydata.org/) |
-| Plotly | [Open documentation](https://plotly.com/python/) |
-| Bokeh | [Open documentation](https://docs.bokeh.org/) |
-| Altair | [Open documentation](https://altair-viz.github.io/) |
-| scikit-learn | [Open documentation](https://scikit-learn.org/stable/user_guide.html) |
-| JupyterLab | [Open documentation](https://jupyterlab.readthedocs.io/en/stable/) |
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+<p align="right"><sub><a href="#readme-top">↑ Back to top</a></sub></p>
 
 ---
 
@@ -238,15 +282,24 @@ Change filters and aggregation levels; audit missing values and denominator choi
 
 ## License
 
-| Material | License | Scope |
-|---|---|---|
-| Original source code | [MIT](../LICENSE-CODE.txt) | Original scripts and notebook code |
-| Original educational content | [CC BY-NC 4.0](../LICENSE-CONTENT.md) | Original explanations, READMEs, guides and Cheat Sheets |
-| Third-party content | Respective terms | External datasets, images, trademarks and other assets |
-
 These licenses apply only where the author holds the necessary rights; notebook code and educational prose may have different licenses.
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+<table>
+<tr>
+<td align="center" valign="middle"><a href="../LICENSE-CODE.txt"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/licenses/mit.svg" alt="MIT"></a></td>
+<td valign="middle"><strong>Source code</strong> | Scripts and original notebook code.</td>
+</tr>
+<tr>
+<td align="center" valign="middle"><a href="../LICENSE-CONTENT.md"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/licenses/cc_by_nc_4_0.svg" alt="CC BY-NC 4.0"></a></td>
+<td valign="middle"><strong>Educational content</strong> | Original explanations, READMEs, guides and Cheat Sheets.</td>
+</tr>
+<tr>
+<td align="center" valign="middle">Third-party terms</td>
+<td valign="middle"><strong>External content</strong> | Datasets, images, trademarks and other assets; their respective terms apply.</td>
+</tr>
+</table>
+
+<p align="right"><sub><a href="#readme-top">↑ Back to top</a></sub></p>
 
 ---
 
@@ -257,23 +310,15 @@ These licenses apply only where the author holds the necessary rights; notebook 
 
 <div align="center">
 
-<a href="https://eduardo-pereira.webflow.io/" title="Personal website — Eduardo Junior Pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90"></a>
+<a href="https://eduardo-pereira.webflow.io/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo" height="90"></a>
 
-**Eduardo Junior Pereira**
-
-*Economics · Data Science · Analytics*
+Let's connect and exchange ideas and opportunities.
 
 <a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
-<a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>
-
-[Let's connect on LinkedIn to exchange ideas and opportunities.](https://www.linkedin.com/in/eduardo-jr-pereira/)
-
-[**GitHub Portfolio**](https://github.com/eduardojr-pereira/data-science-portfolio)
+<a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>&nbsp;&nbsp;
+<a href="https://discord.com/users/533043855122235393"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/discord_icon.svg" alt="Discord" height="27"></a>
 
 </div>
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
 <!-- EP-FOOTER:END -->

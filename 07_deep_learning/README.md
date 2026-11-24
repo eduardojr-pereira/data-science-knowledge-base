@@ -2,24 +2,18 @@
 
 <div align="center">
 
-[🇺🇸 English](./README.md) &nbsp;|&nbsp; [🇧🇷 Português](./README.pt-BR.md)
+| [English](./README.md) · [Português](./README.pt-BR.md) |
 
 # Deep Learning
-
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge) ![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white&style=for-the-badge) ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white&style=for-the-badge)
 
 *A progressive, reproducible course in neural-network foundations, model evaluation, CNNs, RNNs and attention.*
 
 </div>
 
----
-
-## On This Page
-
 <div align="center">
 
-[Overview](#overview) • [Contents](#contents) • [Technologies](#technologies) • [Setup and Installation](#installation) • [Testing and Validation](#validation)  
-[How to Use](#usage) • [References](#references) • [License](#license) • [Contact](#contact)
+[Overview](#overview) · [Contents](#contents) · [Technologies](#technologies) · [Installation](#installation)  
+[Validation](#validation) · [License](#license) · [Contact](#contact)
 
 </div>
 
@@ -29,17 +23,10 @@
 
 ## Overview
 
-This area contains twenty Portuguese-language notebooks with original technical guides and concise Cheat Sheets. The sequence connects neural-network mathematics to reproducible experiments and explicitly separates CPU-friendly examples from optional TensorFlow/Keras labs. The original university course materials were consulted as historical support; slides and third-party copyrighted illustrations are not redistributed here.
+Study neural networks from tensor operations, optimization and backpropagation to multilayer, convolutional, recurrent and attention-based architectures. Compare baselines, regularization, model persistence and temporal evaluation; the core exercises and optional TensorFlow/Keras laboratories distinguish mathematical demonstrations from actual training and from pretrained-model inference.
 
-### Learning Objectives
-
-- Explain tensor shapes, activations, gradients and backpropagation.
-- Design leakage-safe experiments and compare neural networks with baselines.
-- Understand Sequential and Functional APIs, training, callbacks and persistence.
-- Study CNNs, augmentation, transfer learning, interpretability, recurrent networks and attention.
-- Identify limitations of synthetic examples and distinguish code execution from model validation.
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+> [!WARNING]
+> Notebooks and study PDFs are written in Brazilian Portuguese. This README provides navigation and documentation in English.
 
 ---
 
@@ -49,56 +36,66 @@ This area contains twenty Portuguese-language notebooks with original technical 
 
 ### Notebooks and Learning Materials
 
-| Order | Notebook | Technical Guide | Cheat Sheet |
-|:---:|---|---|---|
-| 01 | [Deep Learning Foundations](./01_fundamentos_deep_learning.ipynb) | [Open PDF](./reference_materials/01_fundamentos_deep_learning.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_fundamentos_deep_learning.pdf) |
-| 02 | [Tensors, TensorFlow and Keras](./02_tensores_tensorflow_keras.ipynb) | [Open PDF](./reference_materials/02_tensores_tensorflow_keras.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_tensores_tensorflow_keras.pdf) |
-| 03 | [Data Preparation for Neural Networks](./03_preparacao_para_redes.ipynb) | [Open PDF](./reference_materials/03_preparacao_para_redes.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_preparacao_para_redes.pdf) |
-| 04 | [Neuron Models and the Perceptron](./04_neuronio_perceptron.ipynb) | [Open PDF](./reference_materials/04_neuronio_perceptron.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_neuronio_perceptron.pdf) |
-| 05 | [Loss Functions, Gradients and Optimization](./05_perdas_gradientes_otimizacao.ipynb) | [Open PDF](./reference_materials/05_perdas_gradientes_otimizacao.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_perdas_gradientes_otimizacao.pdf) |
-| 06 | [Backpropagation, MLP and XOR](./06_backpropagation_mlp_xor.ipynb) | [Open PDF](./reference_materials/06_backpropagation_mlp_xor.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_backpropagation_mlp_xor.pdf) |
-| 07 | [Sequential Models with Keras](./07_keras_sequential.ipynb) | [Open PDF](./reference_materials/07_keras_sequential.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_keras_sequential.pdf) |
-| 08 | [Functional API and Multi-input Models](./08_keras_functional.ipynb) | [Open PDF](./reference_materials/08_keras_functional.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_keras_functional.pdf) |
-| 09 | [Model Evaluation and Baselines](./09_avaliacao_baselines.ipynb) | [Open PDF](./reference_materials/09_avaliacao_baselines.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_avaliacao_baselines.pdf) |
-| 10 | [Hyperparameters and Initialization](./10_hiperparametros_inicializacao.ipynb) | [Open PDF](./reference_materials/10_hiperparametros_inicializacao.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_hiperparametros_inicializacao.pdf) |
-| 11 | [Regularization, Callbacks and Early Stopping](./11_regularizacao_callbacks.ipynb) | [Open PDF](./reference_materials/11_regularizacao_callbacks.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_regularizacao_callbacks.pdf) |
-| 12 | [Model Persistence and Reproducibility](./12_persistencia_reproducibilidade.ipynb) | [Open PDF](./reference_materials/12_persistencia_reproducibilidade.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_persistencia_reproducibilidade.pdf) |
-| 13 | [Convolutions and CNN Mathematics](./13_convolucao_cnn_matematica.ipynb) | [Open PDF](./reference_materials/13_convolucao_cnn_matematica.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_convolucao_cnn_matematica.pdf) |
-| 14 | [Convolutional Networks in Practice](./14_cnn_na_pratica.ipynb) | [Open PDF](./reference_materials/14_cnn_na_pratica.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_cnn_na_pratica.pdf) |
-| 15 | [Data Augmentation and Robustness](./15_augmentation_robustez.ipynb) | [Open PDF](./reference_materials/15_augmentation_robustez.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_augmentation_robustez.pdf) |
-| 16 | [Neural Architectures and Transfer Learning](./16_arquiteturas_transfer_learning.ipynb) | [Open PDF](./reference_materials/16_arquiteturas_transfer_learning.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_arquiteturas_transfer_learning.pdf) |
-| 17 | [Interpretability and Computer Vision](./17_interpretabilidade_visao.ipynb) | [Open PDF](./reference_materials/17_interpretabilidade_visao.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_interpretabilidade_visao.pdf) |
-| 18 | [Recurrent Networks: RNN, LSTM and GRU](./18_rnn_lstm_gru.ipynb) | [Open PDF](./reference_materials/18_rnn_lstm_gru.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_rnn_lstm_gru.pdf) |
-| 19 | [Sequences, Time Series and Sentiment](./19_sequencias_series_sentimentos.ipynb) | [Open PDF](./reference_materials/19_sequencias_series_sentimentos.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_sequencias_series_sentimentos.pdf) |
-| 20 | [Attention Mechanisms and Transformers](./20_atencao_transformers.ipynb) | [Open PDF](./reference_materials/20_atencao_transformers.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_atencao_transformers.pdf) |
+| Notebook | Technical Guide | Cheat Sheet |
+| --- | :---: | :---: |
+| [01 - Deep Learning Foundations](./01_fundamentos_deep_learning.ipynb) | [PDF](./reference_materials/01_fundamentos_deep_learning.pdf) | [PDF](./cheat_sheets/cheat_sheet_fundamentos_deep_learning.pdf) |
+| [02 - Tensors, TensorFlow and Keras](./02_tensores_tensorflow_keras.ipynb) | [PDF](./reference_materials/02_tensores_tensorflow_keras.pdf) | [PDF](./cheat_sheets/cheat_sheet_tensores_tensorflow_keras.pdf) |
+| [03 - Data Preparation for Neural Networks](./03_preparacao_para_redes.ipynb) | [PDF](./reference_materials/03_preparacao_para_redes.pdf) | [PDF](./cheat_sheets/cheat_sheet_preparacao_para_redes.pdf) |
+| [04 - Neuron Models and the Perceptron](./04_neuronio_perceptron.ipynb) | [PDF](./reference_materials/04_neuronio_perceptron.pdf) | [PDF](./cheat_sheets/cheat_sheet_neuronio_perceptron.pdf) |
+| [05 - Loss Functions, Gradients and Optimization](./05_perdas_gradientes_otimizacao.ipynb) | [PDF](./reference_materials/05_perdas_gradientes_otimizacao.pdf) | [PDF](./cheat_sheets/cheat_sheet_perdas_gradientes_otimizacao.pdf) |
+| [06 - Backpropagation, MLP and XOR](./06_backpropagation_mlp_xor.ipynb) | [PDF](./reference_materials/06_backpropagation_mlp_xor.pdf) | [PDF](./cheat_sheets/cheat_sheet_backpropagation_mlp_xor.pdf) |
+| [07 - Sequential Models with Keras](./07_keras_sequential.ipynb) | [PDF](./reference_materials/07_keras_sequential.pdf) | [PDF](./cheat_sheets/cheat_sheet_keras_sequential.pdf) |
+| [08 - Functional API and Multi-input Models](./08_keras_functional.ipynb) | [PDF](./reference_materials/08_keras_functional.pdf) | [PDF](./cheat_sheets/cheat_sheet_keras_functional.pdf) |
+| [09 - Model Evaluation and Baselines](./09_avaliacao_baselines.ipynb) | [PDF](./reference_materials/09_avaliacao_baselines.pdf) | [PDF](./cheat_sheets/cheat_sheet_avaliacao_baselines.pdf) |
+| [10 - Hyperparameters and Initialization](./10_hiperparametros_inicializacao.ipynb) | [PDF](./reference_materials/10_hiperparametros_inicializacao.pdf) | [PDF](./cheat_sheets/cheat_sheet_hiperparametros_inicializacao.pdf) |
+| [11 - Regularization, Callbacks and Early Stopping](./11_regularizacao_callbacks.ipynb) | [PDF](./reference_materials/11_regularizacao_callbacks.pdf) | [PDF](./cheat_sheets/cheat_sheet_regularizacao_callbacks.pdf) |
+| [12 - Model Persistence and Reproducibility](./12_persistencia_reproducibilidade.ipynb) | [PDF](./reference_materials/12_persistencia_reproducibilidade.pdf) | [PDF](./cheat_sheets/cheat_sheet_persistencia_reproducibilidade.pdf) |
+| [13 - Convolutions and CNN Mathematics](./13_convolucao_cnn_matematica.ipynb) | [PDF](./reference_materials/13_convolucao_cnn_matematica.pdf) | [PDF](./cheat_sheets/cheat_sheet_convolucao_cnn_matematica.pdf) |
+| [14 - Convolutional Networks in Practice](./14_cnn_na_pratica.ipynb) | [PDF](./reference_materials/14_cnn_na_pratica.pdf) | [PDF](./cheat_sheets/cheat_sheet_cnn_na_pratica.pdf) |
+| [15 - Data Augmentation and Robustness](./15_augmentation_robustez.ipynb) | [PDF](./reference_materials/15_augmentation_robustez.pdf) | [PDF](./cheat_sheets/cheat_sheet_augmentation_robustez.pdf) |
+| [16 - Neural Architectures and Transfer Learning](./16_arquiteturas_transfer_learning.ipynb) | [PDF](./reference_materials/16_arquiteturas_transfer_learning.pdf) | [PDF](./cheat_sheets/cheat_sheet_arquiteturas_transfer_learning.pdf) |
+| [17 - Interpretability and Computer Vision](./17_interpretabilidade_visao.ipynb) | [PDF](./reference_materials/17_interpretabilidade_visao.pdf) | [PDF](./cheat_sheets/cheat_sheet_interpretabilidade_visao.pdf) |
+| [18 - Recurrent Networks: RNN, LSTM and GRU](./18_rnn_lstm_gru.ipynb) | [PDF](./reference_materials/18_rnn_lstm_gru.pdf) | [PDF](./cheat_sheets/cheat_sheet_rnn_lstm_gru.pdf) |
+| [19 - Sequences, Time Series and Sentiment](./19_sequencias_series_sentimentos.ipynb) | [PDF](./reference_materials/19_sequencias_series_sentimentos.pdf) | [PDF](./cheat_sheets/cheat_sheet_sequencias_series_sentimentos.pdf) |
+| [20 - Attention Mechanisms and Transformers](./20_atencao_transformers.ipynb) | [PDF](./reference_materials/20_atencao_transformers.pdf) | [PDF](./cheat_sheets/cheat_sheet_atencao_transformers.pdf) |
+
+> [!TIP]
+> **Recommended Learning Path**
+>
+> 1. Configure the core environment; use the guides and Cheat Sheets while progressing from tensors to backpropagation.
+> 2. Compare a simple baseline with neural architectures; control preprocessing, data splits and random seeds.
+> 3. Vary initialization, regularization and callbacks; inspect validation curves before interpreting the test set.
+> 4. Study convolution, augmentation, recurrent networks and attention; preserve temporal ordering in forecasting.
+> 5. Activate the separate TensorFlow environment for optional real training and distinguish trained models from demonstrations with random weights.
 
 ### Datasets
 
 No mandatory external dataset is included. The notebooks use synthetic examples or datasets distributed with scikit-learn; optional neural labs should not download external model weights without explicit setup.
 
-### Generated Outputs
+<details>
+<summary><strong>Generated Outputs</strong></summary>
 
-Files exported by notebooks are generated locally in `outputs/`. Examples include:
+Nine versioned artifacts: eight core artifacts and the optional CNN training history from notebook 14. Never load an untrusted serialized model.
 
-- [07_metricas_sequential.csv](./outputs/07_metricas_sequential.csv)
-- [09_metricas_baselines.csv](./outputs/09_metricas_baselines.csv)
-- [10_resultados_grid_search.csv](./outputs/10_resultados_grid_search.csv)
-- [11_regularizacao_resultado.csv](./outputs/11_regularizacao_resultado.csv)
-- [12_pipeline_logistic_regression.joblib](./outputs/12_pipeline_logistic_regression.joblib)
-- [12_pipeline_metadata.json](./outputs/12_pipeline_metadata.json)
-- [14_historico_treinamento_cnn.csv](./outputs/14_historico_treinamento_cnn.csv) (optional TensorFlow lab)
-- [17_mapa_saliencia_numerica.png](./outputs/17_mapa_saliencia_numerica.png)
-- [19_previsoes_series_temporais.csv](./outputs/19_previsoes_series_temporais.csv)
+| Notebook | File | Format |
+| :---: | --- | :---: |
+| [07](./07_keras_sequential.ipynb) | [`07_metricas_sequential.csv`](./outputs/07_metricas_sequential.csv) | CSV |
+| [09](./09_avaliacao_baselines.ipynb) | [`09_metricas_baselines.csv`](./outputs/09_metricas_baselines.csv) | CSV |
+| [10](./10_hiperparametros_inicializacao.ipynb) | [`10_resultados_grid_search.csv`](./outputs/10_resultados_grid_search.csv) | CSV |
+| [11](./11_regularizacao_callbacks.ipynb) | [`11_regularizacao_resultado.csv`](./outputs/11_regularizacao_resultado.csv) | CSV |
+| [12](./12_persistencia_reproducibilidade.ipynb) | [`12_pipeline_logistic_regression.joblib`](./outputs/12_pipeline_logistic_regression.joblib) | JOBLIB |
+| [12](./12_persistencia_reproducibilidade.ipynb) | [`12_pipeline_metadata.json`](./outputs/12_pipeline_metadata.json) | JSON |
+| [14](./14_cnn_na_pratica.ipynb) | [`14_historico_treinamento_cnn.csv`](./outputs/14_historico_treinamento_cnn.csv) | CSV |
+| [17](./17_interpretabilidade_visao.ipynb) | [`17_mapa_saliencia_numerica.png`](./outputs/17_mapa_saliencia_numerica.png) | PNG |
+| [19](./19_sequencias_series_sentimentos.ipynb) | [`19_previsoes_series_temporais.csv`](./outputs/19_previsoes_series_temporais.csv) | CSV |
 
-The files linked above are available in the repository under `outputs/`. Review models and generated artifacts before sharing them; never load untrusted `.joblib` files.
+</details>
 
-### Directory Structure
+<details>
+<summary><strong>Directory Structure</strong></summary>
 
 ```text
 07_deep_learning/
-├── README.md
-├── README.pt-BR.md
-├── requirements.txt
 ├── 01_fundamentos_deep_learning.ipynb
 ├── 02_tensores_tensorflow_keras.ipynb
 ├── 03_preparacao_para_redes.ipynb
@@ -119,12 +116,66 @@ The files linked above are available in the repository under `outputs/`. Review 
 ├── 18_rnn_lstm_gru.ipynb
 ├── 19_sequencias_series_sentimentos.ipynb
 ├── 20_atencao_transformers.ipynb
-├── reference_materials/
+├── README.md
+├── README.pt-BR.md
+├── requirements.txt
 ├── cheat_sheets/
-└── outputs/
+│   ├── cheat_sheet_arquiteturas_transfer_learning.pdf
+│   ├── cheat_sheet_atencao_transformers.pdf
+│   ├── cheat_sheet_augmentation_robustez.pdf
+│   ├── cheat_sheet_avaliacao_baselines.pdf
+│   ├── cheat_sheet_backpropagation_mlp_xor.pdf
+│   ├── cheat_sheet_cnn_na_pratica.pdf
+│   ├── cheat_sheet_convolucao_cnn_matematica.pdf
+│   ├── cheat_sheet_fundamentos_deep_learning.pdf
+│   ├── cheat_sheet_hiperparametros_inicializacao.pdf
+│   ├── cheat_sheet_interpretabilidade_visao.pdf
+│   ├── cheat_sheet_keras_functional.pdf
+│   ├── cheat_sheet_keras_sequential.pdf
+│   ├── cheat_sheet_neuronio_perceptron.pdf
+│   ├── cheat_sheet_perdas_gradientes_otimizacao.pdf
+│   ├── cheat_sheet_persistencia_reproducibilidade.pdf
+│   ├── cheat_sheet_preparacao_para_redes.pdf
+│   ├── cheat_sheet_regularizacao_callbacks.pdf
+│   ├── cheat_sheet_rnn_lstm_gru.pdf
+│   ├── cheat_sheet_sequencias_series_sentimentos.pdf
+│   └── cheat_sheet_tensores_tensorflow_keras.pdf
+├── outputs/
+│   ├── 07_metricas_sequential.csv
+│   ├── 09_metricas_baselines.csv
+│   ├── 10_resultados_grid_search.csv
+│   ├── 11_regularizacao_resultado.csv
+│   ├── 12_pipeline_logistic_regression.joblib
+│   ├── 12_pipeline_metadata.json
+│   ├── 14_historico_treinamento_cnn.csv
+│   ├── 17_mapa_saliencia_numerica.png
+│   └── 19_previsoes_series_temporais.csv
+└── reference_materials/
+    ├── 01_fundamentos_deep_learning.pdf
+    ├── 02_tensores_tensorflow_keras.pdf
+    ├── 03_preparacao_para_redes.pdf
+    ├── 04_neuronio_perceptron.pdf
+    ├── 05_perdas_gradientes_otimizacao.pdf
+    ├── 06_backpropagation_mlp_xor.pdf
+    ├── 07_keras_sequential.pdf
+    ├── 08_keras_functional.pdf
+    ├── 09_avaliacao_baselines.pdf
+    ├── 10_hiperparametros_inicializacao.pdf
+    ├── 11_regularizacao_callbacks.pdf
+    ├── 12_persistencia_reproducibilidade.pdf
+    ├── 13_convolucao_cnn_matematica.pdf
+    ├── 14_cnn_na_pratica.pdf
+    ├── 15_augmentation_robustez.pdf
+    ├── 16_arquiteturas_transfer_learning.pdf
+    ├── 17_interpretabilidade_visao.pdf
+    ├── 18_rnn_lstm_gru.pdf
+    ├── 19_sequencias_series_sentimentos.pdf
+    └── 20_atencao_transformers.pdf
 ```
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+</details>
+
+<p align="right"><sub><a href="#readme-top">↑ Back to top</a></sub></p>
 
 ---
 
@@ -132,19 +183,34 @@ The files linked above are available in the repository under `outputs/`. Review 
 
 ## Technologies
 
-| Technology | Purpose |
-|---|---|
-| Python | Core programming and notebooks |
-| NumPy | Numerical arrays, tensors, gradients |
-| Pandas | Tabular data processing |
-| scikit-learn | Baselines, metrics, train/test splits and pipelines |
-| Matplotlib | Scientific plotting |
-| JupyterLab / ipykernel | Interactive execution and kernel management |
-| TensorFlow / Keras (optional labs) | Real neural network labs with compatible environment |
+> Programming and notebook development
 
-The basic environment is described in `requirements.txt`. TensorFlow/Keras must be validated separately due to platform and Python version compatibility.
+[![Python](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/python.svg)](https://docs.python.org/3/) &nbsp;&nbsp; [![JupyterLab](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/jupyterlab.svg)](https://jupyterlab.readthedocs.io/en/stable/) &nbsp;&nbsp; [![ipykernel](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/ipykernel.svg)](https://ipykernel.readthedocs.io/)
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+> Numerical computing and visualization
+
+[![NumPy](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/numpy.svg)](https://numpy.org/doc/stable/) &nbsp;&nbsp; [![pandas](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/pandas.svg)](https://pandas.pydata.org/docs/) &nbsp;&nbsp; [![Matplotlib](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/matplotlib.svg)](https://matplotlib.org/stable/)
+
+> Machine learning and persistence
+
+[![scikit-learn](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/scikit_learn.svg)](https://scikit-learn.org/stable/) &nbsp;&nbsp; [![joblib](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/joblib.svg)](https://joblib.readthedocs.io/)
+
+> Optional neural laboratories
+
+[![TensorFlow](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/tensorflow.svg)](https://www.tensorflow.org/guide) &nbsp;&nbsp; [![Keras](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/keras.svg)](https://keras.io/guides/)
+
+> [!WARNING]
+> Python dependencies are listed in `requirements.txt`. Additional tools and installation requirements are described in Setup and Installation.
+
+<details>
+<summary><strong>Additional References</strong></summary>
+
+- [Deep Learning Book](https://www.deeplearningbook.org/)
+- [Keras serialization and saving guide](https://keras.io/guides/serialization_and_saving/)
+
+</details>
+
+<p align="right"><sub><a href="#readme-top">↑ Back to top</a></sub></p>
 
 ---
 
@@ -168,12 +234,15 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-**Windows PowerShell alternative**
+<details>
+<summary><strong>Windows PowerShell alternative</strong></summary>
 
 ```powershell
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
+
+</details>
 
 **3. Install dependencies and verify the environment**
 
@@ -192,7 +261,8 @@ jupyter lab
 
 Select this kernel in each notebook. Start JupyterLab in the area directory to keep relative data and output paths consistent.
 
-<!-- TF_KERNEL07_DOCUMENTADO -->
+<details>
+<summary><strong>Optional TensorFlow/Keras CPU environment</strong></summary>
 
 **TensorFlow/Keras CPU environment (validated locally on Ubuntu 26.04.1, Python 3.14.4)**
 
@@ -220,7 +290,9 @@ The locally observed test returned TensorFlow `2.22.0-rc0`, a CPU device and `6.
 
 Windows and macOS users should select a TensorFlow/Python combination supported on their platforms rather than copying the Linux-specific CPU wheel version verbatim.
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+</details>
+
+<p align="right"><sub><a href="#readme-top">↑ Back to top</a></sub></p>
 
 ---
 
@@ -228,58 +300,37 @@ Windows and macOS users should select a TensorFlow/Python combination supported 
 
 ## Testing and Validation
 
-| Verification | Recorded status |
-|---|---|
-| Notebooks documented | 20 |
-| Supporting materials | 20 guides / 20 Cheat Sheets |
-| Dependencies | `requirements.txt` |
-| Local execution | 20/20 notebooks executed with isolated Python kernel (2026-11-16) |
-| Neural laboratory | 17/17 TensorFlow-option notebooks executed in separate kernel |
-| Artifacts | 8 core artifacts audited; CNN history separately audited after real training |
+### Validation results
+
+| Verification | Status | Result |
+| --- | :---: | --- |
+| Core notebook execution | ![Passed](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/status/passed_en.svg) | 20/20 · isolated Python kernel |
+| Optional neural laboratories | ![Passed](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/status/passed_en.svg) | 17/17 · separate TensorFlow kernel |
+| Core artifacts | ![Passed](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/status/passed_en.svg) | 8 regenerated and checked |
+| CNN training history | ![Passed](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/status/passed_en.svg) | Schema and finite metrics checked after real training |
+
+*Recorded validation: November 16, 2026. Historical evidence, not a new execution audit.*
+
+<details>
+<summary><strong>Technical validation details</strong></summary>
 
 All 20 notebooks were executed in an isolated local Python environment. Eight core artifacts were regenerated and verified against the baseline, with the serialized model checked through the locally generated file rather than loading the historical binary. The TensorFlow notebooks were also executed in the dedicated neural kernel, including actual CNN training; its CSV history was validated for schema and finite metrics, not numerical equality across nondeterministic runs. Scientific corrections address integer layer dimensions, baseline comparison, persistence environment reporting, cross-correlation terminology, CNN training provenance, degenerate bounding boxes, and one-step temporal forecasting. No pretrained weights were downloaded, and these demonstrations do not establish real-world predictive performance.
 
 To check your environment, run `python -m pip check` and then **Restart Kernel → Run All Cells** in JupyterLab, inspecting tables, plots and generated files.
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+</details>
 
----
+<details>
+<summary><strong>Reproduce the validation</strong></summary>
 
-<a id="usage"></a>
+Check the active environment with `python -m pip check`. Select the appropriate kernel in JupyterLab and restart it before running all cells. Follow the installation instructions for optional labs; inspect actual outputs and document differences.
 
-## How to Use
+</details>
 
-### Recommended Learning Path
+> [!CAUTION]
+> These results demonstrate educational experiments, not real-world predictive performance. The CNN history requires actual training; never deserialize untrusted `.joblib` files.
 
-Follow notebooks 01–20 in numerical order. For each topic: study the Technical Guide, execute the notebook, compare outputs to expectations, and consult the Cheat Sheet for quick recipes. Keep local changes in a separate copy until the review is approved.
-
-### Exercises and Practice
-
-Explain a model assumption, run a controlled variation, and assess whether the evidence supports a claim. In particular, distinguish demonstrations using random weights from real training, and preserve chronology in time-series experiments.
-
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
-
-<a id="references"></a>
-
-## References
-
-| Resource | Documentation / Reference |
-|---|---|
-| Python | [Open documentation](https://docs.python.org/3/) |
-| NumPy | [Open documentation](https://numpy.org/doc/stable/) |
-| Pandas | [Open documentation](https://pandas.pydata.org/docs/) |
-| scikit-learn | [Open documentation](https://scikit-learn.org/stable/user_guide.html) |
-| Matplotlib | [Open documentation](https://matplotlib.org/stable/) |
-| JupyterLab | [Open documentation](https://jupyterlab.readthedocs.io/en/stable/) |
-| TensorFlow | [Open documentation](https://www.tensorflow.org/guide) |
-| Keras | [Open documentation](https://keras.io/guides/) |
-| Deep Learning Book | [Open documentation](https://www.deeplearningbook.org/) |
-| Keras saving guide | [Open documentation](https://keras.io/guides/serialization_and_saving/) |
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+<p align="right"><sub><a href="#readme-top">↑ Back to top</a></sub></p>
 
 ---
 
@@ -287,15 +338,24 @@ Explain a model assumption, run a controlled variation, and assess whether the e
 
 ## License
 
-| Material | License | Scope |
-|---|---|---|
-| Original source code | [MIT](../LICENSE-CODE.txt) | Original notebook code and scripts |
-| Original educational content | [CC BY-NC 4.0](../LICENSE-CONTENT.md) | Original explanations, PDFs and Cheat Sheets |
-| Third-party resources | Their own licenses | External source material and trademarks |
+These licenses apply only where the author holds the necessary rights; notebook code and educational prose may have different licenses.
 
-These terms apply only to material owned by the author.
+<table>
+<tr>
+<td align="center" valign="middle"><a href="../LICENSE-CODE.txt"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/licenses/mit.svg" alt="MIT"></a></td>
+<td valign="middle"><strong>Source code</strong> | Scripts and original notebook code.</td>
+</tr>
+<tr>
+<td align="center" valign="middle"><a href="../LICENSE-CONTENT.md"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/licenses/cc_by_nc_4_0.svg" alt="CC BY-NC 4.0"></a></td>
+<td valign="middle"><strong>Educational content</strong> | Original explanations, READMEs, guides and Cheat Sheets.</td>
+</tr>
+<tr>
+<td align="center" valign="middle">Third-party terms</td>
+<td valign="middle"><strong>External content</strong> | Datasets, images, trademarks and other assets; their respective terms apply.</td>
+</tr>
+</table>
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+<p align="right"><sub><a href="#readme-top">↑ Back to top</a></sub></p>
 
 ---
 
@@ -306,23 +366,15 @@ These terms apply only to material owned by the author.
 
 <div align="center">
 
-<a href="https://eduardo-pereira.webflow.io/" title="Personal website — Eduardo Junior Pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90"></a>
+<a href="https://eduardo-pereira.webflow.io/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo" height="90"></a>
 
-**Eduardo Junior Pereira**
-
-*Economics · Data Science · Analytics*
+Let's connect and exchange ideas and opportunities.
 
 <a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
-<a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>
-
-[Let's connect on LinkedIn to exchange ideas and opportunities.](https://www.linkedin.com/in/eduardo-jr-pereira/)
-
-[**GitHub Portfolio**](https://github.com/eduardojr-pereira/data-science-portfolio)
+<a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>&nbsp;&nbsp;
+<a href="https://discord.com/users/533043855122235393"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/discord_icon.svg" alt="Discord" height="27"></a>
 
 </div>
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
 <!-- EP-FOOTER:END -->

@@ -2,24 +2,18 @@
 
 <div align="center">
 
-[🇺🇸 English](./README.md) &nbsp;|&nbsp; [🇧🇷 Português](./README.pt-BR.md)
+| [English](./README.md) · [Português](./README.pt-BR.md) |
 
 # Recommender Systems
-
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge) ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white&style=for-the-badge) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white&style=for-the-badge)
 
 *A progressive path through interaction data, collaborative filtering, latent models and responsible evaluation.*
 
 </div>
 
----
-
-## On This Page
-
 <div align="center">
 
-[Overview](#overview) • [Contents](#contents) • [Technologies](#technologies) • [Setup and Installation](#installation) • [Testing and Validation](#validation)  
-[How to Use](#usage) • [References](#references) • [License](#license) • [Contact](#contact)
+[Overview](#overview) · [Contents](#contents) · [Technologies](#technologies) · [Installation](#installation)  
+[Validation](#validation) · [License](#license) · [Contact](#contact)
 
 </div>
 
@@ -29,17 +23,10 @@
 
 ## Overview
 
-This area contains **16 Portuguese-language notebooks**, supported by **16 original Technical Guides** and **16 Cheat Sheets**. The sequence covers interaction representations, popularity and content-based recommendation, collaborative filtering, sparse matrices, factorization, rating prediction, Top-K ranking, cold start, hybrid systems, and reproducibility. Experiments use the real MovieLens dataset and a **clearly labeled original synthetic book-interaction fixture** in notebook 16. The repository includes MovieLens `ratings.csv` and `movies.csv`; the synthetic book records are defined directly in the notebook. The public learning references are the Technical Guides and Cheat Sheets.
+Develop recommender systems from interaction data, popularity and content baselines to collaborative filtering, sparse matrices, latent factors and hybrid ranking. Use MovieLens to examine rating prediction and Top-K evaluation under explicit data splits, and analyze cold start, diversity, reproducibility and exposure bias. The final notebook also uses a separate fictional book-feedback example.
 
-### Learning Objectives
-
-- Distinguish explicit feedback, implicit feedback, missing interactions, and exposure.
-- Build popularity baselines, content-based recommenders, and user/item-neighborhood methods.
-- Explain sparsity, similarity shrinkage, illustrative SVD, and biased rating models.
-- Evaluate rating predictions and Top-K rankings with leakage-aware protocols.
-- Recognize cold start, diversity, sampling bias, and artifact-traceability concerns.
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+> [!WARNING]
+> Notebooks and study PDFs are written in Brazilian Portuguese. This README provides navigation and documentation in English.
 
 ---
 
@@ -49,30 +36,47 @@ This area contains **16 Portuguese-language notebooks**, supported by **16 origi
 
 ### Notebooks and Learning Materials
 
-| Order | Notebook | Technical Guide | Cheat Sheet |
-|:---:|---|---|---|
-| 01 | [Introduction and Recommender-System Taxonomy](./01_introducao_taxonomia.ipynb) | [Open PDF](./reference_materials/01_introducao_taxonomia.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_01_introducao_taxonomia.pdf) |
-| 02 | [Interaction Data, Feedback and Exploration](./02_dados_interacoes.ipynb) | [Open PDF](./reference_materials/02_dados_interacoes.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_02_dados_interacoes.pdf) |
-| 03 | [Popularity Models and Baselines](./03_popularidade_baselines.ipynb) | [Open PDF](./reference_materials/03_popularidade_baselines.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_03_popularidade_baselines.pdf) |
-| 04 | [Content-Based Filtering](./04_filtragem_conteudo.ipynb) | [Open PDF](./reference_materials/04_filtragem_conteudo.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_04_filtragem_conteudo.pdf) |
-| 05 | [User-Based Collaborative Filtering](./05_similaridade_usuarios.ipynb) | [Open PDF](./reference_materials/05_similaridade_usuarios.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_05_similaridade_usuarios.pdf) |
-| 06 | [Item-Based Collaborative Filtering](./06_similaridade_itens.ipynb) | [Open PDF](./reference_materials/06_similaridade_itens.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_06_similaridade_itens.pdf) |
-| 07 | [KNN and Sparse Matrices](./07_knn_matrizes_esparsas.ipynb) | [Open PDF](./reference_materials/07_knn_matrizes_esparsas.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_07_knn_matrizes_esparsas.pdf) |
-| 08 | [Sparsity, Bias and Similarity Shrinkage](./08_esparsidade_regularizacao.ipynb) | [Open PDF](./reference_materials/08_esparsidade_regularizacao.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_08_esparsidade_regularizacao.pdf) |
-| 09 | [Matrix Factorization and SVD](./09_svd_fatoracao.ipynb) | [Open PDF](./reference_materials/09_svd_fatoracao.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_09_svd_fatoracao.pdf) |
-| 10 | [Explicit-Feedback Rating Prediction](./10_feedback_explicito_modelo.ipynb) | [Open PDF](./reference_materials/10_feedback_explicito_modelo.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_10_feedback_explicito_modelo.pdf) |
-| 11 | [Rating Evaluation: MAE, RMSE and Experimental Design](./11_avaliacao_mae_rmse.ipynb) | [Open PDF](./reference_materials/11_avaliacao_mae_rmse.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_11_avaliacao_mae_rmse.pdf) |
-| 12 | [Top-K Ranking and Offline Metrics](./12_metricas_ranking.ipynb) | [Open PDF](./reference_materials/12_metricas_ranking.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_12_metricas_ranking.pdf) |
-| 13 | [Cold Start, Diversity and Coverage](./13_cold_start_diversidade.ipynb) | [Open PDF](./reference_materials/13_cold_start_diversidade.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_13_cold_start_diversidade.pdf) |
-| 14 | [Hybrid Recommender Systems and Re-ranking](./14_sistemas_hibridos.ipynb) | [Open PDF](./reference_materials/14_sistemas_hibridos.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_14_sistemas_hibridos.pdf) |
-| 15 | [Reproducible Pipelines and Persistence](./15_pipeline_reproduzivel.ipynb) | [Open PDF](./reference_materials/15_pipeline_reproduzivel.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_15_pipeline_reproduzivel.pdf) |
-| 16 | [Integrated Study: MovieLens and Synthetic Book Feedback](./16_estudo_integrador_movielens_livros.ipynb) | [Open PDF](./reference_materials/16_estudo_integrador_movielens_livros.pdf) | [Open PDF](./cheat_sheets/cheat_sheet_16_estudo_integrador_movielens_livros.pdf) |
+| Notebook | Technical Guide | Cheat Sheet |
+| --- | :---: | :---: |
+| [01 - Introduction and Recommender-System Taxonomy](./01_introducao_taxonomia.ipynb) | [PDF](./reference_materials/01_introducao_taxonomia.pdf) | [PDF](./cheat_sheets/cheat_sheet_01_introducao_taxonomia.pdf) |
+| [02 - Interaction Data, Feedback and Exploration](./02_dados_interacoes.ipynb) | [PDF](./reference_materials/02_dados_interacoes.pdf) | [PDF](./cheat_sheets/cheat_sheet_02_dados_interacoes.pdf) |
+| [03 - Popularity Models and Baselines](./03_popularidade_baselines.ipynb) | [PDF](./reference_materials/03_popularidade_baselines.pdf) | [PDF](./cheat_sheets/cheat_sheet_03_popularidade_baselines.pdf) |
+| [04 - Content-Based Filtering](./04_filtragem_conteudo.ipynb) | [PDF](./reference_materials/04_filtragem_conteudo.pdf) | [PDF](./cheat_sheets/cheat_sheet_04_filtragem_conteudo.pdf) |
+| [05 - User-Based Collaborative Filtering](./05_similaridade_usuarios.ipynb) | [PDF](./reference_materials/05_similaridade_usuarios.pdf) | [PDF](./cheat_sheets/cheat_sheet_05_similaridade_usuarios.pdf) |
+| [06 - Item-Based Collaborative Filtering](./06_similaridade_itens.ipynb) | [PDF](./reference_materials/06_similaridade_itens.pdf) | [PDF](./cheat_sheets/cheat_sheet_06_similaridade_itens.pdf) |
+| [07 - KNN and Sparse Matrices](./07_knn_matrizes_esparsas.ipynb) | [PDF](./reference_materials/07_knn_matrizes_esparsas.pdf) | [PDF](./cheat_sheets/cheat_sheet_07_knn_matrizes_esparsas.pdf) |
+| [08 - Sparsity, Bias and Similarity Shrinkage](./08_esparsidade_regularizacao.ipynb) | [PDF](./reference_materials/08_esparsidade_regularizacao.pdf) | [PDF](./cheat_sheets/cheat_sheet_08_esparsidade_regularizacao.pdf) |
+| [09 - Matrix Factorization and SVD](./09_svd_fatoracao.ipynb) | [PDF](./reference_materials/09_svd_fatoracao.pdf) | [PDF](./cheat_sheets/cheat_sheet_09_svd_fatoracao.pdf) |
+| [10 - Explicit-Feedback Rating Prediction](./10_feedback_explicito_modelo.ipynb) | [PDF](./reference_materials/10_feedback_explicito_modelo.pdf) | [PDF](./cheat_sheets/cheat_sheet_10_feedback_explicito_modelo.pdf) |
+| [11 - Rating Evaluation: MAE, RMSE and Experimental Design](./11_avaliacao_mae_rmse.ipynb) | [PDF](./reference_materials/11_avaliacao_mae_rmse.pdf) | [PDF](./cheat_sheets/cheat_sheet_11_avaliacao_mae_rmse.pdf) |
+| [12 - Top-K Ranking and Offline Metrics](./12_metricas_ranking.ipynb) | [PDF](./reference_materials/12_metricas_ranking.pdf) | [PDF](./cheat_sheets/cheat_sheet_12_metricas_ranking.pdf) |
+| [13 - Cold Start, Diversity and Coverage](./13_cold_start_diversidade.ipynb) | [PDF](./reference_materials/13_cold_start_diversidade.pdf) | [PDF](./cheat_sheets/cheat_sheet_13_cold_start_diversidade.pdf) |
+| [14 - Hybrid Recommender Systems and Re-ranking](./14_sistemas_hibridos.ipynb) | [PDF](./reference_materials/14_sistemas_hibridos.pdf) | [PDF](./cheat_sheets/cheat_sheet_14_sistemas_hibridos.pdf) |
+| [15 - Reproducible Pipelines and Persistence](./15_pipeline_reproduzivel.ipynb) | [PDF](./reference_materials/15_pipeline_reproduzivel.pdf) | [PDF](./cheat_sheets/cheat_sheet_15_pipeline_reproduzivel.pdf) |
+| [16 - Integrated Study: MovieLens and Synthetic Book Feedback](./16_estudo_integrador_movielens_livros.ipynb) | [PDF](./reference_materials/16_estudo_integrador_movielens_livros.pdf) | [PDF](./cheat_sheets/cheat_sheet_16_estudo_integrador_movielens_livros.pdf) |
+
+> [!TIP]
+> **Recommended Learning Path**
+>
+> 1. Verify the local MovieLens files and their usage conditions; follow notebooks 01–16 using the guides and Cheat Sheets.
+> 2. Inspect interaction sparsity and popularity; distinguish unobserved ratings from observed values.
+> 3. Compare content, neighborhood and latent-factor methods; check overlap and regularization assumptions.
+> 4. Define train, validation and test splits before comparing rating prediction and Top-K metrics with a fixed candidate protocol.
+> 5. Experiment with cold start, diversity and hybrid ranking; review the provenance and rights of every exported artifact.
 
 <a id="dataset-provenance"></a>
 
 ### Datasets
 
 This repository tracks **two** MovieLens Latest Small CSV files from **GroupLens Research, University of Minnesota**. The [official dataset README](https://files.grouplens.org/datasets/movielens/ml-latest-small-README.html) describes a dataset generated on **September 26, 2018**, containing 100,836 ratings across 9,742 movies. The published subset below contains only `movies.csv` and `ratings.csv`; the official archive also includes `links.csv` and `tags.csv`, which are **not included here**.
+
+| Dataset | Rows | Purpose |
+| --- | ---: | --- |
+| [`movies.csv`](./datasets/movies.csv) | 9,742 | Titles and genres |
+| [`ratings.csv`](./datasets/ratings.csv) | 100,836 | Explicit user–movie ratings |
+
+<details>
+<summary><strong>Provenance and integrity</strong></summary>
 
 | Published file | Rows | Columns | SHA-256 of published bytes |
 |---|---:|---|---|
@@ -81,31 +85,51 @@ This repository tracks **two** MovieLens Latest Small CSV files from **GroupLens
 
 The hashes were calculated from the area archive and verified to identify the **same Git blobs published in commit `4ff0a4a`**. Record counts and schemas agree with the official documentation; however, **an independent byte-for-byte comparison to the original GroupLens download has not been performed**. The exact download date and acquisition steps are not established. These are **local/published-file integrity checks**, not official upstream checksums.
 
-`ratings.csv` contains explicit user–movie ratings; `movies.csv` contains movie titles and genres.
+</details>
 
 Launch JupyterLab **from `09_recommender_systems/`**, because notebooks use relative paths such as `Path("datasets")`. The experiments illustrate recommendation techniques; they do not establish production-quality performance.
 
-### Generated Outputs
+<details>
+<summary><strong>Generated Outputs</strong></summary>
 
-Notebook runs can generate CSV exports and, in notebook 15, JSON manifests. The `outputs/` directory contains **32 tracked files**: 30 from chapters 01–15 and two reviewed synthetic CSVs from chapter 16. They are artifacts of prior runs, not a guarantee that reruns will produce byte-identical outputs.
+The 32 versioned outputs below include descriptive summaries, evaluation artifacts and provenance records. The two fictional-book CSVs are separate from MovieLens. New files require individual review before staging; reruns can overwrite local files. Descriptive rankings are not held-out metrics.
 
-**Examples of published outputs:**
+| Notebook | File | Format |
+| :---: | --- | :---: |
+| [01](./01_introducao_taxonomia.ipynb) | [`01_resumo_movielens.csv`](./outputs/01_resumo_movielens.csv) | CSV |
+| [02](./02_dados_interacoes.ipynb) | [`02_atividade_usuarios.csv`](./outputs/02_atividade_usuarios.csv) | CSV |
+| [02](./02_dados_interacoes.ipynb) | [`02_popularidade_itens.csv`](./outputs/02_popularidade_itens.csv) | CSV |
+| [03](./03_popularidade_baselines.ipynb) | [`03_ranking_popularidade_suavizada.csv`](./outputs/03_ranking_popularidade_suavizada.csv) | CSV |
+| [04](./04_filtragem_conteudo.ipynb) | [`04_similares_por_conteudo.csv`](./outputs/04_similares_por_conteudo.csv) | CSV |
+| [05](./05_similaridade_usuarios.ipynb) | [`05_vizinhos_pearson_observado.csv`](./outputs/05_vizinhos_pearson_observado.csv) | CSV |
+| [05](./05_similaridade_usuarios.ipynb) | [`05_vizinhos_usuarios.csv`](./outputs/05_vizinhos_usuarios.csv) | CSV |
+| [06](./06_similaridade_itens.ipynb) | [`06_similares_item_item.csv`](./outputs/06_similares_item_item.csv) | CSV |
+| [06](./06_similaridade_itens.ipynb) | [`06_similares_itens_pearson_observado.csv`](./outputs/06_similares_itens_pearson_observado.csv) | CSV |
+| [07](./07_knn_matrizes_esparsas.ipynb) | [`07_knn_usuarios.csv`](./outputs/07_knn_usuarios.csv) | CSV |
+| [07](./07_knn_matrizes_esparsas.ipynb) | [`07_knn_usuarios_sem_autorreferencia.csv`](./outputs/07_knn_usuarios_sem_autorreferencia.csv) | CSV |
+| [08](./08_esparsidade_regularizacao.ipynb) | [`08_efeito_regularizacao.csv`](./outputs/08_efeito_regularizacao.csv) | CSV |
+| [09](./09_svd_fatoracao.ipynb) | [`09_rmse_fatores_observados_holdout.csv`](./outputs/09_rmse_fatores_observados_holdout.csv) | CSV |
+| [09](./09_svd_fatoracao.ipynb) | [`09_top_latente_demonstrativo.csv`](./outputs/09_top_latente_demonstrativo.csv) | CSV |
+| [10](./10_feedback_explicito_modelo.ipynb) | [`10_metricas_temporais_segmentadas.csv`](./outputs/10_metricas_temporais_segmentadas.csv) | CSV |
+| [10](./10_feedback_explicito_modelo.ipynb) | [`10_predicoes_teste.csv`](./outputs/10_predicoes_teste.csv) | CSV |
+| [11](./11_avaliacao_mae_rmse.ipynb) | [`11_bootstrap_mae_temporal.csv`](./outputs/11_bootstrap_mae_temporal.csv) | CSV |
+| [11](./11_avaliacao_mae_rmse.ipynb) | [`11_mae_temporal_por_segmento.csv`](./outputs/11_mae_temporal_por_segmento.csv) | CSV |
+| [11](./11_avaliacao_mae_rmse.ipynb) | [`11_metricas_baselines.csv`](./outputs/11_metricas_baselines.csv) | CSV |
+| [12](./12_metricas_ranking.ipynb) | [`12_metricas_topk_exemplo.csv`](./outputs/12_metricas_topk_exemplo.csv) | CSV |
+| [12](./12_metricas_ranking.ipynb) | [`12_metricas_topk_por_usuario_temporal.csv`](./outputs/12_metricas_topk_por_usuario_temporal.csv) | CSV |
+| [12](./12_metricas_ranking.ipynb) | [`12_resumo_topk_temporal.csv`](./outputs/12_resumo_topk_temporal.csv) | CSV |
+| [13](./13_cold_start_diversidade.ipynb) | [`13_comparacao_diversidade_mmr.csv`](./outputs/13_comparacao_diversidade_mmr.csv) | CSV |
+| [13](./13_cold_start_diversidade.ipynb) | [`13_diversidade_topk.csv`](./outputs/13_diversidade_topk.csv) | CSV |
+| [13](./13_cold_start_diversidade.ipynb) | [`13_ranking_mmr_diversidade.csv`](./outputs/13_ranking_mmr_diversidade.csv) | CSV |
+| [14](./14_sistemas_hibridos.ipynb) | [`14_ranking_hibrido_demonstrativo.csv`](./outputs/14_ranking_hibrido_demonstrativo.csv) | CSV |
+| [14](./14_sistemas_hibridos.ipynb) | [`14_ranking_hibrido_personalizado_treino.csv`](./outputs/14_ranking_hibrido_personalizado_treino.csv) | CSV |
+| [15](./15_pipeline_reproduzivel.ipynb) | [`15_manifesto_ranking.json`](./outputs/15_manifesto_ranking.json) | JSON |
+| [15](./15_pipeline_reproduzivel.ipynb) | [`15_verificacao_reprodutibilidade.json`](./outputs/15_verificacao_reprodutibilidade.json) | JSON |
+| [16](./16_estudo_integrador_movielens_livros.ipynb) | [`16_ranking_livros_sintetico.csv`](./outputs/16_ranking_livros_sintetico.csv) | CSV |
+| [16](./16_estudo_integrador_movielens_livros.ipynb) | [`16_resumo_feedback_livros_sintetico.csv`](./outputs/16_resumo_feedback_livros_sintetico.csv) | CSV |
+| [15](./15_pipeline_reproduzivel.ipynb) | [`ranking_popularidade.csv`](./outputs/ranking_popularidade.csv) | CSV |
 
-| Notebook | Published file | Description |
-|---|---|---|
-| 01 | [`01_resumo_movielens.csv`](./outputs/01_resumo_movielens.csv) | Observed matrix dimensions and coverage |
-| 03 | [`03_ranking_popularidade_suavizada.csv`](./outputs/03_ranking_popularidade_suavizada.csv) | Descriptive smoothed-mean ranking |
-| 10 | [`10_predicoes_teste.csv`](./outputs/10_predicoes_teste.csv) | Observed and predicted ratings |
-| 11 | [`11_metricas_baselines.csv`](./outputs/11_metricas_baselines.csv) | Rating baseline comparison |
-| 12 | [`12_metricas_topk_exemplo.csv`](./outputs/12_metricas_topk_exemplo.csv) | Example ranking metrics |
-| 14 | [`14_ranking_hibrido_demonstrativo.csv`](./outputs/14_ranking_hibrido_demonstrativo.csv) | Illustrative blended ranking |
-| 15 | [`ranking_popularidade.csv`](./outputs/ranking_popularidade.csv) and [`15_manifesto_ranking.json`](./outputs/15_manifesto_ranking.json) | Ranking and provenance manifest |
-
-**Chapter 16 — separate the two sources:** [`16_ranking_livros_sintetico.csv`](./outputs/16_ranking_livros_sintetico.csv) and [`16_resumo_feedback_livros_sintetico.csv`](./outputs/16_resumo_feedback_livros_sintetico.csv) were generated by the current notebook using only fictional book records. Two isolated executions produced identical SHA-256 hashes; `origem=sintetico_autoral` identifies the data source. Historical local files `16_ranking_livros_amostra.csv` and `16_resumo_feedback_livros.csv` derive from Book-Crossing samples and remain explicitly excluded by the root `.gitignore` pending rights clearance.
-
-New outputs are no longer ignored as a directory class, but a deliberate file-level review is required before staging. Reruns can overwrite local files. Descriptive rankings are not held-out evaluation metrics. MovieLens data and derivatives remain subject to the upstream usage terms.
-
-#### Synthetic Book-Feedback Teaching Example
+**Synthetic Book-Feedback Teaching Example**
 
 Notebook [`16_estudo_integrador_movielens_livros.ipynb`](./16_estudo_integrador_movielens_livros.ipynb) creates a small fictional book catalog and interactions in Python. It does **not** use or publish a third-party book dataset. In this **example only**, `0` means an interaction without an explicit rating; scores 1–10 are explicitly defined ratings. These records are not evidence about real readers.
 
@@ -120,13 +144,13 @@ Two synthetic CSVs produced by notebook 16 have passed individual content and pr
 
 These files are produced from in-notebook fictional book records, **not** from MovieLens or Book-Crossing book ratings. They are educational demonstrations, not evidence of recommendation effectiveness.
 
-### Directory Structure
+</details>
+
+<details>
+<summary><strong>Directory Structure</strong></summary>
 
 ```text
 09_recommender_systems/
-├── README.md
-├── README.pt-BR.md
-├── requirements.txt
 ├── 01_introducao_taxonomia.ipynb
 ├── 02_dados_interacoes.ipynb
 ├── 03_popularidade_baselines.ipynb
@@ -143,15 +167,84 @@ These files are produced from in-notebook fictional book records, **not** from M
 ├── 14_sistemas_hibridos.ipynb
 ├── 15_pipeline_reproduzivel.ipynb
 ├── 16_estudo_integrador_movielens_livros.ipynb
-├── reference_materials/
+├── README.md
+├── README.pt-BR.md
+├── requirements.txt
 ├── cheat_sheets/
+│   ├── cheat_sheet_01_introducao_taxonomia.pdf
+│   ├── cheat_sheet_02_dados_interacoes.pdf
+│   ├── cheat_sheet_03_popularidade_baselines.pdf
+│   ├── cheat_sheet_04_filtragem_conteudo.pdf
+│   ├── cheat_sheet_05_similaridade_usuarios.pdf
+│   ├── cheat_sheet_06_similaridade_itens.pdf
+│   ├── cheat_sheet_07_knn_matrizes_esparsas.pdf
+│   ├── cheat_sheet_08_esparsidade_regularizacao.pdf
+│   ├── cheat_sheet_09_svd_fatoracao.pdf
+│   ├── cheat_sheet_10_feedback_explicito_modelo.pdf
+│   ├── cheat_sheet_11_avaliacao_mae_rmse.pdf
+│   ├── cheat_sheet_12_metricas_ranking.pdf
+│   ├── cheat_sheet_13_cold_start_diversidade.pdf
+│   ├── cheat_sheet_14_sistemas_hibridos.pdf
+│   ├── cheat_sheet_15_pipeline_reproduzivel.pdf
+│   └── cheat_sheet_16_estudo_integrador_movielens_livros.pdf
 ├── datasets/
-└── outputs/
+│   ├── movies.csv
+│   └── ratings.csv
+├── outputs/
+│   ├── 01_resumo_movielens.csv
+│   ├── 02_atividade_usuarios.csv
+│   ├── 02_popularidade_itens.csv
+│   ├── 03_ranking_popularidade_suavizada.csv
+│   ├── 04_similares_por_conteudo.csv
+│   ├── 05_vizinhos_pearson_observado.csv
+│   ├── 05_vizinhos_usuarios.csv
+│   ├── 06_similares_item_item.csv
+│   ├── 06_similares_itens_pearson_observado.csv
+│   ├── 07_knn_usuarios.csv
+│   ├── 07_knn_usuarios_sem_autorreferencia.csv
+│   ├── 08_efeito_regularizacao.csv
+│   ├── 09_rmse_fatores_observados_holdout.csv
+│   ├── 09_top_latente_demonstrativo.csv
+│   ├── 10_metricas_temporais_segmentadas.csv
+│   ├── 10_predicoes_teste.csv
+│   ├── 11_bootstrap_mae_temporal.csv
+│   ├── 11_mae_temporal_por_segmento.csv
+│   ├── 11_metricas_baselines.csv
+│   ├── 12_metricas_topk_exemplo.csv
+│   ├── 12_metricas_topk_por_usuario_temporal.csv
+│   ├── 12_resumo_topk_temporal.csv
+│   ├── 13_comparacao_diversidade_mmr.csv
+│   ├── 13_diversidade_topk.csv
+│   ├── 13_ranking_mmr_diversidade.csv
+│   ├── 14_ranking_hibrido_demonstrativo.csv
+│   ├── 14_ranking_hibrido_personalizado_treino.csv
+│   ├── 15_manifesto_ranking.json
+│   ├── 15_verificacao_reprodutibilidade.json
+│   ├── 16_ranking_livros_sintetico.csv
+│   ├── 16_resumo_feedback_livros_sintetico.csv
+│   └── ranking_popularidade.csv
+└── reference_materials/
+    ├── 01_introducao_taxonomia.pdf
+    ├── 02_dados_interacoes.pdf
+    ├── 03_popularidade_baselines.pdf
+    ├── 04_filtragem_conteudo.pdf
+    ├── 05_similaridade_usuarios.pdf
+    ├── 06_similaridade_itens.pdf
+    ├── 07_knn_matrizes_esparsas.pdf
+    ├── 08_esparsidade_regularizacao.pdf
+    ├── 09_svd_fatoracao.pdf
+    ├── 10_feedback_explicito_modelo.pdf
+    ├── 11_avaliacao_mae_rmse.pdf
+    ├── 12_metricas_ranking.pdf
+    ├── 13_cold_start_diversidade.pdf
+    ├── 14_sistemas_hibridos.pdf
+    ├── 15_pipeline_reproduzivel.pdf
+    └── 16_estudo_integrador_movielens_livros.pdf
 ```
 
-The two MovieLens CSVs are tracked with the publication. The current notebook 16 generates fictional book data in memory; its two CSV exports have now passed an isolated reexecution and content review and are included in the repository. Historical Book-Crossing-derived local outputs remain excluded until their reuse rights are verified. MovieLens outputs from chapters 01–15 are published. Both READMEs belong at the area root; PDFs remain in their learning-material subdirectories.
+</details>
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+<p align="right"><sub><a href="#readme-top">↑ Back to top</a></sub></p>
 
 ---
 
@@ -159,18 +252,28 @@ The two MovieLens CSVs are tracked with the publication. The current notebook 16
 
 ## Technologies
 
-| Technology | Purpose |
-|---|---|
-| Python / NumPy | Numerical operations and matrices |
-| Pandas | Exploration, grouping, pivot tables and CSV export |
-| SciPy | CSR sparse matrices |
-| scikit-learn | Similarity, neighbors, illustrative SVD, splitting and metrics |
-| Matplotlib | Supporting visualizations |
-| JupyterLab / ipykernel | Interactive execution and kernel management |
+> Programming and notebook development
 
-**Surprise is optional and is not required for the 16 notebooks.** The `TruncatedSVD` experiment on zero-filled data is illustrative; it is not equivalent to factorization models optimized only over observed ratings.
+[![Python](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/python.svg)](https://docs.python.org/3/) &nbsp;&nbsp; [![JupyterLab](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/jupyterlab.svg)](https://jupyterlab.readthedocs.io/en/stable/) &nbsp;&nbsp; [![ipykernel](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/ipykernel.svg)](https://ipykernel.readthedocs.io/)
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+> Data analysis and sparse matrices
+
+[![NumPy](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/numpy.svg)](https://numpy.org/doc/stable/) &nbsp;&nbsp; [![pandas](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/pandas.svg)](https://pandas.pydata.org/docs/) &nbsp;&nbsp; [![SciPy](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/scipy.svg)](https://docs.scipy.org/doc/scipy/) &nbsp;&nbsp; [![Matplotlib](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/matplotlib.svg)](https://matplotlib.org/stable/)
+
+> Recommender modeling and evaluation
+
+[![scikit-learn](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/scikit_learn.svg)](https://scikit-learn.org/stable/)
+
+> Optional recommendation library
+
+[![Surprise](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/surprise.svg)](https://surprise.readthedocs.io/)
+
+> [!WARNING]
+> Python dependencies are listed in `requirements.txt`. Additional tools and installation requirements are described in Setup and Installation.
+
+Surprise is optional; the core notebooks do not require it. The zero-filled `TruncatedSVD` demonstration is not factorization optimized on observed ratings.
+
+<p align="right"><sub><a href="#readme-top">↑ Back to top</a></sub></p>
 
 ---
 
@@ -194,12 +297,15 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-**Windows PowerShell alternative**
+<details>
+<summary><strong>Windows PowerShell alternative</strong></summary>
 
 ```powershell
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
+
+</details>
 
 **3. Install dependencies and verify the environment**
 
@@ -220,7 +326,7 @@ Select this kernel in each notebook. Start JupyterLab in the area directory to k
 
 **Before running the notebooks:** `datasets/ratings.csv` and `datasets/movies.csv` are included when cloning this repository. Notebook 16 generates its own synthetic book catalog and interactions; no additional book files are needed. Do not commit private academic materials or datasets of uncertain redistribution status.
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+<p align="right"><sub><a href="#readme-top">↑ Back to top</a></sub></p>
 
 ---
 
@@ -228,14 +334,18 @@ Select this kernel in each notebook. Start JupyterLab in the area directory to k
 
 ## Testing and Validation
 
-| Verification | Recorded status |
-|---|---|
-| Notebooks available | 16 |
-| Published learning materials | 16 Technical Guides / 16 Cheat Sheets |
-| Core dependencies | `requirements.txt` |
-| Automated execution | 16/16 notebooks during the V4 review, in a test environment with data copies (prior review record) |
-| Author's local validation | Full JupyterLab verification of the published version is not established by this README update |
-| Scientific review | Guides approved with reservations about depth; alignment with Cheat Sheets remains subject to review |
+### Validation results
+
+| Verification | Status | Result |
+| --- | :---: | --- |
+| Automated notebook execution | ![Passed](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/status/passed_en.svg) | 16/16 · V4 test environment with data copies |
+| Author local validation | ![Pending](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/status/pending_en.svg) | Full published-version JupyterLab run not established |
+| Scientific review | ![Partial](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/status/partial_en.svg) | Guides approved with depth reservations; Cheat Sheet alignment pending |
+
+*Recorded validation: V4 review; date not established here. Historical evidence, not a new execution audit.*
+
+<details>
+<summary><strong>Technical validation details</strong></summary>
 
 Successful execution shows that cells completed in the tested environment; it **does not** establish scientific validity, leakage freedom, or production predictive performance. For local checks, select the appropriate kernel, run **Restart Kernel → Run All Cells**, and inspect results, warnings and exported files.
 
@@ -251,42 +361,19 @@ sha256sum datasets/movies.csv datasets/ratings.csv
 
 Compare these values with the table. A matching SHA-256 validates your copy against the **repository snapshot**, not against an independently obtained GroupLens archive. Use explicit train/validation/test separation when interpreting recommendation metrics, and consult the [installation](#installation) and validation sections on this page.
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+</details>
 
----
+<details>
+<summary><strong>Reproduce the validation</strong></summary>
 
-<a id="usage"></a>
+Check the active environment with `python -m pip check`. Select the appropriate kernel in JupyterLab and restart it before running all cells. Follow the installation instructions for optional labs; inspect actual outputs and document differences.
 
-## How to Use
+</details>
 
-### Recommended Learning Path
+> [!CAUTION]
+> Execution without errors does not prove scientific validity, leakage freedom or production performance. MovieLens and its derivatives remain subject to GroupLens terms; see License.
 
-Follow notebooks 01–16 in order. For each topic, read the Technical Guide, execute the notebook with a fresh kernel, and consult the Cheat Sheet for quick review. Record hypotheses before changing parameters, and distinguish descriptive results from held-out evaluation metrics.
-
-### Exercises and Practice
-
-Reproduce the examples, state their assumptions, inspect statistical support and exposure biases, and compare alternatives under the same candidate protocol and train/validation/test split. Respect the terms for published MovieLens data and keep unapproved third-party samples and private artifacts out of version control.
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
-
-<a id="references"></a>
-
-## References
-
-| Resource | Documentation / Reference |
-|---|---|
-| Python | [Open documentation](https://docs.python.org/3/) |
-| NumPy | [Open documentation](https://numpy.org/doc/stable/) |
-| Pandas | [Open documentation](https://pandas.pydata.org/docs/) |
-| SciPy | [Open documentation](https://docs.scipy.org/doc/scipy/) |
-| scikit-learn | [Open documentation](https://scikit-learn.org/stable/user_guide.html) |
-| Matplotlib | [Open documentation](https://matplotlib.org/stable/) |
-| JupyterLab | [Open documentation](https://jupyterlab.readthedocs.io/en/stable/) |
-| GroupLens MovieLens | [Open documentation](https://grouplens.org/datasets/movielens/) |
-
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+<p align="right"><sub><a href="#readme-top">↑ Back to top</a></sub></p>
 
 ---
 
@@ -294,15 +381,29 @@ Reproduce the examples, state their assumptions, inspect statistical support and
 
 ## License
 
-| Material | License | Scope |
-|---|---|---|
-| Original source code | [MIT](../LICENSE-CODE.txt) | Author-owned notebook code and scripts |
-| Original educational content | [CC BY-NC 4.0](../LICENSE-CONTENT.md) | Author-owned explanations, Technical Guides and Cheat Sheets |
-| Third-party libraries and datasets | Their own licenses | MovieLens and external components |
+These licenses apply only where the author holds the necessary rights; notebook code and educational prose may have different licenses.
+
+<table>
+<tr>
+<td align="center" valign="middle"><a href="../LICENSE-CODE.txt"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/licenses/mit.svg" alt="MIT"></a></td>
+<td valign="middle"><strong>Source code</strong> | Scripts and original notebook code.</td>
+</tr>
+<tr>
+<td align="center" valign="middle"><a href="../LICENSE-CONTENT.md"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/licenses/cc_by_nc_4_0.svg" alt="CC BY-NC 4.0"></a></td>
+<td valign="middle"><strong>Educational content</strong> | Original explanations, READMEs, guides and Cheat Sheets.</td>
+</tr>
+<tr>
+<td align="center" valign="middle">Third-party terms</td>
+<td valign="middle"><strong>External content</strong> | Datasets, images, trademarks and other assets; their respective terms apply.</td>
+</tr>
+</table>
 
 These terms apply **only to material owned by the author**. The included MovieLens files follow the original GroupLens usage terms described below. The synthetic book records in notebook 16 are original teaching examples; private historical source materials are not redistributed.
 
-### Upstream Usage Terms
+
+
+<details>
+<summary><strong>Upstream Usage Terms</strong></summary>
 
 The dataset is **not** covered by this repository's MIT code license or CC BY-NC content license. Consult the [official GroupLens usage license](https://files.grouplens.org/datasets/movielens/ml-latest-small-README.html) before reuse, including for derived tables. Its conditions include:
 
@@ -315,7 +416,9 @@ Treat published derived rankings, predictions and summaries in `outputs/` as pot
 
 **Recommended citation:** Harper, F. M., & Konstan, J. A. (2015). *The MovieLens Datasets: History and Context*. ACM Transactions on Interactive Intelligent Systems. https://doi.org/10.1145/2827872
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
+</details>
+
+<p align="right"><sub><a href="#readme-top">↑ Back to top</a></sub></p>
 
 ---
 
@@ -326,23 +429,15 @@ Treat published derived rankings, predictions and summaries in `outputs/` as pot
 
 <div align="center">
 
-<a href="https://eduardo-pereira.webflow.io/" title="Personal website — Eduardo Junior Pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo — Eduardo Junior Pereira" height="90"></a>
+<a href="https://eduardo-pereira.webflow.io/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo" height="90"></a>
 
-**Eduardo Junior Pereira**
-
-*Economics · Data Science · Analytics*
+Let's connect and exchange ideas and opportunities.
 
 <a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
-<a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>
-
-[Let's connect on LinkedIn to exchange ideas and opportunities.](https://www.linkedin.com/in/eduardo-jr-pereira/)
-
-[**GitHub Portfolio**](https://github.com/eduardojr-pereira/data-science-portfolio)
+<a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>&nbsp;&nbsp;
+<a href="https://discord.com/users/533043855122235393"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/discord_icon.svg" alt="Discord" height="27"></a>
 
 </div>
 
-<p align="right"><a href="#readme-top">↑ BACK TO TOP</a></p>
-
----
 <!-- EP-FOOTER:END -->

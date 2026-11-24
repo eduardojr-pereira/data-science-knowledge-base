@@ -2,24 +2,18 @@
 
 <div align="center">
 
-[🇺🇸 English](./README.md) &nbsp;|&nbsp; [🇧🇷 Português](./README.pt-BR.md)
+| [English](./README.md) · [Português](./README.pt-BR.md) |
 
 # Aprendizado de Máquina
-
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white&style=for-the-badge) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white&style=for-the-badge)
 
 *Modelos clássicos, avaliação consistente e interpretabilidade.*
 
 </div>
 
----
-
-## Nesta Página
-
 <div align="center">
 
-[Visão Geral](#overview) • [Conteúdo](#contents) • [Tecnologias Utilizadas](#technologies) • [Instalação e Configuração](#installation) • [Testes e Validação](#validation)  
-[Instruções de Uso](#usage) • [Referências](#references) • [Licença](#license) • [Contato](#contact)
+[Visão Geral](#overview) · [Conteúdo](#contents) · [Tecnologias](#technologies) · [Instalação](#installation)  
+[Validação](#validation) · [Licença](#license) · [Contato](#contact)
 
 </div>
 
@@ -29,13 +23,7 @@
 
 ## Visão Geral
 
-Modelos clássicos, avaliação consistente e interpretabilidade.
-
-### Objetivos de Aprendizagem
-
-Desenvolver pré-processamento sem vazamento, avaliar modelos, comparar algoritmos e interpretar resultados preditivos.
-
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+Desenvolva um fluxo disciplinado de aprendizado de máquina, do desenho experimental e dos pipelines de preparação à classificação supervisionada, regressão, redução de dimensionalidade e agrupamento. Compare modelos de referência, escolha métricas adequadas à tarefa, ajuste modelos com os dados de treino e examine interpretabilidade e reprodutibilidade sem vazar informações do conjunto de teste reservado.
 
 ---
 
@@ -45,47 +33,57 @@ Desenvolver pré-processamento sem vazamento, avaliar modelos, comparar algoritm
 
 ### Notebooks e Materiais de Estudo
 
-| Ordem | Notebook | Guia Técnico | Cheat Sheet |
-|:---:|---|---|---|
-| 01 | [Fundamentos Ml](./01_fundamentos_ml.ipynb) | [Abrir PDF](./reference_materials/01_fundamentos_ml.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_fundamentos_ml.pdf) |
-| 02 | [Matematica Aplicada](./02_matematica_aplicada.ipynb) | [Abrir PDF](./reference_materials/02_matematica_aplicada.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_matematica_aplicada.pdf) |
-| 03 | [Metodologia Experimentos](./03_metodologia_experimentos.ipynb) | [Abrir PDF](./reference_materials/03_metodologia_experimentos.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_metodologia_experimentos.pdf) |
-| 04 | [Preparacao Pipelines](./04_preparacao_pipelines.ipynb) | [Abrir PDF](./reference_materials/04_preparacao_pipelines.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_preparacao_pipelines.pdf) |
-| 05 | [KNN](./05_knn.ipynb) | [Abrir PDF](./reference_materials/05_knn.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_knn.pdf) |
-| 06 | [Naive Bayes](./06_naive_bayes.ipynb) | [Abrir PDF](./reference_materials/06_naive_bayes.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_naive_bayes.pdf) |
-| 07 | [Regressao Logistica](./07_regressao_logistica.ipynb) | [Abrir PDF](./reference_materials/07_regressao_logistica.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_regressao_logistica.pdf) |
-| 08 | [SVM](./08_svm.ipynb) | [Abrir PDF](./reference_materials/08_svm.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_svm.pdf) |
-| 09 | [Arvores Ensembles](./09_arvores_ensembles.ipynb) | [Abrir PDF](./reference_materials/09_arvores_ensembles.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_arvores_ensembles.pdf) |
-| 10 | [Avaliacao Classificadores](./10_avaliacao_classificadores.ipynb) | [Abrir PDF](./reference_materials/10_avaliacao_classificadores.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_avaliacao_classificadores.pdf) |
-| 11 | [Validacao Otimizacao](./11_validacao_otimizacao.ipynb) | [Abrir PDF](./reference_materials/11_validacao_otimizacao.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_validacao_otimizacao.pdf) |
-| 12 | [Regressao Linear](./12_regressao_linear.ipynb) | [Abrir PDF](./reference_materials/12_regressao_linear.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_regressao_linear.pdf) |
-| 13 | [Regressao Nao Linear](./13_regressao_nao_linear.ipynb) | [Abrir PDF](./reference_materials/13_regressao_nao_linear.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_regressao_nao_linear.pdf) |
-| 14 | [PCA Reducao](./14_pca_reducao.ipynb) | [Abrir PDF](./reference_materials/14_pca_reducao.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_pca_reducao.pdf) |
-| 15 | [Kmeans Hierarquico](./15_kmeans_hierarquico.ipynb) | [Abrir PDF](./reference_materials/15_kmeans_hierarquico.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_kmeans_hierarquico.pdf) |
-| 16 | [DBSCAN Avaliacao](./16_dbscan_avaliacao.ipynb) | [Abrir PDF](./reference_materials/16_dbscan_avaliacao.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_dbscan_avaliacao.pdf) |
-| 17 | [Interpretabilidade Reprodutibilidade](./17_interpretabilidade_reprodutibilidade.ipynb) | [Abrir PDF](./reference_materials/17_interpretabilidade_reprodutibilidade.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_interpretabilidade_reprodutibilidade.pdf) |
+| Notebook | Guia Técnico | Cheat Sheet |
+| --- | :---: | :---: |
+| [01 - Fundamentos Ml](./01_fundamentos_ml.ipynb) | [PDF](./reference_materials/01_fundamentos_ml.pdf) | [PDF](./cheat_sheets/cheat_sheet_fundamentos_ml.pdf) |
+| [02 - Matematica Aplicada](./02_matematica_aplicada.ipynb) | [PDF](./reference_materials/02_matematica_aplicada.pdf) | [PDF](./cheat_sheets/cheat_sheet_matematica_aplicada.pdf) |
+| [03 - Metodologia Experimentos](./03_metodologia_experimentos.ipynb) | [PDF](./reference_materials/03_metodologia_experimentos.pdf) | [PDF](./cheat_sheets/cheat_sheet_metodologia_experimentos.pdf) |
+| [04 - Preparacao Pipelines](./04_preparacao_pipelines.ipynb) | [PDF](./reference_materials/04_preparacao_pipelines.pdf) | [PDF](./cheat_sheets/cheat_sheet_preparacao_pipelines.pdf) |
+| [05 - KNN](./05_knn.ipynb) | [PDF](./reference_materials/05_knn.pdf) | [PDF](./cheat_sheets/cheat_sheet_knn.pdf) |
+| [06 - Naive Bayes](./06_naive_bayes.ipynb) | [PDF](./reference_materials/06_naive_bayes.pdf) | [PDF](./cheat_sheets/cheat_sheet_naive_bayes.pdf) |
+| [07 - Regressao Logistica](./07_regressao_logistica.ipynb) | [PDF](./reference_materials/07_regressao_logistica.pdf) | [PDF](./cheat_sheets/cheat_sheet_regressao_logistica.pdf) |
+| [08 - SVM](./08_svm.ipynb) | [PDF](./reference_materials/08_svm.pdf) | [PDF](./cheat_sheets/cheat_sheet_svm.pdf) |
+| [09 - Arvores Ensembles](./09_arvores_ensembles.ipynb) | [PDF](./reference_materials/09_arvores_ensembles.pdf) | [PDF](./cheat_sheets/cheat_sheet_arvores_ensembles.pdf) |
+| [10 - Avaliacao Classificadores](./10_avaliacao_classificadores.ipynb) | [PDF](./reference_materials/10_avaliacao_classificadores.pdf) | [PDF](./cheat_sheets/cheat_sheet_avaliacao_classificadores.pdf) |
+| [11 - Validacao Otimizacao](./11_validacao_otimizacao.ipynb) | [PDF](./reference_materials/11_validacao_otimizacao.pdf) | [PDF](./cheat_sheets/cheat_sheet_validacao_otimizacao.pdf) |
+| [12 - Regressao Linear](./12_regressao_linear.ipynb) | [PDF](./reference_materials/12_regressao_linear.pdf) | [PDF](./cheat_sheets/cheat_sheet_regressao_linear.pdf) |
+| [13 - Regressao Nao Linear](./13_regressao_nao_linear.ipynb) | [PDF](./reference_materials/13_regressao_nao_linear.pdf) | [PDF](./cheat_sheets/cheat_sheet_regressao_nao_linear.pdf) |
+| [14 - PCA Reducao](./14_pca_reducao.ipynb) | [PDF](./reference_materials/14_pca_reducao.pdf) | [PDF](./cheat_sheets/cheat_sheet_pca_reducao.pdf) |
+| [15 - Kmeans Hierarquico](./15_kmeans_hierarquico.ipynb) | [PDF](./reference_materials/15_kmeans_hierarquico.pdf) | [PDF](./cheat_sheets/cheat_sheet_kmeans_hierarquico.pdf) |
+| [16 - DBSCAN Avaliacao](./16_dbscan_avaliacao.ipynb) | [PDF](./reference_materials/16_dbscan_avaliacao.pdf) | [PDF](./cheat_sheets/cheat_sheet_dbscan_avaliacao.pdf) |
+| [17 - Interpretabilidade Reprodutibilidade](./17_interpretabilidade_reprodutibilidade.ipynb) | [PDF](./reference_materials/17_interpretabilidade_reprodutibilidade.pdf) | [PDF](./cheat_sheets/cheat_sheet_interpretabilidade_reprodutibilidade.pdf) |
+
+> [!TIP]
+> **Percurso de Aprendizagem Recomendado**
+>
+> 1. Configure o ambiente e revise desenho experimental, matemática e preparação antes de treinar modelos.
+> 2. Recrie divisões de treino e teste e use pipelines para evitar vazamento na preparação e na validação cruzada.
+> 3. Compare classificadores e regressores com referências de desempenho; escolha métricas e ajuste hiperparâmetros apenas com dados de treino.
+> 4. Explore PCA, K-means, agrupamento hierárquico e DBSCAN; examine a escala e os pressupostos dos agrupamentos.
+> 5. Avalie o modelo final nos dados reservados, documente sementes e limitações e use guias e Cheat Sheets para revisar os métodos.
 
 ### Conjuntos de Dados
 
-Nenhum dataset obrigatório é distribuído nesta área; os exemplos são gerados pelos notebooks.
+Não há conjunto de dados de entrada obrigatório distribuído nesta área. Os notebooks geram ou carregam exemplos didáticos das bibliotecas instaladas; a execução isolada registrada não exigiu novos downloads de dados.
 
-### Resultados Gerados
+<details>
+<summary><strong>Resultados Gerados</strong></summary>
 
-Arquivos exportados pelos notebooks estão em `outputs/`. Alguns exemplos:
+Os três resultados finais foram regenerados e conferidos na execução isolada registrada. Consulte a [pasta de resultados](./outputs/).
 
-- [05_comparacao_knn.csv](./outputs/05_comparacao_knn.csv)
-- [15_kmeans_sintetico.png](./outputs/15_kmeans_sintetico.png)
-- [16_dbscan_sintetico.png](./outputs/16_dbscan_sintetico.png)
+| Notebook | Arquivo | Formato |
+| :---: | --- | :---: |
+| [05](./05_knn.ipynb) | [`05_comparacao_knn.csv`](./outputs/05_comparacao_knn.csv) | CSV |
+| [15](./15_kmeans_hierarquico.ipynb) | [`15_kmeans_sintetico.png`](./outputs/15_kmeans_sintetico.png) | PNG |
+| [16](./16_dbscan_avaliacao.ipynb) | [`16_dbscan_sintetico.png`](./outputs/16_dbscan_sintetico.png) | PNG |
 
-Os três resultados foram regenerados e conferidos em ambiente isolado. Não foi necessário adicionar datasets nem baixar dados externos.
+</details>
 
-### Estrutura de Diretórios
+<details>
+<summary><strong>Estrutura de Diretórios</strong></summary>
 
 ```text
 05_machine_learning/
-├── README.md
-├── README.pt-BR.md
-├── requirements.txt
 ├── 01_fundamentos_ml.ipynb
 ├── 02_matematica_aplicada.ipynb
 ├── 03_metodologia_experimentos.ipynb
@@ -103,33 +101,83 @@ Os três resultados foram regenerados e conferidos em ambiente isolado. Não foi
 ├── 15_kmeans_hierarquico.ipynb
 ├── 16_dbscan_avaliacao.ipynb
 ├── 17_interpretabilidade_reprodutibilidade.ipynb
-├── reference_materials/
+├── README.md
+├── README.pt-BR.md
+├── requirements.txt
 ├── cheat_sheets/
+│   ├── cheat_sheet_arvores_ensembles.pdf
+│   ├── cheat_sheet_avaliacao_classificadores.pdf
+│   ├── cheat_sheet_dbscan_avaliacao.pdf
+│   ├── cheat_sheet_fundamentos_ml.pdf
+│   ├── cheat_sheet_interpretabilidade_reprodutibilidade.pdf
+│   ├── cheat_sheet_kmeans_hierarquico.pdf
+│   ├── cheat_sheet_knn.pdf
+│   ├── cheat_sheet_matematica_aplicada.pdf
+│   ├── cheat_sheet_metodologia_experimentos.pdf
+│   ├── cheat_sheet_naive_bayes.pdf
+│   ├── cheat_sheet_pca_reducao.pdf
+│   ├── cheat_sheet_preparacao_pipelines.pdf
+│   ├── cheat_sheet_regressao_linear.pdf
+│   ├── cheat_sheet_regressao_logistica.pdf
+│   ├── cheat_sheet_regressao_nao_linear.pdf
+│   ├── cheat_sheet_svm.pdf
+│   └── cheat_sheet_validacao_otimizacao.pdf
 ├── datasets/
-└── outputs/
+│   └── .gitkeep
+├── outputs/
+│   ├── 05_comparacao_knn.csv
+│   ├── 15_kmeans_sintetico.png
+│   └── 16_dbscan_sintetico.png
+└── reference_materials/
+    ├── 01_fundamentos_ml.pdf
+    ├── 02_matematica_aplicada.pdf
+    ├── 03_metodologia_experimentos.pdf
+    ├── 04_preparacao_pipelines.pdf
+    ├── 05_knn.pdf
+    ├── 06_naive_bayes.pdf
+    ├── 07_regressao_logistica.pdf
+    ├── 08_svm.pdf
+    ├── 09_arvores_ensembles.pdf
+    ├── 10_avaliacao_classificadores.pdf
+    ├── 11_validacao_otimizacao.pdf
+    ├── 12_regressao_linear.pdf
+    ├── 13_regressao_nao_linear.pdf
+    ├── 14_pca_reducao.pdf
+    ├── 15_kmeans_hierarquico.pdf
+    ├── 16_dbscan_avaliacao.pdf
+    └── 17_interpretabilidade_reprodutibilidade.pdf
 ```
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+</details>
+
+<p align="right"><sub><a href="#readme-top">↑ Voltar ao topo</a></sub></p>
 
 ---
 
 <a id="technologies"></a>
 
-## Tecnologias Utilizadas
+## Tecnologias
 
-| Tecnologia | Finalidade |
-|---|---|
-| Python | Programação e automação |
-| NumPy | Arrays e operações numéricas |
-| SciPy | Computação científica e estatística |
-| Pandas | Manipulação de dados tabulares |
-| Matplotlib | Visualização estática de dados |
-| scikit-learn | Algoritmos e avaliação de aprendizado de máquina |
-| JupyterLab | Ambiente e execução dos notebooks |
+> Programação e desenvolvimento de notebooks
 
-As dependências Python são declaradas em `requirements.txt`; ferramentas opcionais são descritas quando aplicáveis.
+[![Python](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/python.svg)](https://docs.python.org/3/) &nbsp;&nbsp; [![JupyterLab](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/jupyterlab.svg)](https://jupyterlab.readthedocs.io/en/stable/) &nbsp;&nbsp; [![ipykernel](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/ipykernel.svg)](https://ipykernel.readthedocs.io/)
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+> Computação numérica e preparação de dados
+
+[![NumPy](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/numpy.svg)](https://numpy.org/doc/stable/) &nbsp;&nbsp; [![SciPy](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/scipy.svg)](https://docs.scipy.org/doc/scipy/) &nbsp;&nbsp; [![pandas](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/pandas.svg)](https://pandas.pydata.org/docs/)
+
+> Aprendizado de máquina e avaliação
+
+[![scikit-learn](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/scikit_learn.svg)](https://scikit-learn.org/stable/)
+
+> Visualização de dados
+
+[![Matplotlib](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/matplotlib.svg)](https://matplotlib.org/stable/)
+
+> [!WARNING]
+> As dependências Python estão listadas em `requirements.txt`. Ferramentas adicionais e requisitos de instalação são descritos em Instalação e Configuração.
+
+<p align="right"><sub><a href="#readme-top">↑ Voltar ao topo</a></sub></p>
 
 ---
 
@@ -153,12 +201,15 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-**Alternativa no Windows PowerShell**
+<details>
+<summary><strong>Alternativa no Windows PowerShell</strong></summary>
 
 ```powershell
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
+
+</details>
 
 **3. Instale as dependências e verifique o ambiente**
 
@@ -177,7 +228,7 @@ jupyter lab
 
 Selecione esse kernel em cada notebook. Inicie o JupyterLab na pasta da área para manter os caminhos relativos dos dados e saídas.
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+<p align="right"><sub><a href="#readme-top">↑ Voltar ao topo</a></sub></p>
 
 ---
 
@@ -185,52 +236,40 @@ Selecione esse kernel em cada notebook. Inicie o JupyterLab na pasta da área pa
 
 ## Testes e Validação
 
-| Verificação | Situação documentada |
-|---|---|
-| Notebooks documentados | 17 |
-| Materiais complementares | 17 guias / 17 Cheat Sheets |
-| Dependências | `requirements.txt` |
-| Execução | 17/17 notebooks executados em kernel Python isolado em 16/11/2026; 3/3 outputs validados |
+### Resultados da validação
 
-Em 16/11/2026, os 17 notebooks foram executados integralmente por um kernel Jupyter automatizado sobre cópias isoladas. O CSV de comparação KNN permaneceu numericamente equivalente ao arquivo versionado; as duas imagens PNG foram idênticas byte a byte. As correções científicas usam validação cruzada no treino para selecionar modelos e hiperparâmetros, preservando o conjunto de teste para avaliação posterior à seleção. Experimentos didáticos e sementes fixas não garantem generalização para populações reais.
+| Verificação | Status | Resultado |
+| --- | :---: | --- |
+| Execução dos notebooks | ![Aprovado](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/status/passed_pt_br.svg) | 17/17 executados por kernel Jupyter isolado |
+| CSV de comparação KNN | ![Aprovado](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/status/passed_pt_br.svg) | Numericamente equivalente à referência |
+| Figuras de agrupamento | ![Aprovado](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/status/passed_pt_br.svg) | 2/2 PNGs idênticos byte a byte à referência |
 
-Para validar seu ambiente, execute `python -m pip check` e depois **Restart Kernel → Run All Cells** no JupyterLab, conferindo tabelas, gráficos e arquivos.
+*Última validação registrada dos notebooks: 16/11/2026. São resultados históricos, não uma nova auditoria de execução.*
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+<details>
+<summary><strong>Detalhes técnicos da validação</strong></summary>
 
----
+As correções científicas documentadas usam validação cruzada nos dados de treino para selecionar modelos e hiperparâmetros. O conjunto de teste reservado é usado apenas após a seleção. O CSV KNN foi numericamente equivalente e os dois PNGs foram idênticos byte a byte na execução isolada.
 
-<a id="usage"></a>
+</details>
 
-## Instruções de Uso
+<details>
+<summary><strong>Reproduzir a validação</strong></summary>
 
-### Percurso de Estudo Recomendado
+Confira o ambiente Python ativo:
 
-Siga os notebooks na ordem da tabela de Conteúdo, selecionando o kernel correto. Leia os Guias Técnicos para aprofundamento e consulte as Cheat Sheets como referência rápida.
+```bash
+python -m pip check
+```
 
-### Exercícios e Prática
+No JupyterLab, selecione o kernel correto e utilize **Restart Kernel → Run All Cells**. Inspecione tabelas, gráficos e arquivos exportados.
 
-Reproduza divisões treino/teste, compare modelos a uma linha de base, avalie métricas adequadas e identifique possíveis vazamentos.
+</details>
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+> [!CAUTION]
+> Experimentos didáticos e sementes fixas não comprovam generalização para populações reais. Evite vazamento de dados e interprete resultados no contexto do conjunto de dados, protocolo experimental e métrica.
 
----
-
-<a id="references"></a>
-
-## Referências
-
-| Recurso | Documentação / Referência |
-|---|---|
-| Python | [Abrir documentação](https://docs.python.org/3/) |
-| NumPy | [Abrir documentação](https://numpy.org/doc/stable/) |
-| SciPy | [Abrir documentação](https://docs.scipy.org/doc/scipy/) |
-| Pandas | [Abrir documentação](https://pandas.pydata.org/docs/) |
-| Matplotlib | [Abrir documentação](https://matplotlib.org/stable/) |
-| scikit-learn | [Abrir documentação](https://scikit-learn.org/stable/user_guide.html) |
-| JupyterLab | [Abrir documentação](https://jupyterlab.readthedocs.io/en/stable/) |
-
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+<p align="right"><sub><a href="#readme-top">↑ Voltar ao topo</a></sub></p>
 
 ---
 
@@ -238,15 +277,24 @@ Reproduza divisões treino/teste, compare modelos a uma linha de base, avalie m�
 
 ## Licença
 
-| Material | Licença | Abrangência |
-|---|---|---|
-| Código-fonte original | [MIT](../LICENSE-CODE.txt) | Scripts e código original dos notebooks |
-| Conteúdo educacional original | [CC BY-NC 4.0](../LICENSE-CONTENT.md) | Textos, READMEs, guias e Cheat Sheets originais |
-| Conteúdo de terceiros | Licenças próprias | Datasets, imagens, marcas e outros recursos externos |
+Estas licenças se aplicam apenas aos materiais sobre os quais o autor possui os direitos necessários; o código e o texto educacional de um mesmo notebook podem ter licenças diferentes.
 
-As licenças acima se aplicam apenas ao material sobre o qual o autor possui os direitos necessários; código e texto no mesmo notebook podem ter licenças diferentes.
+<table>
+<tr>
+<td align="center" valign="middle"><a href="../LICENSE-CODE.txt"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/licenses/mit.svg" alt="MIT"></a></td>
+<td valign="middle"><strong>Código-fonte</strong> | Scripts e código original dos notebooks.</td>
+</tr>
+<tr>
+<td align="center" valign="middle"><a href="../LICENSE-CONTENT.md"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/licenses/cc_by_nc_4_0.svg" alt="CC BY-NC 4.0"></a></td>
+<td valign="middle"><strong>Conteúdo educacional</strong> | Textos originais, READMEs, guias e Cheat Sheets.</td>
+</tr>
+<tr>
+<td align="center" valign="middle">Termos de terceiros</td>
+<td valign="middle"><strong>Conteúdo externo</strong> | Conjuntos de dados, imagens, marcas e outros recursos; aplicam-se os respectivos termos.</td>
+</tr>
+</table>
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+<p align="right"><sub><a href="#readme-top">↑ Voltar ao topo</a></sub></p>
 
 ---
 
@@ -257,23 +305,15 @@ As licenças acima se aplicam apenas ao material sobre o qual o autor possui os 
 
 <div align="center">
 
-<a href="https://eduardo-pereira.webflow.io/" title="Site pessoal — Eduardo Junior Pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="Logo EP — Eduardo Junior Pereira" height="90"></a>
+<a href="https://eduardo-pereira.webflow.io/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo" height="90"></a>
 
-**Eduardo Junior Pereira**
+Vamos nos conectar e trocar ideias e oportunidades.
 
-*Economics · Data Science · Analytics*
-
-<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="E-mail" height="27"></a>&nbsp;&nbsp;
+<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
-<a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>
-
-[Vamos nos conectar no LinkedIn para trocar ideias e oportunidades.](https://www.linkedin.com/in/eduardo-jr-pereira/)
-
-[**Portfólio GitHub**](https://github.com/eduardojr-pereira/data-science-portfolio)
+<a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>&nbsp;&nbsp;
+<a href="https://discord.com/users/533043855122235393"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/discord_icon.svg" alt="Discord" height="27"></a>
 
 </div>
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
-
----
 <!-- EP-FOOTER:END -->

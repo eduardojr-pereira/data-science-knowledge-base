@@ -2,23 +2,18 @@
 
 <div align="center">
 
-[🇺🇸 English](./README.md) &nbsp;|&nbsp; [🇧🇷 Português](./README.pt-BR.md)
+| [English](./README.md) · [Português](./README.pt-BR.md) |
 
 # Análise e Classificação de Imagens
-
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge) ![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white&style=for-the-badge) ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white&style=for-the-badge)
 
 *Um percurso progressivo por processamento de imagens, descritores clássicos, classificação, detecção e avaliação responsável.*
 
 </div>
 
----
-
-## Nesta Página
-
 <div align="center">
 
-[Visão Geral](#overview) • [Conteúdo](#contents) • [Tecnologias Utilizadas](#technologies) • [Instalação e Configuração](#installation) • [Testes e Validação](#validation) • [Instruções de Uso](#usage) • [Referências](#references) • [Licença](#license) • [Contato](#contact)
+[Visão Geral](#overview) · [Conteúdo](#contents) · [Tecnologias](#technologies) · [Instalação](#installation)  
+[Validação](#validation) · [Licença](#license) · [Contato](#contact)
 
 </div>
 
@@ -28,17 +23,7 @@
 
 ## Visão Geral
 
-Esta área reúne **16 notebooks em português**, acompanhados de **16 Guias Técnicos** e **16 Cheat Sheets** autorais. O percurso vai dos fundamentos de imagens digitais até HOG, SVM, cascatas Haar, avaliação de detecção, métodos clássicos de reconhecimento facial, CNNs e ONNX. Os exemplos usam dados didáticos de bibliotecas ou dados sintéticos; nenhum dataset externo precisa ser distribuído. As apresentações acadêmicas originais permanecem no acervo privado e não são publicadas aqui.
-
-### Objetivos de Aprendizagem
-
-- Distinguir classificação, detecção, segmentação, verificação e identificação.
-- Aplicar transformações, filtros, histogramas, gradientes, morfologia e descritores.
-- Planejar comparações sem vazamento e reconhecer as limitações dos dados didáticos.
-- Entender a diferença entre filtros fixos, redes treinadas e modelos efetivamente pré-treinados.
-- Reconhecer restrições de privacidade, direitos de uso e avaliação em sistemas com imagens.
-
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+Explore representação de imagens, amostragem, filtragem, segmentação e extração de atributos antes de estudar classificação visual, detecção, análise facial e inferência neural. Os notebooks combinam imagens sintéticas e imagens das bibliotecas com experimentos locais reproduzíveis; laboratórios isolados opcionais de dlib, TensorFlow e ONNX demonstram capacidades específicas sem comprovar acurácia biométrica ou robustez em dados reais.
 
 ---
 
@@ -48,40 +33,50 @@ Esta área reúne **16 notebooks em português**, acompanhados de **16 Guias Té
 
 ### Notebooks e Materiais de Estudo
 
-| Ordem | Notebook | Guia Técnico | Cheat Sheet |
-|:---:|---|---|---|
-| 01 | [Fundamentos de visão computacional](./01_fundamentos_visao_computacional.ipynb) | [Abrir PDF](./reference_materials/01_fundamentos_visao_computacional.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_fundamentos_visao_computacional.pdf) |
-| 02 | [Pixels, amostragem e quantização](./02_pixels_amostragem_quantizacao.ipynb) | [Abrir PDF](./reference_materials/02_pixels_amostragem_quantizacao.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_pixels_amostragem_quantizacao.pdf) |
-| 03 | [Espaços de cores, histogramas e contraste](./03_cores_histogramas_realce.ipynb) | [Abrir PDF](./reference_materials/03_cores_histogramas_realce.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_cores_histogramas_realce.pdf) |
-| 04 | [Filtragem, suavização e ruído](./04_filtragem_ruido.ipynb) | [Abrir PDF](./reference_materials/04_filtragem_ruido.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_filtragem_ruido.pdf) |
-| 05 | [Bordas, gradientes e morfologia matemática](./05_bordas_gradientes_morfologia.ipynb) | [Abrir PDF](./reference_materials/05_bordas_gradientes_morfologia.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_bordas_gradientes_morfologia.pdf) |
-| 06 | [Limiarização, segmentação e componentes conectados](./06_limiarizacao_segmentacao_contornos.ipynb) | [Abrir PDF](./reference_materials/06_limiarizacao_segmentacao_contornos.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_limiarizacao_segmentacao_contornos.pdf) |
-| 07 | [Transformações geométricas e interpolação](./07_geometria_interpolacao.ipynb) | [Abrir PDF](./reference_materials/07_geometria_interpolacao.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_geometria_interpolacao.pdf) |
-| 08 | [Histograma de gradientes orientados — HOG](./08_descritores_hog.ipynb) | [Abrir PDF](./reference_materials/08_descritores_hog.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_descritores_hog.pdf) |
-| 09 | [SVM, reconhecimento de caracteres e classificação visual](./09_svm_ocr_classificacao.ipynb) | [Abrir PDF](./reference_materials/09_svm_ocr_classificacao.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_svm_ocr_classificacao.pdf) |
-| 10 | [Detecção de objetos com Haar Cascade](./10_detector_haar_cascade.ipynb) | [Abrir PDF](./reference_materials/10_detector_haar_cascade.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_detector_haar_cascade.pdf) |
-| 11 | [Detecção facial: fluxos e qualidade da detecção](./11_deteccao_facial_pipeline.ipynb) | [Abrir PDF](./reference_materials/11_deteccao_facial_pipeline.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_deteccao_facial_pipeline.pdf) |
-| 12 | [Eigenfaces, Fisherfaces e LBPH](./12_eigenfaces_fisherfaces_lbph.ipynb) | [Abrir PDF](./reference_materials/12_eigenfaces_fisherfaces_lbph.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_eigenfaces_fisherfaces_lbph.pdf) |
-| 13 | [HOG, dlib e detectores treináveis](./13_hog_dlib_detectores.ipynb) | [Abrir PDF](./reference_materials/13_hog_dlib_detectores.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_hog_dlib_detectores.pdf) |
-| 14 | [CNNs e transferência de aprendizado em classificação visual](./14_cnn_transfer_learning_visual.ipynb) | [Abrir PDF](./reference_materials/14_cnn_transfer_learning_visual.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_cnn_transfer_learning_visual.pdf) |
-| 15 | [ONNX, inferência visual e modelos modernos](./15_onnx_inferencia_moderna.ipynb) | [Abrir PDF](./reference_materials/15_onnx_inferencia_moderna.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_onnx_inferencia_moderna.pdf) |
-| 16 | [Avaliação, robustez, privacidade e reprodutibilidade](./16_avaliacao_etica_reproducibilidade.ipynb) | [Abrir PDF](./reference_materials/16_avaliacao_etica_reproducibilidade.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_avaliacao_etica_reproducibilidade.pdf) |
+| Notebook | Guia Técnico | Cheat Sheet |
+| --- | :---: | :---: |
+| [01 - Fundamentos de visão computacional](./01_fundamentos_visao_computacional.ipynb) | [PDF](./reference_materials/01_fundamentos_visao_computacional.pdf) | [PDF](./cheat_sheets/cheat_sheet_fundamentos_visao_computacional.pdf) |
+| [02 - Pixels, amostragem e quantização](./02_pixels_amostragem_quantizacao.ipynb) | [PDF](./reference_materials/02_pixels_amostragem_quantizacao.pdf) | [PDF](./cheat_sheets/cheat_sheet_pixels_amostragem_quantizacao.pdf) |
+| [03 - Espaços de cores, histogramas e contraste](./03_cores_histogramas_realce.ipynb) | [PDF](./reference_materials/03_cores_histogramas_realce.pdf) | [PDF](./cheat_sheets/cheat_sheet_cores_histogramas_realce.pdf) |
+| [04 - Filtragem, suavização e ruído](./04_filtragem_ruido.ipynb) | [PDF](./reference_materials/04_filtragem_ruido.pdf) | [PDF](./cheat_sheets/cheat_sheet_filtragem_ruido.pdf) |
+| [05 - Bordas, gradientes e morfologia matemática](./05_bordas_gradientes_morfologia.ipynb) | [PDF](./reference_materials/05_bordas_gradientes_morfologia.pdf) | [PDF](./cheat_sheets/cheat_sheet_bordas_gradientes_morfologia.pdf) |
+| [06 - Limiarização, segmentação e componentes conectados](./06_limiarizacao_segmentacao_contornos.ipynb) | [PDF](./reference_materials/06_limiarizacao_segmentacao_contornos.pdf) | [PDF](./cheat_sheets/cheat_sheet_limiarizacao_segmentacao_contornos.pdf) |
+| [07 - Transformações geométricas e interpolação](./07_geometria_interpolacao.ipynb) | [PDF](./reference_materials/07_geometria_interpolacao.pdf) | [PDF](./cheat_sheets/cheat_sheet_geometria_interpolacao.pdf) |
+| [08 - Histograma de gradientes orientados — HOG](./08_descritores_hog.ipynb) | [PDF](./reference_materials/08_descritores_hog.pdf) | [PDF](./cheat_sheets/cheat_sheet_descritores_hog.pdf) |
+| [09 - SVM, reconhecimento de caracteres e classificação visual](./09_svm_ocr_classificacao.ipynb) | [PDF](./reference_materials/09_svm_ocr_classificacao.pdf) | [PDF](./cheat_sheets/cheat_sheet_svm_ocr_classificacao.pdf) |
+| [10 - Detecção de objetos com Haar Cascade](./10_detector_haar_cascade.ipynb) | [PDF](./reference_materials/10_detector_haar_cascade.pdf) | [PDF](./cheat_sheets/cheat_sheet_detector_haar_cascade.pdf) |
+| [11 - Detecção facial: fluxos e qualidade da detecção](./11_deteccao_facial_pipeline.ipynb) | [PDF](./reference_materials/11_deteccao_facial_pipeline.pdf) | [PDF](./cheat_sheets/cheat_sheet_deteccao_facial_pipeline.pdf) |
+| [12 - Eigenfaces, Fisherfaces e LBPH](./12_eigenfaces_fisherfaces_lbph.ipynb) | [PDF](./reference_materials/12_eigenfaces_fisherfaces_lbph.pdf) | [PDF](./cheat_sheets/cheat_sheet_eigenfaces_fisherfaces_lbph.pdf) |
+| [13 - HOG, dlib e detectores treináveis](./13_hog_dlib_detectores.ipynb) | [PDF](./reference_materials/13_hog_dlib_detectores.pdf) | [PDF](./cheat_sheets/cheat_sheet_hog_dlib_detectores.pdf) |
+| [14 - CNNs e transferência de aprendizado em classificação visual](./14_cnn_transfer_learning_visual.ipynb) | [PDF](./reference_materials/14_cnn_transfer_learning_visual.pdf) | [PDF](./cheat_sheets/cheat_sheet_cnn_transfer_learning_visual.pdf) |
+| [15 - ONNX, inferência visual e modelos modernos](./15_onnx_inferencia_moderna.ipynb) | [PDF](./reference_materials/15_onnx_inferencia_moderna.pdf) | [PDF](./cheat_sheets/cheat_sheet_onnx_inferencia_moderna.pdf) |
+| [16 - Avaliação, robustez, privacidade e reprodutibilidade](./16_avaliacao_etica_reproducibilidade.ipynb) | [PDF](./reference_materials/16_avaliacao_etica_reproducibilidade.pdf) | [PDF](./cheat_sheets/cheat_sheet_avaliacao_etica_reproducibilidade.pdf) |
+
+> [!TIP]
+> **Percurso de Aprendizagem Recomendado**
+>
+> 1. Configure o ambiente principal; revise a representação de pixels e compare reamostragem espacial com quantização de intensidades.
+> 2. Experimente filtros, limiares, morfologia, interpolação e HOG; examine o efeito nos atributos das imagens.
+> 3. Compare classificadores e detectores sob o mesmo protocolo; confira IoU e caixas inválidas.
+> 4. Use guias e Cheat Sheets para revisar pressupostos e execute laboratórios opcionais apenas nos ambientes isolados indicados.
+> 5. Documente a diferença entre experimentos sintéticos e avaliação com imagens reais, incluindo limites de equidade e privacidade.
 
 ### Conjuntos de Dados
 
 **Não há dataset externo obrigatório e não há arquivos próprios a disponibilizar em `datasets/`.** Os notebooks 01, 08, 09 e 12 utilizam `load_digits()` do scikit-learn; os notebooks 02–07, 10, 13 e 14 utilizam imagens de demonstração do `scikit-image` (por exemplo, `camera()`, `astronaut()` e `coins()`); os demais utilizam arrays sintéticos ou exemplos NumPy. Os dados de exemplo são carregados pelas bibliotecas instaladas e não devem ser confundidos com uma base para validar modelos em ambientes reais.
 
-### Resultados Gerados
+<details>
+<summary><strong>Resultados Gerados</strong></summary>
 
-**Não há arquivos de output obrigatórios no repositório para esta área.** Os exemplos exibem resultados em memória e nas células do notebook (`print`, gráficos Matplotlib). Os blocos atuais não contêm comandos de exportação como `to_csv`, `savefig`, `np.save` ou `joblib.dump`. Caso um projeto futuro gere resultados reproduzíveis e apropriados para publicação, documente e versione esses arquivos separadamente, mediante revisão.
+Não há outputs obrigatórios publicados. Os resultados são exibidos nas células dos notebooks; não é necessário criar uma pasta de resultados vazia.
 
-### Estrutura de Diretórios
+</details>
+
+<details>
+<summary><strong>Estrutura de Diretórios</strong></summary>
 
 ```text
 08_image_analysis_classification/
-├── README.md
-├── README.pt-BR.md
-├── requirements.txt
 ├── 01_fundamentos_visao_computacional.ipynb
 ├── 02_pixels_amostragem_quantizacao.ipynb
 ├── 03_cores_histogramas_realce.ipynb
@@ -98,33 +93,77 @@ Esta área reúne **16 notebooks em português**, acompanhados de **16 Guias Té
 ├── 14_cnn_transfer_learning_visual.ipynb
 ├── 15_onnx_inferencia_moderna.ipynb
 ├── 16_avaliacao_etica_reproducibilidade.ipynb
-├── reference_materials/
-└── cheat_sheets/
+├── README.md
+├── README.pt-BR.md
+├── requirements.txt
+├── cheat_sheets/
+│   ├── cheat_sheet_avaliacao_etica_reproducibilidade.pdf
+│   ├── cheat_sheet_bordas_gradientes_morfologia.pdf
+│   ├── cheat_sheet_cnn_transfer_learning_visual.pdf
+│   ├── cheat_sheet_cores_histogramas_realce.pdf
+│   ├── cheat_sheet_descritores_hog.pdf
+│   ├── cheat_sheet_deteccao_facial_pipeline.pdf
+│   ├── cheat_sheet_detector_haar_cascade.pdf
+│   ├── cheat_sheet_eigenfaces_fisherfaces_lbph.pdf
+│   ├── cheat_sheet_filtragem_ruido.pdf
+│   ├── cheat_sheet_fundamentos_visao_computacional.pdf
+│   ├── cheat_sheet_geometria_interpolacao.pdf
+│   ├── cheat_sheet_hog_dlib_detectores.pdf
+│   ├── cheat_sheet_limiarizacao_segmentacao_contornos.pdf
+│   ├── cheat_sheet_onnx_inferencia_moderna.pdf
+│   ├── cheat_sheet_pixels_amostragem_quantizacao.pdf
+│   └── cheat_sheet_svm_ocr_classificacao.pdf
+└── reference_materials/
+    ├── 01_fundamentos_visao_computacional.pdf
+    ├── 02_pixels_amostragem_quantizacao.pdf
+    ├── 03_cores_histogramas_realce.pdf
+    ├── 04_filtragem_ruido.pdf
+    ├── 05_bordas_gradientes_morfologia.pdf
+    ├── 06_limiarizacao_segmentacao_contornos.pdf
+    ├── 07_geometria_interpolacao.pdf
+    ├── 08_descritores_hog.pdf
+    ├── 09_svm_ocr_classificacao.pdf
+    ├── 10_detector_haar_cascade.pdf
+    ├── 11_deteccao_facial_pipeline.pdf
+    ├── 12_eigenfaces_fisherfaces_lbph.pdf
+    ├── 13_hog_dlib_detectores.pdf
+    ├── 14_cnn_transfer_learning_visual.pdf
+    ├── 15_onnx_inferencia_moderna.pdf
+    └── 16_avaliacao_etica_reproducibilidade.pdf
 ```
 
-Não incluímos `datasets/` nem `outputs/` vazias: os exemplos não dependem de arquivos externos e não salvam artefatos obrigatórios.
+</details>
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+<p align="right"><sub><a href="#readme-top">↑ Voltar ao topo</a></sub></p>
 
 ---
 
 <a id="technologies"></a>
 
-## Tecnologias Utilizadas
+## Tecnologias
 
-| Tecnologia | Finalidade |
-|---|---|
-| Python / NumPy | Matrizes, simulações e cálculos |
-| SciPy | Filtros e operações de convolução |
-| scikit-image | Imagens didáticas, transformações, descritores e segmentação |
-| scikit-learn | Digits, PCA/LDA, SVM, treino/teste e métricas |
-| Matplotlib | Gráficos e imagens |
-| OpenCV (opencv-contrib-python) | Carregamento e execução da cascata Haar no notebook 10 |
-| JupyterLab / ipykernel | Execução e gerenciamento de kernels |
+> Programação e desenvolvimento de notebooks
 
-**Opcionais:** TensorFlow/Keras aparece como exemplo em bloco Markdown no notebook 14; ONNX Runtime é ilustrado em comentários no notebook 15; dlib é discutido conceitualmente no notebook 13. Nenhum dos três é necessário para executar os blocos principais dos 16 notebooks.
+[![Python](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/python.svg)](https://docs.python.org/3/) &nbsp;&nbsp; [![JupyterLab](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/jupyterlab.svg)](https://jupyterlab.readthedocs.io/en/stable/) &nbsp;&nbsp; [![ipykernel](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/ipykernel.svg)](https://ipykernel.readthedocs.io/)
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+> Computação científica e visualização
+
+[![NumPy](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/numpy.svg)](https://numpy.org/doc/stable/) &nbsp;&nbsp; [![SciPy](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/scipy.svg)](https://docs.scipy.org/doc/scipy/) &nbsp;&nbsp; [![Matplotlib](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/matplotlib.svg)](https://matplotlib.org/stable/)
+
+> Processamento e classificação de imagens
+
+[![scikit-image](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/scikit_image.svg)](https://scikit-image.org/docs/stable/) &nbsp;&nbsp; [![scikit-learn](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/scikit_learn.svg)](https://scikit-learn.org/stable/) &nbsp;&nbsp; [![OpenCV](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/opencv.svg)](https://docs.opencv.org/4.x/)
+
+> Laboratórios isolados opcionais
+
+[![dlib](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/dlib.svg)](https://dlib.net/) &nbsp;&nbsp; [![TensorFlow](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/tensorflow.svg)](https://www.tensorflow.org/guide) &nbsp;&nbsp; [![Keras](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/keras.svg)](https://keras.io/guides/) &nbsp;&nbsp; [![ONNX Runtime](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/onnx_runtime.svg)](https://onnxruntime.ai/docs/)
+
+> [!WARNING]
+> As dependências Python estão listadas em `requirements.txt`. Ferramentas adicionais e requisitos de instalação são descritos em Instalação e Configuração.
+
+Os laboratórios opcionais estão integrados aos notebooks 13–15 e usam ambientes separados; não são requisitos do núcleo. Consulte os [procedimentos registrados](#optional-validation).
+
+<p align="right"><sub><a href="#readme-top">↑ Voltar ao topo</a></sub></p>
 
 ---
 
@@ -148,12 +187,15 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-**Alternativa no Windows PowerShell**
+<details>
+<summary><strong>Alternativa no Windows PowerShell</strong></summary>
 
 ```powershell
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
+
+</details>
 
 **3. Instale as dependências e verifique o ambiente**
 
@@ -174,7 +216,7 @@ Selecione esse kernel em cada notebook. Inicie o JupyterLab na pasta da área pa
 
 No notebook 10, o arquivo `haarcascade_frontalface_default.xml` é obtido via `cv2.data.haarcascades`, da instalação local do OpenCV. Não se exige webcam, download externo nem dados biométricos privados. A compatibilidade de versões deve ser verificada no ambiente efetivamente utilizado.
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+<p align="right"><sub><a href="#readme-top">↑ Voltar ao topo</a></sub></p>
 
 ---
 
@@ -182,15 +224,19 @@ No notebook 10, o arquivo `haarcascade_frontalface_default.xml` é obtido via `c
 
 ## Testes e Validação
 
-| Verificação | Situação documentada |
-|---|---|
-| Notebooks documentados | 16 |
-| Materiais de apoio | 16 Guias Técnicos / 16 Cheat Sheets |
-| Dependências | `requirements.txt` (somente bibliotecas principais) |
-| Notebooks principais | Todos os 16 executados localmente no JupyterLab, conforme confirmação do autor em 14/11/2026 |
-| Testes opcionais | TensorFlow/Keras, ONNX Runtime e dlib: testes isolados de funcionamento aprovados em 14/11/2026 |
-| Revalidação do núcleo | 16/16 notebooks executados em cópias isoladas; notebooks 02 e 11 reexecutados localmente após as correções |
-| Laboratórios integrados | Executados e salvos nos notebooks 13, 14 e 15 (dlib, TensorFlow/Keras e ONNX Runtime) |
+### Resultados da validação
+
+| Verificação | Status | Resultado |
+| --- | :---: | --- |
+| Execução dos notebooks principais | ![Aprovado](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/status/passed_pt_br.svg) | 16/16 · execução local do autor, 14/11 |
+| Revalidação do núcleo | ![Aprovado](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/status/passed_pt_br.svg) | 16/16 · cópias isoladas; 02 e 11 reexecutados localmente |
+| Testes isolados opcionais | ![Aprovado](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/status/passed_pt_br.svg) | 3/3 · dlib, TensorFlow, ONNX |
+| Laboratórios opcionais integrados | ![Aprovado](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/status/passed_pt_br.svg) | 13, 14, 15 · resultados locais salvos |
+
+*Validação registrada: novembro de 2026 (revisão inicial em 14/11). Evidência histórica, não uma nova auditoria de execução.*
+
+<details>
+<summary><strong>Detalhes técnicos da validação</strong></summary>
 
 ### Finalização científica — novembro de 2026
 
@@ -208,7 +254,12 @@ As novas células de laboratório são opcionais e dependem dos ambientes locais
 
 **Nota histórica:** os testes isolados descritos abaixo documentam a validação anterior, em 14/11, antes da integração dos três laboratórios aos notebooks. Permanecem registrados para reprodutibilidade.
 
+</details>
+
 <a id="optional-validation"></a>
+
+<details>
+<summary><strong>Reproduzir a verificação dos laboratórios opcionais</strong></summary>
 
 ### Procedimentos reproduzíveis dos laboratórios opcionais — 14 de novembro de 2026
 
@@ -303,43 +354,19 @@ print("dlib:", dlib.__version__, "Detector:", type(detector).__name__, "Faces:",
 
 **Interpretação:** o autor confirmou que os 16 notebooks principais foram executados localmente no JupyterLab em 14/11/2026, além destes três testes independentes de funcionamento. Isso não equivale a reprodução externa nem a benchmark. Para reavaliar os notebooks principais, selecione o kernel Python padrão e use **Restart Kernel → Run All Cells**, conferindo resultados, gráficos, dependências e avisos.
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+</details>
 
----
+<details>
+<summary><strong>Reproduzir a validação</strong></summary>
 
-<a id="usage"></a>
+Confira o ambiente ativo com `python -m pip check`. Selecione o kernel apropriado no JupyterLab e reinicie-o antes de executar todas as células. Siga as instruções de instalação dos laboratórios opcionais; examine os resultados reais e documente diferenças.
 
-## Instruções de Uso
+</details>
 
-### Percurso de Estudo Recomendado
+> [!CAUTION]
+> Nenhum laboratório comprova acurácia de identificação biométrica, equidade ou robustez em imagens reais. Mantenha os ambientes opcionais separados e diferencie laboratório ignorado de execução bem-sucedida.
 
-Siga os notebooks 01–16 em ordem numérica. Consulte o Guia Técnico, execute o notebook em kernel limpo e utilize a Cheat Sheet como referência rápida. Experimentos que tratam de reconhecimento de faces incluem ressalvas metodológicas e de privacidade; não use fotografias de terceiros sem autorização.
-
-### Exercícios e Prática
-
-Modifique um parâmetro de cada vez, registre uma hipótese, compare com um baseline pertinente e preserve a separação entre treino, validação e teste quando aplicável.
-
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
-
----
-
-<a id="references"></a>
-
-## Referências
-
-| Recurso | Documentação / Referência |
-|---|---|
-| Python | [Abrir documentação](https://docs.python.org/3/) |
-| NumPy | [Abrir documentação](https://numpy.org/doc/stable/) |
-| SciPy | [Abrir documentação](https://docs.scipy.org/doc/scipy/) |
-| scikit-image | [Abrir documentação](https://scikit-image.org/docs/stable/) |
-| scikit-learn | [Abrir documentação](https://scikit-learn.org/stable/) |
-| Matplotlib | [Abrir documentação](https://matplotlib.org/stable/) |
-| OpenCV | [Abrir documentação](https://docs.opencv.org/4.x/) |
-| Keras (opcional) | [Abrir documentação](https://keras.io/) |
-| ONNX Runtime (opcional) | [Abrir documentação](https://onnxruntime.ai/docs/) |
-
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+<p align="right"><sub><a href="#readme-top">↑ Voltar ao topo</a></sub></p>
 
 ---
 
@@ -347,15 +374,24 @@ Modifique um parâmetro de cada vez, registre uma hipótese, compare com um base
 
 ## Licença
 
-| Material | Licença | Abrangência |
-|---|---|---|
-| Código-fonte original | [MIT](../LICENSE-CODE.txt) | Código original dos notebooks e scripts |
-| Conteúdo educacional original | [CC BY-NC 4.0](../LICENSE-CONTENT.md) | Explicações, PDFs e Cheat Sheets autorais |
-| Recursos de terceiros | Licenças próprias | Bibliotecas, dados de exemplo e marcas |
+Estas licenças se aplicam apenas aos materiais sobre os quais o autor possui os direitos necessários; o código e o texto educacional de um mesmo notebook podem ter licenças diferentes.
 
-Essas condições se aplicam somente aos materiais sobre os quais o autor possui direitos.
+<table>
+<tr>
+<td align="center" valign="middle"><a href="../LICENSE-CODE.txt"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/licenses/mit.svg" alt="MIT"></a></td>
+<td valign="middle"><strong>Código-fonte</strong> | Scripts e código original dos notebooks.</td>
+</tr>
+<tr>
+<td align="center" valign="middle"><a href="../LICENSE-CONTENT.md"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/licenses/cc_by_nc_4_0.svg" alt="CC BY-NC 4.0"></a></td>
+<td valign="middle"><strong>Conteúdo educacional</strong> | Textos originais, READMEs, guias e Cheat Sheets.</td>
+</tr>
+<tr>
+<td align="center" valign="middle">Termos de terceiros</td>
+<td valign="middle"><strong>Conteúdo externo</strong> | Conjuntos de dados, imagens, marcas e outros recursos; aplicam-se os respectivos termos.</td>
+</tr>
+</table>
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+<p align="right"><sub><a href="#readme-top">↑ Voltar ao topo</a></sub></p>
 
 ---
 
@@ -366,23 +402,15 @@ Essas condições se aplicam somente aos materiais sobre os quais o autor possui
 
 <div align="center">
 
-<a href="https://eduardo-pereira.webflow.io/" title="Site pessoal — Eduardo Junior Pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="Logo EP — Eduardo Junior Pereira" height="90"></a>
+<a href="https://eduardo-pereira.webflow.io/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo" height="90"></a>
 
-**Eduardo Junior Pereira**
+Vamos nos conectar e trocar ideias e oportunidades.
 
-*Economics · Data Science · Analytics*
-
-<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="E-mail" height="27"></a>&nbsp;&nbsp;
+<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
-<a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>
-
-[Vamos nos conectar no LinkedIn para trocar ideias e oportunidades.](https://www.linkedin.com/in/eduardo-jr-pereira/)
-
-[**Portfólio GitHub**](https://github.com/eduardojr-pereira/data-science-portfolio)
+<a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>&nbsp;&nbsp;
+<a href="https://discord.com/users/533043855122235393"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/discord_icon.svg" alt="Discord" height="27"></a>
 
 </div>
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
-
----
 <!-- EP-FOOTER:END -->

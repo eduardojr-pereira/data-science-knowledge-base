@@ -2,24 +2,18 @@
 
 <div align="center">
 
-[🇺🇸 English](./README.md) &nbsp;|&nbsp; [🇧🇷 Português](./README.pt-BR.md)
+| [English](./README.md) · [Português](./README.pt-BR.md) |
 
 # Recursos Complementares
-
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge) ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white&style=for-the-badge) ![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white&style=for-the-badge)
 
 *Ambientes de desenvolvimento, notebooks interativos e análise de dados.*
 
 </div>
 
----
-
-## Nesta Página
-
 <div align="center">
 
-[Visão Geral](#overview) • [Conteúdo](#contents) • [Tecnologias Utilizadas](#technologies) • [Instalação e Configuração](#installation) • [Testes e Validação](#validation)  
-[Instruções de Uso](#usage) • [Referências](#references) • [Licença](#license) • [Contato](#contact)
+[Visão Geral](#overview) · [Conteúdo](#contents) · [Tecnologias](#technologies) · [Instalação](#installation)  
+[Validação](#validation) · [Licença](#license) · [Contato](#contact)
 
 </div>
 
@@ -29,13 +23,7 @@
 
 ## Visão Geral
 
-Ambientes de desenvolvimento, notebooks interativos e análise de dados.
-
-### Objetivos de Aprendizagem
-
-Criar ambientes Python/Jupyter confiáveis, documentar análises, desenvolver interfaces interativas e transformar dados com Polars.
-
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+Esta área estabelece os fundamentos de fluxos de trabalho reprodutíveis em ciência de dados: gerenciamento de ambientes Python, documentação científica com Markdown, desenvolvimento de notebooks interativos com JupyterLab e ipywidgets e análise eficiente de dados com Polars.
 
 ---
 
@@ -45,47 +33,75 @@ Criar ambientes Python/Jupyter confiáveis, documentar análises, desenvolver in
 
 ### Notebooks e Materiais de Estudo
 
-| Ordem | Notebook | Guia Técnico | Cheat Sheet |
-|:---:|---|---|---|
-| 01 | [Ambiente Python E JupyterLab](./01_ambiente_python_e_jupyterlab.ipynb) | [Abrir PDF](./reference_materials/ambientes_python_e_jupyterlab.pdf) | [JupyterLab](./cheat_sheets/cheat_sheet_jupyterlab.pdf) · [Pip Ambientes Python](./cheat_sheets/cheat_sheet_pip_ambientes_python.pdf) |
-| 02 | [Markdown E Documentacao Cientifica](./02_markdown_e_documentacao_cientifica.ipynb) | [Abrir PDF](./reference_materials/markdown_e_documentacao.pdf) | [Abrir PDF](./cheat_sheets/cheat_sheet_markdown.pdf) |
-| 03 | [Widgets E Interatividade](./03_widgets_e_interatividade.ipynb) | [Abrir PDF](./reference_materials/widgets_e_interatividade.pdf) | — |
-| 04 | [Polars E Analise De Dados](./04_polars_e_analise_de_dados.ipynb) | [Abrir PDF](./reference_materials/polars_e_analise_de_dados.pdf) | — |
+| Notebook | Guia Técnico | Cheat Sheet |
+| --- | :---: | :---: |
+| [01 - Ambiente Python e JupyterLab](./01_ambiente_python_e_jupyterlab.ipynb) | [PDF](./reference_materials/ambientes_python_e_jupyterlab.pdf) | [JupyterLab](./cheat_sheets/cheat_sheet_jupyterlab.pdf) · [pip](./cheat_sheets/cheat_sheet_pip_ambientes_python.pdf) |
+| [02 - Markdown e Documentação Científica](./02_markdown_e_documentacao_cientifica.ipynb) | [PDF](./reference_materials/markdown_e_documentacao.pdf) | [PDF](./cheat_sheets/cheat_sheet_markdown.pdf) |
+| [03 - Widgets e Interatividade](./03_widgets_e_interatividade.ipynb) | [PDF](./reference_materials/widgets_e_interatividade.pdf) | — |
+| [04 - Polars e Análise de Dados](./04_polars_e_analise_de_dados.ipynb) | [PDF](./reference_materials/polars_e_analise_de_dados.pdf) | — |
+
+> [!TIP]
+> **Percurso de Aprendizagem Recomendado**
+>
+> 1. Configure o ambiente Python e verifique o interpretador e o kernel ativos.
+> 2. Estude os notebooks em sequência, consultando os Guias Técnicos e as Cheat Sheets junto aos exemplos.
+> 3. Documente um notebook com Markdown.
+> 4. Conecte um controle ipywidgets a uma análise de dados.
+> 5. Compare transformações de dados com Polars e pandas.
 
 ### Conjuntos de Dados
 
-Nenhum dataset obrigatório é distribuído nesta área; os exemplos são gerados pelos notebooks.
+Nenhum conjunto de dados externo é necessário. Os notebooks geram seus próprios exemplos.
 
-### Resultados Gerados
+<details>
+<summary><strong>Resultados Gerados</strong></summary>
 
-Arquivos exportados pelos notebooks estão em `outputs/`. Alguns exemplos:
+O notebook 04 utiliza arquivos CSV/Parquet temporários nas demonstrações intermediárias e exporta os seis arquivos definitivos na seção **Exportação de resultados**. Uma nova execução dessa seção substitui os resultados correspondentes.
 
-- [polars_receita_categoria_mes.csv](./outputs/polars_receita_categoria_mes.csv)
-- [polars_receita_mensal.csv](./outputs/polars_receita_mensal.csv)
-- [polars_receita_por_regiao.csv](./outputs/polars_receita_por_regiao.csv)
-- [polars_unidades_por_produto.csv](./outputs/polars_unidades_por_produto.csv)
-- [polars_vendas_exemplo.csv](./outputs/polars_vendas_exemplo.csv)
-- [polars_vendas_exemplo.parquet](./outputs/polars_vendas_exemplo.parquet)
+| Notebook | Arquivo | Formato |
+| :---: | --- | :---: |
+| [04](./04_polars_e_analise_de_dados.ipynb) | [Receita por categoria e mês](./outputs/polars_receita_categoria_mes.csv) | CSV |
+| [04](./04_polars_e_analise_de_dados.ipynb) | [Receita mensal](./outputs/polars_receita_mensal.csv) | CSV |
+| [04](./04_polars_e_analise_de_dados.ipynb) | [Receita por região](./outputs/polars_receita_por_regiao.csv) | CSV |
+| [04](./04_polars_e_analise_de_dados.ipynb) | [Unidades por produto](./outputs/polars_unidades_por_produto.csv) | CSV |
+| [04](./04_polars_e_analise_de_dados.ipynb) | [Dados de vendas de exemplo](./outputs/polars_vendas_exemplo.csv) | CSV |
+| [04](./04_polars_e_analise_de_dados.ipynb) | [Dados de vendas de exemplo](./outputs/polars_vendas_exemplo.parquet) | Parquet |
 
-O notebook 04 (Polars) utiliza arquivos CSV/Parquet temporários nas demonstrações intermediárias. Sua seção única **Exportação de resultados** grava os seis arquivos definitivos em `outputs/` após os cálculos analíticos; uma nova execução substitui os resultados gerados correspondentes. Nenhum dataset externo de entrada é necessário.
+</details>
 
-### Estrutura de Diretórios
+<details>
+<summary><strong>Estrutura de Diretórios</strong></summary>
 
 ```text
 00_supplementary_resources/
-├── README.md
-├── README.pt-BR.md
-├── requirements.txt
 ├── 01_ambiente_python_e_jupyterlab.ipynb
 ├── 02_markdown_e_documentacao_cientifica.ipynb
 ├── 03_widgets_e_interatividade.ipynb
 ├── 04_polars_e_analise_de_dados.ipynb
-├── reference_materials/
+├── README.md
+├── README.pt-BR.md
+├── requirements.txt
 ├── cheat_sheets/
-└── outputs/
+│   ├── cheat_sheet_jupyterlab.pdf
+│   ├── cheat_sheet_markdown.pdf
+│   └── cheat_sheet_pip_ambientes_python.pdf
+├── outputs/
+│   ├── polars_receita_categoria_mes.csv
+│   ├── polars_receita_mensal.csv
+│   ├── polars_receita_por_regiao.csv
+│   ├── polars_unidades_por_produto.csv
+│   ├── polars_vendas_exemplo.csv
+│   └── polars_vendas_exemplo.parquet
+└── reference_materials/
+    ├── ambientes_python_e_jupyterlab.pdf
+    ├── markdown_e_documentacao.pdf
+    ├── polars_e_analise_de_dados.pdf
+    └── widgets_e_interatividade.pdf
 ```
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+</details>
+
+<p align="right"><sub><a href="#readme-top">↑ Voltar ao topo</a></sub></p>
 
 ---
 
@@ -93,21 +109,33 @@ O notebook 04 (Polars) utiliza arquivos CSV/Parquet temporários nas demonstraç
 
 ## Tecnologias Utilizadas
 
-| Tecnologia | Finalidade |
-|---|---|
-| Python | Programação e automação |
-| JupyterLab | Ambiente e execução dos notebooks |
-| Markdown | Documentação técnica estruturada |
-| ipywidgets | Controles interativos em notebooks |
-| Polars | Análise de dados colunar |
-| Pandas | Manipulação de dados tabulares |
-| NumPy | Arrays e operações numéricas |
-| Matplotlib | Visualização estática de dados |
-| ipykernel | Integração de kernels Python |
+> Programação e automação
 
-As dependências Python são declaradas em `requirements.txt`; ferramentas opcionais são descritas quando aplicáveis.
+[![Python](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/python.svg)](https://docs.python.org/3/)
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+> Notebooks interativos e documentação
+
+[![JupyterLab](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/jupyterlab.svg)](https://jupyterlab.readthedocs.io/en/stable/) &nbsp;&nbsp; [![Markdown](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/markdown.svg)](https://github.github.com/gfm/) &nbsp;&nbsp; [![ipywidgets](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/ipywidgets.svg)](https://ipywidgets.readthedocs.io/) &nbsp;&nbsp; [![ipykernel](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/ipykernel.svg)](https://ipykernel.readthedocs.io/) &nbsp;&nbsp; [![IPython](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/ipython.svg)](https://ipython.readthedocs.io/)
+
+> Análise de dados e computação numérica
+
+[![Polars](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/polars.svg)](https://docs.pola.rs/) &nbsp;&nbsp; [![pandas](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/pandas.svg)](https://pandas.pydata.org/docs/) &nbsp;&nbsp; [![NumPy](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/numpy.svg)](https://numpy.org/doc/stable/)
+
+> Visualização de dados
+
+[![Matplotlib](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/technologies/matplotlib.svg)](https://matplotlib.org/stable/)
+
+> [!WARNING]
+> As dependências Python estão listadas em `requirements.txt`. Ferramentas adicionais e requisitos de instalação são descritos em Instalação e Configuração.
+
+<details>
+<summary><strong>Referências Complementares</strong></summary>
+
+- [Markdown Guide](https://www.markdownguide.org/) — referência comunitária sobre a sintaxe Markdown.
+
+</details>
+
+<p align="right"><sub><a href="#readme-top">↑ Voltar ao topo</a></sub></p>
 
 ---
 
@@ -115,7 +143,7 @@ As dependências Python são declaradas em `requirements.txt`; ferramentas opcio
 
 ## Instalação e Configuração
 
-**Comandos copiáveis:** execute as etapas na ordem. Se já utiliza um ambiente funcional como `jupyter-env`, ative-o e pule a criação de `.venv`. Ao usar um clone existente, entre diretamente na pasta da área.
+Execute as etapas na ordem. Se já possui um ambiente Python compatível, ative-o e pule a criação de `.venv`. Se o repositório já estiver clonado, acesse diretamente a pasta da área.
 
 **1. Clone o repositório e acesse a área**
 
@@ -131,12 +159,15 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-**Alternativa no Windows PowerShell**
+<details>
+<summary><strong>Alternativa no Windows PowerShell</strong></summary>
 
 ```powershell
 py -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
+
+</details>
 
 **3. Instale as dependências e verifique o ambiente**
 
@@ -155,7 +186,9 @@ jupyter lab
 
 Selecione esse kernel em cada notebook. Inicie o JupyterLab na pasta da área para manter os caminhos relativos dos dados e saídas.
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+O `pyarrow` é opcional para conversões de Polars para pandas; instale-o no ambiente ativo somente se a conversão exigir essa dependência.
+
+<p align="right"><sub><a href="#readme-top">↑ Voltar ao topo</a></sub></p>
 
 ---
 
@@ -163,59 +196,41 @@ Selecione esse kernel em cada notebook. Inicie o JupyterLab na pasta da área pa
 
 ## Testes e Validação
 
-| Verificação | Situação documentada |
-|---|---|
-| Notebooks documentados | 4 |
-| Materiais complementares | 4 guias / 3 Cheat Sheets |
-| Dependências | `requirements.txt` |
-| Execução | 4 notebooks reexecutados e aprovados no JupyterLab em 16/11/2026 |
-| Controles interativos | Widgets do notebook 03 testados no ambiente local do JupyterLab |
-| Resultados gerados | 6/6 arquivos presentes e validados (5 CSV, 1 Parquet) |
-| Verificações de dados | Dimensões e esquemas esperados, equivalência CSV/Parquet e consistência das agregações de vendas |
+### Resultados da validação
 
-Os quatro notebooks foram reexecutados e aprovados no ambiente local do JupyterLab. Os seis arquivos gerados passaram pelas verificações indicadas, incluindo a conciliação da **receita líquida ilustrativa de 630,00** entre os dados de vendas e os resumos por região, mês e categoria/mês. Os exemplos utilizam **dados fictícios**, não observações reais de vendas.
+| Verificação | Status | Resultado |
+| --- | :---: | --- |
+| Execução dos notebooks | ![Aprovado](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/status/passed_pt_br.svg) | 4/4 reexecutados e aprovados no JupyterLab local |
+| Widgets interativos | ![Aprovado](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/status/passed_pt_br.svg) | Notebook 03 testado no JupyterLab local |
+| Resultados gerados | ![Aprovado](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/status/passed_pt_br.svg) | 6/6 arquivos (5 CSV, 1 Parquet) |
+| Integridade e consistência dos dados | ![Aprovado](https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/status/passed_pt_br.svg) | Dimensões, esquemas, equivalência CSV/Parquet e verificações das agregações de vendas |
 
-A renderização dos widgets depende da integração com a interface e deve ser verificada em outros ambientes. Para validar localmente, execute `python -m pip check` e depois **Restart Kernel → Run All Cells** no JupyterLab, conferindo os controles interativos, as tabelas e os arquivos exportados.
+*Última validação de notebooks registrada: 16/11/2026. Os resultados são históricos, não uma nova auditoria de execução.*
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+<details>
+<summary><strong>Detalhes técnicos da validação</strong></summary>
 
----
+A auditoria registrada conciliou a **receita líquida ilustrativa de 630,00** entre a tabela de vendas e os resumos por região, mês e categoria/mês. O notebook 04 verifica a igualdade de cada tabela exportada após sua releitura e compara o total de unidades por produto.
 
-<a id="usage"></a>
+</details>
 
-## Instruções de Uso
+<details>
+<summary><strong>Reproduzir a validação</strong></summary>
 
-### Percurso de Estudo Recomendado
+Verifique o ambiente Python ativo:
 
-Siga os notebooks na ordem da tabela de Conteúdo, selecionando o kernel correto. Leia os Guias Técnicos para aprofundamento e consulte as Cheat Sheets como referência rápida.
+```bash
+python -m pip check
+```
 
-### Exercícios e Prática
+No JupyterLab, selecione o kernel correto e escolha **Restart Kernel → Run All Cells**. Inspecione as tabelas, os gráficos, os controles interativos e os arquivos exportados conforme o notebook.
 
-Verifique o interpretador e o kernel ativos; documente um notebook com Markdown; conecte um controle ipywidgets a uma análise; compare uma transformação Polars com Pandas.
+</details>
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+> [!CAUTION]
+> Os exemplos utilizam **dados sintéticos**, não observações reais de vendas. A renderização dos widgets depende da integração com a interface e deve ser verificada em outro ambiente.
 
----
-
-<a id="references"></a>
-
-## Referências
-
-| Recurso | Documentação / Referência |
-|---|---|
-| Python | [Abrir documentação](https://docs.python.org/3/) |
-| JupyterLab | [Abrir documentação](https://jupyterlab.readthedocs.io/en/stable/) |
-| Markdown | [Abrir documentação](https://www.markdownguide.org/) |
-| ipywidgets | [Abrir documentação](https://ipywidgets.readthedocs.io/) |
-| Polars | [Abrir documentação](https://docs.pola.rs/) |
-| Pandas | [Abrir documentação](https://pandas.pydata.org/docs/) |
-| NumPy | [Abrir documentação](https://numpy.org/doc/stable/) |
-| Matplotlib | [Abrir documentação](https://matplotlib.org/stable/) |
-| ipykernel | [Abrir documentação](https://ipykernel.readthedocs.io/) |
-
-O Markdown Guide é uma referência comunitária, não a documentação oficial de um produto.
-
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+<p align="right"><sub><a href="#readme-top">↑ Voltar ao topo</a></sub></p>
 
 ---
 
@@ -223,15 +238,24 @@ O Markdown Guide é uma referência comunitária, não a documentação oficial 
 
 ## Licença
 
-| Material | Licença | Abrangência |
-|---|---|---|
-| Código-fonte original | [MIT](../LICENSE-CODE.txt) | Scripts e código original dos notebooks |
-| Conteúdo educacional original | [CC BY-NC 4.0](../LICENSE-CONTENT.md) | Textos, READMEs, guias e Cheat Sheets originais |
-| Conteúdo de terceiros | Licenças próprias | Datasets, imagens, marcas e outros recursos externos |
+Estas licenças se aplicam apenas aos materiais sobre os quais o autor possui os direitos necessários; o código e o texto educacional de um mesmo notebook podem ter licenças diferentes.
 
-As licenças acima se aplicam apenas ao material sobre o qual o autor possui os direitos necessários; código e texto no mesmo notebook podem ter licenças diferentes.
+<table>
+<tr>
+<td align="center" valign="middle"><a href="../LICENSE-CODE.txt"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/licenses/mit.svg" alt="MIT"></a></td>
+<td valign="middle"><strong>Código-fonte</strong> | Scripts e código original dos notebooks.</td>
+</tr>
+<tr>
+<td align="center" valign="middle"><a href="../LICENSE-CONTENT.md"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/badges/licenses/cc_by_nc_4_0.svg" alt="CC BY-NC 4.0"></a></td>
+<td valign="middle"><strong>Conteúdo educacional</strong> | Textos originais, READMEs, guias e Cheat Sheets.</td>
+</tr>
+<tr>
+<td align="center" valign="middle">Termos de terceiros</td>
+<td valign="middle"><strong>Conteúdo externo</strong> | Conjuntos de dados, imagens, marcas e outros recursos; aplicam-se os respectivos termos.</td>
+</tr>
+</table>
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
+<p align="right"><sub><a href="#readme-top">↑ Voltar ao topo</a></sub></p>
 
 ---
 
@@ -242,23 +266,15 @@ As licenças acima se aplicam apenas ao material sobre o qual o autor possui os 
 
 <div align="center">
 
-<a href="https://eduardo-pereira.webflow.io/" title="Site pessoal — Eduardo Junior Pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="Logo EP — Eduardo Junior Pereira" height="90"></a>
+<a href="https://eduardo-pereira.webflow.io/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/logos/logo_initials.png" alt="EP logo" height="90"></a>
 
-**Eduardo Junior Pereira**
+Vamos nos conectar e trocar ideias e oportunidades.
 
-*Economics · Data Science · Analytics*
-
-<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="E-mail" height="27"></a>&nbsp;&nbsp;
+<a href="mailto:eduardojr.pereira@gmail.com"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/gmail_icon.svg" alt="Email" height="27"></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/eduardo-jr-pereira/"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/linkedin_icon.svg" alt="LinkedIn" height="27"></a>&nbsp;&nbsp;
-<a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>
-
-[Vamos nos conectar no LinkedIn para trocar ideias e oportunidades.](https://www.linkedin.com/in/eduardo-jr-pereira/)
-
-[**Portfólio GitHub**](https://github.com/eduardojr-pereira/data-science-portfolio)
+<a href="https://github.com/eduardojr-pereira"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/github_icon.svg" alt="GitHub" height="27"></a>&nbsp;&nbsp;
+<a href="https://discord.com/users/533043855122235393"><img src="https://raw.githubusercontent.com/eduardojr-pereira/ep-brand-assets/main/assets/icons/discord_icon.svg" alt="Discord" height="27"></a>
 
 </div>
 
-<p align="right"><a href="#readme-top">↑ VOLTAR AO TOPO</a></p>
-
----
 <!-- EP-FOOTER:END -->
