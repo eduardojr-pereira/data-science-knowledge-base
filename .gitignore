@@ -55,3 +55,11 @@ secrets.json
 /10_big_data_distributed_processing/datasets/airplanes.csv
 /10_big_data_distributed_processing/datasets/points.tsv
 /10_big_data_distributed_processing/datasets/sms.csv
+
+# Shared local backup and credential protections
+credentials.json
+service-account*.json
+*.backup
+*.old
+*.orig
+.readme_backups/
